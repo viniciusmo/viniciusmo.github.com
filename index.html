@@ -126,18 +126,17 @@ Veja o seguinte exemplo :</p>
 
 <p> A variável <strong><em>firstName</em></strong> é um ponteiro para o objeto string &#8220;Ray&#8221;  que  guarda o valor do campo de texto.Essa variável agora também é proprietário do objeto string &#8220;Ray&#8221;.</p>
 
-<p><img class="center" src="../images/blog/ios/arc-introduction/image05.png"></p>
+<p><img class="center" src="https://raw.github.com/viniciusmo/octopress/master/source/images/blog/ios/arc-introduction/image05.png"></p>
 
 <p>Um objeto pode ter mais de um dono. Até que o usuário não mude o conteúdo do UITextField,a propriedade self.textField.text também  é um proprietário do objeto string &#8220;Ray&#8221;. Existem dois ponteiros para manter esse objeto em memória :<br/>
-<img class="center" src="../images/blog/ios/arc-introduction/image00.png">
+<img class="center" src="https://raw.github.com/viniciusmo/octopress/master/source/images/blog/ios/arc-introduction/image00.png">
 Momentos depois, o usuário vai digitar algo novo no campo de texto e sua propriedade de texto agora aponta para um novo objeto string. Mas o objeto string original ainda tem um proprietário (a variável firstName) e, portanto, permanece na memória.<br/>
-<img class="center" src="../images/blog/ios/arc-introduction/image04.png"></p>
+<img class="center" src="https://raw.github.com/viniciusmo/octopress/master/source/images/blog/ios/arc-introduction/image04.png"></p>
 
 <p>Somente quando firstName recebe um novo valor também, ou sai do escopo - porque é uma variável local e o método termina, ou porque é uma variável de instância e o objeto a que  ela pertence é desalocado .O objeto string não tem mais proprietários, o seu retain count é 0 e ele é desalocado.</p>
 
-<p><img class="center" src="../images/blog/ios/arc-introduction/image06.png"></p>
-
-<p>Chamamos ponteiros como firstName e textField.text  de <strong><em>strong</em></strong> porque mantém os objetos vivos (em memória). Por padrão, todas as variáveis ​​de instância e variáveis ​​locais são ponteiros <strong><em>strong</em></strong>.<br/>
+<p><img class="center" src="https://raw.github.com/viniciusmo/octopress/master/source/images/blog/ios/arc-introduction/image06.png">
+Chamamos ponteiros como firstName e textField.text  de <strong><em>strong</em></strong> porque mantém os objetos vivos (em memória). Por padrão, todas as variáveis ​​de instância e variáveis ​​locais são ponteiros <strong><em>strong</em></strong>.<br/>
 Há também um ponteiro chamado de <strong><em>weak</em></strong>. Variáveis ​​que são <strong><em>weak</em></strong> ainda pode apontar para objetos, mas eles não se tornam proprietários.<br/>
 Veja o seguinte exemplo :</p>
 
@@ -146,18 +145,18 @@ Veja o seguinte exemplo :</p>
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p><img class="center" src="../images/blog/ios/arc-introduction/image02.png"></p>
+<p><img class="center" src="https://raw.github.com/viniciusmo/octopress/master/source/images/blog/ios/arc-introduction/image02.png"></p>
 
 <p>A variável <strong><em>weakName</em></strong> aponta para o mesmo objeto  string &#8220;Rayman&#8221; que a propriedade self.textField.text aponta , mas ela não é proprietária do objeto.<br/>
 Se o campo de texto alterar o conteúdo, então o objeto string &#8220;Rayman&#8221; não tem mais donos e é desalocado.</p>
 
-<p><img class="center" src="../images/blog/ios/arc-introduction/image03.png"></p>
+<p><img class="center" src="https://raw.github.com/viniciusmo/octopress/master/source/images/blog/ios/arc-introduction/image03.png"></p>
 
 <p>Quando isso acontece, o valor de <strong><em>weakName</em></strong> torna-se automaticamente nulo.Note que este é extremamente conveniente, pois impede ponteiros <strong><em>weak</em></strong> de apontar para a memória liberada.<br/>
 Você provavelmente não vai usar muito os  ponteiros <strong><em>weaks</em></strong>. Eles são principalmente úteis quando dois objetos têm uma relação parent-child. O parent vai ter um ponteiro strong para seu child - e, portanto, é o &#8220;dono&#8221; - mas, a fim de evitar ciclos de propriedade, o child só tem um ponteiro <strong><em>weak</em></strong> de volta para seu parent.<br/>
 Um exemplo disto é o padrão delegate. Seu UIControllerView pode possuir um UITableView através de um ponteiro <strong><em>strong</em></strong>. Já o data source e o delegate  apontam para o UIControllerView mas são <strong><em>weaks</em></strong> ponteiros.</p>
 
-<p><img class="center" src="../images/blog/ios/arc-introduction/image01.png"></p>
+<p><img class="center" src="https://raw.github.com/viniciusmo/octopress/master/source/images/blog/ios/arc-introduction/image01.png"></p>
 
 <p>Veja o seguinte exemplo :</p>
 
