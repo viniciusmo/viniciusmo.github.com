@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Vinícius Moisés de Oliveira]]></title>
+  <link href="http://viniciusmo.github.com/atom.xml" rel="self"/>
+  <link href="http://viniciusmo.github.com/"/>
+  <updated>2013-01-23T22:10:02-02:00</updated>
+  <id>http://viniciusmo.github.com/</id>
+  <author>
+    <name><![CDATA[Vinícius Moisés de Oliveira]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+</feed>
