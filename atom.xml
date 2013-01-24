@@ -4,7 +4,7 @@
   <title><![CDATA[Vinícius Moisés de Oliveira]]></title>
   <link href="http://viniciusmo.github.com/atom.xml" rel="self"/>
   <link href="http://viniciusmo.github.com/"/>
-  <updated>2013-01-24T16:11:49-02:00</updated>
+  <updated>2013-01-24T16:12:56-02:00</updated>
   <id>http://viniciusmo.github.com/</id>
   <author>
     <name><![CDATA[Vinícius Moisés de Oliveira]]></name>
@@ -25,9 +25,13 @@ Com o ARC habilitado , o compilador irá inserir automaticamente <b>retain</b>,<
 
 <h1>Como o ARC funciona?</h1>
 
-<p>Você provavelmente já está familiarizado com o gerenciamento de memória manual, que funciona basicamente assim:<br/>
-*   Se você precisa manter um objeto , você deve retê-lo (retain), a menos que já foi retido para você.
-*   Se você quiser parar de usar um objeto , você precisa para liberá-lo (release), a menos que já foi liberado para você ( com o autorelease).</p>
+<p>Você provavelmente já está familiarizado com o gerenciamento de memória manual, que funciona basicamente assim:</p>
+
+<ul>
+<li>Se você precisa manter um objeto , você deve retê-lo (retain), a menos que já foi retido para você.</li>
+<li>Se você quiser parar de usar um objeto , você precisa para liberá-lo (release), a menos que já foi liberado para você ( com o autorelease).</li>
+</ul>
+
 ]]></content>
   </entry>
   
