@@ -138,7 +138,7 @@ Momentos depois, o usuário vai digitar algo novo no campo de texto e sua propri
 <p><img class="center" src="../images/blog/ios/arc-introduction/image06.png"></p>
 
 <p>Chamamos ponteiros como firstName e textField.text  de <strong><em>strong</em></strong> porque mantém os objetos vivos (em memória). Por padrão, todas as variáveis ​​de instância e variáveis ​​locais são ponteiros <strong><em>strong</em></strong>.<br/>
-Há também um ponteiro chamado de weak. Variáveis ​​que são weak ainda pode apontar para objetos, mas eles não se tornam proprietários.<br/>
+Há também um ponteiro chamado de <strong><em>weak</em></strong>. Variáveis ​​que são <strong><em>weak</em></strong> ainda pode apontar para objetos, mas eles não se tornam proprietários.<br/>
 Veja o seguinte exemplo :</p>
 
 <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -148,14 +148,14 @@ Veja o seguinte exemplo :</p>
 
 <p><img class="center" src="../images/blog/ios/arc-introduction/image02.png"></p>
 
-<p>A variável weakName aponta para o mesmo objeto  string &#8220;Rayman&#8221; que a propriedade self.textField.text aponta , mas ela não é proprietária do objeto.<br/>
+<p>A variável <strong><em>weakName</em></strong> aponta para o mesmo objeto  string &#8220;Rayman&#8221; que a propriedade self.textField.text aponta , mas ela não é proprietária do objeto.<br/>
 Se o campo de texto alterar o conteúdo, então o objeto string &#8220;Rayman&#8221; não tem mais donos e é desalocado.</p>
 
 <p><img class="center" src="../images/blog/ios/arc-introduction/image03.png"></p>
 
-<p>Quando isso acontece, o valor de weakName torna-se automaticamente nulo.Note que este é extremamente conveniente, pois impede ponteiros weak de apontar para a memória liberada.<br/>
-Você provavelmente não vai usar muito os  ponteiros weaks. Eles são principalmente úteis quando dois objetos têm uma relação parent-child. O parent vai ter um ponteiro strong para seu child - e, portanto, é o &#8220;dono&#8221; - mas, a fim de evitar ciclos de propriedade, o child só tem um ponteiro weak de volta para seu parent.<br/>
-Um exemplo disto é o padrão delegate. Seu UIControllerView pode possuir um UITableView através de um ponteiro <strong><em>strong</em></strong>. Já o data source e o delegate  apontam para o UIControllerView mas são weaks ponteiros.</p>
+<p>Quando isso acontece, o valor de <strong><em>weakName</em></strong> torna-se automaticamente nulo.Note que este é extremamente conveniente, pois impede ponteiros <strong><em>weak</em></strong> de apontar para a memória liberada.<br/>
+Você provavelmente não vai usar muito os  ponteiros <strong><em>weaks</em></strong>. Eles são principalmente úteis quando dois objetos têm uma relação parent-child. O parent vai ter um ponteiro strong para seu child - e, portanto, é o &#8220;dono&#8221; - mas, a fim de evitar ciclos de propriedade, o child só tem um ponteiro <strong><em>weak</em></strong> de volta para seu parent.<br/>
+Um exemplo disto é o padrão delegate. Seu UIControllerView pode possuir um UITableView através de um ponteiro <strong><em>strong</em></strong>. Já o data source e o delegate  apontam para o UIControllerView mas são <strong><em>weaks</em></strong> ponteiros.</p>
 
 <p><img class="center" src="../images/blog/ios/arc-introduction/image01.png"></p>
 
@@ -182,7 +182,7 @@ Um exemplo disto é o padrão delegate. Seu UIControllerView pode possuir um UIT
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>As variáveis ​​são <strong><em>strong</em></strong> por default e o <strong><em>__strong</em></strong> pode ser omitido. Propriedades também podem ser <strong><em>strong</em></strong> e weak. A notação para propriedades é:</p>
+<p>As variáveis ​​são <strong><em>strong</em></strong> por default e o <strong><em>__strong</em></strong> pode ser omitido. Propriedades também podem ser <strong><em>strong</em></strong> e <strong><em>weak</em></strong>. A notação para propriedades é:</p>
 
 <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
