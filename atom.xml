@@ -4,7 +4,7 @@
   <title><![CDATA[Vinícius Moisés de Oliveira]]></title>
   <link href="http://viniciusmo.github.com/atom.xml" rel="self"/>
   <link href="http://viniciusmo.github.com/"/>
-  <updated>2013-01-24T10:51:47-02:00</updated>
+  <updated>2013-01-24T14:58:15-02:00</updated>
   <id>http://viniciusmo.github.com/</id>
   <author>
     <name><![CDATA[Vinícius Moisés de Oliveira]]></name>
@@ -12,5 +12,14 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[iOS : Automatic Counting Reference - ARC]]></title>
+    <link href="http://viniciusmo.github.com/blog/2013/01/24/ios-automatic-counting-reference-arc/"/>
+    <updated>2013-01-24T14:58:00-02:00</updated>
+    <id>http://viniciusmo.github.com/blog/2013/01/24/ios-automatic-counting-reference-arc</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
 </feed>
