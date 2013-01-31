@@ -4,7 +4,7 @@
   <title><![CDATA[Vinícius Moisés de Oliveira]]></title>
   <link href="http://viniciusmo.github.com/atom.xml" rel="self"/>
   <link href="http://viniciusmo.github.com/"/>
-  <updated>2013-01-31T18:17:40-02:00</updated>
+  <updated>2013-01-31T18:19:08-02:00</updated>
   <id>http://viniciusmo.github.com/</id>
   <author>
     <name><![CDATA[Vinícius Moisés de Oliveira]]></name>
@@ -23,7 +23,7 @@
 <h2>Container IoC</h2>
 
 <p>Spring – http://www.springsource.org/<br/>
-Guice – http://picocontainer.codehaus.org/
+Guice – http://picocontainer.codehaus.org/<br/>
 PicoContainer – http://code.google.com/p/google-guice/<br/>
 EJB – www.oracle.com/technetwork/java/javaee/ejb/index.html <br/>
 CDI – http://www.oracle.com/technetwork/articles/java/cdi-javaee-bien-225152.html</p>
