@@ -4,7 +4,7 @@
   <title><![CDATA[Vinícius Moisés de Oliveira]]></title>
   <link href="http://viniciusmo.github.com/atom.xml" rel="self"/>
   <link href="http://viniciusmo.github.com/"/>
-  <updated>2013-01-31T17:45:24-02:00</updated>
+  <updated>2013-01-31T18:17:02-02:00</updated>
   <id>http://viniciusmo.github.com/</id>
   <author>
     <name><![CDATA[Vinícius Moisés de Oliveira]]></name>
@@ -12,6 +12,253 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Arquitetura - Listagem Frameworks]]></title>
+    <link href="http://viniciusmo.github.com/blog/2013/01/31/listagem-de-frameworks/"/>
+    <updated>2013-01-31T18:01:00-02:00</updated>
+    <id>http://viniciusmo.github.com/blog/2013/01/31/listagem-de-frameworks</id>
+    <content type="html"><![CDATA[<p>Ótima lista de frameworks e componentes feita pelo <a href="http://fernandofranzini.wordpress.com/2013/01/30/listagem-de-frameworks-30012013/">Fernando Franzini</a> como ajuda na hora de arquitetar um sistema , segue a excelente lista :</p>
+
+<h2>Container IoC</h2>
+
+<p>Spring – http://www.springsource.org/
+Guice – http://picocontainer.codehaus.org/
+PicoContainer – http://code.google.com/p/google-guice/<br/>
+EJB – www.oracle.com/technetwork/java/javaee/ejb/index.html <br/>
+CDI – http://www.oracle.com/technetwork/articles/java/cdi-javaee-bien-225152.html</p>
+
+<h2>Persistência</h2>
+
+<p>Hibernate – http://www.hibernate.org/<br/>
+Spring Data – http://www.springsource.org/ <br/>
+iBatis – http://www.mybatis.org/<br/>
+Torque – http://db.apache.org/torque/<br/>
+Castor – http://www.castor.org/<br/>
+Cayenne – http://cayenne.apache.org/</p>
+
+<h2>Gerenciador de Transação</h2>
+
+<p>Spring AOP transaction – http://www.springsource.org/<br/>
+EJB (JTA) www.oracle.com/technetwork/java/javaee/ejb/index.html</p>
+
+<h2>Agendamento de Tarefas</h2>
+
+<p>Timer Task JSE - http://www.dsc.ufcg.edu.br/~jacques/cursos/map/html/threads/timer.html<br/>
+Quarts – http://quartz-scheduler.org/<br/>
+EJB Timer Service – http://docs.oracle.com/javaee/6/tutorial/doc/bnboy.html</p>
+
+<h2>Validação</h2>
+
+<p>Commons Validator – http://commons.apache.org/validator/<br/>
+Java Bean Validator – http://docs.oracle.com/javaee/6/tutorial/doc/gircz.html</p>
+
+<h2>Chamadas Assíncronas</h2>
+
+<p>JSE Executor Services - http://docs.oracle.com/javase/tutorial/essential/concurrency/exinter.html<br/>
+EJB Asynchronous Method Invocation – http://docs.oracle.com/javaee/6/tutorial/doc/gkkqg.html<br/>
+EJB Message-Driven Bean – http://docs.oracle.com/javaee/6/tutorial/doc/gipko.html</p>
+
+<h2>Kit de Interface Gráficas Desktop</h2>
+
+<p>Swing – http://docs.oracle.com/javase/tutorial/uiswing/<br/>
+SwingX – http://swingx.java.net/<br/>
+JGoodies – http://www.jgoodies.com/<br/>
+SWT – http://www.eclipse.org/swt/<br/>
+SWT OPAL – http://code.google.com/a/eclipselabs.org/p/opal/</p>
+
+<h2>RAD Interface Gráficas Desktop</h2>
+
+<p>Eclipse Windows Builder – http://www.eclipse.org/windowbuilder/<br/>
+NetBeans Matisse – http://netbeans.org/features/java/swing.html</p>
+
+<h2>Framework Web</h2>
+
+<p>Click – http://click.apache.org/<br/>
+Wicket – http://wicket.apache.org/<br/>
+Spring MVC – http://www.springsource.org/<br/>
+Struts – http://struts.apache.org/<br/>
+Mentawai – http://www.mentaframework.org/<br/>
+JSF – www.oracle.com/technetwork/java/javaee/javaserverfaces-139869.html<br/>
+GWT – https://developers.google.com/web-toolkit/<br/>
+Vaadin – https://vaadin.com/home <br/>
+VRaptor - http://vraptor.caelum.com.br/</p>
+
+<h2>Framework Web Full Stack</h2>
+
+<p>Grails – http://grails.org/<br/>
+Ruby On Rails – http://rubyonrails.org/<br/>
+OpenXava – http://www.openxava.org/</p>
+
+<h2>Provedores de JSF</h2>
+
+<p>Mojorra – http://javaserverfaces.java.net/<br/>
+MyFaces – http://myfaces.apache.org/<br/>
+ADF – www.oracle.com/technetwork/developer-tools/adf/overview/index.html</p>
+
+<h2>Componentes JSF</h2>
+
+<p>RichFaces – http://www.jboss.org/richfaces<br/>
+PrimeFaces – http://primefaces.org/<br/>
+OpenFaces – http://openfaces.org/<br/>
+IceFaces – http://www.icesoft.org/<br/>
+EasyFaces – http://www.easyfaces.com.br<br/>
+Gmaps4jsf – http://code.google.com/p/gmaps4jsf/</p>
+
+<h2>Extensões JSF</h2>
+
+<p>PrettyFaces - http://ocpsoft.org/prettyfaces/<br/>
+Omnifaces – https://showcase-omnifaces.rhcloud.com/</p>
+
+<h2>Soluções Web Mobile</h2>
+
+<p>JSF RichFaces Mobile – http://www.jboss.org/richfaces<br/>
+JSF PrimeFaces Mobile – http://primefaces.org/<br/>
+JSF OpenFaces Mobile – http://openfaces.org/<br/>
+JSF IceFaces Mobile – http://www.icesoft.org/<br/>
+Spring Mobile – http://www.springsource.org/<br/>
+JQuery Mobile – http://jquery.com/<br/>
+DOJO Mobile – http://dojotoolkit.org/</p>
+
+<h2>Autenticação e Autorização Web</h2>
+
+<p>Spring Security – http://www.springsource.org/ <br/>
+JGuard – http://jguard.xwiki.com/xwiki/bin/view/Main/WebHome<br/>
+JEE Container Managed Security (Configuração particular). Tomcat – http://tomcat.apache.org/tomcat-7.0-doc/realm-howto.html</p>
+
+<h2>JEE Web Container Standalone</h2>
+
+<p>Tomcat – http://tomcat.apache.org/<br/>
+Jetty – http://jetty.codehaus.org/jetty/<br/>
+JBoss – http://www.jboss.org/</p>
+
+<h2>JEE EJB Container (Web Profile e JEE Full)  </h2>
+
+<p>Tomee – http://openejb.apache.org/apache-tomee.html<br/>
+Simpas – http://siwpas.mechsoft.com.tr/<br/>
+Resin – http://www.caucho.com/resin-application-server/<br/>
+JBoss – http://www.jboss.org/<br/>
+Glassfish – http://glassfish.java.net/<br/>
+Webshere – http://www-142.ibm.com/software/products/br/pt/appserv-was<br/>
+WebLogic – http://www.oracle.com/us/products/middleware/application-server/weblogic-suite/index.html?ssSourceSiteId=ocombr<br/>
+Geronimo – http://geronimo.apache.org/</p>
+
+<h2>Relatórios</h2>
+
+<p>iReport – http://jasperforge.org/projects/ireport<br/>
+DynamicReport – http://dynamicreports.sourceforge.net/<br/>
+Birt – http://www.eclipse.org/birt/phoenix/<br/>
+iText – http://itextpdf.com/<br/>
+PDFBox – http://pdfbox.apache.org/</p>
+
+<h2>Gerador de Gráficos Charts</h2>
+
+<p>JFreechart - http://www.jfree.org/jfreechart/<br/>
+HighCharts -  http://www.highcharts.com/</p>
+
+<h2>Web Services REST</h2>
+
+<p>Jersey – http://jersey.java.net/<br/>
+Restlet – http://www.restlet.org/<br/>
+RestEasy – http://www.jboss.org/resteasy/<br/>
+Serfj – http://serfj.sourceforge.net/<br/>
+CXF – http://cxf.apache.org/</p>
+
+<h2>Web Services SOAP</h2>
+
+<p>Metro – http://jax-ws.java.net/<br/>
+Axis – http://axis.apache.org/axis/<br/>
+XFire – http://xfire.codehaus.org/<br/>
+CXF – http://cxf.apache.org/</p>
+
+<h2>JavaScript</h2>
+
+<p>DOJO Toolkit – http://dojotoolkit.org/<br/>
+JQuery – http://jquery.com/<br/>
+Ext-JS – http://docs.sencha.com/ext-js/4-0/<br/>
+DWR – http://directwebremoting.org/dwr/index.html</p>
+
+<h2>Integração com Redes Sociais</h2>
+
+<p>Spring Social – http://www.springsource.org/</p>
+
+<h2>Cache</h2>
+
+<p>Space4J – http://www.space4j.org/<br/>
+Memcache – http://memcached.org/<br/>
+Ecache – http://ehcache.org/<br/>
+Prevayler – http://prevayler.org/<br/>
+JBoss Infinispan – http://www.jboss.org/infinispan.html</p>
+
+<h2>NoSQL</h2>
+
+<p>MongoDB – http://www.mongodb.org/<br/>
+Neo4j – http://neo4j.org/<br/>
+Db4o – http://www.db4o.com/<br/>
+MemcachedDB – http://memcachedb.org/<br/>
+CouchDB – http://couchdb.apache.org/<br/>
+Project Voldemort – http://project-voldemort.com/<br/>
+MarkLkogic Server – http://www.marklogic.com/<br/>
+BaseX – http://basex.org/<br/>
+SimpleDB – http://aws.amazon.com/simpledb/<br/>
+HBase – http://hbase.apache.org/<br/>
+Casandra – http://cassandra.apache.org/<br/>
+Hypertable – http://hypertable.org/<br/>
+OrientBD – http://www.orientechnologies.com/</p>
+
+<h2>SGDB Java Embutidos </h2>
+
+<p>HyperSQL – http://hsqldb.org/<br/>
+JavaDB – www.oracle.com/technetwork/java/javadb/overview/index.html<br/>
+Apache Derby – http://db.apache.org/derby/<br/>
+H2Database – http://www.h2database.com</p>
+
+<h2>Testes</h2>
+
+<p>DBUnit – http://www.dbunit.org/<br/>
+JUnit – http://www.junit.org/<br/>
+EJBUnit – http://ejb3unit.sourceforge.net/<br/>
+JSFUnit – http://www.jboss.org/jsfunit/</p>
+
+<h2>Loggin</h2>
+
+<p>jse – http://docs.oracle.com/javase/7/docs/api/java/util/logging/package-summary.html<br/>
+Log4J –  http://logging.apache.org/index.html</p>
+
+<h2>Testes Cargas e Perfomance</h2>
+
+<p>JMeter – http://jmeter.apache.org/<br/>
+WebLoad – http://www.webload.org/</p>
+
+<h2>JSON</h2>
+
+<p>JSON – http://www.json.org/java/<br/>
+XStream – http://xstream.codehaus.org/json-tutorial.html<br/>
+Google-JSON – http://code.google.com/p/google-gson/</p>
+
+<h2>Boletos Bancário</h2>
+
+<p>Boletos Bancário – http://www.boletobancario.com.br<br/>
+Bopepo – www.jrimum.org/bopepo/<br/>
+Stella – github.com/caelum/caelum-stella/wiki/Gerando-boleto</p>
+
+<h2>Manipulaçao de Arquivos MS Office</h2>
+
+<p>Apache POI – http://poi.apache.org/<br/>
+JExcelApi -  http://jexcelapi.sourceforge.net/<br/>
+Docx4j – http://dev.plutext.org/trac/docx4j<br/>
+Java Docx – http://www.javadocx.com/<br/>
+Aspose – http://www.aspose.com/categories/java-components/aspose.total-for-java/default.aspx</p>
+
+<h2>Gerais</h2>
+
+<p>Maven – Gerenciador de dependências – http://maven.apache.org/<br/>
+E-mail – Gerenciador de emails –  www.oracle.com/technetwork/java/javamail/index.html<br/>
+JLicense  – Gerenciador de licenciamento de uso de software –http://www.websina.com/products/jlicense.html</p>
+
+<p>Créditos a Lista : <a href="http://fernandofranzini.wordpress.com">Fernando Franzini</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[OCEJWCD Study Companion: Certified Expert Java EE 6 Web Component Developer (Oracle Exam 1Z0-899)]]></title>
