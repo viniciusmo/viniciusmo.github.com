@@ -4,7 +4,7 @@
   <title><![CDATA[Vinícius Moisés de Oliveira]]></title>
   <link href="http://viniciusmo.github.com/atom.xml" rel="self"/>
   <link href="http://viniciusmo.github.com/"/>
-  <updated>2013-02-04T14:17:03-02:00</updated>
+  <updated>2013-02-04T16:40:13-02:00</updated>
   <id>http://viniciusmo.github.com/</id>
   <author>
     <name><![CDATA[Vinícius Moisés de Oliveira]]></name>
@@ -12,6 +12,34 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Programming Challenges - Minesweeper]]></title>
+    <link href="http://viniciusmo.github.com/blog/2013/02/04/programming-challenges-minesweeper/"/>
+    <updated>2013-02-04T16:37:00-02:00</updated>
+    <id>http://viniciusmo.github.com/blog/2013/02/04/programming-challenges-minesweeper</id>
+    <content type="html"><![CDATA[<h1>Problem Minesweeper</h1>
+
+<p>Have you ever played Minesweeper? This cute little game comes with a certain op- erating system whose name we can’t remember. The goal of the game is to find where all the mines are located within a M × N field.<br/>
+The game shows a number in a square which tells you how many mines there are adjacent to that square. Each square has at most eight adjacent squares. The 4 × 4 field on the left contains two mines, each represented by a “*” character. If we represent the same field by the hint numbers described above, we end up with the field on the right:</p>
+
+<p><em>&#8230; </em>100<br/>
+&#8230;. 2210 <br/>
+.<em>.. 1</em>10<br/>
+&#8230;. 1110</p>
+
+<h3>Input</h3>
+
+<p>The input will consist of an arbitrary number of fields. The first line of each field contains two integers n and m (0 &lt; n, m ≤ 100) which stand for the number of lines and columns of the field, respectively. Each of the next n lines contains exactly m characters, representing the field.<br/>
+Safe squares are denoted by “.” and mine squares by “*,” both without the quotes. The first field line where n = m = 0 represents the end of input and should not be processed.</p>
+
+<h3>Output</h3>
+
+<p>For each field, print the message Field #x: on a line alone, where x stands for the number of the field starting from 1. The next n lines should contain the field with the “.” characters replaced by the number of mines adjacent to that square. There must be an empty line between field outputs.</p>
+
+<p>Solution : <a href="https://github.com/viniciusmo/programming-challenges-problems/blob/master/getting-started/Minesweeper.cpp">download</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Programming Challenges - The 3n + 1 Problem]]></title>

@@ -5,13 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Blog Archives - Vinícius Moisés de Oliveira</title>
+  <title>Programming Challenges - Minesweeper - Vinícius Moisés de Oliveira</title>
   <meta name="author" content="Vinícius Moisés de Oliveira">
 
   
-  <meta name="description" content="Blog Archives 2013 Programming Challenges - Minesweeper
-Feb 04 2013 Programming Challenges - The 3n + 1 Problem
-Feb 04 2013 Arquitetura - Listagem &hellip;">
+  <meta name="description" content="Problem Minesweeper Have you ever played Minesweeper? This cute little game comes with a certain op- erating system whose name we can’t remember. The &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -20,7 +18,7 @@ Feb 04 2013 Arquitetura - Listagem &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://viniciusmo.github.com/blog/archives/">
+  <link rel="canonical" href="http://viniciusmo.github.com/blog/2013/02/04/programming-challenges-minesweeper/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -65,71 +63,97 @@ Feb 04 2013 Arquitetura - Listagem &hellip;">
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Blog Archives</h1>
+    
+      <h1 class="entry-title">Programming Challenges - Minesweeper</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-04T16:37:00-02:00" pubdate data-updated="true">Feb 4<span>th</span>, 2013</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives">
 
 
+<div class="entry-content"><h1>Problem Minesweeper</h1>
 
-  
-  <h2>2013</h2>
+<p>Have you ever played Minesweeper? This cute little game comes with a certain op- erating system whose name we can’t remember. The goal of the game is to find where all the mines are located within a M × N field.<br/>
+The game shows a number in a square which tells you how many mines there are adjacent to that square. Each square has at most eight adjacent squares. The 4 × 4 field on the left contains two mines, each represented by a “*” character. If we represent the same field by the hint numbers described above, we end up with the field on the right:</p>
 
-<article>
-  
-<h1><a href="/blog/2013/02/04/programming-challenges-minesweeper/">Programming Challenges - Minesweeper</a></h1>
-<time datetime="2013-02-04T16:37:00-02:00" pubdate><span class='month'>Feb</span> <span class='day'>04</span> <span class='year'>2013</span></time>
+<p><em>&#8230; </em>100<br/>
+&#8230;. 2210 <br/>
+.<em>.. 1</em>10<br/>
+&#8230;. 1110</p>
 
+<h3>Input</h3>
 
-</article>
+<p>The input will consist of an arbitrary number of fields. The first line of each field contains two integers n and m (0 &lt; n, m ≤ 100) which stand for the number of lines and columns of the field, respectively. Each of the next n lines contains exactly m characters, representing the field.<br/>
+Safe squares are denoted by “.” and mine squares by “*,” both without the quotes. The first field line where n = m = 0 represents the end of input and should not be processed.</p>
 
+<h3>Output</h3>
 
+<p>For each field, print the message Field #x: on a line alone, where x stands for the number of the field starting from 1. The next n lines should contain the field with the “.” characters replaced by the number of mines adjacent to that square. There must be an empty line between field outputs.</p>
 
-<article>
-  
-<h1><a href="/blog/2013/02/04/programming-challenges-the-3n-plus-1-problem/">Programming Challenges - The 3n + 1 Problem</a></h1>
-<time datetime="2013-02-04T14:06:00-02:00" pubdate><span class='month'>Feb</span> <span class='day'>04</span> <span class='year'>2013</span></time>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2013/01/31/listagem-de-frameworks/">Arquitetura - Listagem Frameworks</a></h1>
-<time datetime="2013-01-31T18:01:00-02:00" pubdate><span class='month'>Jan</span> <span class='day'>31</span> <span class='year'>2013</span></time>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2013/01/31/ocejwcd-study-companion-certified-expert-java-ee-6-web-component-developer-oracle-exam-1z0-899/">OCEJWCD Study Companion: Certified Expert Java EE 6 Web Component Developer (Oracle Exam 1Z0-899)</a></h1>
-<time datetime="2013-01-31T17:15:00-02:00" pubdate><span class='month'>Jan</span> <span class='day'>31</span> <span class='year'>2013</span></time>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2013/01/24/ios-automatic-counting-reference-arc/">iOS : Automatic Counting Reference - ARC</a></h1>
-<time datetime="2013-01-24T14:58:00-02:00" pubdate><span class='month'>Jan</span> <span class='day'>24</span> <span class='year'>2013</span></time>
-
-
-</article>
-
+<p>Solution : <a href="https://github.com/viniciusmo/programming-challenges-problems/blob/master/getting-started/Minesweeper.cpp">download</a></p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Vinícius Moisés de Oliveira</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-04T16:37:00-02:00" pubdate data-updated="true">Feb 4<span>th</span>, 2013</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://viniciusmo.github.com/blog/2013/02/04/programming-challenges-minesweeper/" data-via="" data-counturl="http://viniciusmo.github.com/blog/2013/02/04/programming-challenges-minesweeper/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/02/04/programming-challenges-the-3n-plus-1-problem/" title="Previous Post: Programming Challenges - The 3n + 1 Problem">&laquo; Programming Challenges - The 3n + 1 Problem</a>
+      
+      
+    </p>
+  </footer>
 </article>
 
 </div>
