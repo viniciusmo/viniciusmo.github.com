@@ -4,7 +4,7 @@
   <title><![CDATA[Vinícius Moisés de Oliveira]]></title>
   <link href="http://viniciusmo.github.com/atom.xml" rel="self"/>
   <link href="http://viniciusmo.github.com/"/>
-  <updated>2013-02-04T16:42:11-02:00</updated>
+  <updated>2013-02-04T16:43:01-02:00</updated>
   <id>http://viniciusmo.github.com/</id>
   <author>
     <name><![CDATA[Vinícius Moisés de Oliveira]]></name>
@@ -32,7 +32,7 @@ Safe squares are denoted by “.” and mine squares by “*,” both without th
 
 <p>For each field, print the message Field #x: on a line alone, where x stands for the number of the field starting from 1. The next n lines should contain the field with the “.” characters replaced by the number of mines adjacent to that square. There must be an empty line between field outputs.</p>
 
-<p>Solution : <a href="https://github.com/viniciusmo/programming-challenges-problems/blob/master/getting-started/Minesweeper.cpp">download</a></p>
+<p>Solution : <a href="https://raw.github.com/viniciusmo/programming-challenges-problems/master/getting-started/Minesweeper.cpp">download</a></p>
 ]]></content>
   </entry>
   
