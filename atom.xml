@@ -4,7 +4,7 @@
   <title><![CDATA[Vinícius Moisés de Oliveira]]></title>
   <link href="http://viniciusmo.github.com/atom.xml" rel="self"/>
   <link href="http://viniciusmo.github.com/"/>
-  <updated>2013-02-08T23:21:16-02:00</updated>
+  <updated>2013-02-08T23:25:53-02:00</updated>
   <id>http://viniciusmo.github.com/</id>
   <author>
     <name><![CDATA[Vinícius Moisés de Oliveira]]></name>
@@ -44,6 +44,8 @@ $10,000.00. A single line containing 0 follows the information for the last trip
 
 <p>For each trip, output a line stating the total amount of money, in dollars and cents,<br/>
 that must be exchanged to equalize the students’ costs.</p>
+
+<h3>Solution</h3>
 
 <figure class='code'><figcaption><span> (the_trip.cpp)</span> <a href='http://viniciusmo.github.com/downloads/code/the_trip.cpp'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
