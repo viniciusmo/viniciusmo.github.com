@@ -4,7 +4,7 @@
   <title><![CDATA[Vinícius Moisés de Oliveira]]></title>
   <link href="http://viniciusmo.github.com/atom.xml" rel="self"/>
   <link href="http://viniciusmo.github.com/"/>
-  <updated>2013-02-08T20:20:24-02:00</updated>
+  <updated>2013-02-08T23:16:47-02:00</updated>
   <id>http://viniciusmo.github.com/</id>
   <author>
     <name><![CDATA[Vinícius Moisés de Oliveira]]></name>
@@ -12,6 +12,37 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Programming Challenges - The Trip]]></title>
+    <link href="http://viniciusmo.github.com/blog/2013/02/08/programming-challenges-the-trip/"/>
+    <updated>2013-02-08T23:13:00-02:00</updated>
+    <id>http://viniciusmo.github.com/blog/2013/02/08/programming-challenges-the-trip</id>
+    <content type="html"><![CDATA[<h1>Problem The Trip</h1>
+
+<p>A group of students are members of a club that travels annually to different lo-
+cations. Their destinations in the past have included Indianapolis, Phoenix, Nashville,
+Philadelphia, San Jose, and Atlanta. This spring they are planning a trip to Eindhoven.<br/>
+The group agrees in advance to share expenses equally, but it is not practical to share
+every expense as it occurs.<br/>
+Thus individuals in the group pay for particular things, such
+as meals, hotels, taxi rides, and plane tickets. After the trip, each student’s expenses
+are tallied and money is exchanged so that the net cost to each is the same, to within
+one cent. In the past, this money exchange has been tedious and time consuming.<br/>
+Your job is to compute, from a list of expenses, the minimum amount of money that must
+change hands in order to equalize (within one cent) all the students’ costs.</p>
+
+<h3>Input</h3>
+
+<p>Standard input will contain the information for several trips. Each trip consists of a<br/>
+line containing a positive integer n denoting the number of students on the trip. This is<br/>
+followed by n lines of input, each containing the amount spent by a student in dollars<br/>
+and cents. There are no more than 1000 students and no student spent more than<br/>
+$10,000.00. A single line containing 0 follows the information for the last trip.</p>
+
+<h3>Output</h3>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Programming Challenges - Minesweeper]]></title>
