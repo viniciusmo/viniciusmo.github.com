@@ -4,7 +4,7 @@
   <title><![CDATA[Vinícius Moisés de Oliveira]]></title>
   <link href="http://viniciusmo.github.com/atom.xml" rel="self"/>
   <link href="http://viniciusmo.github.com/"/>
-  <updated>2013-04-09T15:33:26-03:00</updated>
+  <updated>2013-04-09T15:36:28-03:00</updated>
   <id>http://viniciusmo.github.com/</id>
   <author>
     <name><![CDATA[Vinícius Moisés de Oliveira]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Pong Game feito em Java]]></title>
+    <link href="http://viniciusmo.github.com/blog/2013/04/09/pong-game-feito-em-java/"/>
+    <updated>2013-04-09T15:15:00-03:00</updated>
+    <id>http://viniciusmo.github.com/blog/2013/04/09/pong-game-feito-em-java</id>
+    <content type="html"><![CDATA[<p>Pong Game (versão modificada) feito em Java apresentado a disciplina de Jogos Digitais para WEB - Fatec Carapicuíba.</p>
+
+<p><img class="center" src="https://raw.github.com/viniciusmo/octopress/master/source/images/blog/opensource/pong_game_modificado.png"></p>
+
+<p>Código Fonte : <a href="https://github.com/viniciusmo/simple-pong-game-applet" title="Clique aqui">Clique aqui</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Campo minado utilizando HTML5 (Canvas/Local Storage)]]></title>
@@ -36,27 +49,6 @@
 <p><img class="center" src="https://raw.github.com/viniciusmo/octopress/master/source/images/blog/opensource/joguinho_da_memoria.png"></p>
 
 <p>Código Fonte : <a href="https://github.com/viniciusmo/memory-game" title="Clique aqui">Clique aqui</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Pong Game Feito Em Java]]></title>
-    <link href="http://viniciusmo.github.com/blog/2013/04/09/pong-game-feito-em-java/"/>
-    <updated>2013-04-09T00:00:00-03:00</updated>
-    <id>http://viniciusmo.github.com/blog/2013/04/09/pong-game-feito-em-java</id>
-    <content type="html"><![CDATA[<hr />
-
-<p>layout: post
-title: &#8220;Pong Game feito em Java&#8221;
-date: 2013-04-09 15:15
-comments: true
-categories:opensource</p>
-
-<p>Pong Game (versao modificada) feito em Java apresentado a disciplina de Jogos Digitais para WEB - Fatec Carapicuíba</p>
-
-<p><img class="center" src="https://raw.github.com/viniciusmo/octopress/master/source/images/blog/opensource/pong_game_modificado.png"></p>
-
-<p>Código Fonte : <a href="https://github.com/viniciusmo/simple-pong-game-applet" title="Clique aqui">Clique aqui</a></p>
 ]]></content>
   </entry>
   

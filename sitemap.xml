@@ -39,10 +39,6 @@
         <lastmod>2013-04-08T10:38:51-03:00</lastmod>
     </url>
     <url>
-        <loc>http://viniciusmo.github.com/blog/2013/04/09/pong-game-feito-em-java/</loc>
-        <lastmod>2013-04-09T15:33:19-03:00</lastmod>
-    </url>
-    <url>
         <loc>
             http://viniciusmo.github.com/blog/2013/04/09/joguinho-da-memoria-html-plus-css-plus-javascript/
         </loc>
@@ -55,12 +51,16 @@
         <lastmod>2013-04-09T15:24:17-03:00</lastmod>
     </url>
     <url>
+        <loc>http://viniciusmo.github.com/blog/2013/04/09/pong-game-feito-em-java/</loc>
+        <lastmod>2013-04-09T15:36:22-03:00</lastmod>
+    </url>
+    <url>
         <loc>http://viniciusmo.github.com/blog/archives/</loc>
-        <lastmod>2013-04-09T15:33:19-03:00</lastmod>
+        <lastmod>2013-04-09T15:36:22-03:00</lastmod>
     </url>
     <url>
         <loc>http://viniciusmo.github.com/</loc>
-        <lastmod>2013-04-09T15:33:19-03:00</lastmod>
+        <lastmod>2013-04-09T15:36:22-03:00</lastmod>
     </url>
     <url>
         <loc>http://viniciusmo.github.com/robots.txt</loc>
