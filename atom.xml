@@ -4,7 +4,7 @@
   <title><![CDATA[Vinícius Moisés de Oliveira]]></title>
   <link href="http://viniciusmo.github.com/atom.xml" rel="self"/>
   <link href="http://viniciusmo.github.com/"/>
-  <updated>2013-04-09T14:41:59-03:00</updated>
+  <updated>2013-04-09T14:50:34-03:00</updated>
   <id>http://viniciusmo.github.com/</id>
   <author>
     <name><![CDATA[Vinícius Moisés de Oliveira]]></name>
@@ -12,6 +12,16 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Joguinho da Memória HTML+CSS+JAVASCRIPT]]></title>
+    <link href="http://viniciusmo.github.com/blog/2013/04/09/joguinho-da-memoria-html-plus-css-plus-javascript/"/>
+    <updated>2013-04-09T14:44:00-03:00</updated>
+    <id>http://viniciusmo.github.com/blog/2013/04/09/joguinho-da-memoria-html-plus-css-plus-javascript</id>
+    <content type="html"><![CDATA[<p>Pequeno joguinho da memória apresentado para a disciplina de Jogos Digitais para WEB - FATEC Carapicuíba.<br/>
+Link : <a href="https://github.com/viniciusmo/memory-game" title="Clique aqui">Clique aqui</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Programming Challenges - LCD Display]]></title>
