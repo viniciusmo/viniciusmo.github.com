@@ -4,7 +4,7 @@
   <title><![CDATA[Vinícius Moisés de Oliveira]]></title>
   <link href="http://viniciusmo.github.com/atom.xml" rel="self"/>
   <link href="http://viniciusmo.github.com/"/>
-  <updated>2013-04-09T15:29:34-03:00</updated>
+  <updated>2013-04-09T15:31:29-03:00</updated>
   <id>http://viniciusmo.github.com/</id>
   <author>
     <name><![CDATA[Vinícius Moisés de Oliveira]]></name>
@@ -50,7 +50,7 @@
 title: &#8220;Pong Game feito em Java&#8221;
 date: 2013-04-09 15:15
 comments: true
-categories: opensource</p>
+categories:opensource</p>
 
 <p>Pong Game (versão modificada) feito em Java apresentado a disciplina de Jogos Digitais para WEB - Fatec Carapicuíba</p>
 
