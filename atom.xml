@@ -4,7 +4,7 @@
   <title><![CDATA[Vinícius Moisés de Oliveira]]></title>
   <link href="http://viniciusmo.github.com/atom.xml" rel="self"/>
   <link href="http://viniciusmo.github.com/"/>
-  <updated>2013-04-09T14:56:28-03:00</updated>
+  <updated>2013-04-09T15:04:58-03:00</updated>
   <id>http://viniciusmo.github.com/</id>
   <author>
     <name><![CDATA[Vinícius Moisés de Oliveira]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Campo minado utilizando HTML5 (Canvas/Local Storage)]]></title>
+    <link href="http://viniciusmo.github.com/blog/2013/04/09/campo-minado-utilizando-html5-canvas-slash-local-storage/"/>
+    <updated>2013-04-09T15:00:00-03:00</updated>
+    <id>http://viniciusmo.github.com/blog/2013/04/09/campo-minado-utilizando-html5-canvas-slash-local-storage</id>
+    <content type="html"><![CDATA[<p>Campo minado apresentado a disciplina de Jogos Digitais para WEB - Fatec Carapicuíba com três niveis diferentes.</p>
+
+<p><img class="center" src="https://raw.github.com/viniciusmo/octopress/master/source/images/blog/opensource/campo_minado.png"></p>
+
+<p>Código Fonte : <a href="https://github.com/viniciusmo/minesweeper-html5" title="Clique aqui">Clique aqui</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Joguinho da Memória HTML+CSS+JAVASCRIPT]]></title>
