@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: iOS | Vinícius Moisés de Oliveira]]></title>
+  <link href="http://viniciusmo.github.com/blog/categories/ios/atom.xml" rel="self"/>
+  <link href="http://viniciusmo.github.com/"/>
+  <updated>2013-04-09T14:41:59-03:00</updated>
+  <id>http://viniciusmo.github.com/</id>
+  <author>
+    <name><![CDATA[Vinícius Moisés de Oliveira]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[iOS : Automatic Counting Reference - ARC]]></title>
+    <link href="http://viniciusmo.github.com/blog/2013/01/24/ios-automatic-counting-reference-arc/"/>
+    <updated>2013-01-24T14:58:00-02:00</updated>
+    <id>http://viniciusmo.github.com/blog/2013/01/24/ios-automatic-counting-reference-arc</id>
+    <content type="html"><![CDATA[<h1>Introdução</h1>
+
+<p>A grande mudança no <strong><em>iOS 5</em></strong> foi o novo recurso adicionado  chamado de contador automático de referência (ARC - Automatic Counting Reference).ARC é uma característica do novo compilador LLVM 3.0 que acaba completamente com  o gerenciamento  de memória manual.Usar o ARC em seus projetos é extremamente simples.Você mantém o mesmo código, como de costume, exceto que você não precisa realizar chamadas a <strong><em>release</em></strong> , <strong><em>retain</em></strong> ou ao <strong><em>autorelease</em></strong>.O ARC realiza todas essas tarefas pra você :).<br/>
+Com o ARC habilitado , o compilador irá inserir automaticamente <strong><em>retain</em></strong>,<strong><em>release</em></strong> e <strong><em>autorelease</em></strong> nos lugares corretos em seu programa.</p>
+
+<h1>Como o ARC funciona?</h1>
+
+<p>Você provavelmente já está familiarizado com o gerenciamento de memória manual, que funciona basicamente assim:</p>
+
+<ul>
+<li>   Se você precisa manter um objeto , você deve retê-lo (<strong><em>retain</em></strong>), a menos que já foi retido para você.</li>
+<li>   Se você quiser parar de usar um objeto , você precisa para liberá-lo (<strong><em>release</em></strong>), a menos que já foi liberado para você ( com o <strong><em>autorelease</em></strong>).</li>
+</ul>
+
+
+<p>Acho que para todos no começo , essa tarefa de entender o gerenciamento de memória manual é algo difícil,mas com o tempo se torna natural  manter o balanceamento dos <strong><em>retains</em></strong> e <strong><em>releases</em></strong> .Exceto quando você esquece de realizar essa tarefa rs<br/>
+Os princípios de gerenciamento de memória manual não são difíceis, mas é muito fácil cometer um erro. E esses pequenos erros podem ter consequências terríveis. O seu aplicativo irá falhar em algum ponto, porque você lançou um objeto muitas vezes e suas variáveis ​​estão apontando para dados que já não é válido, ou você vai ficar sem memória, porque se você não liberar os objetos  acontecem os famosos <strong><em>leaks</em></strong>.<br/>
+O <strong><em>Static Analyzer</em></strong> do Xcode é uma grande ajuda para encontrar esses problemas , mas o ARC vai um passo além.O ARC evita problemas de gerenciamento de memória completamente ,inserindo o <strong><em>retain</em></strong> e o <strong><em>release</em></strong> pra você.<br/>
+É importante perceber que a ARC é uma característica do compilador do Objective-C e, portanto, todo o trabalho do ARC é feito na compilação do seu programa. O ARC não é uma característica de tempo de execução (com exceção de uma pequena parte, o sistema de <strong><em>weak pointer</em></strong>), nem é  um  <strong><em>garbage collector</em></strong>.</p>
+
+<h1>Ponteiros mantém os objetos em memória</h1>
+
+<p>As novas regras que você tem que aprender para o ARC são bastante simples. Com o gerenciamento de memória manual você precisava dar um <strong><em>retain</em></strong> no objeto para mantê-lo em memória. Isso já não é necessário, tudo que você precisa é fazer um ponteiro para o objeto.<br/>
+Enquanto há uma variável que aponta para um objeto, esse objeto permanece na memória. Quando o ponteiro chega um novo valor ou deixa de existir, o objeto associado é liberado (<strong><em>release</em></strong>). Isto é válido para todas as variáveis​​:<strong><em>variáveis ​​de instância</em></strong>, <strong><em>propriedades</em></strong>, e até  mesmo,<strong><em>variáveis ​​locais</em></strong>.<br/>
+Veja o seguinte exemplo :
+<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span> <span class="n">NSString</span> <span class="o">*</span> <span class="n">firstName</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">textField</span><span class="p">.</span><span class="n">text</span><span class="p">;</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+ A variável <strong><em>firstName</em></strong> é um ponteiro para o objeto string "Ray"  que  guarda o valor do campo de texto.Essa variável agora também é proprietário do objeto string "Ray".</p>
+
+<p><img class="center" src="https://raw.github.com/viniciusmo/octopress/master/source/images/blog/ios/arc-introduction/image05.png"></p>
+
+<p>Um objeto pode ter mais de um dono. Até que o usuário não mude o conteúdo do UITextField,a propriedade self.textField.text também  é um proprietário do objeto string "Ray". Existem dois ponteiros para manter esse objeto em memória :<br/>
+<img class="center" src="https://raw.github.com/viniciusmo/octopress/master/source/images/blog/ios/arc-introduction/image00.png">
+Momentos depois, o usuário vai digitar algo novo no campo de texto e sua propriedade de texto agora aponta para um novo objeto string. Mas o objeto string original ainda tem um proprietário (a variável firstName) e, portanto, permanece na memória.<br/>
+<img class="center" src="https://raw.github.com/viniciusmo/octopress/master/source/images/blog/ios/arc-introduction/image04.png"></p>
+
+<p>Somente quando firstName recebe um novo valor também, ou sai do escopo - porque é uma variável local e o método termina, ou porque é uma variável de instância e o objeto a que  ela pertence é desalocado .O objeto string não tem mais proprietários, o seu retain count é 0 e ele é desalocado.</p>
+
+<p><img class="center" src="https://raw.github.com/viniciusmo/octopress/master/source/images/blog/ios/arc-introduction/image06.png">
+Chamamos ponteiros como firstName e textField.text  de <strong><em>strong</em></strong> porque mantém os objetos vivos (em memória). Por padrão, todas as variáveis ​​de instância e variáveis ​​locais são ponteiros <strong><em>strong</em></strong>.<br/>
+Há também um ponteiro chamado de <strong><em>weak</em></strong>. Variáveis ​​que são <strong><em>weak</em></strong> ainda pode apontar para objetos, mas eles não se tornam proprietários.<br/>
+Veja o seguinte exemplo :<br/>
+<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">__weak</span> <span class="n">NSString</span> <span class="o">*</span> <span class="n">weakName</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">textField</span><span class="p">.</span><span class="n">text</span><span class="p">;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p><img class="center" src="https://raw.github.com/viniciusmo/octopress/master/source/images/blog/ios/arc-introduction/image02.png"></p>
+
+<p>A variável <strong><em>weakName</em></strong> aponta para o mesmo objeto  string "Rayman" que a propriedade self.textField.text aponta , mas ela não é proprietária do objeto.<br/>
+Se o campo de texto alterar o conteúdo, então o objeto string "Rayman" não tem mais donos e é desalocado.</p>
+
+<p><img class="center" src="https://raw.github.com/viniciusmo/octopress/master/source/images/blog/ios/arc-introduction/image03.png"></p>
+
+<p>Quando isso acontece, o valor de <strong><em>weakName</em></strong> torna-se automaticamente nulo.Note que este é extremamente conveniente, pois impede ponteiros <strong><em>weak</em></strong> de apontar para a memória liberada.<br/>
+Você provavelmente não vai usar muito os  ponteiros <strong><em>weaks</em></strong>. Eles são principalmente úteis quando dois objetos têm uma relação parent-child. O parent vai ter um ponteiro strong para seu child - e, portanto, é o "dono" - mas, a fim de evitar ciclos de propriedade, o child só tem um ponteiro <strong><em>weak</em></strong> de volta para seu parent.<br/>
+Um exemplo disto é o padrão delegate. Seu UIControllerView pode possuir um UITableView através de um ponteiro <strong><em>strong</em></strong>. Já o data source e o delegate  apontam para o UIControllerView mas são <strong><em>weaks</em></strong> ponteiros.</p>
+
+<p><img class="center" src="https://raw.github.com/viniciusmo/octopress/master/source/images/blog/ios/arc-introduction/image01.png"></p>
+
+<p>Veja o seguinte exemplo :</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">__weak</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">str</span> <span class="o">=</span> <span class="p">[[</span><span class="n">NSString</span> <span class="n">alloc</span><span class="p">]</span> <span class="nl">initWithFormat:</span><span class="p">...];</span>
+</span><span class='line'><span class="n">NSLog</span><span class="p">(</span><span class="s">@&quot;%@&quot;</span><span class="p">,</span> <span class="n">str</span><span class="p">);</span>  <span class="c1">// a saída será &quot;(null)&quot;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Não existe um dono para o objeto string (porque str é fraco) e o objeto será desalocado imediatamente após ele ser criado. O Xcode vai dar o  seguinte aviso quando você faz isso ,porque provavelmente não é o que você quer fazer.
+<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="p">(</span><span class="err">“</span><span class="nl">Warning:</span> <span class="n">assigning</span> <span class="n">retained</span> <span class="n">object</span> <span class="n">to</span> <span class="n">weak</span> <span class="n">variable</span><span class="p">;</span> <span class="n">object</span> <span class="n">will</span> <span class="n">be</span> <span class="n">released</span> <span class="n">after</span> <span class="n">assignment</span><span class="err">”</span><span class="p">).</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Você pode usar a palavra-chave <strong><strong><em>strong</em></strong> para falar que uma variável é um ponteiro <strong><em>strong</em></strong>:
+<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="o">&lt;/</span><span class="n">strong</span><span class="o">&gt;</span><span class="n">strong</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">firstName</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">textField</span><span class="p">.</span><span class="n">text</span><span class="p">;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>As variáveis ​​são <strong><em>strong</em></strong> por default e o <strong><em>__strong</em></strong> pode ser omitido. Propriedades também podem ser <strong><em>strong</em></strong> e <strong><em>weak</em></strong>. A notação para propriedades é:<br/>
+<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">firstName</span><span class="p">;</span>
+</span><span class='line'><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">weak</span><span class="p">)</span> <span class="kt">id</span> <span class="o">&lt;</span><span class="n">MyDelegate</span><span class="o">&gt;</span> <span class="n">delegate</span><span class="p">;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>O ARC vai remover um monte de lixo do seu código. Você não tem que pensar sobre quando usar o release ou quando usar o retain, apenas sobre como os objetos se relacionam entre si.</p>
+
+<p><strong><em>Traduzido de </em></strong>: <a href="http://www.raywenderlich.com/5677/beginning-arc-in-ios-5-part-1">http://www.raywenderlich.com/5677/beginning-arc-in-ios-5-part-1</a>.</p>
+]]></content>
+  </entry>
+  
+</feed>
