@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: 
-
-Sitemap: http://viniciusmo.github.com/sitemap.xml 
