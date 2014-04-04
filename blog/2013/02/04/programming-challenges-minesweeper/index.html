@@ -1,0 +1,387 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Programming Challenges - Minesweeper - Vinícius Moisés de Oliveira</title>
+  <meta name="author" content="viniciusmo">
+
+  
+  <meta name="description" content="Problem Minesweeper Have you ever played Minesweeper? This cute little game comes with a certain op- erating system whose name we can’t remember. The &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://viniciusmo.github.com/blog/2013/02/04/programming-challenges-minesweeper/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Vinícius Moisés de Oliveira" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Vinícius Moisés de Oliveira</a></h1>
+  
+    <h2>I love coding.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:viniciusmo.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="">Home</a></li>
+  <li><a href="/blog/archives/">Blog Archives</a></li>
+  <li><a href="/blog/categories/opensource/">Open Source</a></li>
+  <li><a href="/about">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Programming Challenges - Minesweeper</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-04T16:37:00-02:00" pubdate data-updated="true">Feb 4<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><h1>Problem Minesweeper</h1>
+
+<p>Have you ever played Minesweeper? This cute little game comes with a certain op- erating system whose name we can’t remember. The goal of the game is to find where all the mines are located within a M × N field.<br/>
+The game shows a number in a square which tells you how many mines there are adjacent to that square. Each square has at most eight adjacent squares. The 4 × 4 field on the left contains two mines, each represented by a “*” character. If we represent the same field by the hint numbers described above, we end up with the field on the right:</p>
+
+<pre><code>        *...    *100  
+        ....    2210  
+        .*..    1*10   
+        ....    1110  
+</code></pre>
+
+<h3>Input</h3>
+
+<p>The input will consist of an arbitrary number of fields. The first line of each field contains two integers n and m (0 &lt; n, m ≤ 100) which stand for the number of lines and columns of the field, respectively. Each of the next n lines contains exactly m characters, representing the field.<br/>
+Safe squares are denoted by “.” and mine squares by “*,” both without the quotes. The first field line where n = m = 0 represents the end of input and should not be processed.</p>
+
+<h3>Output</h3>
+
+<p>For each field, print the message Field #x: on a line alone, where x stands for the number of the field starting from 1. The next n lines should contain the field with the “.” characters replaced by the number of mines adjacent to that square. There must be an empty line between field outputs.</p>
+
+<h3>Solution</h3>
+
+<figure class='code'><figcaption><span>[++] (minesweeper.cpp)</span> <a href='/downloads/code/minesweeper.cpp'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+</pre></td><td class='code'><pre><code class='c'><span class='line'><span class="cp">#include &lt;stdio.h&gt;</span>
+</span><span class='line'><span class="cp">#include &lt;stdlib.h&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">using</span> <span class="n">namespace</span> <span class="n">std</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="cp">#define M 10000</span>
+</span><span class='line'><span class="cp">#define N 10000</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">char</span> <span class="n">mine</span><span class="p">[</span><span class="n">M</span><span class="p">][</span><span class="n">N</span><span class="p">];</span>
+</span><span class='line'><span class="kt">int</span> <span class="n">size_m</span><span class="p">;</span>
+</span><span class='line'><span class="kt">int</span> <span class="n">size_n</span><span class="p">;</span>
+</span><span class='line'><span class="kt">int</span> <span class="n">test</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">int</span> <span class="nf">count_adjacent_mine</span><span class="p">(</span><span class="kt">int</span> <span class="n">pos_m</span><span class="p">,</span><span class="kt">int</span> <span class="n">pos_n</span><span class="p">){</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="n">pos_m</span><span class="o">+</span><span class="mi">1</span> <span class="o">&lt;</span> <span class="n">size_m</span> <span class="o">&amp;&amp;</span> <span class="n">mine</span><span class="p">[</span><span class="n">pos_m</span><span class="o">+</span><span class="mi">1</span><span class="p">][</span><span class="n">pos_n</span><span class="p">]</span> <span class="o">==</span> <span class="sc">&#39;*&#39;</span><span class="p">){</span><span class="c1">//0X0</span>
+</span><span class='line'>      <span class="n">count</span><span class="o">++</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="n">pos_m</span><span class="o">-</span><span class="mi">1</span> <span class="o">&gt;=</span><span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">mine</span><span class="p">[</span><span class="n">pos_m</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">pos_n</span><span class="p">]</span> <span class="o">==</span> <span class="sc">&#39;*&#39;</span><span class="p">){</span><span class="c1">//0X0</span>
+</span><span class='line'>      <span class="n">count</span><span class="o">++</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="n">pos_m</span><span class="o">+</span><span class="mi">1</span> <span class="o">&lt;</span> <span class="n">size_m</span> <span class="o">&amp;&amp;</span> <span class="n">pos_n</span><span class="o">+</span><span class="mi">1</span> <span class="o">&lt;</span> <span class="n">size_n</span> <span class="o">&amp;&amp;</span>  <span class="n">mine</span><span class="p">[</span><span class="n">pos_m</span><span class="o">+</span><span class="mi">1</span><span class="p">][</span><span class="n">pos_n</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="sc">&#39;*&#39;</span><span class="p">){</span> <span class="c1">//00X</span>
+</span><span class='line'>      <span class="n">count</span><span class="o">++</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="n">pos_m</span><span class="o">+</span><span class="mi">1</span> <span class="o">&lt;</span> <span class="n">size_m</span> <span class="o">&amp;&amp;</span> <span class="n">pos_n</span><span class="o">-</span><span class="mi">1</span> <span class="o">&gt;=</span><span class="mi">0</span> <span class="o">&amp;&amp;</span>  <span class="n">mine</span><span class="p">[</span><span class="n">pos_m</span><span class="o">+</span><span class="mi">1</span><span class="p">][</span><span class="n">pos_n</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="sc">&#39;*&#39;</span><span class="p">){</span> <span class="c1">//00X</span>
+</span><span class='line'>      <span class="n">count</span><span class="o">++</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="n">pos_m</span><span class="o">-</span><span class="mi">1</span> <span class="o">&gt;=</span><span class="mi">0</span>  <span class="o">&amp;&amp;</span> <span class="n">pos_n</span><span class="o">+</span><span class="mi">1</span> <span class="o">&lt;</span> <span class="n">size_n</span> <span class="o">&amp;&amp;</span>  <span class="n">mine</span><span class="p">[</span><span class="n">pos_m</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">pos_n</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="sc">&#39;*&#39;</span><span class="p">){</span> <span class="c1">//00X</span>
+</span><span class='line'>      <span class="n">count</span><span class="o">++</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="n">pos_m</span><span class="o">-</span><span class="mi">1</span> <span class="o">&gt;=</span><span class="mi">0</span>  <span class="o">&amp;&amp;</span> <span class="n">pos_n</span><span class="o">-</span><span class="mi">1</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">mine</span><span class="p">[</span><span class="n">pos_m</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">pos_n</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="sc">&#39;*&#39;</span><span class="p">){</span><span class="c1">//X00</span>
+</span><span class='line'>      <span class="n">count</span><span class="o">++</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="n">pos_n</span><span class="o">+</span><span class="mi">1</span> <span class="o">&lt;</span> <span class="n">size_n</span> <span class="o">&amp;&amp;</span> <span class="n">mine</span><span class="p">[</span><span class="n">pos_m</span><span class="p">][</span><span class="n">pos_n</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="sc">&#39;*&#39;</span><span class="p">){</span><span class="c1">//00X</span>
+</span><span class='line'>      <span class="n">count</span><span class="o">++</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="n">pos_n</span><span class="o">-</span><span class="mi">1</span> <span class="o">&gt;=</span><span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">mine</span><span class="p">[</span><span class="n">pos_m</span><span class="p">][</span><span class="n">pos_n</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="sc">&#39;*&#39;</span><span class="p">){</span><span class="c1">//X00</span>
+</span><span class='line'>      <span class="n">count</span><span class="o">++</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">return</span> <span class="n">count</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">void</span> <span class="nf">print_all_count_adjacent_mine</span><span class="p">(){</span>
+</span><span class='line'>   <span class="k">if</span> <span class="p">(</span><span class="n">test</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span>    <span class="n">printf</span> <span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">printf</span> <span class="p">(</span><span class="s">&quot;Field #%d:</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="n">test</span><span class="o">++</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">size_m</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+</span><span class='line'>      <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">size_n</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">){</span>
+</span><span class='line'>          <span class="k">if</span> <span class="p">(</span><span class="n">mine</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="sc">&#39;*&#39;</span><span class="p">){</span>
+</span><span class='line'>              <span class="n">printf</span> <span class="p">(</span><span class="s">&quot;*&quot;</span><span class="p">);</span>
+</span><span class='line'>          <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+</span><span class='line'>              <span class="kt">int</span> <span class="n">total</span> <span class="o">=</span> <span class="n">count_adjacent_mine</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">);</span>
+</span><span class='line'>              <span class="n">printf</span> <span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="n">total</span><span class="p">);</span>
+</span><span class='line'>          <span class="p">}</span>    
+</span><span class='line'>      <span class="p">}</span>
+</span><span class='line'>      <span class="n">printf</span> <span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">while</span> <span class="p">(</span><span class="mi">1</span><span class="p">){</span>
+</span><span class='line'>      <span class="n">scanf</span> <span class="p">(</span><span class="s">&quot;%d%d&quot;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">size_m</span><span class="p">,</span><span class="o">&amp;</span><span class="n">size_n</span><span class="p">);</span>
+</span><span class='line'>      <span class="k">if</span> <span class="p">(</span><span class="n">size_m</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">size_n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">break</span><span class="p">;</span>
+</span><span class='line'>      <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">size_m</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+</span><span class='line'>          <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">size_n</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">){</span>
+</span><span class='line'>              <span class="n">scanf</span> <span class="p">(</span><span class="s">&quot; %c&quot;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">mine</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]);</span>
+</span><span class='line'>          <span class="p">}</span>
+</span><span class='line'>      <span class="p">}</span>    
+</span><span class='line'>      <span class="n">print_all_count_adjacent_mine</span><span class="p">();</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">viniciusmo</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-04T16:37:00-02:00" pubdate data-updated="true">Feb 4<span>th</span>, 2013</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://viniciusmo.github.com/blog/2013/02/04/programming-challenges-minesweeper/" data-via="" data-counturl="http://viniciusmo.github.com/blog/2013/02/04/programming-challenges-minesweeper/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/02/04/programming-challenges-the-3n-plus-1-problem/" title="Previous Post: Programming Challenges - The 3n + 1 Problem">&laquo; Programming Challenges - The 3n + 1 Problem</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2013/02/08/programming-challenges-the-trip/" title="Next Post: Programming Challenges - The Trip">Programming Challenges - The Trip &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/04/09/pong-game-feito-em-java/">Pong Game feito em Java</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/04/09/campo-minado-utilizando-html5-canvas-slash-local-storage/">Campo minado utilizando HTML5 (Canvas/Local Storage)</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/04/09/joguinho-da-memoria-html-plus-css-plus-javascript/">Joguinho da Memória HTML+CSS+JAVASCRIPT</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/02/08/programming-challenges-lcd-display/">Programming Challenges - LCD Display</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/02/08/programming-challenges-the-trip/">Programming Challenges - The Trip</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - viniciusmo -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

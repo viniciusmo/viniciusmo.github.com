@@ -1,0 +1,326 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Programming Challenges - The 3n + 1 Problem - Vinícius Moisés de Oliveira</title>
+  <meta name="author" content="viniciusmo">
+
+  
+  <meta name="description" content="Problem The 3n + 1 Consider the following algorithm to generate a sequence of numbers. Start with an integer n. If n is even, divide by 2. If n is &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://viniciusmo.github.com/blog/2013/02/04/programming-challenges-the-3n-plus-1-problem/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Vinícius Moisés de Oliveira" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Vinícius Moisés de Oliveira</a></h1>
+  
+    <h2>I love coding.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:viniciusmo.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="">Home</a></li>
+  <li><a href="/blog/archives/">Blog Archives</a></li>
+  <li><a href="/blog/categories/opensource/">Open Source</a></li>
+  <li><a href="/about">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Programming Challenges - the 3n + 1 Problem</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-04T14:06:00-02:00" pubdate data-updated="true">Feb 4<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><h1>Problem The 3n + 1</h1>
+
+<p>Consider the following algorithm to generate a sequence of numbers. Start with an integer n. If n is even, divide by 2. If n is odd, multiply by 3 and add 1.Repeat this process with the new value of n, terminating when n = 1. For example, the following sequence of numbers will be generated for n = 22:</p>
+
+<p>22 11 34 17 52 26 13 40 20 10 5 16 8 4 2 1</p>
+
+<p>It is conjectured (but not yet proven) that this algorithm will terminate at n = 1 for every integer n. Still, the conjecture holds for all integers up to at least 1, 000, 000.<br/>
+For an input n, the cycle-length of n is the number of numbers generated up to and including the 1. In the example above, the cycle length of 22 is 16. Given any two numbers i and j, you are to determine the maximum cycle length over all numbers between i and j, including both endpoints.</p>
+
+<h3>Input</h3>
+
+<p>The input will consist of a series of pairs of integers i and j, one pair of integers per line. All integers will be less than 1,000,000 and greater than 0.</p>
+
+<h3>Output</h3>
+
+<p>For each pair of input integers i and j, output i, j in the same order in which they appeared in the input and then the maximum cycle length for integers between and including i and j. These three numbers should be separated by one space, with all three numbers on one line and with one line of output for each line of input.</p>
+
+<h3>Solution</h3>
+
+<figure class='code'><figcaption><span> (the_3n_+_1.cpp)</span> <a href='/downloads/code/the_3n_+_1.cpp'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+</pre></td><td class='code'><pre><code class='cpp'><span class='line'><span class="cp">#include &lt;stdio.h&gt;</span>
+</span><span class='line'><span class="cp">#include &lt;stdlib.h&gt;</span>
+</span><span class='line'><span class="cp">#include &lt;algorithm&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">int</span> <span class="n">count_cycle_lenght</span><span class="p">(</span> <span class="kt">int</span> <span class="p">);</span>
+</span><span class='line'><span class="kt">int</span> <span class="n">max_cycle_lenght_between</span><span class="p">(</span><span class="kt">int</span><span class="p">,</span><span class="kt">int</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">int</span> <span class="n">main</span><span class="p">(){</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">n1</span><span class="p">;</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">n2</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">while</span> <span class="p">(</span> <span class="p">(</span><span class="n">scanf</span> <span class="p">(</span><span class="s">&quot;%d%d&quot;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">n1</span><span class="p">,</span><span class="o">&amp;</span><span class="n">n2</span><span class="p">))</span>  <span class="o">!=</span> <span class="n">EOF</span><span class="p">){</span>
+</span><span class='line'>      <span class="kt">int</span> <span class="n">max_cycle</span> <span class="o">=</span> <span class="n">max_cycle_lenght_between</span><span class="p">(</span><span class="n">n1</span><span class="p">,</span><span class="n">n2</span><span class="p">);</span>
+</span><span class='line'>      <span class="n">printf</span> <span class="p">(</span><span class="s">&quot;%d %d %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="n">n1</span><span class="p">,</span><span class="n">n2</span><span class="p">,</span><span class="n">max_cycle</span><span class="p">);</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">int</span> <span class="n">max_cycle_lenght_between</span><span class="p">(</span><span class="kt">int</span> <span class="n">n1</span><span class="p">,</span><span class="kt">int</span> <span class="n">n2</span><span class="p">){</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="n">min</span> <span class="p">(</span><span class="n">n1</span><span class="p">,</span><span class="n">n2</span><span class="p">);</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">b</span> <span class="o">=</span> <span class="n">max</span> <span class="p">(</span><span class="n">n1</span><span class="p">,</span><span class="n">n2</span><span class="p">);</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">max_cycle</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span> <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">a</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">b</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+</span><span class='line'>      <span class="kt">int</span> <span class="n">result</span> <span class="o">=</span> <span class="n">count_cycle_lenght</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+</span><span class='line'>      <span class="n">max_cycle</span> <span class="o">=</span> <span class="n">max</span><span class="p">(</span><span class="n">result</span><span class="p">,</span><span class="n">max_cycle</span><span class="p">);</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">return</span> <span class="n">max_cycle</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">int</span>  <span class="n">count_cycle_lenght</span><span class="p">(</span> <span class="kt">int</span> <span class="n">n1</span><span class="p">){</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">count_cycle</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">while</span> <span class="p">(</span><span class="n">n1</span> <span class="o">!=</span> <span class="mi">1</span> <span class="p">){</span>
+</span><span class='line'>      <span class="k">if</span> <span class="p">(</span> <span class="p">(</span><span class="n">n1</span> <span class="o">%</span> <span class="mi">2</span><span class="p">)</span>  <span class="o">==</span> <span class="mi">0</span><span class="p">){</span>
+</span><span class='line'>          <span class="n">n1</span> <span class="o">/=</span> <span class="mi">2</span><span class="p">;</span>
+</span><span class='line'>      <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+</span><span class='line'>          <span class="n">n1</span> <span class="o">*=</span><span class="mi">3</span><span class="p">;</span>
+</span><span class='line'>          <span class="n">n1</span><span class="o">++</span><span class="p">;</span>
+</span><span class='line'>      <span class="p">}</span>
+</span><span class='line'>      <span class="n">count_cycle</span><span class="o">++</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="n">count_cycle</span><span class="o">++</span><span class="p">;</span> 
+</span><span class='line'>  <span class="k">return</span> <span class="n">count_cycle</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">viniciusmo</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-04T14:06:00-02:00" pubdate data-updated="true">Feb 4<span>th</span>, 2013</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://viniciusmo.github.com/blog/2013/02/04/programming-challenges-the-3n-plus-1-problem/" data-via="" data-counturl="http://viniciusmo.github.com/blog/2013/02/04/programming-challenges-the-3n-plus-1-problem/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/01/31/listagem-de-frameworks/" title="Previous Post: Arquitetura - Listagem Frameworks">&laquo; Arquitetura - Listagem Frameworks</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2013/02/04/programming-challenges-minesweeper/" title="Next Post: Programming Challenges - Minesweeper">Programming Challenges - Minesweeper &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/04/09/pong-game-feito-em-java/">Pong Game feito em Java</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/04/09/campo-minado-utilizando-html5-canvas-slash-local-storage/">Campo minado utilizando HTML5 (Canvas/Local Storage)</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/04/09/joguinho-da-memoria-html-plus-css-plus-javascript/">Joguinho da Memória HTML+CSS+JAVASCRIPT</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/02/08/programming-challenges-lcd-display/">Programming Challenges - LCD Display</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/02/08/programming-challenges-the-trip/">Programming Challenges - The Trip</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - viniciusmo -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

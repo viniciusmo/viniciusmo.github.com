@@ -1,0 +1,1193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Vinícius Moisés de Oliveira]]></title>
+  <link href="http://viniciusmo.github.com/atom.xml" rel="self"/>
+  <link href="http://viniciusmo.github.com/"/>
+  <updated>2014-04-04T14:24:27-03:00</updated>
+  <id>http://viniciusmo.github.com/</id>
+  <author>
+    <name><![CDATA[viniciusmo]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Pong Game feito em Java]]></title>
+    <link href="http://viniciusmo.github.com/blog/2013/04/09/pong-game-feito-em-java/"/>
+    <updated>2013-04-09T15:15:00-03:00</updated>
+    <id>http://viniciusmo.github.com/blog/2013/04/09/pong-game-feito-em-java</id>
+    <content type="html"><![CDATA[<p>Pong Game (versão modificada) feito em Java apresentado a disciplina de Jogos Digitais para WEB - Fatec Carapicuíba.</p>
+
+<p><img class="center" src="https://raw.github.com/viniciusmo/octopress/master/source/images/blog/opensource/pong_game_modificado.png"></p>
+
+<p>Código Fonte : <a href="https://github.com/viniciusmo/simple-pong-game-applet" title="Clique aqui">Clique aqui</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Campo minado utilizando HTML5 (Canvas/Local Storage)]]></title>
+    <link href="http://viniciusmo.github.com/blog/2013/04/09/campo-minado-utilizando-html5-canvas-slash-local-storage/"/>
+    <updated>2013-04-09T15:00:00-03:00</updated>
+    <id>http://viniciusmo.github.com/blog/2013/04/09/campo-minado-utilizando-html5-canvas-slash-local-storage</id>
+    <content type="html"><![CDATA[<p>Campo minado apresentado a disciplina de Jogos Digitais para WEB - Fatec Carapicuíba com três niveis diferentes.</p>
+
+<p><img class="center" src="https://raw.github.com/viniciusmo/octopress/master/source/images/blog/opensource/campo_minado.png"></p>
+
+<p>Código Fonte : <a href="https://github.com/viniciusmo/minesweeper-html5" title="Clique aqui">Clique aqui</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Joguinho da Memória HTML+CSS+JAVASCRIPT]]></title>
+    <link href="http://viniciusmo.github.com/blog/2013/04/09/joguinho-da-memoria-html-plus-css-plus-javascript/"/>
+    <updated>2013-04-09T14:44:00-03:00</updated>
+    <id>http://viniciusmo.github.com/blog/2013/04/09/joguinho-da-memoria-html-plus-css-plus-javascript</id>
+    <content type="html"><![CDATA[<p>Pequeno joguinho da memória apresentado para a disciplina de Jogos Digitais para WEB - FATEC Carapicuíba.</p>
+
+<p><img class="center" src="https://raw.github.com/viniciusmo/octopress/master/source/images/blog/opensource/joguinho_da_memoria.png"></p>
+
+<p>Código Fonte : <a href="https://github.com/viniciusmo/memory-game" title="Clique aqui">Clique aqui</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Programming Challenges - LCD Display]]></title>
+    <link href="http://viniciusmo.github.com/blog/2013/02/08/programming-challenges-lcd-display/"/>
+    <updated>2013-02-08T23:33:00-02:00</updated>
+    <id>http://viniciusmo.github.com/blog/2013/02/08/programming-challenges-lcd-display</id>
+    <content type="html"><![CDATA[<h1>Problem LCD Display</h1>
+
+<p>A friend of yours has just bought a new computer. Before this, the most powerful<br/>
+machine he ever used was a pocket calculator. He is a little disappointed because he<br/>
+liked the LCD display of his calculator more than the screen on his new computer! To<br/>
+make him happy, write a program that prints numbers in LCD display style.</p>
+
+<h3>Input</h3>
+
+<p>The input file contains several lines, one for each number to be displayed. Each line<br/>
+contains integers s and n, where n is the number to be displayed (0 ≤ n ≤ 99, 999, 999)<br/>
+and s is the size in which it shall be displayed (1 ≤ s ≤ 10). The input will be terminated<br/>
+by a line containing two zeros, which should not be processed.</p>
+
+<h3>Output</h3>
+
+<p>Print the numbers specified in the input file in an LCD display-style using s “-” signs<br/>
+for the horizontal segments and s “|” signs for the vertical ones. Each digit occupies<br/>
+exactly s + 2 columns and 2s + 3 rows. Be sure to fill all the white space occupied by<br/>
+the digits with blanks, including the last digit. There must be exactly one column of<br/>
+blanks between two digits.<br/>
+Output a blank line after each number. You will find an example of each digit in the<br/>
+sample output below.</p>
+
+<h3>Solution</h3>
+
+<figure class='code'><figcaption><span> (lcd_display.cpp)</span> <a href='http://viniciusmo.github.com/downloads/code/lcd_display.cpp'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+<span class='line-number'>79</span>
+<span class='line-number'>80</span>
+<span class='line-number'>81</span>
+<span class='line-number'>82</span>
+<span class='line-number'>83</span>
+<span class='line-number'>84</span>
+<span class='line-number'>85</span>
+<span class='line-number'>86</span>
+<span class='line-number'>87</span>
+<span class='line-number'>88</span>
+<span class='line-number'>89</span>
+<span class='line-number'>90</span>
+<span class='line-number'>91</span>
+<span class='line-number'>92</span>
+<span class='line-number'>93</span>
+<span class='line-number'>94</span>
+<span class='line-number'>95</span>
+<span class='line-number'>96</span>
+<span class='line-number'>97</span>
+<span class='line-number'>98</span>
+<span class='line-number'>99</span>
+<span class='line-number'>100</span>
+<span class='line-number'>101</span>
+<span class='line-number'>102</span>
+<span class='line-number'>103</span>
+<span class='line-number'>104</span>
+<span class='line-number'>105</span>
+<span class='line-number'>106</span>
+<span class='line-number'>107</span>
+<span class='line-number'>108</span>
+<span class='line-number'>109</span>
+<span class='line-number'>110</span>
+<span class='line-number'>111</span>
+<span class='line-number'>112</span>
+<span class='line-number'>113</span>
+<span class='line-number'>114</span>
+<span class='line-number'>115</span>
+<span class='line-number'>116</span>
+<span class='line-number'>117</span>
+<span class='line-number'>118</span>
+<span class='line-number'>119</span>
+<span class='line-number'>120</span>
+<span class='line-number'>121</span>
+<span class='line-number'>122</span>
+<span class='line-number'>123</span>
+<span class='line-number'>124</span>
+<span class='line-number'>125</span>
+<span class='line-number'>126</span>
+<span class='line-number'>127</span>
+<span class='line-number'>128</span>
+<span class='line-number'>129</span>
+<span class='line-number'>130</span>
+<span class='line-number'>131</span>
+<span class='line-number'>132</span>
+<span class='line-number'>133</span>
+<span class='line-number'>134</span>
+<span class='line-number'>135</span>
+<span class='line-number'>136</span>
+<span class='line-number'>137</span>
+<span class='line-number'>138</span>
+<span class='line-number'>139</span>
+<span class='line-number'>140</span>
+<span class='line-number'>141</span>
+<span class='line-number'>142</span>
+<span class='line-number'>143</span>
+<span class='line-number'>144</span>
+<span class='line-number'>145</span>
+<span class='line-number'>146</span>
+<span class='line-number'>147</span>
+<span class='line-number'>148</span>
+<span class='line-number'>149</span>
+<span class='line-number'>150</span>
+<span class='line-number'>151</span>
+<span class='line-number'>152</span>
+<span class='line-number'>153</span>
+<span class='line-number'>154</span>
+<span class='line-number'>155</span>
+</pre></td><td class='code'><pre><code class='cpp'><span class='line'><span class="cp">#include &lt;stdio.h&gt;</span>
+</span><span class='line'><span class="cp">#include &lt;string.h&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">char</span> <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">10</span><span class="p">][</span><span class="mi">5</span><span class="p">][</span><span class="mi">3</span><span class="p">];</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">void</span> <span class="n">init_data_of_numbers</span><span class="p">();</span>
+</span><span class='line'><span class="kt">void</span> <span class="n">print_char_with_count</span> <span class="p">(</span><span class="kt">int</span><span class="p">,</span> <span class="kt">char</span><span class="p">);</span>
+</span><span class='line'><span class="kt">void</span> <span class="n">print_specific_char_for_number</span><span class="p">(</span><span class="kt">int</span><span class="p">,</span> <span class="kt">char</span><span class="p">);</span>
+</span><span class='line'><span class="kt">void</span> <span class="n">print_char_formatted_lcd</span><span class="p">(</span><span class="kt">int</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="p">,</span> <span class="kt">int</span><span class="p">);</span>
+</span><span class='line'><span class="kt">void</span> <span class="n">print_space_between_number</span><span class="p">(</span><span class="kt">int</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">int</span> <span class="n">main</span> <span class="p">(){</span>
+</span><span class='line'>  <span class="n">init_data_of_numbers</span><span class="p">();</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">s</span><span class="p">;</span>
+</span><span class='line'>  <span class="kt">char</span> <span class="n">number</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
+</span><span class='line'>  <span class="k">while</span> <span class="p">(</span><span class="mi">1</span><span class="p">){</span>
+</span><span class='line'>      <span class="n">scanf</span> <span class="p">(</span><span class="s">&quot; %d %s&quot;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">s</span><span class="p">,</span><span class="n">number</span><span class="p">);</span>
+</span><span class='line'>      <span class="k">if</span> <span class="p">(</span><span class="n">s</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">number</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="sc">&#39;0&#39;</span><span class="p">)</span> <span class="k">break</span><span class="p">;</span>
+</span><span class='line'>      <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">){</span>
+</span><span class='line'>          <span class="k">if</span> <span class="p">(</span><span class="n">j</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">j</span> <span class="o">==</span> <span class="mi">2</span> <span class="o">||</span> <span class="n">j</span> <span class="o">==</span> <span class="mi">4</span><span class="p">){</span>
+</span><span class='line'>              <span class="n">print_char_formatted_lcd</span><span class="p">(</span><span class="n">s</span><span class="p">,</span><span class="n">number</span><span class="p">,</span> <span class="n">j</span><span class="p">);</span>
+</span><span class='line'>              <span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+</span><span class='line'>          <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+</span><span class='line'>              <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">k</span> <span class="o">&lt;</span> <span class="n">s</span><span class="p">;</span> <span class="n">k</span><span class="o">++</span><span class="p">){</span>
+</span><span class='line'>                  <span class="n">print_char_formatted_lcd</span><span class="p">(</span><span class="n">s</span><span class="p">,</span><span class="n">number</span><span class="p">,</span><span class="n">j</span><span class="p">);</span>
+</span><span class='line'>                 <span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+</span><span class='line'>              <span class="p">}</span>
+</span><span class='line'>          <span class="p">}</span>
+</span><span class='line'>      <span class="p">}</span>
+</span><span class='line'>      <span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">void</span> <span class="n">print_char_formatted_lcd</span><span class="p">(</span><span class="kt">int</span> <span class="n">count</span> <span class="p">,</span> <span class="kt">char</span> <span class="o">*</span> <span class="n">number</span><span class="p">,</span> <span class="kt">int</span> <span class="n">j</span><span class="p">){</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">strlen</span><span class="p">(</span><span class="n">number</span><span class="p">);</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+</span><span class='line'>      <span class="kt">int</span> <span class="n">pos_number</span> <span class="o">=</span> <span class="n">number</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="sc">&#39;0&#39;</span><span class="p">;</span>
+</span><span class='line'>      <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="n">x</span><span class="o">++</span><span class="p">){</span>
+</span><span class='line'>          <span class="kt">char</span> <span class="n">choose</span> <span class="o">=</span> <span class="n">data_of_numbers</span><span class="p">[</span><span class="n">pos_number</span><span class="p">][</span><span class="n">j</span><span class="p">][</span><span class="n">x</span><span class="p">];</span>
+</span><span class='line'>          <span class="n">print_specific_char_for_number</span><span class="p">(</span><span class="n">count</span><span class="p">,</span><span class="n">choose</span><span class="p">);</span>
+</span><span class='line'>      <span class="p">}</span>
+</span><span class='line'>      <span class="n">print_space_between_number</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">number</span><span class="p">);</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">void</span> <span class="n">print_space_between_number</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">,</span> <span class="kt">char</span> <span class="o">*</span> <span class="n">number</span><span class="p">){</span>
+</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">!=</span> <span class="n">strlen</span><span class="p">(</span><span class="n">number</span><span class="p">)){</span>
+</span><span class='line'>      <span class="n">printf</span><span class="p">(</span><span class="s">&quot; &quot;</span><span class="p">);</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">void</span> <span class="n">print_specific_char_for_number</span><span class="p">(</span><span class="kt">int</span> <span class="n">count</span> <span class="p">,</span> <span class="kt">char</span> <span class="n">c</span><span class="p">){</span>
+</span><span class='line'>  <span class="k">switch</span><span class="p">(</span><span class="n">c</span><span class="p">){</span>
+</span><span class='line'>      <span class="k">case</span> <span class="sc">&#39;S&#39;</span><span class="o">:</span>
+</span><span class='line'>          <span class="n">print_char_with_count</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="sc">&#39; &#39;</span><span class="p">);</span>
+</span><span class='line'>          <span class="k">break</span><span class="p">;</span>
+</span><span class='line'>      <span class="k">case</span> <span class="sc">&#39;Y&#39;</span><span class="o">:</span>
+</span><span class='line'>          <span class="n">print_char_with_count</span><span class="p">(</span><span class="n">count</span><span class="p">,</span><span class="sc">&#39; &#39;</span><span class="p">);</span>
+</span><span class='line'>          <span class="k">break</span><span class="p">;</span>
+</span><span class='line'>      <span class="k">case</span> <span class="sc">&#39;-&#39;</span><span class="o">:</span>
+</span><span class='line'>          <span class="n">print_char_with_count</span><span class="p">(</span><span class="n">count</span><span class="p">,</span><span class="sc">&#39;-&#39;</span><span class="p">);</span>
+</span><span class='line'>          <span class="k">break</span><span class="p">;</span>
+</span><span class='line'>      <span class="k">case</span> <span class="sc">&#39;|&#39;</span><span class="o">:</span>
+</span><span class='line'>          <span class="n">print_char_with_count</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="sc">&#39;|&#39;</span><span class="p">);</span>
+</span><span class='line'>          <span class="k">break</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">void</span> <span class="n">print_char_with_count</span> <span class="p">(</span><span class="kt">int</span> <span class="n">count</span> <span class="p">,</span> <span class="kt">char</span> <span class="n">c</span><span class="p">){</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">count</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+</span><span class='line'>      <span class="n">printf</span><span class="p">(</span><span class="s">&quot;%c&quot;</span><span class="p">,</span><span class="n">c</span><span class="p">);</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="kt">void</span> <span class="n">init_data_of_numbers</span><span class="p">(){</span>
+</span><span class='line'>  <span class="c1">//0</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;-&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;|&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;Y&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;|&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;Y&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;|&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;Y&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;|&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;-&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="c1">//end 0</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c1">//1</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;Y&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;Y&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;|&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;Y&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;Y&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;|&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;Y&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="c1">//end 1</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c1">//2</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;-&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;Y&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;|&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;-&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;|&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;Y&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;-&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="c1">//end2</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c1">//3</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;-&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;Y&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;|&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;-&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;Y&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;|&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;-&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="c1">//end3</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c1">//4</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;Y&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;|&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;Y&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;|&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;-&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;Y&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;|&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;Y&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="c1">//end4</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c1">//5</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">5</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">5</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;-&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">5</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">5</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;|&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">5</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;Y&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">5</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">5</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">5</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;-&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">5</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">5</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">5</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;Y&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">5</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;|&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">5</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">5</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;-&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">5</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="c1">//end5</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c1">//6</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">6</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">6</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;-&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">6</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">6</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;|&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">6</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;Y&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">6</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">6</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">6</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;-&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">6</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">6</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;|&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">6</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;Y&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">6</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;|&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">6</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">6</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;-&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">6</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="c1">//end6</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c1">//7</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">7</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">7</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;-&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">7</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">7</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">7</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;Y&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">7</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;|&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">7</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">7</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;Y&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">7</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">7</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">7</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;Y&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">7</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;|&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">7</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">7</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;Y&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">7</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="c1">//end7</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c1">//8</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">8</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">8</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;-&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">8</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">8</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;|&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">8</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;Y&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">8</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;|&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">8</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">8</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;-&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">8</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">8</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;|&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">8</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;Y&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">8</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;|&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">8</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">8</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;-&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">8</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="c1">//end8</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c1">//9</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">9</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">9</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;-&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">9</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">9</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;|&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">9</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;Y&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">9</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;|&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">9</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">9</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;-&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">9</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">9</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">9</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;Y&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">9</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;|&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">9</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">9</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;-&#39;</span><span class="p">;</span><span class="n">data_of_numbers</span><span class="p">[</span><span class="mi">9</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;S&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="c1">//end9</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Programming Challenges - The Trip]]></title>
+    <link href="http://viniciusmo.github.com/blog/2013/02/08/programming-challenges-the-trip/"/>
+    <updated>2013-02-08T23:13:00-02:00</updated>
+    <id>http://viniciusmo.github.com/blog/2013/02/08/programming-challenges-the-trip</id>
+    <content type="html"><![CDATA[<h1>Problem The Trip</h1>
+
+<p>A group of students are members of a club that travels annually to different lo-
+cations. Their destinations in the past have included Indianapolis, Phoenix, Nashville,
+Philadelphia, San Jose, and Atlanta. This spring they are planning a trip to Eindhoven.<br/>
+The group agrees in advance to share expenses equally, but it is not practical to share
+every expense as it occurs.<br/>
+Thus individuals in the group pay for particular things, such
+as meals, hotels, taxi rides, and plane tickets. After the trip, each student’s expenses
+are tallied and money is exchanged so that the net cost to each is the same, to within
+one cent. In the past, this money exchange has been tedious and time consuming.<br/>
+Your job is to compute, from a list of expenses, the minimum amount of money that must
+change hands in order to equalize (within one cent) all the students’ costs.</p>
+
+<h3>Input</h3>
+
+<p>Standard input will contain the information for several trips. Each trip consists of a<br/>
+line containing a positive integer n denoting the number of students on the trip. This is<br/>
+followed by n lines of input, each containing the amount spent by a student in dollars<br/>
+and cents. There are no more than 1000 students and no student spent more than<br/>
+$10,000.00. A single line containing 0 follows the information for the last trip.</p>
+
+<h3>Output</h3>
+
+<p>For each trip, output a line stating the total amount of money, in dollars and cents,<br/>
+that must be exchanged to equalize the students’ costs.</p>
+
+<h3>Solution</h3>
+
+<figure class='code'><figcaption><span> (the_trip.cpp)</span> <a href='http://viniciusmo.github.com/downloads/code/the_trip.cpp'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+</pre></td><td class='code'><pre><code class='cpp'><span class='line'><span class="cp">#include &lt;stdio.h&gt;</span>
+</span><span class='line'><span class="cp">#include &lt;stdlib.h&gt;</span>
+</span><span class='line'><span class="cp">#include &lt;algorithm&gt;</span>
+</span><span class='line'><span class="cp">#include &lt;math.h&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="cp">#define MAX_STUDENT 1000</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">double</span> <span class="n">student_spent</span><span class="p">[</span><span class="n">MAX_STUDENT</span><span class="p">];</span>
+</span><span class='line'><span class="kt">double</span> <span class="n">total_high</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">;</span>
+</span><span class='line'><span class="kt">double</span> <span class="n">total_low</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">double</span> <span class="n">sum</span> <span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">){</span>
+</span><span class='line'>  <span class="kt">double</span> <span class="n">result</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+</span><span class='line'>      <span class="n">result</span> <span class="o">+=</span> <span class="n">student_spent</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">return</span> <span class="n">result</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">int</span> <span class="n">main</span> <span class="p">(){</span>
+</span><span class='line'>  <span class="kt">int</span>  <span class="n">n</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">while</span> <span class="p">(</span><span class="n">scanf</span> <span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">n</span><span class="p">)</span> <span class="o">!=</span> <span class="n">EOF</span>  <span class="o">&amp;&amp;</span> <span class="n">n</span><span class="o">!=</span><span class="mi">0</span><span class="p">){</span>
+</span><span class='line'>      <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+</span><span class='line'>          <span class="n">scanf</span> <span class="p">(</span><span class="s">&quot;%lf&quot;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">student_spent</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+</span><span class='line'>      <span class="p">}</span>
+</span><span class='line'>      <span class="kt">double</span> <span class="n">avg</span> <span class="o">=</span> <span class="n">sum</span><span class="p">(</span><span class="n">n</span><span class="p">)</span><span class="o">/</span><span class="n">n</span><span class="p">;</span>
+</span><span class='line'>      <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+</span><span class='line'>          <span class="kt">double</span> <span class="n">result</span> <span class="o">=</span> <span class="n">student_spent</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="n">avg</span><span class="p">;</span>
+</span><span class='line'>          <span class="k">if</span> <span class="p">(</span><span class="n">result</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="n">total_high</span><span class="o">+=</span> <span class="n">floor</span><span class="p">(</span><span class="n">result</span><span class="o">*</span><span class="mi">100</span><span class="p">)</span><span class="o">/</span><span class="mi">100</span><span class="p">;</span>
+</span><span class='line'>          <span class="k">else</span> <span class="n">total_low</span> <span class="o">-=</span> <span class="n">ceil</span><span class="p">(</span><span class="n">result</span><span class="o">*</span><span class="mi">100</span><span class="p">)</span><span class="o">/</span><span class="mi">100</span><span class="p">;</span>
+</span><span class='line'>      <span class="p">}</span>
+</span><span class='line'>      <span class="n">printf</span><span class="p">(</span><span class="s">&quot;$%.2f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="n">max</span><span class="p">(</span><span class="n">total_low</span><span class="p">,</span><span class="n">total_high</span><span class="p">));</span>
+</span><span class='line'>      <span class="n">total_high</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>      <span class="n">total_low</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>  
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Programming Challenges - Minesweeper]]></title>
+    <link href="http://viniciusmo.github.com/blog/2013/02/04/programming-challenges-minesweeper/"/>
+    <updated>2013-02-04T16:37:00-02:00</updated>
+    <id>http://viniciusmo.github.com/blog/2013/02/04/programming-challenges-minesweeper</id>
+    <content type="html"><![CDATA[<h1>Problem Minesweeper</h1>
+
+<p>Have you ever played Minesweeper? This cute little game comes with a certain op- erating system whose name we can’t remember. The goal of the game is to find where all the mines are located within a M × N field.<br/>
+The game shows a number in a square which tells you how many mines there are adjacent to that square. Each square has at most eight adjacent squares. The 4 × 4 field on the left contains two mines, each represented by a “*” character. If we represent the same field by the hint numbers described above, we end up with the field on the right:</p>
+
+<pre><code>        *...    *100  
+        ....    2210  
+        .*..    1*10   
+        ....    1110  
+</code></pre>
+
+<h3>Input</h3>
+
+<p>The input will consist of an arbitrary number of fields. The first line of each field contains two integers n and m (0 &lt; n, m ≤ 100) which stand for the number of lines and columns of the field, respectively. Each of the next n lines contains exactly m characters, representing the field.<br/>
+Safe squares are denoted by “.” and mine squares by “*,” both without the quotes. The first field line where n = m = 0 represents the end of input and should not be processed.</p>
+
+<h3>Output</h3>
+
+<p>For each field, print the message Field #x: on a line alone, where x stands for the number of the field starting from 1. The next n lines should contain the field with the “.” characters replaced by the number of mines adjacent to that square. There must be an empty line between field outputs.</p>
+
+<h3>Solution</h3>
+
+<figure class='code'><figcaption><span>[++] (minesweeper.cpp)</span> <a href='http://viniciusmo.github.com/downloads/code/minesweeper.cpp'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+</pre></td><td class='code'><pre><code class='c'><span class='line'><span class="cp">#include &lt;stdio.h&gt;</span>
+</span><span class='line'><span class="cp">#include &lt;stdlib.h&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">using</span> <span class="n">namespace</span> <span class="n">std</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="cp">#define M 10000</span>
+</span><span class='line'><span class="cp">#define N 10000</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">char</span> <span class="n">mine</span><span class="p">[</span><span class="n">M</span><span class="p">][</span><span class="n">N</span><span class="p">];</span>
+</span><span class='line'><span class="kt">int</span> <span class="n">size_m</span><span class="p">;</span>
+</span><span class='line'><span class="kt">int</span> <span class="n">size_n</span><span class="p">;</span>
+</span><span class='line'><span class="kt">int</span> <span class="n">test</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">int</span> <span class="nf">count_adjacent_mine</span><span class="p">(</span><span class="kt">int</span> <span class="n">pos_m</span><span class="p">,</span><span class="kt">int</span> <span class="n">pos_n</span><span class="p">){</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="n">pos_m</span><span class="o">+</span><span class="mi">1</span> <span class="o">&lt;</span> <span class="n">size_m</span> <span class="o">&amp;&amp;</span> <span class="n">mine</span><span class="p">[</span><span class="n">pos_m</span><span class="o">+</span><span class="mi">1</span><span class="p">][</span><span class="n">pos_n</span><span class="p">]</span> <span class="o">==</span> <span class="sc">&#39;*&#39;</span><span class="p">){</span><span class="c1">//0X0</span>
+</span><span class='line'>      <span class="n">count</span><span class="o">++</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="n">pos_m</span><span class="o">-</span><span class="mi">1</span> <span class="o">&gt;=</span><span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">mine</span><span class="p">[</span><span class="n">pos_m</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">pos_n</span><span class="p">]</span> <span class="o">==</span> <span class="sc">&#39;*&#39;</span><span class="p">){</span><span class="c1">//0X0</span>
+</span><span class='line'>      <span class="n">count</span><span class="o">++</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="n">pos_m</span><span class="o">+</span><span class="mi">1</span> <span class="o">&lt;</span> <span class="n">size_m</span> <span class="o">&amp;&amp;</span> <span class="n">pos_n</span><span class="o">+</span><span class="mi">1</span> <span class="o">&lt;</span> <span class="n">size_n</span> <span class="o">&amp;&amp;</span>  <span class="n">mine</span><span class="p">[</span><span class="n">pos_m</span><span class="o">+</span><span class="mi">1</span><span class="p">][</span><span class="n">pos_n</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="sc">&#39;*&#39;</span><span class="p">){</span> <span class="c1">//00X</span>
+</span><span class='line'>      <span class="n">count</span><span class="o">++</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="n">pos_m</span><span class="o">+</span><span class="mi">1</span> <span class="o">&lt;</span> <span class="n">size_m</span> <span class="o">&amp;&amp;</span> <span class="n">pos_n</span><span class="o">-</span><span class="mi">1</span> <span class="o">&gt;=</span><span class="mi">0</span> <span class="o">&amp;&amp;</span>  <span class="n">mine</span><span class="p">[</span><span class="n">pos_m</span><span class="o">+</span><span class="mi">1</span><span class="p">][</span><span class="n">pos_n</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="sc">&#39;*&#39;</span><span class="p">){</span> <span class="c1">//00X</span>
+</span><span class='line'>      <span class="n">count</span><span class="o">++</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="n">pos_m</span><span class="o">-</span><span class="mi">1</span> <span class="o">&gt;=</span><span class="mi">0</span>  <span class="o">&amp;&amp;</span> <span class="n">pos_n</span><span class="o">+</span><span class="mi">1</span> <span class="o">&lt;</span> <span class="n">size_n</span> <span class="o">&amp;&amp;</span>  <span class="n">mine</span><span class="p">[</span><span class="n">pos_m</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">pos_n</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="sc">&#39;*&#39;</span><span class="p">){</span> <span class="c1">//00X</span>
+</span><span class='line'>      <span class="n">count</span><span class="o">++</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="n">pos_m</span><span class="o">-</span><span class="mi">1</span> <span class="o">&gt;=</span><span class="mi">0</span>  <span class="o">&amp;&amp;</span> <span class="n">pos_n</span><span class="o">-</span><span class="mi">1</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">mine</span><span class="p">[</span><span class="n">pos_m</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">pos_n</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="sc">&#39;*&#39;</span><span class="p">){</span><span class="c1">//X00</span>
+</span><span class='line'>      <span class="n">count</span><span class="o">++</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="n">pos_n</span><span class="o">+</span><span class="mi">1</span> <span class="o">&lt;</span> <span class="n">size_n</span> <span class="o">&amp;&amp;</span> <span class="n">mine</span><span class="p">[</span><span class="n">pos_m</span><span class="p">][</span><span class="n">pos_n</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="sc">&#39;*&#39;</span><span class="p">){</span><span class="c1">//00X</span>
+</span><span class='line'>      <span class="n">count</span><span class="o">++</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="n">pos_n</span><span class="o">-</span><span class="mi">1</span> <span class="o">&gt;=</span><span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">mine</span><span class="p">[</span><span class="n">pos_m</span><span class="p">][</span><span class="n">pos_n</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="sc">&#39;*&#39;</span><span class="p">){</span><span class="c1">//X00</span>
+</span><span class='line'>      <span class="n">count</span><span class="o">++</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">return</span> <span class="n">count</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">void</span> <span class="nf">print_all_count_adjacent_mine</span><span class="p">(){</span>
+</span><span class='line'>   <span class="k">if</span> <span class="p">(</span><span class="n">test</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span>    <span class="n">printf</span> <span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">printf</span> <span class="p">(</span><span class="s">&quot;Field #%d:</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="n">test</span><span class="o">++</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">size_m</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+</span><span class='line'>      <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">size_n</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">){</span>
+</span><span class='line'>          <span class="k">if</span> <span class="p">(</span><span class="n">mine</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="sc">&#39;*&#39;</span><span class="p">){</span>
+</span><span class='line'>              <span class="n">printf</span> <span class="p">(</span><span class="s">&quot;*&quot;</span><span class="p">);</span>
+</span><span class='line'>          <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+</span><span class='line'>              <span class="kt">int</span> <span class="n">total</span> <span class="o">=</span> <span class="n">count_adjacent_mine</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">);</span>
+</span><span class='line'>              <span class="n">printf</span> <span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="n">total</span><span class="p">);</span>
+</span><span class='line'>          <span class="p">}</span>    
+</span><span class='line'>      <span class="p">}</span>
+</span><span class='line'>      <span class="n">printf</span> <span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">while</span> <span class="p">(</span><span class="mi">1</span><span class="p">){</span>
+</span><span class='line'>      <span class="n">scanf</span> <span class="p">(</span><span class="s">&quot;%d%d&quot;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">size_m</span><span class="p">,</span><span class="o">&amp;</span><span class="n">size_n</span><span class="p">);</span>
+</span><span class='line'>      <span class="k">if</span> <span class="p">(</span><span class="n">size_m</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">size_n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">break</span><span class="p">;</span>
+</span><span class='line'>      <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">size_m</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+</span><span class='line'>          <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">size_n</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">){</span>
+</span><span class='line'>              <span class="n">scanf</span> <span class="p">(</span><span class="s">&quot; %c&quot;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">mine</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]);</span>
+</span><span class='line'>          <span class="p">}</span>
+</span><span class='line'>      <span class="p">}</span>    
+</span><span class='line'>      <span class="n">print_all_count_adjacent_mine</span><span class="p">();</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Programming Challenges - The 3n + 1 Problem]]></title>
+    <link href="http://viniciusmo.github.com/blog/2013/02/04/programming-challenges-the-3n-plus-1-problem/"/>
+    <updated>2013-02-04T14:06:00-02:00</updated>
+    <id>http://viniciusmo.github.com/blog/2013/02/04/programming-challenges-the-3n-plus-1-problem</id>
+    <content type="html"><![CDATA[<h1>Problem The 3n + 1</h1>
+
+<p>Consider the following algorithm to generate a sequence of numbers. Start with an integer n. If n is even, divide by 2. If n is odd, multiply by 3 and add 1.Repeat this process with the new value of n, terminating when n = 1. For example, the following sequence of numbers will be generated for n = 22:</p>
+
+<p>22 11 34 17 52 26 13 40 20 10 5 16 8 4 2 1</p>
+
+<p>It is conjectured (but not yet proven) that this algorithm will terminate at n = 1 for every integer n. Still, the conjecture holds for all integers up to at least 1, 000, 000.<br/>
+For an input n, the cycle-length of n is the number of numbers generated up to and including the 1. In the example above, the cycle length of 22 is 16. Given any two numbers i and j, you are to determine the maximum cycle length over all numbers between i and j, including both endpoints.</p>
+
+<h3>Input</h3>
+
+<p>The input will consist of a series of pairs of integers i and j, one pair of integers per line. All integers will be less than 1,000,000 and greater than 0.</p>
+
+<h3>Output</h3>
+
+<p>For each pair of input integers i and j, output i, j in the same order in which they appeared in the input and then the maximum cycle length for integers between and including i and j. These three numbers should be separated by one space, with all three numbers on one line and with one line of output for each line of input.</p>
+
+<h3>Solution</h3>
+
+<figure class='code'><figcaption><span> (the_3n_+_1.cpp)</span> <a href='http://viniciusmo.github.com/downloads/code/the_3n_+_1.cpp'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+</pre></td><td class='code'><pre><code class='cpp'><span class='line'><span class="cp">#include &lt;stdio.h&gt;</span>
+</span><span class='line'><span class="cp">#include &lt;stdlib.h&gt;</span>
+</span><span class='line'><span class="cp">#include &lt;algorithm&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">int</span> <span class="n">count_cycle_lenght</span><span class="p">(</span> <span class="kt">int</span> <span class="p">);</span>
+</span><span class='line'><span class="kt">int</span> <span class="n">max_cycle_lenght_between</span><span class="p">(</span><span class="kt">int</span><span class="p">,</span><span class="kt">int</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">int</span> <span class="n">main</span><span class="p">(){</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">n1</span><span class="p">;</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">n2</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">while</span> <span class="p">(</span> <span class="p">(</span><span class="n">scanf</span> <span class="p">(</span><span class="s">&quot;%d%d&quot;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">n1</span><span class="p">,</span><span class="o">&amp;</span><span class="n">n2</span><span class="p">))</span>  <span class="o">!=</span> <span class="n">EOF</span><span class="p">){</span>
+</span><span class='line'>      <span class="kt">int</span> <span class="n">max_cycle</span> <span class="o">=</span> <span class="n">max_cycle_lenght_between</span><span class="p">(</span><span class="n">n1</span><span class="p">,</span><span class="n">n2</span><span class="p">);</span>
+</span><span class='line'>      <span class="n">printf</span> <span class="p">(</span><span class="s">&quot;%d %d %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="n">n1</span><span class="p">,</span><span class="n">n2</span><span class="p">,</span><span class="n">max_cycle</span><span class="p">);</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">int</span> <span class="n">max_cycle_lenght_between</span><span class="p">(</span><span class="kt">int</span> <span class="n">n1</span><span class="p">,</span><span class="kt">int</span> <span class="n">n2</span><span class="p">){</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="n">min</span> <span class="p">(</span><span class="n">n1</span><span class="p">,</span><span class="n">n2</span><span class="p">);</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">b</span> <span class="o">=</span> <span class="n">max</span> <span class="p">(</span><span class="n">n1</span><span class="p">,</span><span class="n">n2</span><span class="p">);</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">max_cycle</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span> <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">a</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">b</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+</span><span class='line'>      <span class="kt">int</span> <span class="n">result</span> <span class="o">=</span> <span class="n">count_cycle_lenght</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+</span><span class='line'>      <span class="n">max_cycle</span> <span class="o">=</span> <span class="n">max</span><span class="p">(</span><span class="n">result</span><span class="p">,</span><span class="n">max_cycle</span><span class="p">);</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">return</span> <span class="n">max_cycle</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">int</span>  <span class="n">count_cycle_lenght</span><span class="p">(</span> <span class="kt">int</span> <span class="n">n1</span><span class="p">){</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">count_cycle</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">while</span> <span class="p">(</span><span class="n">n1</span> <span class="o">!=</span> <span class="mi">1</span> <span class="p">){</span>
+</span><span class='line'>      <span class="k">if</span> <span class="p">(</span> <span class="p">(</span><span class="n">n1</span> <span class="o">%</span> <span class="mi">2</span><span class="p">)</span>  <span class="o">==</span> <span class="mi">0</span><span class="p">){</span>
+</span><span class='line'>          <span class="n">n1</span> <span class="o">/=</span> <span class="mi">2</span><span class="p">;</span>
+</span><span class='line'>      <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+</span><span class='line'>          <span class="n">n1</span> <span class="o">*=</span><span class="mi">3</span><span class="p">;</span>
+</span><span class='line'>          <span class="n">n1</span><span class="o">++</span><span class="p">;</span>
+</span><span class='line'>      <span class="p">}</span>
+</span><span class='line'>      <span class="n">count_cycle</span><span class="o">++</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="n">count_cycle</span><span class="o">++</span><span class="p">;</span> 
+</span><span class='line'>  <span class="k">return</span> <span class="n">count_cycle</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Arquitetura - Listagem Frameworks]]></title>
+    <link href="http://viniciusmo.github.com/blog/2013/01/31/listagem-de-frameworks/"/>
+    <updated>2013-01-31T18:01:00-02:00</updated>
+    <id>http://viniciusmo.github.com/blog/2013/01/31/listagem-de-frameworks</id>
+    <content type="html"><![CDATA[<p>Ótima lista de frameworks e componentes feita pelo <a href="http://fernandofranzini.wordpress.com/2013/01/30/listagem-de-frameworks-30012013/">Fernando Franzini</a> como ajuda na hora de arquitetar um sistema , segue a excelente lista :</p>
+
+<h2>Container IoC</h2>
+
+<p>Spring – http://www.springsource.org/<br/>
+Guice – http://picocontainer.codehaus.org/<br/>
+PicoContainer – http://code.google.com/p/google-guice/<br/>
+EJB – www.oracle.com/technetwork/java/javaee/ejb/index.html <br/>
+CDI – http://www.oracle.com/technetwork/articles/java/cdi-javaee-bien-225152.html</p>
+
+<h2>Persistência</h2>
+
+<p>Hibernate – http://www.hibernate.org/<br/>
+Spring Data – http://www.springsource.org/ <br/>
+iBatis – http://www.mybatis.org/<br/>
+Torque – http://db.apache.org/torque/<br/>
+Castor – http://www.castor.org/<br/>
+Cayenne – http://cayenne.apache.org/</p>
+
+<h2>Gerenciador de Transação</h2>
+
+<p>Spring AOP transaction – http://www.springsource.org/<br/>
+EJB (JTA) www.oracle.com/technetwork/java/javaee/ejb/index.html</p>
+
+<h2>Agendamento de Tarefas</h2>
+
+<p>Timer Task JSE - http://www.dsc.ufcg.edu.br/~jacques/cursos/map/html/threads/timer.html<br/>
+Quarts – http://quartz-scheduler.org/<br/>
+EJB Timer Service – http://docs.oracle.com/javaee/6/tutorial/doc/bnboy.html</p>
+
+<h2>Validação</h2>
+
+<p>Commons Validator – http://commons.apache.org/validator/<br/>
+Java Bean Validator – http://docs.oracle.com/javaee/6/tutorial/doc/gircz.html</p>
+
+<h2>Chamadas Assíncronas</h2>
+
+<p>JSE Executor Services - http://docs.oracle.com/javase/tutorial/essential/concurrency/exinter.html<br/>
+EJB Asynchronous Method Invocation – http://docs.oracle.com/javaee/6/tutorial/doc/gkkqg.html<br/>
+EJB Message-Driven Bean – http://docs.oracle.com/javaee/6/tutorial/doc/gipko.html</p>
+
+<h2>Kit de Interface Gráficas Desktop</h2>
+
+<p>Swing – http://docs.oracle.com/javase/tutorial/uiswing/<br/>
+SwingX – http://swingx.java.net/<br/>
+JGoodies – http://www.jgoodies.com/<br/>
+SWT – http://www.eclipse.org/swt/<br/>
+SWT OPAL – http://code.google.com/a/eclipselabs.org/p/opal/</p>
+
+<h2>RAD Interface Gráficas Desktop</h2>
+
+<p>Eclipse Windows Builder – http://www.eclipse.org/windowbuilder/<br/>
+NetBeans Matisse – http://netbeans.org/features/java/swing.html</p>
+
+<h2>Framework Web</h2>
+
+<p>Click – http://click.apache.org/<br/>
+Wicket – http://wicket.apache.org/<br/>
+Spring MVC – http://www.springsource.org/<br/>
+Struts – http://struts.apache.org/<br/>
+Mentawai – http://www.mentaframework.org/<br/>
+JSF – www.oracle.com/technetwork/java/javaee/javaserverfaces-139869.html<br/>
+GWT – https://developers.google.com/web-toolkit/<br/>
+Vaadin – https://vaadin.com/home <br/>
+VRaptor - http://vraptor.caelum.com.br/</p>
+
+<h2>Framework Web Full Stack</h2>
+
+<p>Grails – http://grails.org/<br/>
+Ruby On Rails – http://rubyonrails.org/<br/>
+OpenXava – http://www.openxava.org/</p>
+
+<h2>Provedores de JSF</h2>
+
+<p>Mojorra – http://javaserverfaces.java.net/<br/>
+MyFaces – http://myfaces.apache.org/<br/>
+ADF – www.oracle.com/technetwork/developer-tools/adf/overview/index.html</p>
+
+<h2>Componentes JSF</h2>
+
+<p>RichFaces – http://www.jboss.org/richfaces<br/>
+PrimeFaces – http://primefaces.org/<br/>
+OpenFaces – http://openfaces.org/<br/>
+IceFaces – http://www.icesoft.org/<br/>
+EasyFaces – http://www.easyfaces.com.br<br/>
+Gmaps4jsf – http://code.google.com/p/gmaps4jsf/</p>
+
+<h2>Extensões JSF</h2>
+
+<p>PrettyFaces - http://ocpsoft.org/prettyfaces/<br/>
+Omnifaces – https://showcase-omnifaces.rhcloud.com/</p>
+
+<h2>Soluções Web Mobile</h2>
+
+<p>JSF RichFaces Mobile – http://www.jboss.org/richfaces<br/>
+JSF PrimeFaces Mobile – http://primefaces.org/<br/>
+JSF OpenFaces Mobile – http://openfaces.org/<br/>
+JSF IceFaces Mobile – http://www.icesoft.org/<br/>
+Spring Mobile – http://www.springsource.org/<br/>
+JQuery Mobile – http://jquery.com/<br/>
+DOJO Mobile – http://dojotoolkit.org/</p>
+
+<h2>Autenticação e Autorização Web</h2>
+
+<p>Spring Security – http://www.springsource.org/ <br/>
+JGuard – http://jguard.xwiki.com/xwiki/bin/view/Main/WebHome<br/>
+JEE Container Managed Security (Configuração particular). Tomcat – http://tomcat.apache.org/tomcat-7.0-doc/realm-howto.html</p>
+
+<h2>JEE Web Container Standalone</h2>
+
+<p>Tomcat – http://tomcat.apache.org/<br/>
+Jetty – http://jetty.codehaus.org/jetty/<br/>
+JBoss – http://www.jboss.org/</p>
+
+<h2>JEE EJB Container (Web Profile e JEE Full)  </h2>
+
+<p>Tomee – http://openejb.apache.org/apache-tomee.html<br/>
+Simpas – http://siwpas.mechsoft.com.tr/<br/>
+Resin – http://www.caucho.com/resin-application-server/<br/>
+JBoss – http://www.jboss.org/<br/>
+Glassfish – http://glassfish.java.net/<br/>
+Webshere – http://www-142.ibm.com/software/products/br/pt/appserv-was<br/>
+WebLogic – http://www.oracle.com/us/products/middleware/application-server/weblogic-suite/index.html?ssSourceSiteId=ocombr<br/>
+Geronimo – http://geronimo.apache.org/</p>
+
+<h2>Relatórios</h2>
+
+<p>iReport – http://jasperforge.org/projects/ireport<br/>
+DynamicReport – http://dynamicreports.sourceforge.net/<br/>
+Birt – http://www.eclipse.org/birt/phoenix/<br/>
+iText – http://itextpdf.com/<br/>
+PDFBox – http://pdfbox.apache.org/</p>
+
+<h2>Gerador de Gráficos Charts</h2>
+
+<p>JFreechart - http://www.jfree.org/jfreechart/<br/>
+HighCharts -  http://www.highcharts.com/</p>
+
+<h2>Web Services REST</h2>
+
+<p>Jersey – http://jersey.java.net/<br/>
+Restlet – http://www.restlet.org/<br/>
+RestEasy – http://www.jboss.org/resteasy/<br/>
+Serfj – http://serfj.sourceforge.net/<br/>
+CXF – http://cxf.apache.org/</p>
+
+<h2>Web Services SOAP</h2>
+
+<p>Metro – http://jax-ws.java.net/<br/>
+Axis – http://axis.apache.org/axis/<br/>
+XFire – http://xfire.codehaus.org/<br/>
+CXF – http://cxf.apache.org/</p>
+
+<h2>JavaScript</h2>
+
+<p>DOJO Toolkit – http://dojotoolkit.org/<br/>
+JQuery – http://jquery.com/<br/>
+Ext-JS – http://docs.sencha.com/ext-js/4-0/<br/>
+DWR – http://directwebremoting.org/dwr/index.html</p>
+
+<h2>Integração com Redes Sociais</h2>
+
+<p>Spring Social – http://www.springsource.org/</p>
+
+<h2>Cache</h2>
+
+<p>Space4J – http://www.space4j.org/<br/>
+Memcache – http://memcached.org/<br/>
+Ecache – http://ehcache.org/<br/>
+Prevayler – http://prevayler.org/<br/>
+JBoss Infinispan – http://www.jboss.org/infinispan.html</p>
+
+<h2>NoSQL</h2>
+
+<p>MongoDB – http://www.mongodb.org/<br/>
+Neo4j – http://neo4j.org/<br/>
+Db4o – http://www.db4o.com/<br/>
+MemcachedDB – http://memcachedb.org/<br/>
+CouchDB – http://couchdb.apache.org/<br/>
+Project Voldemort – http://project-voldemort.com/<br/>
+MarkLkogic Server – http://www.marklogic.com/<br/>
+BaseX – http://basex.org/<br/>
+SimpleDB – http://aws.amazon.com/simpledb/<br/>
+HBase – http://hbase.apache.org/<br/>
+Casandra – http://cassandra.apache.org/<br/>
+Hypertable – http://hypertable.org/<br/>
+OrientBD – http://www.orientechnologies.com/</p>
+
+<h2>SGDB Java Embutidos </h2>
+
+<p>HyperSQL – http://hsqldb.org/<br/>
+JavaDB – www.oracle.com/technetwork/java/javadb/overview/index.html<br/>
+Apache Derby – http://db.apache.org/derby/<br/>
+H2Database – http://www.h2database.com</p>
+
+<h2>Testes</h2>
+
+<p>DBUnit – http://www.dbunit.org/<br/>
+JUnit – http://www.junit.org/<br/>
+EJBUnit – http://ejb3unit.sourceforge.net/<br/>
+JSFUnit – http://www.jboss.org/jsfunit/</p>
+
+<h2>Loggin</h2>
+
+<p>jse – http://docs.oracle.com/javase/7/docs/api/java/util/logging/package-summary.html<br/>
+Log4J –  http://logging.apache.org/index.html</p>
+
+<h2>Testes Cargas e Perfomance</h2>
+
+<p>JMeter – http://jmeter.apache.org/<br/>
+WebLoad – http://www.webload.org/</p>
+
+<h2>JSON</h2>
+
+<p>JSON – http://www.json.org/java/<br/>
+XStream – http://xstream.codehaus.org/json-tutorial.html<br/>
+Google-JSON – http://code.google.com/p/google-gson/</p>
+
+<h2>Boletos Bancário</h2>
+
+<p>Boletos Bancário – http://www.boletobancario.com.br<br/>
+Bopepo – www.jrimum.org/bopepo/<br/>
+Stella – github.com/caelum/caelum-stella/wiki/Gerando-boleto</p>
+
+<h2>Manipulaçao de Arquivos MS Office</h2>
+
+<p>Apache POI – http://poi.apache.org/<br/>
+JExcelApi -  http://jexcelapi.sourceforge.net/<br/>
+Docx4j – http://dev.plutext.org/trac/docx4j<br/>
+Java Docx – http://www.javadocx.com/<br/>
+Aspose – http://www.aspose.com/categories/java-components/aspose.total-for-java/default.aspx</p>
+
+<h2>Gerais</h2>
+
+<p>Maven – Gerenciador de dependências – http://maven.apache.org/<br/>
+E-mail – Gerenciador de emails –  www.oracle.com/technetwork/java/javamail/index.html<br/>
+JLicense  – Gerenciador de licenciamento de uso de software –http://www.websina.com/products/jlicense.html</p>
+
+<p>Créditos a Lista : <a href="http://fernandofranzini.wordpress.com">Fernando Franzini</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[OCEJWCD Study Companion: Certified Expert Java EE 6 Web Component Developer (Oracle Exam 1Z0-899)]]></title>
+    <link href="http://viniciusmo.github.com/blog/2013/01/31/ocejwcd-study-companion-certified-expert-java-ee-6-web-component-developer-oracle-exam-1z0-899/"/>
+    <updated>2013-01-31T17:15:00-02:00</updated>
+    <id>http://viniciusmo.github.com/blog/2013/01/31/ocejwcd-study-companion-certified-expert-java-ee-6-web-component-developer-oracle-exam-1z0-899</id>
+    <content type="html"><![CDATA[<p>Para quem está querendo tirar essa certificação recomendo este livro como fonte de estudo.</p>
+
+<p><img class="center" src="https://raw.github.com/viniciusmo/octopress/master/source/images/blog/java/livro_ocejwcd.jpg"></p>
+
+<p><strong><em>Link Amazon </em></strong>: <a href="http://www.amazon.com/OCEJWCD-Study-Companion-Certified-Component/dp/0955160340/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1345570533&amp;sr=1-1&amp;keywords=OCEJWCD+Study+Companion%3A+Certified+Expert+Java+EE+6+Web+Component+Developer">Clique aqui</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[iOS : Automatic Counting Reference - ARC]]></title>
+    <link href="http://viniciusmo.github.com/blog/2013/01/24/ios-automatic-counting-reference-arc/"/>
+    <updated>2013-01-24T14:58:00-02:00</updated>
+    <id>http://viniciusmo.github.com/blog/2013/01/24/ios-automatic-counting-reference-arc</id>
+    <content type="html"><![CDATA[<h1>Introdução</h1>
+
+<p>A grande mudança no <strong><em>iOS 5</em></strong> foi o novo recurso adicionado  chamado de contador automático de referência (ARC - Automatic Counting Reference).ARC é uma característica do novo compilador LLVM 3.0 que acaba completamente com  o gerenciamento  de memória manual.Usar o ARC em seus projetos é extremamente simples.Você mantém o mesmo código, como de costume, exceto que você não precisa realizar chamadas a <strong><em>release</em></strong> , <strong><em>retain</em></strong> ou ao <strong><em>autorelease</em></strong>.O ARC realiza todas essas tarefas pra você :).<br/>
+Com o ARC habilitado , o compilador irá inserir automaticamente <strong><em>retain</em></strong>,<strong><em>release</em></strong> e <strong><em>autorelease</em></strong> nos lugares corretos em seu programa.</p>
+
+<h1>Como o ARC funciona?</h1>
+
+<p>Você provavelmente já está familiarizado com o gerenciamento de memória manual, que funciona basicamente assim:</p>
+
+<ul>
+<li>   Se você precisa manter um objeto , você deve retê-lo (<strong><em>retain</em></strong>), a menos que já foi retido para você.</li>
+<li>   Se você quiser parar de usar um objeto , você precisa para liberá-lo (<strong><em>release</em></strong>), a menos que já foi liberado para você ( com o <strong><em>autorelease</em></strong>).</li>
+</ul>
+
+
+<p>Acho que para todos no começo , essa tarefa de entender o gerenciamento de memória manual é algo difícil,mas com o tempo se torna natural  manter o balanceamento dos <strong><em>retains</em></strong> e <strong><em>releases</em></strong> .Exceto quando você esquece de realizar essa tarefa rs<br/>
+Os princípios de gerenciamento de memória manual não são difíceis, mas é muito fácil cometer um erro. E esses pequenos erros podem ter consequências terríveis. O seu aplicativo irá falhar em algum ponto, porque você lançou um objeto muitas vezes e suas variáveis ​​estão apontando para dados que já não é válido, ou você vai ficar sem memória, porque se você não liberar os objetos  acontecem os famosos <strong><em>leaks</em></strong>.<br/>
+O <strong><em>Static Analyzer</em></strong> do Xcode é uma grande ajuda para encontrar esses problemas , mas o ARC vai um passo além.O ARC evita problemas de gerenciamento de memória completamente ,inserindo o <strong><em>retain</em></strong> e o <strong><em>release</em></strong> pra você.<br/>
+É importante perceber que a ARC é uma característica do compilador do Objective-C e, portanto, todo o trabalho do ARC é feito na compilação do seu programa. O ARC não é uma característica de tempo de execução (com exceção de uma pequena parte, o sistema de <strong><em>weak pointer</em></strong>), nem é  um  <strong><em>garbage collector</em></strong>.</p>
+
+<h1>Ponteiros mantém os objetos em memória</h1>
+
+<p>As novas regras que você tem que aprender para o ARC são bastante simples. Com o gerenciamento de memória manual você precisava dar um <strong><em>retain</em></strong> no objeto para mantê-lo em memória. Isso já não é necessário, tudo que você precisa é fazer um ponteiro para o objeto.<br/>
+Enquanto há uma variável que aponta para um objeto, esse objeto permanece na memória. Quando o ponteiro chega um novo valor ou deixa de existir, o objeto associado é liberado (<strong><em>release</em></strong>). Isto é válido para todas as variáveis​​:<strong><em>variáveis ​​de instância</em></strong>, <strong><em>propriedades</em></strong>, e até  mesmo,<strong><em>variáveis ​​locais</em></strong>.<br/>
+Veja o seguinte exemplo :</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'>     <span class="n">NSString</span> <span class="o">*</span> <span class="n">firstName</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">textField</span><span class="p">.</span><span class="n">text</span><span class="p">;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p> A variável <strong><em>firstName</em></strong> é um ponteiro para o objeto string &#8220;Ray&#8221;  que  guarda o valor do campo de texto.Essa variável agora também é proprietário do objeto string &#8220;Ray&#8221;.</p>
+
+<p><img class="center" src="https://raw.github.com/viniciusmo/octopress/master/source/images/blog/ios/arc-introduction/image05.png"></p>
+
+<p>Um objeto pode ter mais de um dono. Até que o usuário não mude o conteúdo do UITextField,a propriedade self.textField.text também  é um proprietário do objeto string &#8220;Ray&#8221;. Existem dois ponteiros para manter esse objeto em memória :<br/>
+<img class="center" src="https://raw.github.com/viniciusmo/octopress/master/source/images/blog/ios/arc-introduction/image00.png">
+Momentos depois, o usuário vai digitar algo novo no campo de texto e sua propriedade de texto agora aponta para um novo objeto string. Mas o objeto string original ainda tem um proprietário (a variável firstName) e, portanto, permanece na memória.<br/>
+<img class="center" src="https://raw.github.com/viniciusmo/octopress/master/source/images/blog/ios/arc-introduction/image04.png"></p>
+
+<p>Somente quando firstName recebe um novo valor também, ou sai do escopo - porque é uma variável local e o método termina, ou porque é uma variável de instância e o objeto a que  ela pertence é desalocado .O objeto string não tem mais proprietários, o seu retain count é 0 e ele é desalocado.</p>
+
+<p><img class="center" src="https://raw.github.com/viniciusmo/octopress/master/source/images/blog/ios/arc-introduction/image06.png">
+Chamamos ponteiros como firstName e textField.text  de <strong><em>strong</em></strong> porque mantém os objetos vivos (em memória). Por padrão, todas as variáveis ​​de instância e variáveis ​​locais são ponteiros <strong><em>strong</em></strong>.<br/>
+Há também um ponteiro chamado de <strong><em>weak</em></strong>. Variáveis ​​que são <strong><em>weak</em></strong> ainda pode apontar para objetos, mas eles não se tornam proprietários.<br/>
+Veja o seguinte exemplo :</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">__weak</span> <span class="n">NSString</span> <span class="o">*</span> <span class="n">weakName</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">textField</span><span class="p">.</span><span class="n">text</span><span class="p">;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><img class="center" src="https://raw.github.com/viniciusmo/octopress/master/source/images/blog/ios/arc-introduction/image02.png"></p>
+
+<p>A variável <strong><em>weakName</em></strong> aponta para o mesmo objeto  string &#8220;Rayman&#8221; que a propriedade self.textField.text aponta , mas ela não é proprietária do objeto.<br/>
+Se o campo de texto alterar o conteúdo, então o objeto string &#8220;Rayman&#8221; não tem mais donos e é desalocado.</p>
+
+<p><img class="center" src="https://raw.github.com/viniciusmo/octopress/master/source/images/blog/ios/arc-introduction/image03.png"></p>
+
+<p>Quando isso acontece, o valor de <strong><em>weakName</em></strong> torna-se automaticamente nulo.Note que este é extremamente conveniente, pois impede ponteiros <strong><em>weak</em></strong> de apontar para a memória liberada.<br/>
+Você provavelmente não vai usar muito os  ponteiros <strong><em>weaks</em></strong>. Eles são principalmente úteis quando dois objetos têm uma relação parent-child. O parent vai ter um ponteiro strong para seu child - e, portanto, é o &#8220;dono&#8221; - mas, a fim de evitar ciclos de propriedade, o child só tem um ponteiro <strong><em>weak</em></strong> de volta para seu parent.<br/>
+Um exemplo disto é o padrão delegate. Seu UIControllerView pode possuir um UITableView através de um ponteiro <strong><em>strong</em></strong>. Já o data source e o delegate  apontam para o UIControllerView mas são <strong><em>weaks</em></strong> ponteiros.</p>
+
+<p><img class="center" src="https://raw.github.com/viniciusmo/octopress/master/source/images/blog/ios/arc-introduction/image01.png"></p>
+
+<p>Veja o seguinte exemplo :</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">__weak</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">str</span> <span class="o">=</span> <span class="p">[[</span><span class="n">NSString</span> <span class="n">alloc</span><span class="p">]</span> <span class="nl">initWithFormat:</span><span class="p">...];</span>
+</span><span class='line'><span class="n">NSLog</span><span class="p">(</span><span class="s">@&quot;%@&quot;</span><span class="p">,</span> <span class="n">str</span><span class="p">);</span>  <span class="c1">// a saída será &quot;(null)&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Não existe um dono para o objeto string (porque str é fraco) e o objeto será desalocado imediatamente após ele ser criado. O Xcode vai dar o  seguinte aviso quando você faz isso ,porque provavelmente não é o que você quer fazer.</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="p">(</span><span class="err">“</span><span class="nl">Warning:</span> <span class="n">assigning</span> <span class="n">retained</span> <span class="n">object</span> <span class="n">to</span> <span class="n">weak</span> <span class="n">variable</span><span class="p">;</span> <span class="n">object</span> <span class="n">will</span> <span class="n">be</span> <span class="n">released</span> <span class="n">after</span> <span class="n">assignment</span><span class="err">”</span><span class="p">).</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Você pode usar a palavra-chave __<strong><em>strong</em></strong> para falar que uma variável é um ponteiro <strong><em>strong</em></strong>:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">__strong</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">firstName</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">textField</span><span class="p">.</span><span class="n">text</span><span class="p">;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>As variáveis ​​são <strong><em>strong</em></strong> por default e o <strong><em>__strong</em></strong> pode ser omitido. Propriedades também podem ser <strong><em>strong</em></strong> e <strong><em>weak</em></strong>. A notação para propriedades é:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">firstName</span><span class="p">;</span>
+</span><span class='line'><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">weak</span><span class="p">)</span> <span class="kt">id</span> <span class="o">&lt;</span><span class="n">MyDelegate</span><span class="o">&gt;</span> <span class="n">delegate</span><span class="p">;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>O ARC vai remover um monte de lixo do seu código. Você não tem que pensar sobre quando usar o release ou quando usar o retain, apenas sobre como os objetos se relacionam entre si.</p>
+
+<p><strong><em>Traduzido de </em></strong>: <a href="http://www.raywenderlich.com/5677/beginning-arc-in-ios-5-part-1">http://www.raywenderlich.com/5677/beginning-arc-in-ios-5-part-1</a>.</p>
+]]></content>
+  </entry>
+  
+</feed>
