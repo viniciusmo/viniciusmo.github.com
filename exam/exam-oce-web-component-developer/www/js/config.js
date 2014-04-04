@@ -1,1 +1,1 @@
-URL_SOURCE = "https://raw.githubusercontent.com/viniciusmo/exam-oce-web-component-developer/master/www/source/questions.xml"
+URL_SOURCE = "http://viniciusmo.github.io/exam/exam-oce-web-component-developer/www/source/questions.xml"
