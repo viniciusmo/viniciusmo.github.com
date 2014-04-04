@@ -1,0 +1,1004 @@
+
+
+    question. Which of the following are interfaces? (3 correct answers)
+        111 Servlet999
+        111 HttpServlet999
+        111 ServletRequest999
+        111 HttpServletRequest999
+
+     
+    question. Which of the following are abstract classes? (2 correct answers)
+        111 Servlet999
+        111 HttpServlet999
+        111 GenericServlet999
+        111 HttpServletRequest999
+
+     
+    question. Which of the following statements is true? (1 correct answer)
+        111 HttpServlet extends GenericServlet that implements Servlet.999
+        111 HttpServlet extends GenericServlet that extends Servlet.999
+        111 HttpServlet implements GenericServlet that extends Servlet.999
+
+     
+    question. Which of the following statements are true? (2 correct answers)
+        111 HttpServlet IS-A GenericServlet.999
+        111 HttpServlet IS-A Servlet.999
+        111 HttpServlet IS-A ServletRequest.999
+
+     
+    question. Here are some actions taken by the Container when a client request arrives. Place them in the correct order starting from what happens first.
+        111 Calls the void service(HttpServletRequest, HttpServletResponse) method of the servlet.999
+        111 Creates a pair of request and response objects.999
+        111 Finds the correct servlet based on the URL.999
+        111 Creates a new thread or allocates an existing thread to the client’s request.999
+
+     
+    question. How can a servlet access it’s associated ServletConfig object? (1 correct answer)
+        111 getServletConfig();999
+        111 request.getServletConfig();999
+        111 response.getServletConfig();999
+        111 getServletContext().getServletConfig();999
+        111 request.getSession().getServletConfig();999
+
+     
+    question. How can a servlet access the application’s ServletContext object? (3 correct answers)
+        111 getServletContext();999
+        111 request.getServletContext();999
+        111 response.getServletContext();999
+        111 getServletConfig().getServletContext();999
+        111 request.getSession().getServletContext();999
+
+     
+    question. How is a request dispatchedto hello.jsp from a doGet() method? (1 correct answer)
+        111 request.getRequestDispatcher().forward(“hello.jsp”);999
+        111 request.getRequestDispatcher().dispatch(“hello.jsp”);999
+        111 request.getRequestDispatcher(“hello.jsp”).forward(request, response);999
+        111 request.getRequestDispatcher(“hello.jsp”).dispatch(request, response);999
+
+     
+    question. How is a request redirectedto hello.jsp from a doGet() method? (1 correct answer)
+        111 request.redirect(“hello.jsp”);999
+        111 response.redirect(“hello.jsp”);999
+        111 request.sendRedirect(“hello.jsp”);999
+        111 response.sendRedirect(“hello.jsp”);999
+
+     
+    question. Dispatching a request occurs on the server-side and redirection on the client-side. (1 correct answer)
+        111 true999
+        111 false999
+
+     
+    question. Both context init parameters and servlet init parameters are declared in the web.xml. (1 correct answer)
+        111 true999
+        111 false999
+
+     
+    question. The value of a servlet init parameter can be changed programmatically, but the value of a context init parameter cannot. (1 correct answer)
+        111 true999
+        111 false999
+
+     
+    question. A context init parameter cannot have the same name with a servlet init parameter. (1 correct answer)
+        111 true999
+        111 false999
+
+     
+    question. A servlet init parameter cannot have the same name with the servlet it refers to. (1 correct answer)
+        111 true999
+        111 false999
+
+     
+    question. Where is a servlet init parameter stored after the servlet is initialized and available for use? (1 correct answer)
+        111 In the ServletConfig object of the servlet.999
+        111 In the ServletContext object of the web application.999
+
+     
+    question. Where is a context init parameter stored after the servlet is initialized and available for use? (1 correct answer)
+        111 In the ServletConfig object of the servlet.999
+        111 In the ServletContext object of the web application.999
+
+     
+    question. Assume the servlet HelloServlet that belongs to package com. The file HelloServlet.class is placed in the directory WEB-INF/classes/com. Is this a correct declaration of an init parameter for this servlet? (1 correct answer)
+    
+    <servlet>
+        <servlet-name>Hello Servlet</servlet-name>
+        <servlet-class>classes.com.HelloServlet</servlet-class>
+        <init-param>
+            <param-name>this</param-name>
+            <param-value>Hello!</param-value>
+        </init-param>
+    </servlet>
+
+        111 Yes.999
+        111 No, because servlet-name contains a space.999
+        111 No, because servlet-class has a wrong value.999
+        111 No, because param-name is a reserved Java keyword.999
+        111 No, because param-value contains an explanation mark (!).999
+        111 No, because init-param should be inside a servlet-mapping element.999
+
+     
+    question. What happens when we compile and deploy this servlet? (1 correct answer)
+    
+    public class Test extends HttpServlet {
+     
+    }
+
+        111 Compilation fails because there is no init() method defined.999
+        111 An exception is thrown at runtime because service() has no method to call!999
+        111 Deployment succeeds but we get a message “GET is not supported by this URL” if we access it.999
+
+     
+    question. What happens when we compile and deploy this servlet? (1 correct answer)
+    
+    class Test extends HttpServlet {
+     
+    }
+
+        111 Compilation fails because there is no init() method defined.999
+        111 An exception is thrown at runtime because the servlet has no modifier.999
+        111 An exception is thrown at runtime because service() has no method to call!999
+        111 Deployment succeeds but we get a message “GET is not supported by this URL” if we try to access its URL.999
+
+     
+    question. What happens when this servlet is compiled, deployed and called? (1 correct answer)
+    
+    public class Test extends HttpServlet {
+        public void doGet(HttpServletRequest request,
+                          HttpServletResponse response)
+                          throws ServletException, IOException {
+            // TODO
+        }
+    }
+
+        111 Compilation fails because doGet() is empty.999
+        111 An exception is thrown at runtime because doGet() is empty.999
+        111 Deployment succeeds but nothing is displayed to the user’s browser.999
+
+     
+    question. What happens when this servlet is compiled, deployed and called? (1 correct answer)
+    
+    public class Test extends HttpServlet {
+    public String doGet(HttpServletRequest request,
+                        HttpServletResponse response)
+                        throws ServletException, IOException {
+            // TODO
+        return null;
+    }
+    }
+
+        111 Compilation fails because doGet() must be void.999
+        111 Deployment succeeds but nothing is displayed to the user’s browser.999
+        111 A NullPointerException is thrown at runtime because null is returned.999
+        111 A ServletException is thrown at runtime because service() cannot find the proper doGet() method.999
+
+     
+    question. What happens when this servlet is compiled and deployed? (1 correct answer)
+    
+    public class Test extends HttpServlet {
+    protected void doGet(HttpServletRequest request,
+                         HttpServletResponse response)
+                         throws IOException {
+        response.setContentType("text/html; charset=UTF-8");
+        PrintWriter out = response.getWriter();
+        out.println("<html><body>");
+        out.println("<p>Hello!!</p>");
+        out.println("</body></html>");
+        out.close();
+    }
+    }
+
+        111 Compilation fails because doGet() is protected.999
+        111 Compilation fails because doGet() does not declare a ServletException.999
+        111 Deployment succeeds and clients are served just fine.999
+
+     
+    question. What happens when this servlet is deployed and called? (1 correct answer)
+    
+    public class Test extends HttpServlet {
+    public void doGet(final HttpServletRequest request,
+                      final HttpServletResponse response)
+                      throws IOException, ServletException {
+        response.setContentType("text/html; charset=UTF-8");
+        final PrintWriter out = response.getWriter();
+        out.println("<html><body>");
+        out.println("<p>Hello!!</p>");
+        out.println("</body></html>");
+        out.close();
+    }
+    }
+
+        111 An exception is thrown at runtime because the Container cannot modify the request and response objects.999
+        111 An exception is thrown at runtime when the out object is closed.999
+        111 Deployment succeeds and clients are served just fine.999
+
+     
+    question. What happens when this servlet is deployed and called? (1 correct answer)
+    
+    public class Test extends HttpServlet {
+    public void doGet(HttpServletRequest request,
+                      HttpServletResponse response)
+                      throws ServletException, IOException {
+        response.setContentType("text/html; charset=UTF-8");
+        PrintWriter out = response.getWriter();
+        // out.println("<html><body>");
+        out.println("<p>Hello!!</p>");
+        // out.println("</body></html>");
+        out.close();
+    }
+    }
+
+        111 A ServletException is thrown at runtime because the <html> and <body> tags are missing.999
+        111 Deployment succeeds and Hello!! is presented on the browser.999
+        111 The server responds with a HTTP status code 404: “Not Found”.999
+
+     
+    question. What happens when this servlet is compiled, deployed and called? (1 correct answer)
+    
+    public class Test extends HttpServlet {
+    public void doGet(HttpServletRequest request,
+                      HttpServletResponse response)
+                      throws ServletException, IOException {
+        // response.setContentType("text/html; charset=UTF-8");
+        PrintWriter out = response.getWriter();
+        out.println("<html><body>Hello!!</body></html>");
+        out.close();
+    }
+    }
+
+        111 Deployment succeeds and Hello!! is presented on the browser.999
+        111 Compilation fails because the content type should be specified before any output is written.999
+        111 An exception is thrown at runtime because the response has not an explicitly set content type.999
+
+     
+    question. What happens when this servlet is compiled, deployed and called? (1 correct answer)
+    
+    public class Test extends HttpServlet {
+    public void doGet(HttpServletRequest request,
+                      HttpServletResponse response)
+                      throws ServletException, IOException {
+        response.setContentType("text/html; charset=UTF-8");
+        PrintWriter out = response.getWriter();
+        out.println("<html><body>Hello!!</body></html>");
+        // out.close();
+    }
+    }
+
+        111 An exception is thrown at runtime because out is not closed.999
+        111 Deployment succeeds and Hello!! is presented on the browser.999
+        111 Deployment succeeds but no output is presented on the browser.999
+
+     
+    question. Does this servlet compile successfully? (1 correct answer)
+    
+    1 public class Test extends HttpServlet {
+    2 public void doGet(HttpServletRequest request,
+    3                   HttpServletResponse response)
+    4                   throws Exception {
+    5     response.setContentType("text/html; charset=UTF-8");
+    6     response.getWriter().println("Hello!!").close();
+    7 }
+    8 }
+
+        111 Compilation succeeds.999
+        111 There is a compilation error at line 4.999
+        111 There is a compilation error at line 6.999
+        111 Both lines 4 and 6 contain a compilation error.999
+
+     
+    question. Does this servlet compile successfully? (1 correct answer)
+    
+    public class Test extends HttpServlet {
+    public void init(ServletConfig config) {
+        super.init(config);
+    }
+    public void doGet(HttpServletRequest request,
+                      HttpServletResponse response)
+                      throws ServletException, IOException {
+        response.setContentType("text/html; charset=UTF-8");
+        PrintWriter out = response.getWriter();
+        out.println("<html><body>Hello!</body></html>");
+        out.close();
+    }
+    }
+
+        111 Compilation succeeds.999
+        111 Compilation fails because there is no init(ServletConfig) in GenericServlet.999
+        111 Compilation fails because init(ServletConfig) of GenericServlet throws ServletException.999
+        111 Compilation fails because init(ServletConfig) of GenericServlet throws IOException and ServletException.999
+
+     
+    question. Does this servlet compile successfully? (1 correct answer)
+    
+    public class Test extends HttpServlet {
+    public void doGet(HttpServletRequest req,
+                      HttpServletResponse response)
+                      throws IOException {
+        req.getRequestDispatcher("index.html").
+            forward(req, response);
+    }
+    }
+
+        111 Compilation succeeds.999
+        111 Compilation fails because index.html is not a jsp.999
+        111 Compilation fails because doGet should declare ServletException as well.999
+        111 Compilation fails because the request object’s reference must be request and not req.999
+
+     
+    question. Does this servlet compile successfully? (1 correct answer)
+    
+    public class Test extends HttpServlet {
+    public void doGet(HttpServletRequest req,
+                      HttpServletResponse response)
+                      throws IOException {
+        response.sendRedirect("index.html");
+    }
+    }
+
+        111 Compilation succeeds.999
+        111 Compilation fails because index.html is not a jsp.999
+        111 Compilation fails because doGet should declare ServletException as well.999
+        111 Compilation fails because the request object’s reference must be request and not req.999
+
+     
+    question. Which of the following statements shoud be inserted for a successful compilation? (1 correct answer)
+    
+    public class Test extends HttpServlet {
+        protected void doGet(HttpServletRequest request,
+        HttpServletResponse response) {
+            // insert statement
+        }
+    }
+
+        111 request.getRequestDispatcher(“hello.jsp”).forward(request, response);999
+        111 request.getRequestDispatcher(“hello.jsp”).forward(response, request);999
+        111 response.getRequestDispatcher(“hello.jsp”).forward(request, response);999
+        111 response.getRequestDispatcher(“hello.jsp”).forward(response, request);999
+        111 None of the above.999
+
+     
+    question. What happens when the servlet with the following method is deployed and called? (1 correct answer)
+    
+    1 public void doGet(HttpServletRequest request,
+    2                   HttpServletResponse response)
+    3                   throws ServletException, IOException {
+    4     response.getWriter().print('a');
+    5     request.getRequestDispatcher("hello.jsp").forward(request, response);
+    6     response.getWriter().print('a');
+    7     response.getWriter().close();
+    8 }
+
+        111 An IllegalStateException is thrown at runtime because response.getWriter() is called more than once.999
+        111 An IllegalStateException is thrown at runtime at line 5 because the request is dispatched after writing data.999
+        111 An IllegalStateException is thrown at runtime at line 6 because data is written after the request has been dispatched.999
+        111 An IllegalStateException is thrown at runtime at line 7 because the writer is closed after the request has been dispatched.999
+        111 The browser displays the content of hello.jsp without any exception at runtime.999
+        111 The browser displays aa without any exception at runtime.999
+        111 The browser displays a without any exception at runtime.999
+
+     
+    question. What happens when the servlet with the following method is deployed and called? (1 correct answer)
+    
+    public void doGet(HttpServletRequest request,
+                      HttpServletResponse response)
+                      throws ServletException, IOException {
+        getServletContext().getRequestDispatcher("hello.jsp")
+                           .forward(request, response);
+    }
+
+        111 An exception is thrown at runtime because the provided URL does not start with “/”.999
+        111 Compilation fails because the provided URL does not start with “/”.999
+        111 The browser displays the content of hello.jsp.999
+        111 The browser displays an empty page.999
+
+     
+    question. What happens when the servlet with the following method is deployed and called? (1 correct answer)
+    
+    public void doGet(HttpServletRequest request,
+                      HttpServletResponse response)
+                      throws ServletException, IOException {
+        getServletContext().getRequestDispatcher("/hello.jsp");
+    }
+
+        111 An exception is thrown at runtime because the provided URL is absolute.999
+        111 Compilation fails because the provided URL is absolute.999
+        111 The browser displays the content of hello.jsp.999
+        111 The browser displays an empty page.999
+
+     
+    question. A servlet init parameter with name “ice” and value “tea” is properly declared. What is the result of this code? (1 correct answer)
+    
+    public void doGet(HttpServletRequest request,
+                      HttpServletResponse response)
+                      throws ServletException, IOException {
+        response.getWriter().println(
+            getServletConfig().getInitParameter("tea")
+        );
+    }
+
+        111 A NullPointerException occurs at runtime.999
+        111 The browser displays an empty page.999
+        111 The browser displays “null”.999
+        111 The browser displays “ice”.999
+        111 The browser displays “tea”.999
+        111 Compilation fails.999
+
+     
+    question. A servlet init parameter with name “ice” and value “tea” is properly declared. What is the result of this code? (1 correct answer)
+    
+    public void doGet(HttpServletRequest request,
+                      HttpServletResponse response)
+                      throws ServletException, IOException {
+        response.getWriter().println(getInitParameter("ice"));
+    }
+
+        111 A NullPointerException occurs at runtime.999
+        111 The browser displays an empty page.999
+        111 The browser displays “null”.999
+        111 The browser displays “ice”.999
+        111 The browser displays “tea”.999
+        111 Compilation fails.999
+
+     
+    question. A context init parameter with name “ice” and value “tea” is properly declared. What is the result of this code? (1 correct answer)
+    
+    public void doGet(HttpServletRequest request,
+                      HttpServletResponse response)
+                      throws ServletException, IOException {
+        response.getWriter().println(
+            getServletContext().getInitParameter("tea")
+        );
+    }
+
+        111 A NullPointerException occurs at runtime.999
+        111 The browser displays an empty page.999
+        111 The browser displays “null”.999
+        111 The browser displays “ice”.999
+        111 The browser displays “tea”.999
+        111 Compilation fails.999
+
+     
+    question. A context init parameter with name “ice” and value “tea” is properly declared. What is the result of this code? (1 correct answer)
+    
+    public void doGet(HttpServletRequest request,
+                      HttpServletResponse response)
+                      throws ServletException, IOException {
+        response.getWriter().println(getContextParameter("ice"));
+    }
+
+        111 A NullPointerException occurs at runtime.999
+        111 The browser displays an empty page.999
+        111 The browser displays “null”.999
+        111 The browser displays “ice”.999
+        111 The browser displays “tea”.999
+        111 Compilation fails.999
+
+     
+    question. The Container creates a single instance for every servlet. The client requests are served with various threads. (1 correct answer)
+        111 true999
+        111 false999
+
+     
+    question. Assume that the container is running on port 9999 of localhost, our application is called test1 and that the following servlet is declared with url pattern /processor. What is the output? (1 correct answer)
+    
+    public class Processor extends HttpServlet {
+    public void doGet(HttpServletRequest request,
+                      HttpServletResponse response)
+                      throws ServletException, IOException {
+        response.getWriter().println(request.getContextPath());
+    }
+    }
+
+        111 http://localhost:9999/test1/processor999
+        111 /test1/processor999
+        111 /processor999
+        111 /test1999
+
+     
+    question. Assume that the container is running on port 9999 of localhost, our application is called test1 and that the following servlet is declared with url pattern /processor. What is the output? (1 correct answer)
+    
+    public class Processor extends HttpServlet {
+    public void doGet(HttpServletRequest request,
+                      HttpServletResponse response)
+                      throws ServletException, IOException {
+        response.getWriter().println(request.getServletPath());
+    }
+    }
+
+        111 http://localhost:9999/test1/processor999
+        111 /test1/processor999
+        111 /processor999
+        111 /test1999
+
+     
+    question. Assume that the container is running on port 9999 of localhost, our application is called test1 and that the following servlet is declared with url pattern /processor. What is the output? (1 correct answer)
+    
+    public class Processor extends HttpServlet {
+    public void doGet(HttpServletRequest request,
+                      HttpServletResponse response)
+                      throws ServletException, IOException {
+        response.getWriter().println(request.getRequestURL());
+    }
+    }
+
+        111 http://localhost:9999/test1/processor999
+        111 /test1/processor999
+        111 /processor999
+        111 /test1999
+
+     
+    question. Assume that the container is running on port 9999 of localhost, our application is called test1 and that the following servlet is declared with url pattern /processor. What is the output? (1 correct answer)
+    
+    public class Processor extends HttpServlet {
+    public void doGet(HttpServletRequest request,
+                      HttpServletResponse response)
+                      throws ServletException, IOException {
+        response.getWriter().println(request.getRequestURI());
+    }
+    }
+
+        111 http://localhost:9999/test1/processor999
+        111 /test1/processor999
+        111 /processor999
+        111 /test1999
+
+     
+    question. Consider this form.
+    
+    <form method="post" action="processor">
+       <input type="submit" value="OK"/>
+    </form>
+
+    And this servlet.
+    
+    public class Processor extends HttpServlet {
+    public void doGet(HttpServletRequest request,
+                      HttpServletResponse response)
+                      throws ServletException, IOException {
+        response.getWriter().println(request.getMethod());
+    }
+    }
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        111 GET999
+        111 POST999
+        111 A HTTP 405 message informs that GET is not supported.999
+        111 A HTTP 405 message informs that POST is not supported.999
+
+     
+    question. Consider this form.
+    
+    <form method="post" action="processor">
+       <input type="submit" value="OK"/>
+    </form>
+
+    And this servlet.
+    
+    public class Processor extends HttpServlet {
+    public void doGet(HttpServletRequest request,
+                      HttpServletResponse response)
+                      throws ServletException, IOException {
+        response.getWriter().println(request.getMethod());
+    }
+    public void doPost(HttpServletResponse response,
+                      HttpServletRequest request)
+                      throws ServletException, IOException {
+        doGet(request, response);
+    }
+    }
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        111 GET999
+        111 POST999
+        111 A HTTP 405 message informs that GET is not supported.999
+        111 A HTTP 405 message informs that POST is not supported.999
+
+     
+    question. Consider this form.
+    
+    <form name="form" method="post" action="processor">
+       <input name="submit" type="submit" value="OK"/>
+    </form>
+
+    And this servlet.
+    
+    public class Processor extends HttpServlet {
+    public void doPost(HttpServletRequest request,
+                       HttpServletResponse response)
+                       throws ServletException, IOException {
+        response.getWriter().format("%s %s",
+        request.getParameter("form"),
+        request.getParameter("name"));
+    }
+    }
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        111 form OK999
+        111 null OK999
+        111 form null999
+        111 null null999
+
+     
+    question. Consider this form.
+    
+    <form name="form" method="post" action="processor">
+       <input name="submit" type="submit" value="OK"/>
+    </form>
+
+    And this servlet.
+    
+    public class Processor extends HttpServlet {
+    public void doPost(HttpServletRequest request,
+                       HttpServletResponse response)
+                       throws ServletException, IOException {
+        response.getWriter().format("%s %s",
+        request.getParameter("form"),
+        request.getParameter("submit"));
+    }
+    }
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        111 form OK999
+        111 null OK999
+        111 form null999
+        111 null null999
+
+     
+    question. Consider this form.
+    
+    <form name="form" method="post" action="processor">
+       <input type="text" name="name" value="OK"/>
+       <input name="submit" type="submit" value="OK"/>
+    </form>
+
+    And this servlet.
+    
+    public class Processor extends HttpServlet {
+    public void doPost(HttpServletRequest request,
+                       HttpServletResponse response)
+                       throws ServletException, IOException {
+        response.getWriter().format("%s %s",
+        request.getParameter("name"),
+        request.getParameter("OK"));
+    }
+    }
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        111 OK OK999
+        111 null OK999
+        111 OK null999
+        111 null null999
+
+     
+    question. Consider doGet() of a valid servlet with url pattern /source,
+    
+    request.getRequestDispatcher("target")
+           .forward(request, response);
+
+    and doGet() of another valid servlet with url pattern /target.
+    
+    response.getWriter().println(request.getRequestURL());
+
+    What is the output when invoking http://localhost:9999/exam/source?user=nikos&pass=12345? (1 correct answer)
+
+        111 http://localhost:9999/exam/source999
+        111 http://localhost:9999/exam/target999
+        111 null999
+
+     
+    question. Consider doGet() of a valid servlet with url pattern /source,
+    
+    request.getRequestDispatcher("target")
+           .forward(request, response);
+
+    and doGet() of another valid servlet with url pattern /target.
+    
+    response.getWriter().println(request.getQueryString());
+
+    What is the output when invoking http://localhost:9999/exam/source?user=nikos&pass=12345? (1 correct answer)
+
+        111 user=nikos&pass=12345999
+        111 null999
+
+     
+    question. Consider doGet() of a valid servlet with url pattern /source,
+    
+    request.getRequestDispatcher("target")
+           .forward(request, response);
+
+    and doGet() of another valid servlet with url pattern /target.
+    
+    response.getWriter().println(request.getAttribute("javax.servlet.forward.query_string"));
+
+    What is the output when invoking http://localhost:9999/exam/source?user=nikos&pass=12345? (1 correct answer)
+
+        111 user=nikos&pass=12345999
+        111 null999
+
+     
+    question. Consider doGet() of a valid servlet with url pattern /source,
+    
+    request.getRequestDispatcher("target")
+           .forward(request, response);
+
+    and doGet() of another valid servlet with url pattern /target.
+    
+    response.getWriter().println(request.getAttribute("javax.servlet.forward.servlet_path"));
+
+    What is the output when invoking http://localhost:9999/exam/source?user=nikos&pass=12345? (1 correct answer)
+
+        111 /source999
+        111 /target999
+        111 null999
+
+     
+    question. Consider doGet() of a valid servlet with url pattern /source,
+    
+    request.getRequestDispatcher("target")
+           .forward(request, response);
+
+    and doGet() of another valid servlet with url pattern /target.
+    
+    response.getWriter().println(request.getServletPath());
+
+    What is the output when invoking http://localhost:9999/exam/source?user=nikos&pass=12345? (1 correct answer)
+
+        111 /source999
+        111 /target999
+        111 null999
+
+     
+    question. Consider doGet() of a valid servlet with url pattern /source,
+    
+    request.getRequestDispatcher("target")
+           .forward(request, response);
+
+    and doGet() of another valid servlet with url pattern /target.
+    
+    response.getWriter().println(request.getParameter("pass"));
+
+    What is the output when invoking http://localhost:9999/exam/source?user=nikos&pass=12345? (1 correct answer)
+
+        111 12345999
+        111 null999
+
+     
+    question. Consider doGet() of a valid servlet with url pattern /source,
+    
+    response.sendRedirect("target");
+
+    and doGet() of another valid servlet with url pattern /target.
+    
+    response.getWriter().println(request.getParameter("pass"));
+
+    What is the output when invoking http://localhost:9999/exam/source?user=nikos&pass=12345? (1 correct answer)
+
+        111 12345999
+        111 null999
+
+     
+    question. Consider doGet() of a valid servlet with url pattern /source,
+    
+    response.sendRedirect("target");
+
+    and doGet() of another valid servlet with url pattern /target.
+    
+    response.getWriter().println(request.getServletPath());
+
+    What is the output when invoking http://localhost:9999/exam/source?user=nikos&pass=12345? (1 correct answer)
+
+        111 /source999
+        111 /target999
+        111 null999
+
+     
+    question. Consider doGet() of a valid servlet with url pattern /source,
+    
+    response.sendRedirect("target");
+
+    and doGet() of another valid servlet with url pattern /target.
+    
+    response.getWriter().println(
+        request.getAttribute("javax.servlet.forward.query_string")
+    );
+
+    What is the output when invoking http://localhost:9999/exam/source?user=nikos&pass=12345? (1 correct answer)
+
+        111 user=nikos&pass=12345999
+        111 null999
+
+     
+    question. Consider doGet() of a valid servlet with url pattern /source,
+    
+    response.sendRedirect("target");
+
+    and doGet() of another valid servlet with url pattern /target.
+    
+    response.getWriter().println(
+        request.getQueryString()
+    );
+
+    What is the output when invoking http://localhost:9999/exam/source?user=nikos&pass=12345? (1 correct answer)
+
+        111 user=nikos&pass=12345999
+        111 null999
+
+     
+    question. There is a top-level folder help in the war file with index.htmlinside. What is the output of this code? (1 correct answer)
+    
+    request.getRequestDispatcher("help/index.html")
+           .forward(request, response);
+
+        111 The content of index.html999
+        111 HTTP Status 404999
+
+     
+    question. There is a top-level folder help in the war file with index.htmlinside. What is the output of this code? (1 correct answer)
+    
+    request.getRequestDispatcher("/help/index.html")
+           .forward(request, response);
+
+        111 The content of index.html999
+        111 HTTP Status 404999
+
+     
+    question. What is the output of this code? (1 correct answer)
+    
+    request.getRequestDispatcher("http://fcom.gr")
+           .forward(request, response);
+
+        111 The content of fcom.gr999
+        111 HTTP Status 404999
+
+     
+    question. There is a top-level folder help in the war file with index.htmlinside. What is the output of this code? (1 correct answer)
+    
+    response.sendRedirect("help/index.html");
+
+        111 The content of index.html999
+        111 HTTP Status 404999
+
+     
+    question. There is a top-level folder help in the war file with index.htmlinside. What is the output of this code? (1 correct answer)
+    
+    response.sendRedirect("/help/index.html");
+
+        111 The content of index.html999
+        111 HTTP Status 404999
+
+     
+    question. What is the output of this code? (1 correct answer)
+    
+    response.sendRedirect("http://fcom.gr");
+
+        111 The content of fcom.gr999
+        111 HTTP Status 404999
+
+     
+    question. What happens when this servlet is deployed and a user hits repeatedly the refresh button of his browser? (1 correct answer)
+    
+    public class Test extends HttpServlet {
+    private Integer number = 0;
+    public void doGet(HttpServletRequest request,
+                      HttpServletResponse response)
+                      throws ServletException, IOException {
+        number = number + 1;
+        response.getWriter().println(number);
+    }
+    }
+
+        111 The same value is always displayed.999
+        111 The displayed value increases with every refresh.999
+
+     
+    question. What happens when this servlet is deployed and a user hits repeatedly the refresh button of his browser? (1 correct answer)
+    
+    public class Test extends HttpServlet {
+    private Integer number = new Random().nextInt();
+    public void doGet(HttpServletRequest request,
+                      HttpServletResponse response)
+                      throws ServletException, IOException {
+        response.getWriter().println(number);
+    }
+    }
+
+        111 The same value is always displayed.999
+        111 The displayed value increases with every refresh.999
+
+     
+    question. The following types are ALL interfaces and are used as listeners in a web application. (1 correct answer)
+    → ServletContextListener
+    → ServletContextAttributeListener
+    → ServletRequestListener
+    → ServletRequestAttributeListener
+    → HttpSessionListener
+    → HttpSessionBindingListener
+    → HttpSessionAttributeListener
+    → HttpSessionActivationListener
+
+        111 true999
+        111 false999
+
+     
+    question. Consider the interface ServletContextListener. What is the signature of the method that is invoked when the servlet context is about to be shut down? (1 correct answer)
+        111 void contextDeleted(ServletContextEvent)999
+        111 void contextDestroyed(ServletContextEvent)999
+        111 void servletContextDeleted(ServletContextEvent)999
+        111 void servletContextDestroyed(ServletContextEvent)999
+
+     
+    question. There is a properly declared HttpSessionAttributeListener. How many times its attributeRemovedmethod is invoked when the following servlet is accessed once? (1 correct answer)
+    
+    public class Test extends HttpServlet {
+    public void doGet(HttpServletRequest request,
+                      HttpServletResponse response)
+                      throws ServletException, IOException {
+        request.getSession().setAttribute("planet", "earth");
+        request.getSession().removeAttribute("planet");
+        request.getSession().removeAttribute("planet");
+    }
+    }
+
+        111 0999
+        111 1999
+        111 2999
+
+     
+    question. There is a properly declared HttpSessionAttributeListener. How many times its attributeRemovedmethod is invoked when the following servlet is accessed once? (1 correct answer)
+    
+    public class Test extends HttpServlet {
+    public void doGet(HttpServletRequest request,
+                      HttpServletResponse response)
+                      throws ServletException, IOException {
+        request.getSession().setAttribute("planet", "earth");
+        request.getSession().invalidate();
+        request.getSession().removeAttribute("planet");
+        request.getSession().setAttribute("planet", "earth");
+    }
+    }
+
+        111 0999
+        111 1999
+        111 2999
+
+     
+    question. There is a properly declared HttpSessionAttributeListener. How many times its attributeReplacedmethod is invoked when the following servlet is accessed once? (1 correct answer)
+    
+    public class Test extends HttpServlet {
+    public void doGet(HttpServletRequest request,
+                      HttpServletResponse response)
+                      throws ServletException, IOException {
+        request.getSession().setAttribute("planet", "earth");
+        request.getSession().removeAttribute("earth");
+        request.getSession().setAttribute("planet", "earth");
+    }
+    }
+
+        111 0999
+        111 1999
+        111 2999
+
+     
+    question. There is a properly declared HttpSessionAttributeListener. How many times its attributeReplacedmethod is invoked when the following servlet is accessed once? (1 correct answer)
+    
+    public class Test extends HttpServlet {
+    public void doGet(HttpServletRequest request,
+                      HttpServletResponse response)
+                      throws ServletException, IOException {
+        request.getSession().setAttribute("planet", "earth");
+        request.getSession().removeAttribute("planet");
+        request.getSession().setAttribute("planet", "venus");
+        request.setAttribute("planet", "earth");
+        request.setAttribute("planet", "venus");
+    }
+    }
+
+        111 0999
+        111 1999
+        111 2999
+
+     

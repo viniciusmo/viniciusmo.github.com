@@ -1,0 +1,24 @@
+<html>
+ <head>
+     <script type="text/javascript" src="js/config.js" ></script>
+     <script type="text/javascript" src="js/jquery.min.js" ></script>
+     <script type="text/javascript" src="js/question.js" ></script>
+ </head>
+ <body>
+     <span style="margin:0 0 0 10px"> <span id="total">0</span>%</span>
+     <span style="margin:0 0 0 50px">Corretas : <span id="corrects">0</span></span>
+     <span style="margin:0 0 0 10px">Incorretas :<span id="incorrects">0</span></span>
+     <div id="content" style="background-color:#EEEEEE;overflow: scroll; width:100%;white-space: nowrap;overflow:scroll;zoom:1; ">
+     	    <h1>Question</h1>
+		    <pre id="question" >
+		    </pre>
+     </div>
+      <div id="alternatives">
+
+      </div>
+      <br/>
+      <input  value="OK" id="btnOk" onclick="controllerQuestion.accountingScore()" type="button"/>
+      <input  value="Next Question" id="btnNextQuestion" onclick="controllerQuestion.nextQuestion()" type="button"/>
+ </body>
+ 
+</html>

@@ -1,0 +1,942 @@
+<question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ In EL you may use the . operator to access maps and beans.
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ In EL you may use the [] operator to access maps, beans, lists and arrays.
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ pageScope]]></name><id>a</id></alternative><alternative><name><![CDATA[ requestScope]]></name><id>b</id></alternative><alternative><name><![CDATA[ sessionScope]]></name><id>c</id></alternative><alternative><name><![CDATA[ contextScope]]></name><id>d</id></alternative><alternative><name><![CDATA[ applicationScope]]></name><id>e</id></alternative><corrects>a,b,c,e</corrects></alternatives><question_name><![CDATA[ Which of the following are EL implicit objects? (4 correct answers)
+        
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ param]]></name><id>a</id></alternative><alternative><name><![CDATA[ parameter]]></name><id>b</id></alternative><alternative><name><![CDATA[ params]]></name><id>c</id></alternative><alternative><name><![CDATA[ parameters]]></name><id>d</id></alternative><alternative><name><![CDATA[ paramValues]]></name><id>e</id></alternative><alternative><name><![CDATA[ parameterValues]]></name><id>f</id></alternative><corrects>a,e</corrects></alternatives><question_name><![CDATA[ Which of the following are EL implicit objects? (2 correct answers)
+        
+        
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ initParam]]></name><id>a</id></alternative><alternative><name><![CDATA[ servletParam]]></name><id>b</id></alternative><alternative><name><![CDATA[ contextParam]]></name><id>c</id></alternative><alternative><name><![CDATA[ applicationParam]]></name><id>d</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Which of the following are EL implicit objects? (1 correct answer)
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ cookie]]></name><id>a</id></alternative><alternative><name><![CDATA[ pageContext]]></name><id>b</id></alternative><alternative><name><![CDATA[ headerValues]]></name><id>c</id></alternative><alternative><name><![CDATA[ applicationScope]]></name><id>d</id></alternative><corrects>a,c,d</corrects></alternatives><question_name><![CDATA[ Which of the following EL implicit objects are maps? (3 correct answers)
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Diogenes”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “”]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of the following code? (1 correct answer)
+
+    <% session.setAttribute("name", "Diogenes"); %>
+    ${session.name}
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Diogenes”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “”]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of the following code? (1 correct answer)
+
+    <% session.setAttribute("name", "Diogenes"); %>
+    ${sessionScope.name}
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Diogenes”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “”]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of the following code? (1 correct answer)
+
+    <% session.setAttribute("name", "Diogenes"); %>
+    ${sessionScope[name]}
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hello !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hello Bond !!”]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider this code.
+
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="yourname" value="Bond"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+    <%-- output.jsp --%>
+    <html>
+      <body>
+        Hello ${yourname} !!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hello !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hello Bond !!”]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider this code.
+
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="yourname" value="Bond"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+    <%-- output.jsp --%>
+    <html>
+      <body>
+        Hello ${request.yourname} !!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hello !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hello Bond !!”]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider this code.
+
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="yourname" value="Bond"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+    <%-- output.jsp --%>
+    <html>
+      <body>
+        Hello ${requestMap.yourname} !!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hello !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hello Bond !!”]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider this code.
+
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="yourname" value="Bond"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+    <%-- output.jsp --%>
+    <html>
+      <body>
+        Hello ${requestScope.yourname} !!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hello !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hello Bond !!”]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider this code.
+
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="yourname" value="Bond"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+    <%-- output.jsp --%>
+    <html>
+      <body>
+        Hello ${pageScope.yourname} !!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hello !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hello Bond !!”]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider this code.
+
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="yourname" value="Bond"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+    <%-- output.jsp --%>
+    <html>
+      <body>
+        Hello ${param.yourname} !!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hello !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hello Bond !!”]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider this code.
+
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="yourname" value="Bond"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+    <%-- output.jsp --%>
+    <html>
+      <body>
+        Hello ${param[yourname]} !!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hello !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hello Bond !!”]]></name><id>b</id></alternative><alternative><name><![CDATA[ None of the above.]]></name><id>c</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ Consider this code.
+
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="yourname" value="Bond"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+    <%-- output.jsp --%>
+    <html>
+      <body>
+        Hello ${paramValues.yourname} !!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hello !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hello Bond !!”]]></name><id>b</id></alternative><alternative><name><![CDATA[ None of the above.]]></name><id>c</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider this code.
+
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="yourname" value="Bond"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+    <%-- output.jsp --%>
+    <html>
+      <body>
+        Hello ${paramValues[yourname]} !!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hello !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hello Bond !!”]]></name><id>b</id></alternative><alternative><name><![CDATA[ None of the above.]]></name><id>c</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ Consider this code.
+
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="yourname" value="Bond"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+    <%-- output.jsp --%>
+    <html>
+      <body>
+        Hello ${paramValues.yourname.0} !!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hello !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hello Bond !!”]]></name><id>b</id></alternative><alternative><name><![CDATA[ None of the above.]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider this code.
+
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="yourname" value="Bond"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+    <%-- output.jsp --%>
+    <html>
+      <body>
+        Hello ${paramValues.yourname[0]} !!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Number “]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Number 17″]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Number ${14 + 3}
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Number 17″]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Number 143″]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Number ${"14" + 3}
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Result is true”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Result is false”]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Result is ${2 > 3}
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Result is true”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Result is false”]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Result is ${"2" > 3}
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Result is true”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Result is false”]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Result is ${"a" > "b"}
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Result is true”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Result is false”]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Result is ${"a" < "b"}
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Result is true”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Result is false”]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Result is ${a < b}
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Result is “]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Result is a literal”]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Result is ${"a literal"}
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Result is “]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Result is a literal”]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Result is ${'a literal'}
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Result is a literal indeed.”]]></name><id>a</id></alternative><alternative><name><![CDATA[ An exception is thrown at runtime.]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Result is ${"a literal" + " indeed."}
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Result is Infinity”]]></name><id>a</id></alternative><alternative><name><![CDATA[ An exception is thrown at runtime.]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Result is ${2 / 0}
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Result is Infinity”]]></name><id>a</id></alternative><alternative><name><![CDATA[ An exception is thrown at runtime.]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Result is ${2 mod 0}
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Result is 0″]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Result is null”]]></name><id>b</id></alternative><alternative><name><![CDATA[ An exception is thrown at runtime.]]></name><id>c</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Result is ${null mod 1}
+      </body>
+    </html>
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Result is 0″]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Result is 1″]]></name><id>b</id></alternative><alternative><name><![CDATA[ “Result is null”]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Result is ${null + 1}
+      </body>
+    </html>
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Result is true”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Result is false”]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Result is ${true and null}
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Result is true”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Result is false”]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Result is ${empty null}
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Result is true”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Result is false”]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <% request.setAttribute("list", new String[100]); %>
+    <html>
+      <body>
+        Result is ${empty list}
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Result is true”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Result is false”]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <% request.setAttribute("list", new String[0]); %>
+    <html>
+      <body>
+        Result is ${empty list}
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hey !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hey null!!”]]></name><id>b</id></alternative><alternative><name><![CDATA[ “Hey Rihanna!!”]]></name><id>c</id></alternative><alternative><name><![CDATA[ None of the above.]]></name><id>d</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <% String[] names = new String[]{"Rihanna", "Lopez", "Kylie"};
+       request.setAttribute("names", names); %>
+    <html>
+      <body>
+        Hey ${request.names}!!
+      </body>
+    </html>
+
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hey !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hey Rihanna!!”]]></name><id>b</id></alternative><alternative><name><![CDATA[ None of the above.]]></name><id>c</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <% String[] names = new String[]{"Rihanna", "Lopez", "Kylie"};
+       request.setAttribute("names", names); %>
+    <html>
+      <body>
+        Hey ${request.names[0]}!!
+      </body>
+    </html>
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hey !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hey Rihanna!!”]]></name><id>b</id></alternative><alternative><name><![CDATA[ None of the above.]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <% String[] names = new String[]{"Rihanna", "Lopez", "Kylie"};
+       request.setAttribute("names", names); %>
+    <html>
+      <body>
+        Hey ${requestScope.names[0]}!!
+      </body>
+    </html>
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hey !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hey Rihanna!!”]]></name><id>b</id></alternative><alternative><name><![CDATA[ None of the above.]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <% String[] names = new String[]{"Rihanna", "Lopez", "Kylie"};
+       request.setAttribute("names", names); %>
+    <html>
+      <body>
+        Hey ${requestScope.names[12 - 12]}!!
+      </body>
+    </html>
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hey !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hey Rihanna!!”]]></name><id>b</id></alternative><alternative><name><![CDATA[ None of the above.]]></name><id>c</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <% String[] names = new String[]{"Rihanna", "Lopez", "Kylie"};
+       request.setAttribute("names", names); %>
+    <html>
+      <body>
+        Hey ${requestScope.names[<%= names.length - 2%>]}!!
+      </body>
+    </html>
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hey !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hey Rihanna!!”]]></name><id>b</id></alternative><alternative><name><![CDATA[ None of the above.]]></name><id>c</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <% String[] names = new String[]{"Rihanna", "Lopez", "Kylie"};
+       request.setAttribute("names", names); %>
+    <html>
+      <body>
+        Hey ${requestScope["names"]}!!
+      </body>
+    </html>
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hey !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hey Rihanna!!”]]></name><id>b</id></alternative><alternative><name><![CDATA[ None of the above.]]></name><id>c</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <% String[] names = new String[]{"Rihanna", "Lopez", "Kylie"};
+       request.setAttribute("names", names); %>
+    <html>
+      <body>
+        Hey ${requestScope["names"].0}!!
+      </body>
+    </html>
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hey !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hey Rihanna!!”]]></name><id>b</id></alternative><alternative><name><![CDATA[ None of the above.]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <% String[] names = new String[]{"Rihanna", "Lopez", "Kylie"};
+       request.setAttribute("names", names); %>
+    <html>
+      <body>
+        Hey ${requestScope["names"][0]}!!
+      </body>
+    </html>
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hey !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hey Rihanna!!”]]></name><id>b</id></alternative><alternative><name><![CDATA[ None of the above.]]></name><id>c</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <% String[] names = new String[]{"Rihanna", "Lopez", "Kylie"};
+       request.setAttribute("names", names); %>
+    <html>
+      <body>
+        Hey ${pageScope["names"][0]}!!
+      </body>
+    </html>
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hey !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hey Rihanna!!”]]></name><id>b</id></alternative><alternative><name><![CDATA[ None of the above.]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <% String[] names = new String[]{"Rihanna", "Lopez", "Kylie"};
+       request.setAttribute("names", names); %>
+    <html>
+      <body>
+        Hey ${names[0]}!!
+      </body>
+    </html>
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hey !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hey Rihanna!!”]]></name><id>b</id></alternative><alternative><name><![CDATA[ None of the above.]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <% java.util.List names = new java.util.LinkedList();
+       names.add("Rihanna");
+       names.add("Lopez");
+       names.add("Kylie");
+       request.setAttribute("names", names); %>
+    <html>
+      <body>
+        Hey ${names[0]}!!
+      </body>
+    </html>
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hey !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hey Rihanna!!”]]></name><id>b</id></alternative><alternative><name><![CDATA[ None of the above.]]></name><id>c</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <% java.util.List names = new java.util.LinkedList();
+       names.add("Rihanna");
+       names.add("Lopez");
+       names.add("Kylie");
+       request.setAttribute("names", names); %>
+    <html>
+      <body>
+        Hey ${names[-1]}!!
+      </body>
+    </html>
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hey !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hey Rihanna!!”]]></name><id>b</id></alternative><alternative><name><![CDATA[ None of the above.]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <% java.util.Map names = new java.util.HashMap();
+       names.put("0", "Rihanna");
+       names.put("1", "Lopez");
+       names.put("2", "Kylie");
+       request.setAttribute("names", names); %>
+    <html>
+      <body>
+        Hey ${names["0"]}!!
+      </body>
+    </html>
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hey !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hey Rihanna!!”]]></name><id>b</id></alternative><alternative><name><![CDATA[ None of the above.]]></name><id>c</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <% java.util.Map names = new java.util.HashMap();
+       names.put("0", "Rihanna");
+       names.put("1", "Lopez");
+       names.put("2", "Kylie");
+       request.setAttribute("names", names); %>
+    <html>
+      <body>
+        Hey ${names[0]}!!
+      </body>
+    </html>
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Number is !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Number is 10!!”]]></name><id>b</id></alternative><alternative><name><![CDATA[ “Number is 1007!!”]]></name><id>c</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <% request.setAttribute("1007", Integer.valueOf(10)); %>
+    <html>
+      <body>
+        Number is ${1007}!!
+      </body>
+    </html>
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Number is !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Number is 10!!”]]></name><id>b</id></alternative><alternative><name><![CDATA[ “Number is 1007!!”]]></name><id>c</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <% request.setAttribute("1007", Integer.valueOf(10)); %>
+    <html>
+      <body>
+        Number is ${"1007"}!!
+      </body>
+    </html>
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Number is !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Number is 10!!”]]></name><id>b</id></alternative><alternative><name><![CDATA[ “Number is 1007!!”]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <% request.setAttribute("1007", Integer.valueOf(10)); %>
+    <html>
+      <body>
+        Number is ${requestScope["1007"]}!!
+      </body>
+    </html>
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Hey you !]]></name><id>a</id></alternative><alternative><name><![CDATA[ Hey you Josh Childress!]]></name><id>b</id></alternative><alternative><name><![CDATA[ None of the above.]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider the following code.
+
+    package model;
+    public class Person {
+       private String fullName;
+       public String getFullName() {
+          return fullName;
+       }
+       public void setFullName(String fullName) {
+          this.fullName = fullName;
+       }
+    }
+
+    <jsp:useBean id="person" class="model.Person">
+      <jsp:setProperty name="person" property="fullName" value="Josh Childress" />
+    </jsp:useBean>
+    <html>
+      <body>
+        Hey you ${person.fullName}!
+      </body>
+    </html>
+
+    What is the output? (1 correct answer)
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Hey you !]]></name><id>a</id></alternative><alternative><name><![CDATA[ Hey you Josh Childress!]]></name><id>b</id></alternative><alternative><name><![CDATA[ None of the above.]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider the following code.
+
+    package model;
+    public class Person {
+       private String name;
+       public String getFullName() {
+          return name;
+       }
+       public void setFullName(String fullName) {
+          this.name = fullName;
+       }
+    }
+
+    <jsp:useBean id="person" class="model.Person">
+      <jsp:setProperty name="person" property="fullName" value="Josh Childress" />
+    </jsp:useBean>
+    <html>
+      <body>
+        Hey you ${person.fullName}!
+      </body>
+    </html>
+
+    What is the output? (1 correct answer)
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Hey you !]]></name><id>a</id></alternative><alternative><name><![CDATA[ Hey you Josh Childress!]]></name><id>b</id></alternative><alternative><name><![CDATA[ None of the above.]]></name><id>c</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ Consider the following code.
+
+    package model;
+    public class Person {
+       private String fullName;
+       public String getFullName() {
+          return fullName;
+       }
+       public void setFullName(String fullName) {
+          this.fullName = fullName;
+       }
+    }
+
+    <jsp:useBean id="person" class="model.Person">
+      <jsp:setProperty name="person" property="fullName" value="Josh Childress" />
+    </jsp:useBean>
+    <html>
+      <body>
+        Hey you ${person}!
+      </body>
+    </html>
+
+    What is the output? (1 correct answer)
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Hey you !]]></name><id>a</id></alternative><alternative><name><![CDATA[ Hey you Josh Childress!]]></name><id>b</id></alternative><alternative><name><![CDATA[ None of the above.]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider the following code.
+
+    package model;
+    public class Person {
+       private String fullName;
+       public String getFullName() {
+          return fullName;
+       }
+       public void setFullName(String fullName) {
+          this.fullName = fullName;
+       }
+       public String toString() {
+          return fullName;
+       }
+    }
+
+    <jsp:useBean id="person" class="model.Person">
+      <jsp:setProperty name="person" property="fullName" value="Josh Childress" />
+    </jsp:useBean>
+    <html>
+      <body>
+        Hey you ${person}!
+      </body>
+    </html>
+
+    What is the output? (1 correct answer)
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Contact an administrator at page@info.]]></name><id>a</id></alternative><alternative><name><![CDATA[ Contact an administrator at session@info.]]></name><id>b</id></alternative><alternative><name><![CDATA[ Contact an administrator at request@info.]]></name><id>c</id></alternative><alternative><name><![CDATA[ Contact an administrator at application@info.]]></name><id>d</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of this code? (1 correct answer)
+
+    <%
+      request.setAttribute("email", "request@info");
+      session.setAttribute("email", "session@info");
+      pageContext.setAttribute("email", "page@info");
+      application.setAttribute("email", "application@info");
+    %>
+    <html>
+      <body>
+        Contact an administrator at ${email}.
+      </body>
+    </html>
+
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Contact an administrator at session@info.]]></name><id>a</id></alternative><alternative><name><![CDATA[ Contact an administrator at application@info.]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of this code? (1 correct answer)
+
+    <%
+      session.setAttribute("email", "session@info");
+      application.setAttribute("email", "application@info");
+    %>
+    <html>
+      <body>
+        Contact an administrator at ${email}.
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Contact an administrator at request@info.]]></name><id>a</id></alternative><alternative><name><![CDATA[ Contact an administrator at session@info.]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of this code? (1 correct answer)
+
+    <%
+      request.setAttribute("email", "request@info");
+      session.setAttribute("email", "session@info");
+    %>
+    <html>
+      <body>
+        Contact an administrator at ${email}.
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Contact an administrator at .]]></name><id>a</id></alternative><alternative><name><![CDATA[ Contact an administrator at session@info.]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of this code? (1 correct answer)
+
+    <%
+      request.setAttribute("email", null);
+      session.setAttribute("email", "session@info");
+    %>
+    <html>
+      <body>
+        Contact an administrator at ${email}.
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question>

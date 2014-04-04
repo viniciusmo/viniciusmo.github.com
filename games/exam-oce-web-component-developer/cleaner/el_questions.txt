@@ -1,0 +1,942 @@
+    question. In EL you may use the . operator to access maps and beans.
+        111 true999
+        111 false999
+
+    question. In EL you may use the [] operator to access maps, beans, lists and arrays.
+        111 true999
+        111 false999
+
+    question. Which of the following are EL implicit objects? (4 correct answers)
+        111 pageScope999
+        111 requestScope999
+        111 sessionScope999
+        111 contextScope999
+        111 applicationScope999
+
+    question. Which of the following are EL implicit objects? (2 correct answers)
+        111 param999
+        111 parameter999
+        111 params999
+        111 parameters999
+        111 paramValues999
+        111 parameterValues999
+
+    question. Which of the following are EL implicit objects? (1 correct answer)
+        111 initParam999
+        111 servletParam999
+        111 contextParam999
+        111 applicationParam999
+
+    question. Which of the following EL implicit objects are maps? (3 correct answers)
+        111 cookie999
+        111 pageContext999
+        111 headerValues999
+        111 applicationScope999
+
+    question. What is the output of the following code? (1 correct answer)
+
+    <% session.setAttribute("name", "Diogenes"); %>
+    ${session.name}
+
+        111 “Diogenes”999
+        111 “”999
+
+    question. What is the output of the following code? (1 correct answer)
+
+    <% session.setAttribute("name", "Diogenes"); %>
+    ${sessionScope.name}
+
+        111 “Diogenes”999
+        111 “”999
+
+    question. What is the output of the following code? (1 correct answer)
+
+    <% session.setAttribute("name", "Diogenes"); %>
+    ${sessionScope[name]}
+
+        111 “Diogenes”999
+        111 “”999
+
+    question. Consider this code.
+
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="yourname" value="Bond"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+    <%-- output.jsp --%>
+    <html>
+      <body>
+        Hello ${yourname} !!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+        111 “Hello !!”999
+        111 “Hello Bond !!”999
+
+    question. Consider this code.
+
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="yourname" value="Bond"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+    <%-- output.jsp --%>
+    <html>
+      <body>
+        Hello ${request.yourname} !!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+        111 “Hello !!”999
+        111 “Hello Bond !!”999
+
+    question. Consider this code.
+
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="yourname" value="Bond"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+    <%-- output.jsp --%>
+    <html>
+      <body>
+        Hello ${requestMap.yourname} !!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+        111 “Hello !!”999
+        111 “Hello Bond !!”999
+
+    question. Consider this code.
+
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="yourname" value="Bond"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+    <%-- output.jsp --%>
+    <html>
+      <body>
+        Hello ${requestScope.yourname} !!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+        111 “Hello !!”999
+        111 “Hello Bond !!”999
+
+    question. Consider this code.
+
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="yourname" value="Bond"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+    <%-- output.jsp --%>
+    <html>
+      <body>
+        Hello ${pageScope.yourname} !!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+        111 “Hello !!”999
+        111 “Hello Bond !!”999
+
+    question. Consider this code.
+
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="yourname" value="Bond"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+    <%-- output.jsp --%>
+    <html>
+      <body>
+        Hello ${param.yourname} !!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+        111 “Hello !!”999
+        111 “Hello Bond !!”999
+
+    question. Consider this code.
+
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="yourname" value="Bond"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+    <%-- output.jsp --%>
+    <html>
+      <body>
+        Hello ${param[yourname]} !!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+        111 “Hello !!”999
+        111 “Hello Bond !!”999
+
+    question. Consider this code.
+
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="yourname" value="Bond"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+    <%-- output.jsp --%>
+    <html>
+      <body>
+        Hello ${paramValues.yourname} !!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+        111 “Hello !!”999
+        111 “Hello Bond !!”999
+        111 None of the above.999
+
+    question. Consider this code.
+
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="yourname" value="Bond"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+    <%-- output.jsp --%>
+    <html>
+      <body>
+        Hello ${paramValues[yourname]} !!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+        111 “Hello !!”999
+        111 “Hello Bond !!”999
+        111 None of the above.999
+
+    question. Consider this code.
+
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="yourname" value="Bond"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+    <%-- output.jsp --%>
+    <html>
+      <body>
+        Hello ${paramValues.yourname.0} !!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+        111 “Hello !!”999
+        111 “Hello Bond !!”999
+        111 None of the above.999
+
+    question. Consider this code.
+
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="yourname" value="Bond"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+    <%-- output.jsp --%>
+    <html>
+      <body>
+        Hello ${paramValues.yourname[0]} !!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+        111 “Hello !!”999
+        111 “Hello Bond !!”999
+        111 None of the above.999
+
+    question. What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Number ${14 + 3}
+      </body>
+    </html>
+
+        111 “Number “999
+        111 “Number 17″999
+
+    question. What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Number ${"14" + 3}
+      </body>
+    </html>
+
+        111 “Number 17″999
+        111 “Number 143″999
+
+    question. What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Result is ${2 > 3}
+      </body>
+    </html>
+
+        111 “Result is true”999
+        111 “Result is false”999
+
+    question. What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Result is ${"2" > 3}
+      </body>
+    </html>
+
+        111 “Result is true”999
+        111 “Result is false”999
+
+    question. What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Result is ${"a" > "b"}
+      </body>
+    </html>
+
+        111 “Result is true”999
+        111 “Result is false”999
+
+    question. What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Result is ${"a" < "b"}
+      </body>
+    </html>
+
+        111 “Result is true”999
+        111 “Result is false”999
+
+    question. What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Result is ${a < b}
+      </body>
+    </html>
+
+        111 “Result is true”999
+        111 “Result is false”999
+
+    question. What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Result is ${"a literal"}
+      </body>
+    </html>
+
+        111 “Result is “999
+        111 “Result is a literal”999
+
+    question. What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Result is ${'a literal'}
+      </body>
+    </html>
+
+        111 “Result is “999
+        111 “Result is a literal”999
+
+    question. What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Result is ${"a literal" + " indeed."}
+      </body>
+    </html>
+
+        111 “Result is a literal indeed.”999
+        111 An exception is thrown at runtime.999
+
+    question. What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Result is ${2 / 0}
+      </body>
+    </html>
+
+        111 “Result is Infinity”999
+        111 An exception is thrown at runtime.999
+
+    question. What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Result is ${2 mod 0}
+      </body>
+    </html>
+
+        111 “Result is Infinity”999
+        111 An exception is thrown at runtime.999
+
+    question. What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Result is ${null mod 1}
+      </body>
+    </html>
+
+        111 “Result is 0″999
+        111 “Result is null”999
+        111 An exception is thrown at runtime.999
+
+    question. What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Result is ${null + 1}
+      </body>
+    </html>
+
+        111 “Result is 0″999
+        111 “Result is 1″999
+        111 “Result is null”999
+
+    question. What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Result is ${true and null}
+      </body>
+    </html>
+
+        111 “Result is true”999
+        111 “Result is false”999
+
+    question. What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Result is ${empty null}
+      </body>
+    </html>
+
+        111 “Result is true”999
+        111 “Result is false”999
+
+    question. What is the output of this page? (1 correct answer)
+
+    <% request.setAttribute("list", new String[100]); %>
+    <html>
+      <body>
+        Result is ${empty list}
+      </body>
+    </html>
+
+        111 “Result is true”999
+        111 “Result is false”999
+
+    question. What is the output of this page? (1 correct answer)
+
+    <% request.setAttribute("list", new String[0]); %>
+    <html>
+      <body>
+        Result is ${empty list}
+      </body>
+    </html>
+
+        111 “Result is true”999
+        111 “Result is false”999
+
+    question. What is the output of this page? (1 correct answer)
+
+    <% String[] names = new String[]{"Rihanna", "Lopez", "Kylie"};
+       request.setAttribute("names", names); %>
+    <html>
+      <body>
+        Hey ${request.names}!!
+      </body>
+    </html>
+
+        111 “Hey !!”999
+        111 “Hey null!!”999
+        111 “Hey Rihanna!!”999
+        111 None of the above.999
+
+    question. What is the output of this page? (1 correct answer)
+
+    <% String[] names = new String[]{"Rihanna", "Lopez", "Kylie"};
+       request.setAttribute("names", names); %>
+    <html>
+      <body>
+        Hey ${request.names[0]}!!
+      </body>
+    </html>
+
+        111 “Hey !!”999
+        111 “Hey Rihanna!!”999
+        111 None of the above.999
+
+    question. What is the output of this page? (1 correct answer)
+
+    <% String[] names = new String[]{"Rihanna", "Lopez", "Kylie"};
+       request.setAttribute("names", names); %>
+    <html>
+      <body>
+        Hey ${requestScope.names[0]}!!
+      </body>
+    </html>
+
+        111 “Hey !!”999
+        111 “Hey Rihanna!!”999
+        111 None of the above.999
+
+    question. What is the output of this page? (1 correct answer)
+
+    <% String[] names = new String[]{"Rihanna", "Lopez", "Kylie"};
+       request.setAttribute("names", names); %>
+    <html>
+      <body>
+        Hey ${requestScope.names[12 - 12]}!!
+      </body>
+    </html>
+
+        111 “Hey !!”999
+        111 “Hey Rihanna!!”999
+        111 None of the above.999
+
+    question. What is the output of this page? (1 correct answer)
+
+    <% String[] names = new String[]{"Rihanna", "Lopez", "Kylie"};
+       request.setAttribute("names", names); %>
+    <html>
+      <body>
+        Hey ${requestScope.names[<%= names.length - 2%>]}!!
+      </body>
+    </html>
+
+        111 “Hey !!”999
+        111 “Hey Rihanna!!”999
+        111 None of the above.999
+
+    question. What is the output of this page? (1 correct answer)
+
+    <% String[] names = new String[]{"Rihanna", "Lopez", "Kylie"};
+       request.setAttribute("names", names); %>
+    <html>
+      <body>
+        Hey ${requestScope["names"]}!!
+      </body>
+    </html>
+
+        111 “Hey !!”999
+        111 “Hey Rihanna!!”999
+        111 None of the above.999
+
+    question. What is the output of this page? (1 correct answer)
+
+    <% String[] names = new String[]{"Rihanna", "Lopez", "Kylie"};
+       request.setAttribute("names", names); %>
+    <html>
+      <body>
+        Hey ${requestScope["names"].0}!!
+      </body>
+    </html>
+
+        111 “Hey !!”999
+        111 “Hey Rihanna!!”999
+        111 None of the above.999
+
+    question. What is the output of this page? (1 correct answer)
+
+    <% String[] names = new String[]{"Rihanna", "Lopez", "Kylie"};
+       request.setAttribute("names", names); %>
+    <html>
+      <body>
+        Hey ${requestScope["names"][0]}!!
+      </body>
+    </html>
+
+        111 “Hey !!”999
+        111 “Hey Rihanna!!”999
+        111 None of the above.999
+
+    question. What is the output of this page? (1 correct answer)
+
+    <% String[] names = new String[]{"Rihanna", "Lopez", "Kylie"};
+       request.setAttribute("names", names); %>
+    <html>
+      <body>
+        Hey ${pageScope["names"][0]}!!
+      </body>
+    </html>
+
+        111 “Hey !!”999
+        111 “Hey Rihanna!!”999
+        111 None of the above.999
+
+    question. What is the output of this page? (1 correct answer)
+
+    <% String[] names = new String[]{"Rihanna", "Lopez", "Kylie"};
+       request.setAttribute("names", names); %>
+    <html>
+      <body>
+        Hey ${names[0]}!!
+      </body>
+    </html>
+
+        111 “Hey !!”999
+        111 “Hey Rihanna!!”999
+        111 None of the above.999
+
+    question. What is the output of this page? (1 correct answer)
+
+    <% java.util.List names = new java.util.LinkedList();
+       names.add("Rihanna");
+       names.add("Lopez");
+       names.add("Kylie");
+       request.setAttribute("names", names); %>
+    <html>
+      <body>
+        Hey ${names[0]}!!
+      </body>
+    </html>
+
+        111 “Hey !!”999
+        111 “Hey Rihanna!!”999
+        111 None of the above.999
+
+    question. What is the output of this page? (1 correct answer)
+
+    <% java.util.List names = new java.util.LinkedList();
+       names.add("Rihanna");
+       names.add("Lopez");
+       names.add("Kylie");
+       request.setAttribute("names", names); %>
+    <html>
+      <body>
+        Hey ${names[-1]}!!
+      </body>
+    </html>
+
+        111 “Hey !!”999
+        111 “Hey Rihanna!!”999
+        111 None of the above.999
+
+    question. What is the output of this page? (1 correct answer)
+
+    <% java.util.Map names = new java.util.HashMap();
+       names.put("0", "Rihanna");
+       names.put("1", "Lopez");
+       names.put("2", "Kylie");
+       request.setAttribute("names", names); %>
+    <html>
+      <body>
+        Hey ${names["0"]}!!
+      </body>
+    </html>
+
+        111 “Hey !!”999
+        111 “Hey Rihanna!!”999
+        111 None of the above.999
+
+    question. What is the output of this page? (1 correct answer)
+
+    <% java.util.Map names = new java.util.HashMap();
+       names.put("0", "Rihanna");
+       names.put("1", "Lopez");
+       names.put("2", "Kylie");
+       request.setAttribute("names", names); %>
+    <html>
+      <body>
+        Hey ${names[0]}!!
+      </body>
+    </html>
+
+        111 “Hey !!”999
+        111 “Hey Rihanna!!”999
+        111 None of the above.999
+
+    question. What is the output of this page? (1 correct answer)
+
+    <% request.setAttribute("1007", Integer.valueOf(10)); %>
+    <html>
+      <body>
+        Number is ${1007}!!
+      </body>
+    </html>
+
+        111 “Number is !!”999
+        111 “Number is 10!!”999
+        111 “Number is 1007!!”999
+
+    question. What is the output of this page? (1 correct answer)
+
+    <% request.setAttribute("1007", Integer.valueOf(10)); %>
+    <html>
+      <body>
+        Number is ${"1007"}!!
+      </body>
+    </html>
+
+        111 “Number is !!”999
+        111 “Number is 10!!”999
+        111 “Number is 1007!!”999
+
+    question. What is the output of this page? (1 correct answer)
+
+    <% request.setAttribute("1007", Integer.valueOf(10)); %>
+    <html>
+      <body>
+        Number is ${requestScope["1007"]}!!
+      </body>
+    </html>
+
+        111 “Number is !!”999
+        111 “Number is 10!!”999
+        111 “Number is 1007!!”999
+
+    question. Consider the following code.
+
+    package model;
+    public class Person {
+       private String fullName;
+       public String getFullName() {
+          return fullName;
+       }
+       public void setFullName(String fullName) {
+          this.fullName = fullName;
+       }
+    }
+
+    <jsp:useBean id="person" class="model.Person">
+      <jsp:setProperty name="person" property="fullName" value="Josh Childress" />
+    </jsp:useBean>
+    <html>
+      <body>
+        Hey you ${person.fullName}!
+      </body>
+    </html>
+
+    What is the output? (1 correct answer)
+        111 Hey you !999
+        111 Hey you Josh Childress!999
+        111 None of the above.999
+
+    question. Consider the following code.
+
+    package model;
+    public class Person {
+       private String name;
+       public String getFullName() {
+          return name;
+       }
+       public void setFullName(String fullName) {
+          this.name = fullName;
+       }
+    }
+
+    <jsp:useBean id="person" class="model.Person">
+      <jsp:setProperty name="person" property="fullName" value="Josh Childress" />
+    </jsp:useBean>
+    <html>
+      <body>
+        Hey you ${person.fullName}!
+      </body>
+    </html>
+
+    What is the output? (1 correct answer)
+        111 Hey you !999
+        111 Hey you Josh Childress!999
+        111 None of the above.999
+
+    question. Consider the following code.
+
+    package model;
+    public class Person {
+       private String fullName;
+       public String getFullName() {
+          return fullName;
+       }
+       public void setFullName(String fullName) {
+          this.fullName = fullName;
+       }
+    }
+
+    <jsp:useBean id="person" class="model.Person">
+      <jsp:setProperty name="person" property="fullName" value="Josh Childress" />
+    </jsp:useBean>
+    <html>
+      <body>
+        Hey you ${person}!
+      </body>
+    </html>
+
+    What is the output? (1 correct answer)
+        111 Hey you !999
+        111 Hey you Josh Childress!999
+        111 None of the above.999
+
+    question. Consider the following code.
+
+    package model;
+    public class Person {
+       private String fullName;
+       public String getFullName() {
+          return fullName;
+       }
+       public void setFullName(String fullName) {
+          this.fullName = fullName;
+       }
+       public String toString() {
+          return fullName;
+       }
+    }
+
+    <jsp:useBean id="person" class="model.Person">
+      <jsp:setProperty name="person" property="fullName" value="Josh Childress" />
+    </jsp:useBean>
+    <html>
+      <body>
+        Hey you ${person}!
+      </body>
+    </html>
+
+    What is the output? (1 correct answer)
+        111 Hey you !999
+        111 Hey you Josh Childress!999
+        111 None of the above.999
+
+    question. What is the output of this code? (1 correct answer)
+
+    <%
+      request.setAttribute("email", "request@info");
+      session.setAttribute("email", "session@info");
+      pageContext.setAttribute("email", "page@info");
+      application.setAttribute("email", "application@info");
+    %>
+    <html>
+      <body>
+        Contact an administrator at ${email}.
+      </body>
+    </html>
+
+        111 Contact an administrator at page@info.999
+        111 Contact an administrator at session@info.999
+        111 Contact an administrator at request@info.999
+        111 Contact an administrator at application@info.999
+
+    question. What is the output of this code? (1 correct answer)
+
+    <%
+      session.setAttribute("email", "session@info");
+      application.setAttribute("email", "application@info");
+    %>
+    <html>
+      <body>
+        Contact an administrator at ${email}.
+      </body>
+    </html>
+
+        111 Contact an administrator at session@info.999
+        111 Contact an administrator at application@info.999
+
+    question. What is the output of this code? (1 correct answer)
+
+    <%
+      request.setAttribute("email", "request@info");
+      session.setAttribute("email", "session@info");
+    %>
+    <html>
+      <body>
+        Contact an administrator at ${email}.
+      </body>
+    </html>
+
+        111 Contact an administrator at request@info.999
+        111 Contact an administrator at session@info.999
+
+    question. What is the output of this code? (1 correct answer)
+
+    <%
+      request.setAttribute("email", null);
+      session.setAttribute("email", "session@info");
+    %>
+    <html>
+      <body>
+        Contact an administrator at ${email}.
+      </body>
+    </html>
+
+        111 Contact an administrator at .999
+        111 Contact an administrator at session@info.999
+
+

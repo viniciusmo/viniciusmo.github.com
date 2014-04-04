@@ -1,0 +1,1257 @@
+<question><alternatives><alternative><name><![CDATA[ create instance]]></name><id>a</id></alternative><alternative><name><![CDATA[ translation]]></name><id>b</id></alternative><alternative><name><![CDATA[ load class]]></name><id>c</id></alternative><alternative><name><![CDATA[ call jspInit()]]></name><id>d</id></alternative><alternative><name><![CDATA[ call jspDestroy()]]></name><id>e</id></alternative><alternative><name><![CDATA[ compilation]]></name><id>f</id></alternative><alternative><name><![CDATA[ call _jspService()]]></name><id>g</id></alternative><corrects>b,f,c,a,d,g,e</corrects></alternatives><question_name><![CDATA[ Put in the correct order the following events from a JSP’s lifecycle.
+        
+        
+        
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ <% %>]]></name><id>a</id></alternative><alternative><name><![CDATA[ <%@ %>]]></name><id>b</id></alternative><alternative><name><![CDATA[ <%= %>]]></name><id>c</id></alternative><alternative><name><![CDATA[ <%! %>]]></name><id>d</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ How is a scriplet defined? (1 correct answer)
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ <% %>]]></name><id>a</id></alternative><alternative><name><![CDATA[ <%@ %>]]></name><id>b</id></alternative><alternative><name><![CDATA[ <%= %>]]></name><id>c</id></alternative><alternative><name><![CDATA[ <%! %>]]></name><id>d</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ How is a directive defined? (1 correct answer)
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ <% %>]]></name><id>a</id></alternative><alternative><name><![CDATA[ <%@ %>]]></name><id>b</id></alternative><alternative><name><![CDATA[ <%= %>]]></name><id>c</id></alternative><alternative><name><![CDATA[ <%! %>]]></name><id>d</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ How is an expression defined? (1 correct answer)
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ <% %>]]></name><id>a</id></alternative><alternative><name><![CDATA[ <%@ %>]]></name><id>b</id></alternative><alternative><name><![CDATA[ <%= %>]]></name><id>c</id></alternative><alternative><name><![CDATA[ <%! %>]]></name><id>d</id></alternative><corrects>d</corrects></alternatives><question_name><![CDATA[ How is a declaration defined? (1 correct answer)
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ <%@ page import=”java.util.List” %>]]></name><id>a</id></alternative><alternative><name><![CDATA[ <%@ page “import=java.util.List” %>]]></name><id>b</id></alternative><alternative><name><![CDATA[ <%@ page “import java.util.List” %>]]></name><id>c</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Which of the following is syntactically valid? (1 correct answer)
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ <%@ page import=”java.util.*” %>]]></name><id>a</id></alternative><alternative><name><![CDATA[ <%@ page “import=java.util.*” %>]]></name><id>b</id></alternative><alternative><name><![CDATA[ <%@ page “import java.util.*” %>]]></name><id>c</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Which of the following is syntactically valid? (1 correct answer)
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ <%@ page import=”java.util.List : java.util.ArrayList” %>]]></name><id>a</id></alternative><alternative><name><![CDATA[ <%@ page import=”java.util.List , java.util.ArrayList” %>]]></name><id>b</id></alternative><alternative><name><![CDATA[ <%@ page import=”java.util.List” import=”java.util.ArrayList” %>]]></name><id>c</id></alternative><corrects>b,c</corrects></alternatives><question_name><![CDATA[ Which of the following are syntactically valid? (2 correct answers)
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ The following are all attributes of the page directive. (1 correct answer)
+          ⇒ import
+          ⇒ errorPage
+          ⇒ contentType
+          ⇒ isErrorPage
+          ⇒ isELignored
+          ⇒ isThreadSafe
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ The following are all implicit objects of a JSP. (1 correct answer)
+
+        ⇒ out
+
+        ⇒ config
+
+        ⇒ session
+
+        ⇒ request
+
+        ⇒ response
+
+        ⇒ application
+
+        ⇒ exception
+        ⇒ pageContext
+        ⇒ page
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of the following code? (1 correct answer)
+   
+    <%= session == pageContext.getSession() %>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of the following code? (1 correct answer)
+   
+    <%= request == pageContext.getRequest() %>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of the following code? (1 correct answer)
+   
+    <%= response == pageContext.getResponse() %>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of the following code? (1 correct answer)
+   
+    <%= config == pageContext.getServletConfig() %>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of the following code? (1 correct answer)
+   
+    <%= application == session.getServletContext() %>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of the following code? (1 correct answer)
+   
+    <%= application == pageContext.getServletContext() %>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of the following code? (1 correct answer)
+   
+    <%= application == request.getSession().getServletContext() %>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of the following code? (1 correct answer)
+   
+    <%= page instanceof JspPage %>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of the following code? (1 correct answer)
+   
+    <%= out instanceof JspWriter %>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Diogenes]]></name><id>a</id></alternative><alternative><name><![CDATA[ null]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of the following code? (1 correct answer)
+   
+    <% session.setAttribute("name", "Diogenes"); %>
+    <%= session.getAttribute("name") %>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Diogenes]]></name><id>a</id></alternative><alternative><name><![CDATA[ null]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of the following code? (1 correct answer)
+   
+    <% session.setAttribute("name", "Diogenes"); %>
+    <%= session.getAttribute("Diogenes") %>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Diogenes]]></name><id>a</id></alternative><alternative><name><![CDATA[ null]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of the following code? (1 correct answer)
+   
+    <% session.setAttribute("name", "Diogenes"); %>
+    <%= pageContext.getAttribute("name") %>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Diogenes]]></name><id>a</id></alternative><alternative><name><![CDATA[ null]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of the following code? (1 correct answer)
+   
+    <% session.setAttribute("name", "Diogenes"); %>
+    <%= pageContext.getAttribute("name",
+                                 pageContext.APPLICATION_SCOPE) %>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Diogenes]]></name><id>a</id></alternative><alternative><name><![CDATA[ null]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of the following code? (1 correct answer)
+   
+    <% session.setAttribute("name", "Diogenes"); %>
+    <%= pageContext.getAttribute("name",
+                                 pageContext.SESSION_SCOPE) %>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Diogenes]]></name><id>a</id></alternative><alternative><name><![CDATA[ null]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of the following code? (1 correct answer)
+   
+    <% session.setAttribute("name", "Diogenes"); %>
+    <%= pageContext.findAttribute("name") %>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of the following code? (1 correct answer)
+   
+    <% session.setAttribute("name", "Diogenes"); %>
+    <%= pageContext.SESSION_SCOPE ==
+        pageContext.getAttributesScope("name") %>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hello null !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hello Bond !!”]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider this code.
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="yourname" value="Bond"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <html>
+      <body>
+        Hello <%= request.getAttribute("yourname")%> !!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hello null !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hello Bond !!”]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider this code.
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="yourname" value="Bond"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <html>
+      <body>
+        Hello <%= request.getParameter("yourname")%> !!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hello null !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hello submit !!”]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider this code.
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="yourname" value="Bond"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <html>
+      <body>
+        Hello <%= request.getParameter("OK")%> !!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hello null !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hello OK !!”]]></name><id>b</id></alternative><alternative><name><![CDATA[ “Hello submit !!”]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider this code.
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="yourname" value="Bond"/>
+          <input type="submit" name="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <html>
+      <body>
+        Hello <%= request.getParameter("submit")%> !!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ I like null!]]></name><id>a</id></alternative><alternative><name><![CDATA[ I like Mathematics!]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="about" value="Mathematics"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="request" />
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ I like null!]]></name><id>a</id></alternative><alternative><name><![CDATA[ I like Mathematics!]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="about" value="Mathematics"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="request" />
+    <jsp:setProperty name="book" property="title" param="title" />
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ I like null!]]></name><id>a</id></alternative><alternative><name><![CDATA[ I like Mathematics!]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="about" value="Mathematics"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="request" />
+    <jsp:setProperty name="book" property="title" param="about" />
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ I like Art!]]></name><id>a</id></alternative><alternative><name><![CDATA[ I like Mathematics!]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="about" value="Mathematics"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="request" />
+    <jsp:setProperty name="book" property="title" value="Art" />
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ I like Art!]]></name><id>a</id></alternative><alternative><name><![CDATA[ I like Mathematics!]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="about" value="Mathematics"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="request" >
+      <jsp:setProperty name="book" property="title" value="Art" />
+    </jsp:useBean>
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ I like null!]]></name><id>a</id></alternative><alternative><name><![CDATA[ I like Mathematics!]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="about" value="Mathematics"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="request" >
+      <jsp:setProperty name="book" property="title" param="Mathematics" />
+    </jsp:useBean>
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ I like null!]]></name><id>a</id></alternative><alternative><name><![CDATA[ I like Mathematics!]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="about" value="Mathematics"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="request" >
+      <jsp:setProperty name="book" property="title" param="title" />
+    </jsp:useBean>
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ I like null!]]></name><id>a</id></alternative><alternative><name><![CDATA[ I like Mathematics!]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="about" value="Mathematics"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="request" >
+      <jsp:setProperty name="book" property="title" param="about" />
+    </jsp:useBean>
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ I like Art!]]></name><id>a</id></alternative><alternative><name><![CDATA[ I like Mathematics!]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="about" value="Mathematics"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="request" >
+      <jsp:setProperty name="book" property="title" param="about" />
+    </jsp:useBean>
+    <jsp:setProperty name="book" property="title" value="Art" />
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ I like null!]]></name><id>a</id></alternative><alternative><name><![CDATA[ I like Mathematics!]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="title" value="Mathematics"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="request" >
+      <jsp:setProperty name="book" property="title" param="title" />
+    </jsp:useBean>
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ I like null!]]></name><id>a</id></alternative><alternative><name><![CDATA[ I like Mathematics!]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="title" value="Mathematics"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="request" >
+      <jsp:setProperty name="book" property="title" param="*" />
+    </jsp:useBean>
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ I like null!]]></name><id>a</id></alternative><alternative><name><![CDATA[ I like Mathematics!]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="title" value="Mathematics"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="request" >
+      <jsp:setProperty name="book" property="title" />
+    </jsp:useBean>
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ I like null!]]></name><id>a</id></alternative><alternative><name><![CDATA[ I like Mathematics!]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="title" value="Mathematics"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="request" >
+      <jsp:setProperty name="book" property="*" />
+    </jsp:useBean>
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ I like Mathematics!]]></name><id>a</id></alternative><alternative><name><![CDATA[ An exception is thrown at runtime.]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="title" value="Mathematics"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" type="library.Book" scope="request" >
+      <jsp:setProperty name="book" property="*" />
+    </jsp:useBean>
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ I like Mathematics!]]></name><id>a</id></alternative><alternative><name><![CDATA[ An exception is thrown at runtime.]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="title" value="Mathematics"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" type="library.Book" class="library.Book" scope="request" >
+      <jsp:setProperty name="book" property="*" />
+    </jsp:useBean>
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ I like null!]]></name><id>a</id></alternative><alternative><name><![CDATA[ I like Head First Servlets and JSP!]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="request" >
+      <jsp:setProperty name="book" property="title" value="Head First Servlets and JSP" />
+    </jsp:useBean>
+    <html>
+      <body>
+        <a href="output.jsp">click here</a>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="request" />
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ I like null!]]></name><id>a</id></alternative><alternative><name><![CDATA[ I like Head First Servlets and JSP!]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="session" >
+      <jsp:setProperty name="book" property="title" value="Head First Servlets and JSP" />
+    </jsp:useBean>
+    <html>
+      <body>
+        <a href="output.jsp">click here</a>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="session" />
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ I like null!]]></name><id>a</id></alternative><alternative><name><![CDATA[ I like Head First Servlets and JSP!]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="session" >
+      <jsp:setProperty name="book" property="title" value="Head First Servlets and JSP" />
+    </jsp:useBean>
+    <html>
+      <body>
+        <a href="output.jsp">click here</a>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="session" />
+    <html>
+      <body>
+        I like <%= book.getTitle() %>!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Hello !!]]></name><id>a</id></alternative><alternative><name><![CDATA[ Hello Niko!!]]></name><id>b</id></alternative><alternative><name><![CDATA[ An Exception is thrown at runtime]]></name><id>c</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ Consider this code and that there is no attribute in the request object.
+   
+    package value;
+    public class Person {
+       public String name;
+    }
+
+   
+    <%-- hello.jsp --%>
+    <html>
+      <body>
+        <jsp:useBean id="person" class="value.Person" scope="request">
+          <jsp:setProperty name="person" property="name" value="Niko" />
+        </jsp:useBean>
+        Hello ${person.name}!!
+      </body>
+    </html>
+
+    What is the output of hello.jsp? (1 correct answer)
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Hello !!]]></name><id>a</id></alternative><alternative><name><![CDATA[ Hello Niko!!]]></name><id>b</id></alternative><alternative><name><![CDATA[ An Exception is thrown at runtime]]></name><id>c</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ Consider this code and that there is no attribute in the request object.
+   
+    package value;
+    public class Person {
+       private String name;
+       public void setName(String name) {
+          this.name = name;
+       }
+    }
+
+   
+    <%-- hello.jsp --%>
+    <html>
+      <body>
+        <jsp:useBean id="person" class="value.Person" scope="request">
+          <jsp:setProperty name="person" property="name" value="Niko" />
+        </jsp:useBean>
+        Hello ${person.name}!!
+      </body>
+    </html>
+
+    What is the output of hello.jsp? (1 correct answer)
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Hello !!]]></name><id>a</id></alternative><alternative><name><![CDATA[ Hello Niko!!]]></name><id>b</id></alternative><alternative><name><![CDATA[ An Exception is thrown at runtime]]></name><id>c</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ Consider this code and that there is no attribute in the request object.
+   
+    package value;
+    public class Person {
+       private String name;
+       public String getName() {
+          return name;
+       }
+    }
+
+   
+    <%-- hello.jsp --%>
+    <html>
+      <body>
+        <jsp:useBean id="person" class="value.Person" scope="request">
+          <jsp:setProperty name="person" property="name" value="Niko" />
+        </jsp:useBean>
+        Hello ${person.name}!!
+      </body>
+    </html>
+
+    What is the output of hello.jsp? (1 correct answer)
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Hello !!]]></name><id>a</id></alternative><alternative><name><![CDATA[ Hello Niko!!]]></name><id>b</id></alternative><alternative><name><![CDATA[ An Exception is thrown at runtime]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider this code and that there is no attribute in the request object.
+   
+    package value;
+    public class Person {
+       private String name;
+       public String getName() {
+          return name;
+       }
+       public void setName(String name) {
+          this.name = name;
+       }
+    }
+
+   
+    <%-- hello.jsp --%>
+    <html>
+      <body>
+        <jsp:useBean id="person" class="value.Person" scope="request">
+          <jsp:setProperty name="person" property="name" value="Niko" />
+        </jsp:useBean>
+        Hello ${person.name}!!
+      </body>
+    </html>
+
+    What is the output of hello.jsp? (1 correct answer)
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Hello !!]]></name><id>a</id></alternative><alternative><name><![CDATA[ Hello Niko!!]]></name><id>b</id></alternative><alternative><name><![CDATA[ An Exception is thrown at runtime]]></name><id>c</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ Consider this code and that there is no attribute in the request object.
+   
+    package value;
+    public class Person {
+       private String name;
+       private Person() {
+       }
+       public String getName() {
+          return name;
+       }
+       public void setName(String name) {
+          this.name = name;
+       }
+    }
+
+   
+    <%-- hello.jsp --%>
+    <html>
+      <body>
+        <jsp:useBean id="person" class="value.Person" scope="request">
+          <jsp:setProperty name="person" property="name" value="Niko" />
+        </jsp:useBean>
+        Hello ${person.name}!!
+      </body>
+    </html>
+
+    What is the output of hello.jsp? (1 correct answer)
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Hello !!]]></name><id>a</id></alternative><alternative><name><![CDATA[ Hello Niko!!]]></name><id>b</id></alternative><alternative><name><![CDATA[ An Exception is thrown at runtime]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider this code and that there is no attribute in the request object.
+   
+    package value;
+    public class Person {
+       private String onoma;
+       public String getName() {
+          return onoma;
+       }
+       public void setName(String name) {
+          this.onoma = name;
+       }
+    }
+
+   
+    <%-- hello.jsp --%>
+    <html>
+      <body>
+        <jsp:useBean id="person" class="value.Person" scope="request">
+          <jsp:setProperty name="person" property="name" value="Niko" />
+        </jsp:useBean>
+        Hello ${person.name}!!
+      </body>
+    </html>
+
+    What is the output of hello.jsp? (1 correct answer)
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Hello !!]]></name><id>a</id></alternative><alternative><name><![CDATA[ Hello Niko!!]]></name><id>b</id></alternative><alternative><name><![CDATA[ An Exception is thrown at runtime]]></name><id>c</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ Consider this code and that there is no attribute in the request object.
+   
+    package value;
+    public class Person {
+       private String name;
+       public String getName() {
+          return name;
+       }
+       public void setName(String name) {
+          this.name = name;
+       }
+    }
+
+   
+    <%-- hello.jsp --%>
+    <html>
+      <body>
+        <jsp:useBean id="person" class="value.Person" scope="request">
+          <jsp:setProperty name="person" property="name" value="Niko" />
+        </jsp:useBean>
+        Hello ${person.name[0]}!!
+      </body>
+    </html>
+
+    What is the output of hello.jsp? (1 correct answer)
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Hello !!]]></name><id>a</id></alternative><alternative><name><![CDATA[ Hello Niko!!]]></name><id>b</id></alternative><alternative><name><![CDATA[ An Exception is thrown at runtime]]></name><id>c</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ Consider this code and that there is no attribute in the request object.
+   
+    package value;
+    public class Person {
+       private String name;
+       public String getName() {
+          return name;
+       }
+       public void setName(String name) {
+          this.name = name;
+       }
+    }
+
+   
+    <%-- hello.jsp --%>
+    <html>
+      <body>
+        <jsp:useBean id="person" class="value.Person" scope="request">
+          <jsp:setProperty name="person" property="name" value="Niko" />
+        </jsp:useBean>
+        Hello ${person.name["0"]}!!
+      </body>
+    </html>
+
+    What is the output of hello.jsp? (1 correct answer)
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Both HttpJspPage and JspPage are interfaces. (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ HttpJspPage IS-A JspPage. (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ HttpJspPage IS-A Servlet. (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ void _jspService()]]></name><id>a</id></alternative><alternative><name><![CDATA[ void _jspService(HttpServletRequest, HttpServletResponse)]]></name><id>b</id></alternative><alternative><name><![CDATA[ void _jspService(HttpServletRequest, HttpServletResponse) throws IOException, ServletException]]></name><id>c</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ What is the signature of method _jspService of HttpJspPage? (1 correct answer)
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ The method _jspService of HttpJspPage should not be overriden by a JSP author. (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ void jspInit()]]></name><id>a</id></alternative><alternative><name><![CDATA[ void jspInit(HttpServletRequest, HttpServletResponse)]]></name><id>b</id></alternative><alternative><name><![CDATA[ void jspInit(HttpServletRequest, HttpServletResponse) throws IOException, ServletException]]></name><id>c</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the signature of method jspInit of JspPage? (1 correct answer)
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ void jspDestroy()]]></name><id>a</id></alternative><alternative><name><![CDATA[ void jspDestroy(HttpServletRequest, HttpServletResponse)]]></name><id>b</id></alternative><alternative><name><![CDATA[ void jspDestroy(HttpServletRequest, HttpServletResponse) throws IOException, ServletException]]></name><id>c</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the signature of method jspDestroy of JspPage? (1 correct answer)
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ The methods jspInit and jspDestroy of JspPage may be overriden by a JSP author. (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Both PageContext and JspContext are abstract classes. (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ PageContext IS-A JspContext. (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ The following are all methods of JspContext. (1 correct answer)
+          ⇒ findAttribute()
+          ⇒ getAttribute()
+          ⇒ setAttribute()
+          ⇒ removeAttribute()
+          ⇒ getAttributeNamesInScope()
+          ⇒ getAttributesScope()
+          ⇒ getOut()
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ findAttribute()]]></name><id>a</id></alternative><alternative><name><![CDATA[ getAttribute()]]></name><id>b</id></alternative><alternative><name><![CDATA[ setAttribute()]]></name><id>c</id></alternative><alternative><name><![CDATA[ removeAttribute()]]></name><id>d</id></alternative><corrects>b,c,d</corrects></alternatives><question_name><![CDATA[ Which of the following methods of JspContext have 2 overloaded versions? (3 correct answers)
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ public abstract JspWriter getOut()]]></name><id>a</id></alternative><alternative><name><![CDATA[ public abstract PrintWriter getOut()]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the signature of the method getOut of JspContext? (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ The following are all methods of PageContext. (1 correct answer)
+          ⇒ getPage()
+          ⇒ getSession()
+          ⇒ getRequest()
+          ⇒ getResponse()
+          ⇒ getServletConfig()
+          ⇒ getServletContext()
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ The following are all fields of PageContext. (1 correct answer)
+          ⇒ PAGE_SCOPE
+          ⇒ REQUEST_SCOPE
+          ⇒ SESSION_SCOPE
+          ⇒ APPLICATION_SCOPE
+
+        
+        
+
+]]></question_name></question>

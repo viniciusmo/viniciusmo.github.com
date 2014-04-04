@@ -1,0 +1,1086 @@
+    question. Is this a valid use of header.tag, a JSP tag file that is located in WEB-INF/tags? (1 correct answer)
+
+    <%@ taglib prefix="my" tagdir="/WEB-INF/tags" %>
+    <html>
+      <body>
+        <my:header />
+      </body>
+    </html>
+
+        111 Yes.999
+        111 No.999
+
+    question. Is this a valid use of header.tag, a JSP tag file that is located in WEB-INF/tags? (1 correct answer)
+
+    <%@ taglib prefix="my" tagdir="/WEB-INF/tags/
+
+    header.tag" %>
+    <html>
+      <body>
+        <my:header />
+      </body>
+    </html>
+
+        111 Yes.999
+        111 No.999
+
+    question. Is this a valid use of header.tag, a JSP tag file that is located in WEB-INF/tags? (1 correct answer)
+
+    <%@ taglib prefix="my" uri="/WEB-INF/tags" %>
+    <html>
+      <body>
+        <my:header />
+      </body>
+    </html>
+
+        111 Yes.999
+        111 No.999
+
+    question. Is this a valid use of header.tag, a JSP tag file that is located in WEB-INF/tags? (1 correct answer)
+
+    <%@ taglib prefix="my" uri="/WEB-INF/tags/
+
+    header.tag" %>
+    <html>
+      <body>
+        <my:header />
+      </body>
+    </html>
+
+        111 Yes.999
+        111 No.999
+
+    question. Is this a valid use of header.tag, a JSP tag file that is located in WEB-INF/tags? (1 correct answer)
+
+    <%@ taglib prefix="my" tagdir="/WEB-INF/tags/"
+
+    uri="http://nikojava.wordpress.com" %>
+    <html>
+      <body>
+        <my:header />
+      </body>
+    </html>
+
+        111 Yes.999
+        111 No.999
+
+    question. Is this a valid use of header.tag, a JSP tag file that is located in WEB-INF/tags? (1 correct answer)
+
+    <%@ taglib prefix="header" tagdir="/WEB-INF/
+    tags" %>
+    <html>
+      <body>
+        <header:header />
+      </body>
+    </html>
+
+        111 Yes.999
+        111 No.999
+
+    question. Is this a valid use of header.tag, a JSP tag file that is located in WEB-INF/tags? (1 correct answer)
+
+    <%@ taglib prefix="1" tagdir="/WEB-INF/tags" %>
+    <html>
+      <body>
+        <1:header />
+      </body>
+    </html>
+
+        111 Yes.999
+        111 No.999
+
+    question. Consider these files.
+
+    <%-- WEB-INF/tags/header.tag --%>
+    <h1>Hello !!</h1>
+
+    <%-- output.jsp --%>
+    <%@ taglib prefix="my" tagdir="/WEB-INF/tags" %>
+    <html>
+      <body>
+        <my:header></my:header>
+      </body>
+    </html>
+
+    Is the declaration and use of the JSP tag file valid? (1 correct answer)
+        111 Yes.999
+        111 No.999
+
+    question. Consider these files.
+
+    <%-- WEB-INF/tags/header.tag --%>
+    <h1>Hello ${Manoli}!!</h1>
+
+    <%-- output.jsp --%>
+    <%@ taglib prefix="my" tagdir="/WEB-INF/tags" %>
+    <html>
+      <body>
+        <my:header name="Manoli"/>
+      </body>
+    </html>
+
+    Is the declaration and use of the JSP tag file valid? (1 correct answer)
+        111 Yes.999
+        111 No.999
+
+    question. Consider these files.
+
+    <%-- WEB-INF/tags/header.tag --%>
+    <h1>Hello ${name}!!</h1>
+
+    <%-- output.jsp --%>
+    <%@ taglib prefix="my" tagdir="/WEB-INF/tags" %>
+    <html>
+      <body>
+        <my:header name="Manoli"/>
+      </body>
+    </html>
+
+    Is the declaration and use of the JSP tag file valid? (1 correct answer)
+        111 Yes.999
+        111 No.999
+
+    question. Consider these files.
+
+    <%-- WEB-INF/tags/header.tag --%>
+    <%@ attribute name="name" %>
+    <h1>Hello ${name}!!</h1>
+
+    <%-- output.jsp --%>
+    <%@ taglib prefix="my" tagdir="/WEB-INF/tags" %>
+    <html>
+      <body>
+        <my:header name="Manoli"/>
+      </body>
+    </html>
+
+    Is the declaration and use of the JSP tag file valid? (1 correct answer)
+        111 Yes.999
+        111 No.999
+
+    question. Consider these files.
+
+    <%-- WEB-INF/tags/header.tag --%>
+    <%@ attribute name="name" %>
+    <h1>Hello ${name}!!</h1>
+
+    <%-- output.jsp --%>
+    <%@ taglib prefix="my" tagdir="/WEB-INF/tags" %>
+    <html>
+      <body>
+        <my:header name="Manoli"></my:header>
+      </body>
+    </html>
+
+    Is the declaration and use of the JSP tag file valid? (1 correct answer)
+        111 Yes.999
+        111 No.999
+
+    question. Consider these files.
+
+    <%-- WEB-INF/tags/simple.tag --%>
+    <%@ attribute name="city" required="false" %>
+    <%@ tag pageEncoding="utf-8"%>
+    This is ${city}.
+
+    <%-- output.jsp --%>
+    <%@ taglib prefix="ayo" tagdir="/WEB-INF/tags" %>
+    <html>
+      <body>
+        <ayo:simple city="Sparta"/>
+      </body>
+    </html>
+
+    What is the output? (1 correct answer)
+        111 “This is .”999
+        111 “This is Sparta.”999
+        111 An exception occurs at runtime.999
+
+    question. Consider these files.
+
+    <%-- WEB-INF/tags/simple.tag --%>
+    <%@ attribute name="city" required="true" %>
+    <%@ tag pageEncoding="utf-8"%>
+    This is ${city}.
+
+    <%-- output.jsp --%>
+    <%@ taglib prefix="ayo" tagdir="/WEB-INF/tags" %>
+    <html>
+      <body>
+        <ayo:simple/>
+      </body>
+    </html>
+
+    What is the output? (1 correct answer)
+        111 “This is .”999
+        111 “This is Sparta.”999
+        111 An exception occurs at runtime.999
+
+    question. Consider these files.
+
+    <%-- WEB-INF/tags/simple.tag --%>
+    <%@ attribute name="city" %>
+    <%@ tag pageEncoding="utf-8"%>
+    This is ${city}.
+
+    <%-- output.jsp --%>
+    <%@ taglib prefix="ayo" tagdir="/WEB-INF/tags" %>
+    <% request.setAttribute("city", "Sparta");%>
+    <html>
+      <body>
+        <ayo:simple city="${city}"/>
+      </body>
+    </html>
+
+    What is the output? (1 correct answer)
+        111 “This is .”999
+        111 “This is Sparta.”999
+        111 An exception occurs at runtime.999
+
+    question. Consider these files.
+
+    <%-- WEB-INF/tags/simple.tag --%>
+    <%@ attribute name="city" rtexprvalue="false" %>
+    <%@ tag pageEncoding="utf-8"%>
+    This is ${city}.
+
+    <%-- output.jsp --%>
+    <%@ taglib prefix="ayo" tagdir="/WEB-INF/tags" %>
+    <% request.setAttribute("city", "Sparta");%>
+    <html>
+      <body>
+        <ayo:simple city="${city}"/>
+      </body>
+    </html>
+
+    What is the output? (1 correct answer)
+        111 “This is .”999
+        111 “This is Sparta.”999
+        111 An exception occurs at runtime.999
+
+    question. Consider these files.
+
+    <%-- WEB-INF/tags/simple.tag --%>
+    <%@ attribute name="city" rtexprvalue="true" %>
+    <%@ tag pageEncoding="utf-8"%>
+    This is ${city}.
+
+    <%-- output.jsp --%>
+    <%@ taglib prefix="ayo" tagdir="/WEB-INF/tags" %>
+    <html>
+      <body>
+        <ayo:simple city="${1 ge 10}"/>
+      </body>
+    </html>
+
+    What is the output? (1 correct answer)
+        111 “This is true.”999
+        111 “This is false.”999
+        111 An exception occurs at runtime.999
+
+    question. Consider these files.
+
+    <%-- WEB-INF/tags/simple.tag --%>
+    <%@ attribute name="city" rtexprvalue="true" %>
+    <%@ tag pageEncoding="utf-8"%>
+    This is ${city}.
+
+    <%-- output.jsp --%>
+    <%@ taglib prefix="ayo" tagdir="/WEB-INF/tags" %>
+    <html>
+      <body>
+        <ayo:simple capital="${1 ge 10}"/>
+      </body>
+    </html>
+
+    What is the output? (1 correct answer)
+        111 “This is true.”999
+        111 “This is false.”999
+        111 An exception occurs at runtime.999
+
+    question. Consider these files.
+
+    <%-- WEB-INF/tags/body.tag --%>
+    Start <jsp:doBody /> End
+
+    <%-- output.jsp --%>
+    <%@ taglib prefix="ayo" tagdir="/WEB-INF/tags" %>
+    <html>
+      <body>
+        <ayo:body>Middle</ayo:body>
+      </body>
+    </html>
+
+    What is the output? (1 correct answer)
+        111 “Start End”999
+        111 “Start Middle End”999
+        111 An exception occurs at runtime.999
+
+    question. Consider these files.
+
+    <%-- WEB-INF/tags/body.tag --%>
+    <%@ tag body-content="scriptless" %>
+    Start <jsp:doBody /> End
+
+    <%-- output.jsp --%>
+    <%@ taglib prefix="ayo" tagdir="/WEB-INF/tags" %>
+    <% request.setAttribute("position", "Middle"); %>
+    <html>
+      <body>
+        <ayo:body>${position}</ayo:body>
+      </body>
+    </html>
+
+    What is the output? (1 correct answer)
+        111 “Start End”999
+        111 “Start Middle End”999
+        111 An exception occurs at runtime.999
+
+    question. Consider these files.
+
+    <%-- WEB-INF/tags/body.tag --%>
+    <%@ tag body-content="tagdependent" %>
+    Start <jsp:doBody /> End
+
+    <%-- output.jsp --%>
+    <%@ taglib prefix="ayo" tagdir="/WEB-INF/tags" %>
+    <% request.setAttribute("position", "Middle"); %>
+    <html>
+      <body>
+        <ayo:body><%= request.getAttribute("position") %></ayo:body>
+      </body>
+    </html>
+
+    What is the output? (1 correct answer)
+        111 “Start End”999
+        111 “Start Middle End”999
+        111 An exception occurs at runtime.999
+
+    question. SimpleTagSupport is a class that belongs to package javax.servlet.jsp.tagext. (1 correct answer)
+        111 true999
+        111 false999
+
+    question. SimpleTagSupport IS-A SimpleTag. (1 correct answer)
+        111 true999
+        111 false999
+
+    question. SimpleTagSupport IS-A JspTag. (1 correct answer)
+        111 true999
+        111 false999
+
+    question. How many times is the doTag() method of SimpleTagSupport called on each tag invocation? (1 correct answer)
+        111 One.999
+        111 It depends on the container.999
+
+    question. Consider class SimpleTagSupport. What is the signature of its method doTag? (1 correct answer)
+        111 public void doTag() throws ServletException999
+        111 public void doTag() throws IOException, JspException999
+
+    question. Consider a simple tag handler that is nested, has attributes and a body. Here are the actions taken by the Container when this tag is invoked. Place them in the correct order starting from what happens first.
+        111 Calls the setJspBody(JspFragment).999
+        111 Calls the no-arg constructor.999
+        111 Calls the doTag() method.999
+        111 Calls the setParent(JspTag).999
+        111 Calls the attribute setters.999
+        111 Calls the setJspContext(JspContext).999
+
+    question. Assuming all imports are correct, will this code compile successfully? (1 correct answer)
+
+    public class Test extends SimpleTagSupport {
+    public void doTag() throws IOException, JspException {
+        getJspContext().getOut().println("A simple tag handler!!");
+    }
+    }
+
+        111 Yes.999
+        111 No.999
+
+    question. Assuming all imports are correct, will this code compile successfully? (1 correct answer)
+
+    public class Test extends SimpleTagSupport {
+    public void doTag() throws IOException, JspException {
+        getJspContext().getOut().append("A simple tag handler!!");
+    }
+    }
+
+        111 Yes.999
+        111 No.999
+
+    question. Assuming all imports are correct, will this code compile successfully? (1 correct answer)
+
+    public class Test extends SimpleTagSupport {
+    public void doTag() throws IOException, JspException {
+        getJspContext().getOut().format("A simple tag handler!!");
+    }
+    }
+
+        111 Yes.999
+        111 No.999
+
+    question. Assuming all imports are correct, will this code compile successfully? (1 correct answer)
+
+    public class Test extends SimpleTagSupport {
+    public void doTag() throws IOException {
+        getJspContext().getOut().print("A simple tag handler!!");
+    }
+    }
+
+        111 Yes.999
+        111 No.999
+
+    question. Assuming all imports are correct, will this code compile successfully? (1 correct answer)
+
+    public class Test extends SimpleTagSupport {
+    public void doTag() throws Exception {
+        getJspContext().getOut().print("A simple tag handler!!");
+    }
+    }
+
+        111 Yes.999
+        111 No.999
+
+    question. Is this code a valid simple tag handler? (1 correct answer)
+
+    public class Test extends SimpleTagSupport {
+    public Test(String name) {
+    }
+    public void doTag() throws IOException, JspException {
+        getJspContext().getOut().println("A simple tag handler!!");
+    }
+    }
+
+        111 Yes.999
+        111 No.999
+
+    question. Test IS-A SimpleTagSupport in package simpletaghandlers. Is it correctly declared in a TLD? (1 correct answer)
+
+    <tag>
+      <tag-class>simpletaghandlers.Test</tag-class>
+      <body-content>empty</body-content>
+    </tag>
+
+        111 Yes.999
+        111 No.999
+
+    question. Test IS-A SimpleTagSupport in package simpletaghandlers. Is it correctly declared in a TLD? (1 correct answer)
+
+    <tag>
+      <name>simple</name>
+      <body-content>empty</body-content>
+    </tag>
+
+        111 Yes.999
+        111 No.999
+
+    question. Test IS-A SimpleTagSupport in package simpletaghandlers. Is it correctly declared in a TLD? (1 correct answer)
+
+    <tag>
+      <name>simple</name>
+      <tag-class>Test</tag-class>
+      <body-content>empty</body-content>
+    </tag>
+
+        111 Yes.999
+        111 No.999
+
+    question. Test IS-A SimpleTagSupport in package simpletaghandlers. Is it correctly declared in a TLD? (1 correct answer)
+
+    <tag>
+      <name>simple</name>
+      <tag-class>simpletaghandlers.Test</tag-class>
+    </tag>
+
+        111 Yes.999
+        111 No.999
+
+    question. Test IS-A SimpleTagSupport in package simpletaghandlers. Is it correctly declared in a TLD? (1 correct answer)
+
+    <tag>
+      <name>simple</name>
+      <tag-class>simpletaghandlers.Test</tag-class>
+      <body-content>empty</body-content>
+    </tag>
+
+        111 Yes.999
+        111 No.999
+
+    question. mytaglib.tld is a valid TLD with <uri>/webapp/mytaglib</uri> and a simple tag handler with <name>simple</name>. Is this a valid use of the tag handler? (1 correct answer)
+
+    <%@ taglib tagdir="/WEB-INF/" prefix="show"%>
+    <html>
+      <body>
+        <show:simple />
+      </body>
+    </html>
+
+        111 Yes.999
+        111 No.999
+
+    question. mytaglib.tld is a valid TLD with <uri>/webapp/mytaglib</uri> and a simple tag handler with <name>simple</name>. Is this a valid use of the tag handler? (1 correct answer)
+
+    <%@ taglib tagdir="/WEB-INF/mytaglib.tld" prefix="show"%>
+    <html>
+      <body>
+        <show:simple />
+      </body>
+    </html>
+
+        111 Yes.999
+        111 No.999
+
+    question. mytaglib.tld is a valid TLD with <uri>/webapp/mytaglib</uri> and a simple tag handler with <name>simple</name>. Is this a valid use of the tag handler? (1 correct answer)
+
+    <%@ taglib tagdir="/webapp/mytaglib" prefix="show"%>
+    <html>
+      <body>
+        <show:simple />
+      </body>
+    </html>
+
+        111 Yes.999
+        111 No.999
+
+    question. mytaglib.tld is a valid TLD with <uri>/webapp/mytaglib</uri> and a simple tag handler with <name>simple</name>. Is this a valid use of the tag handler? (1 correct answer)
+
+    <%@ taglib uri="/webapp/mytaglib" prefix="show"%>
+    <html>
+      <body>
+        <show:simple />
+      </body>
+    </html>
+
+        111 Yes.999
+        111 No.999
+
+    question. Assume that everything is declared properly and the TLD specifies <body-content>scriptless</body-content>. What is the output of the JSP? (1 correct answer)
+
+    public class Repeater extends SimpleTagSupport {
+      public void doTag() throws JspException, IOException {
+        getJspBody().invoke(null);
+      }
+    }
+
+    <%@ taglib uri="/webapp/mytaglib" prefix="do" %>
+    <html>
+      <body>
+        (Before)
+        <do:repeater />
+        (After)
+      </body>
+    </html>
+
+        111 (Before)(After)999
+        111 An exception occurs at runtime.999
+
+    question. Assume that everything is declared properly and the TLD specifies <body-content>scriptless</body-content>. What is the output of the JSP? (1 correct answer)
+
+    public class Repeater extends SimpleTagSupport {
+      public void doTag() throws JspException, IOException {
+        if (getJspBody() == null) {
+          getJspContext().getOut().print("Surprise");
+        } else {
+          getJspBody().invoke(null);
+        }
+      }
+    }
+
+    <%@ taglib uri="/webapp/mytaglib" prefix="do" %>
+    <html>
+      <body>
+        (Before)
+        <do:repeater></do:repeater>
+        (After)
+      </body>
+    </html>
+
+        111 (Before)(After)999
+        111 (Before)Surprise(After)999
+        111 An exception occurs at runtime.999
+
+    question. Assume that everything is declared properly and the TLD specifies <body-content>scriptless</body-content>. What is the output of the JSP? (1 correct answer)
+
+    public class Repeater extends SimpleTagSupport {
+      public void doTag() throws JspException, IOException {
+        getJspBody().invoke(null);
+      }
+    }
+
+    <%@ taglib uri="/webapp/mytaglib" prefix="do" %>
+    <html>
+      <body>
+        (Before)
+        <do:repeater>Surprise</do:repeater>
+        (After)
+      </body>
+    </html>
+
+        111 (Before)(After)999
+        111 (Before)Surprise(After)999
+        111 An exception occurs at runtime.999
+
+    question. Assume that everything is declared properly and the TLD specifies <body-content>empty</body-content>. What is the output of the JSP? (1 correct answer)
+
+    public class Repeater extends SimpleTagSupport {
+      public void doTag() throws JspException, IOException {
+        getJspBody().invoke(null);
+      }
+    }
+
+    <%@ taglib uri="/webapp/mytaglib" prefix="do" %>
+    <html>
+      <body>
+        (Before)
+        <do:repeater>Surprise</do:repeater>
+        (After)
+      </body>
+    </html>
+
+        111 (Before)(After)999
+        111 (Before)Surprise(After)999
+        111 An exception occurs at runtime.999
+
+    question. Assume that everything is declared properly and the TLD specifies <body-content>scriptless</body-content>. What is the output of the JSP? (1 correct answer)
+
+    public class Repeater extends SimpleTagSupport {
+      public void doTag() throws JspException, IOException {
+        getJspBody().invoke(null);
+        getJspBody().invoke(null);
+      }
+    }
+
+    <%@ taglib uri="/webapp/mytaglib" prefix="do" %>
+    <html>
+      <body>
+        (Before)
+        <do:repeater>Surprise</do:repeater>
+        (After)
+      </body>
+    </html>
+
+        111 (Before)(After)999
+        111 (Before)Surprise(After)999
+        111 (Before)SurpriseSurprise(After)999
+        111 An exception occurs at runtime.999
+
+    question. Assume that everything is declared properly and the TLD specifies <body-content>scriptless</body-content>. What is the output of the JSP? (1 correct answer)
+
+    public class Repeater extends SimpleTagSupport {
+      public void doTag() throws JspException, IOException {
+        getJspBody().invoke(null);
+      }
+    }
+
+    <%@ taglib uri="/webapp/mytaglib" prefix="do" %>
+    <html>
+      <body>
+        (Before)
+        <do:repeater>${here}</do:repeater>
+        (After)
+      </body>
+    </html>
+
+        111 (Before)(After)999
+        111 (Before)here(After)999
+        111 (Before)${here}(After)999
+        111 An exception occurs at runtime.999
+
+    question. Assume that everything is declared properly and the TLD specifies <body-content>scriptless</body-content>. What is the output of the JSP? (1 correct answer)
+
+    public class Repeater extends SimpleTagSupport {
+      public void doTag() throws JspException, IOException {
+        getJspBody().invoke(null);
+      }
+    }
+
+    <%@ taglib uri="/webapp/mytaglib" prefix="do" %>
+    <% request.setAttribute("here", "Surprise"); %>
+    <html>
+      <body>
+        (Before)
+        <do:repeater>${here}</do:repeater>
+        (After)
+      </body>
+    </html>
+
+        111 (Before)(After)999
+        111 (Before)Surprise(After)999
+        111 An exception occurs at runtime.999
+
+    question. Assume that everything is declared properly and the TLD specifies <body-content>scriptless</body-content>. What is the output of the JSP? (1 correct answer)
+
+    public class Repeater extends SimpleTagSupport {
+      public void doTag() throws JspException, IOException {
+        getJspContext().setAttribute("here", "Surprise");
+        getJspBody().invoke(null);
+      }
+    }
+
+    <%@ taglib uri="/webapp/mytaglib" prefix="do" %>
+    <html>
+      <body>
+        (Before)
+        <do:repeater>${here}</do:repeater>
+        (After)
+      </body>
+    </html>
+
+        111 (Before)(After)999
+        111 (Before)Surprise(After)999
+        111 An exception occurs at runtime.999
+
+    question. Consider this simple tag handler
+
+    public class Repeater extends SimpleTagSupport {
+      private String surprise;
+      public void doTag() throws JspException, IOException {
+        getJspContext().getOut().print(surprise);
+        getJspContext().getOut().print(" is a big surprise!");
+      }
+    }
+
+    that is properly declared in a TLD with the following attribute.
+
+    <attribute>
+      <name>surprise</name>
+      <required>false</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+
+    What is the output of this JSP? (1 correct answer)
+
+    <%@ taglib uri="/webapp/mytaglib" prefix="do" %>
+    <html>
+      <body>
+        (Before)
+        <do:repeater surprise="NetBeans 6.5" />
+        (After)
+      </body>
+    </html>
+
+        111 (Before)(After)999
+        111 (Before)null is a big surprise!(After)999
+        111 (Before)NetBeans 6.5 is a big surprise!(After)999
+        111 An exception occurs at runtime.999
+
+    question. Consider this simple tag handler
+
+    public class Repeater extends SimpleTagSupport {
+      private String surprise;
+      public void doTag() throws JspException, IOException {
+        getJspContext().getOut().print(surprise);
+        getJspContext().getOut().print(" is a big surprise!");
+      }
+      public void setSurprise(String surprise) {
+      }
+    }
+
+    that is properly declared in a TLD with the following attribute.
+
+    <attribute>
+      <name>surprise</name>
+      <required>false</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+
+    What is the output of this JSP? (1 correct answer)
+
+    <%@ taglib uri="/webapp/mytaglib" prefix="do" %>
+    <html>
+      <body>
+        (Before)
+        <do:repeater surprise="NetBeans 6.5" />
+        (After)
+      </body>
+    </html>
+
+        111 (Before)(After)999
+        111 (Before)null is a big surprise!(After)999
+        111 (Before)NetBeans 6.5 is a big surprise!(After)999
+        111 An exception occurs at runtime.999
+
+    question. Consider this simple tag handler
+
+    public class Repeater extends SimpleTagSupport {
+      private String surprise;
+      public void doTag() throws JspException, IOException {
+        getJspContext().getOut().print(surprise);
+        getJspContext().getOut().print(" is a big surprise!");
+      }
+      public void setSurprise(String surprise) {
+        this.surprise = surprise;
+      ;}
+    }
+
+    that is properly declared in a TLD with the following attribute.
+
+    <attribute>
+      <name>surprise</name>
+      <required>false</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+
+    What is the output of this JSP? (1 correct answer)
+
+    <%@ taglib uri="/webapp/mytaglib" prefix="do" %>
+    <html>
+      <body>
+        (Before)
+        <do:repeater surprise="NetBeans 6.5" />
+        (After)
+      </body>
+    </html>
+
+        111 (Before)(After)999
+        111 (Before)null is a big surprise!(After)999
+        111 (Before)NetBeans 6.5 is a big surprise!(After)999
+        111 An exception occurs at runtime.999
+
+    question. TagSupport is a class that belongs to package javax.servlet.jsp.tagext. (1 correct answer)
+        111 true999
+        111 false999
+
+    question. TagSupport IS-A IterationTag. (1 correct answer)
+        111 true999
+        111 false999
+
+    question. TagSupport IS-A Tag. (1 correct answer)
+        111 true999
+        111 false999
+
+    question. TagSupport IS-A JspTag. (1 correct answer)
+        111 true999
+        111 false999
+
+    question. Consider class TagSupport. What is the signature of its method doStartTag? (1 correct answer)
+        111 public int doStartTag() throws JspException999
+        111 public void doStartTag() throws JspException999
+        111 public int doStartTag() throws JspException, IOException999
+        111 public void doStartTag() throws JspException, IOException999
+
+    question. Consider class TagSupport. What is the signature of its method doEndTag? (1 correct answer)
+        111 public int doEndTag() throws JspException999
+        111 public int doEndTag(String) throws JspException999
+        111 public int doEndTag(Writer) throws JspException, IOException999
+
+    question. Consider interface IterationTag. What is the signature of its method doAfterBody? (1 correct answer)
+        111 int doAfterBody() throws JspException999
+        111 void doAfterBody() throws JspException999
+
+    question. The following are all fields of interface Tag. (1 correct answer)
+          ⇒ SKIP_BODY
+          ⇒ SKIP_PAGE
+          ⇒ EVAL_PAGE
+          ⇒ EVAL_BODY_INCLUDE
+
+        111 true999
+        111 false999
+
+    question. The following is a field of interface IterationTag. (1 correct answer)
+          ⇒ EVAL_BODY_AGAIN
+
+        111 true999
+        111 false999
+
+    question. Is this a valid classic tag handler? (1 correct answer)
+
+    public class Classic extends TagSupport {
+    }
+
+        111 Yes.999
+        111 No.999
+
+    question. Is this a valid classic tag handler? (1 correct answer)
+
+    public class Classic extends TagSupport {
+        public Classic() {
+        }
+    }
+
+        111 Yes.999
+        111 No.999
+
+    question. Is this a valid classic tag handler? (1 correct answer)
+
+    public class Classic extends TagSupport {
+        private Classic() {
+        }
+    }
+
+        111 Yes.999
+        111 No.999
+
+    question. Is this a valid classic tag handler? (1 correct answer)
+
+    public class Classic extends TagSupport {
+        public Classic() {
+        }
+        public Classic(String construct) {
+        }
+    }
+
+        111 Yes.999
+        111 No.999
+
+    question. Assume that everything is declared properly and the TLD specifies <body-content>scriptless</body-content>. What is the output of the JSP? (1 correct answer)
+
+    public class Classic extends TagSupport {
+      public int doStartTag() {
+        return SKIP_BODY;
+      }
+    }
+
+    <%@ taglib uri="correct" prefix="yes" %>
+    <html>
+      <body>
+        (Before)
+        <yes:classic>My Body</yes:classic>
+        (After)
+      </body>
+    </html>
+
+        111 (Before)(After)999
+        111 (Before)My Body(After)999
+
+    question. Assume that everything is declared properly and the TLD specifies <body-content>scriptless</body-content>. What is the output of the JSP? (1 correct answer)
+
+    public class Classic extends TagSupport {
+      public int doStartTag() {
+        return SKIP_PAGE;
+      }
+    }
+
+    <%@ taglib uri="correct" prefix="yes" %>
+    <html>
+      <body>
+        (Before)
+        <yes:classic>My Body</yes:classic>
+        (After)
+      </body>
+    </html>
+
+        111 (Before)(After)999
+        111 (Before)999
+        111 (Before)My Body(After)999
+        111 (Before)My Body999
+
+    question. Assume that everything is declared properly and the TLD specifies <body-content>scriptless</body-content>. What is the output of the JSP? (1 correct answer)
+
+    public class Classic extends TagSupport {
+      public int doStartTag() {
+        return EVAL_BODY_INCLUDE;
+      }
+    }
+
+    <%@ taglib uri="correct" prefix="yes" %>
+    <html>
+      <body>
+        (Before)
+        <yes:classic>My Body</yes:classic>
+        (After)
+      </body>
+    </html>
+
+        111 (Before)(After)999
+        111 (Before)999
+        111 (Before)My Body(After)999
+        111 (Before)My Body999
+
+    question. Assume that everything is declared properly and the TLD specifies <body-content>scriptless</body-content>. What is the output of the JSP? (1 correct answer)
+
+    public class Classic extends TagSupport {
+      public int doStartTag() {
+        try {
+          pageContext.getOut().print("Hello!!");
+        } catch (Exception e) {
+          e.printStackTrace();
+        }
+        return SKIP_BODY;
+      }
+    }
+
+    <%@ taglib uri="correct" prefix="yes" %>
+    <html>
+      <body>
+        (Before)
+        <yes:classic>My Body</yes:classic>
+        (After)
+      </body>
+    </html>
+
+        111 (Before)(After)999
+        111 (Before)Hello!!(After)999
+        111 (Before)My Body(After)999
+        111 (Before)Hello!!My Body(After)999
+
+    question. Assume that everything is declared properly and the TLD specifies <body-content>scriptless</body-content>. What is the output of the JSP? (1 correct answer)
+
+    public class Classic extends TagSupport {
+      public int doStartTag() {
+        try {
+          pageContext.getOut().print("Hello!!");
+        } catch (Exception e) {
+          e.printStackTrace();
+        }
+        return EVAL_BODY_INCLUDE;
+      }
+    }
+
+    <%@ taglib uri="correct" prefix="yes" %>
+    <html>
+      <body>
+        (Before)
+        <yes:classic>My Body</yes:classic>
+        (After)
+      </body>
+    </html>
+
+        111 (Before)(After)999
+        111 (Before)Hello!!(After)999
+        111 (Before)My Body(After)999
+        111 (Before)Hello!!My Body(After)999
+
+    question. This classic tag handler is properly declared in a TLD.
+
+    public class Classic extends TagSupport {
+      private List<String> movies = new ArrayList<String>();
+      private int current = 0;
+      public ClassicRepeater() {
+        movies.add("Heat");
+        movies.add("Pocahontas");
+        movies.add("Lawrence of Arabia");
+      }
+      public int doStartTag() {
+        setAttribute();
+        return EVAL_BODY_INCLUDE;
+      }
+      public int doAfterBody() {
+        while (current < movies.size()) {
+          setAttribute();
+          return EVAL_BODY_AGAIN;
+        }
+        return SKIP_BODY;        
+      }
+      private void setAttribute() {
+        pageContext.setAttribute("movie", movies.get(current));                
+        current++;
+      }
+    }
+
+    Many testers complain that when they visit or repeatedly hit the refresh button on the following jsp, they sometimes get an IndexOutOfBoundsException. What’s wrong with the above implementation? (1 correct answer)
+
+    <%@ taglib uri="correct" prefix="yes" %>
+    <html>
+      <body>
+        <ol>
+        <yes:classic><li>${movie}</li></yes:classic>
+        </ol>
+      </body>
+    </html>
+
+        111 We should override the doEndTag() method.999
+        111 The value returned by doStartTag() is not correct.999
+        111 The doAfterBody() should not have a while loop inside.999
+        111 The instance variables should be initialized in the doStartTag() method.999
+        111 The doStartTag() and doAfterBody() methods should throw a JspException.999
+
+

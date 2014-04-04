@@ -1,0 +1,4217 @@
+<questions>
+<question><alternatives><alternative><name><![CDATA[ Yes.]]></name><id>a</id></alternative><alternative><name><![CDATA[ No.]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Is this a valid use of header.tag, a JSP tag file that is located in WEB-INF/tags? (1 correct answer)
+
+    <%@ taglib prefix="my" tagdir="/WEB-INF/tags" %>
+    <html>
+      <body>
+        <my:header />
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Yes.]]></name><id>a</id></alternative><alternative><name><![CDATA[ No.]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Is this a valid use of header.tag, a JSP tag file that is located in WEB-INF/tags? (1 correct answer)
+
+    <%@ taglib prefix="my" tagdir="/WEB-INF/tags/
+
+    header.tag" %>
+    <html>
+      <body>
+        <my:header />
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Yes.]]></name><id>a</id></alternative><alternative><name><![CDATA[ No.]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Is this a valid use of header.tag, a JSP tag file that is located in WEB-INF/tags? (1 correct answer)
+
+    <%@ taglib prefix="my" uri="/WEB-INF/tags" %>
+    <html>
+      <body>
+        <my:header />
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Yes.]]></name><id>a</id></alternative><alternative><name><![CDATA[ No.]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Is this a valid use of header.tag, a JSP tag file that is located in WEB-INF/tags? (1 correct answer)
+
+    <%@ taglib prefix="my" uri="/WEB-INF/tags/
+
+    header.tag" %>
+    <html>
+      <body>
+        <my:header />
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Yes.]]></name><id>a</id></alternative><alternative><name><![CDATA[ No.]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Is this a valid use of header.tag, a JSP tag file that is located in WEB-INF/tags? (1 correct answer)
+
+    <%@ taglib prefix="my" tagdir="/WEB-INF/tags/"
+
+    uri="http://nikojava.wordpress.com" %>
+    <html>
+      <body>
+        <my:header />
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Yes.]]></name><id>a</id></alternative><alternative><name><![CDATA[ No.]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Is this a valid use of header.tag, a JSP tag file that is located in WEB-INF/tags? (1 correct answer)
+
+    <%@ taglib prefix="header" tagdir="/WEB-INF/
+    tags" %>
+    <html>
+      <body>
+        <header:header />
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Yes.]]></name><id>a</id></alternative><alternative><name><![CDATA[ No.]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Is this a valid use of header.tag, a JSP tag file that is located in WEB-INF/tags? (1 correct answer)
+
+    <%@ taglib prefix="1" tagdir="/WEB-INF/tags" %>
+    <html>
+      <body>
+        <1:header />
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Yes.]]></name><id>a</id></alternative><alternative><name><![CDATA[ No.]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider these files.
+
+    <%-- WEB-INF/tags/header.tag --%>
+    <h1>Hello !!</h1>
+
+    <%-- output.jsp --%>
+    <%@ taglib prefix="my" tagdir="/WEB-INF/tags" %>
+    <html>
+      <body>
+        <my:header></my:header>
+      </body>
+    </html>
+
+    Is the declaration and use of the JSP tag file valid? (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Yes.]]></name><id>a</id></alternative><alternative><name><![CDATA[ No.]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider these files.
+
+    <%-- WEB-INF/tags/header.tag --%>
+    <h1>Hello ${Manoli}!!</h1>
+
+    <%-- output.jsp --%>
+    <%@ taglib prefix="my" tagdir="/WEB-INF/tags" %>
+    <html>
+      <body>
+        <my:header name="Manoli"/>
+      </body>
+    </html>
+
+    Is the declaration and use of the JSP tag file valid? (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Yes.]]></name><id>a</id></alternative><alternative><name><![CDATA[ No.]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider these files.
+
+    <%-- WEB-INF/tags/header.tag --%>
+    <h1>Hello ${name}!!</h1>
+
+    <%-- output.jsp --%>
+    <%@ taglib prefix="my" tagdir="/WEB-INF/tags" %>
+    <html>
+      <body>
+        <my:header name="Manoli"/>
+      </body>
+    </html>
+
+    Is the declaration and use of the JSP tag file valid? (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Yes.]]></name><id>a</id></alternative><alternative><name><![CDATA[ No.]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider these files.
+
+    <%-- WEB-INF/tags/header.tag --%>
+    <%@ attribute name="name" %>
+    <h1>Hello ${name}!!</h1>
+
+    <%-- output.jsp --%>
+    <%@ taglib prefix="my" tagdir="/WEB-INF/tags" %>
+    <html>
+      <body>
+        <my:header name="Manoli"/>
+      </body>
+    </html>
+
+    Is the declaration and use of the JSP tag file valid? (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Yes.]]></name><id>a</id></alternative><alternative><name><![CDATA[ No.]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider these files.
+
+    <%-- WEB-INF/tags/header.tag --%>
+    <%@ attribute name="name" %>
+    <h1>Hello ${name}!!</h1>
+
+    <%-- output.jsp --%>
+    <%@ taglib prefix="my" tagdir="/WEB-INF/tags" %>
+    <html>
+      <body>
+        <my:header name="Manoli"></my:header>
+      </body>
+    </html>
+
+    Is the declaration and use of the JSP tag file valid? (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “This is .”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “This is Sparta.”]]></name><id>b</id></alternative><alternative><name><![CDATA[ An exception occurs at runtime.]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider these files.
+
+    <%-- WEB-INF/tags/simple.tag --%>
+    <%@ attribute name="city" required="false" %>
+    <%@ tag pageEncoding="utf-8"%>
+    This is ${city}.
+
+    <%-- output.jsp --%>
+    <%@ taglib prefix="ayo" tagdir="/WEB-INF/tags" %>
+    <html>
+      <body>
+        <ayo:simple city="Sparta"/>
+      </body>
+    </html>
+
+    What is the output? (1 correct answer)
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “This is .”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “This is Sparta.”]]></name><id>b</id></alternative><alternative><name><![CDATA[ An exception occurs at runtime.]]></name><id>c</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ Consider these files.
+
+    <%-- WEB-INF/tags/simple.tag --%>
+    <%@ attribute name="city" required="true" %>
+    <%@ tag pageEncoding="utf-8"%>
+    This is ${city}.
+
+    <%-- output.jsp --%>
+    <%@ taglib prefix="ayo" tagdir="/WEB-INF/tags" %>
+    <html>
+      <body>
+        <ayo:simple/>
+      </body>
+    </html>
+
+    What is the output? (1 correct answer)
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “This is .”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “This is Sparta.”]]></name><id>b</id></alternative><alternative><name><![CDATA[ An exception occurs at runtime.]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider these files.
+
+    <%-- WEB-INF/tags/simple.tag --%>
+    <%@ attribute name="city" %>
+    <%@ tag pageEncoding="utf-8"%>
+    This is ${city}.
+
+    <%-- output.jsp --%>
+    <%@ taglib prefix="ayo" tagdir="/WEB-INF/tags" %>
+    <% request.setAttribute("city", "Sparta");%>
+    <html>
+      <body>
+        <ayo:simple city="${city}"/>
+      </body>
+    </html>
+
+    What is the output? (1 correct answer)
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “This is .”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “This is Sparta.”]]></name><id>b</id></alternative><alternative><name><![CDATA[ An exception occurs at runtime.]]></name><id>c</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ Consider these files.
+
+    <%-- WEB-INF/tags/simple.tag --%>
+    <%@ attribute name="city" rtexprvalue="false" %>
+    <%@ tag pageEncoding="utf-8"%>
+    This is ${city}.
+
+    <%-- output.jsp --%>
+    <%@ taglib prefix="ayo" tagdir="/WEB-INF/tags" %>
+    <% request.setAttribute("city", "Sparta");%>
+    <html>
+      <body>
+        <ayo:simple city="${city}"/>
+      </body>
+    </html>
+
+    What is the output? (1 correct answer)
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “This is true.”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “This is false.”]]></name><id>b</id></alternative><alternative><name><![CDATA[ An exception occurs at runtime.]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider these files.
+
+    <%-- WEB-INF/tags/simple.tag --%>
+    <%@ attribute name="city" rtexprvalue="true" %>
+    <%@ tag pageEncoding="utf-8"%>
+    This is ${city}.
+
+    <%-- output.jsp --%>
+    <%@ taglib prefix="ayo" tagdir="/WEB-INF/tags" %>
+    <html>
+      <body>
+        <ayo:simple city="${1 ge 10}"/>
+      </body>
+    </html>
+
+    What is the output? (1 correct answer)
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “This is true.”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “This is false.”]]></name><id>b</id></alternative><alternative><name><![CDATA[ An exception occurs at runtime.]]></name><id>c</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ Consider these files.
+
+    <%-- WEB-INF/tags/simple.tag --%>
+    <%@ attribute name="city" rtexprvalue="true" %>
+    <%@ tag pageEncoding="utf-8"%>
+    This is ${city}.
+
+    <%-- output.jsp --%>
+    <%@ taglib prefix="ayo" tagdir="/WEB-INF/tags" %>
+    <html>
+      <body>
+        <ayo:simple capital="${1 ge 10}"/>
+      </body>
+    </html>
+
+    What is the output? (1 correct answer)
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Start End”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Start Middle End”]]></name><id>b</id></alternative><alternative><name><![CDATA[ An exception occurs at runtime.]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider these files.
+
+    <%-- WEB-INF/tags/body.tag --%>
+    Start <jsp:doBody /> End
+
+    <%-- output.jsp --%>
+    <%@ taglib prefix="ayo" tagdir="/WEB-INF/tags" %>
+    <html>
+      <body>
+        <ayo:body>Middle</ayo:body>
+      </body>
+    </html>
+
+    What is the output? (1 correct answer)
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Start End”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Start Middle End”]]></name><id>b</id></alternative><alternative><name><![CDATA[ An exception occurs at runtime.]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider these files.
+
+    <%-- WEB-INF/tags/body.tag --%>
+    <%@ tag body-content="scriptless" %>
+    Start <jsp:doBody /> End
+
+    <%-- output.jsp --%>
+    <%@ taglib prefix="ayo" tagdir="/WEB-INF/tags" %>
+    <% request.setAttribute("position", "Middle"); %>
+    <html>
+      <body>
+        <ayo:body>${position}</ayo:body>
+      </body>
+    </html>
+
+    What is the output? (1 correct answer)
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Start End”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Start Middle End”]]></name><id>b</id></alternative><alternative><name><![CDATA[ An exception occurs at runtime.]]></name><id>c</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ Consider these files.
+
+    <%-- WEB-INF/tags/body.tag --%>
+    <%@ tag body-content="tagdependent" %>
+    Start <jsp:doBody /> End
+
+    <%-- output.jsp --%>
+    <%@ taglib prefix="ayo" tagdir="/WEB-INF/tags" %>
+    <% request.setAttribute("position", "Middle"); %>
+    <html>
+      <body>
+        <ayo:body><%= request.getAttribute("position") %></ayo:body>
+      </body>
+    </html>
+
+    What is the output? (1 correct answer)
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ SimpleTagSupport is a class that belongs to package javax.servlet.jsp.tagext. (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ SimpleTagSupport IS-A SimpleTag. (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ SimpleTagSupport IS-A JspTag. (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ One.]]></name><id>a</id></alternative><alternative><name><![CDATA[ It depends on the container.]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ How many times is the doTag() method of SimpleTagSupport called on each tag invocation? (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ public void doTag() throws ServletException]]></name><id>a</id></alternative><alternative><name><![CDATA[ public void doTag() throws IOException, JspException]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider class SimpleTagSupport. What is the signature of its method doTag? (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Calls the setJspBody(JspFragment).]]></name><id>a</id></alternative><alternative><name><![CDATA[ Calls the no-arg constructor.]]></name><id>b</id></alternative><alternative><name><![CDATA[ Calls the doTag() method.]]></name><id>c</id></alternative><alternative><name><![CDATA[ Calls the setParent(JspTag).]]></name><id>d</id></alternative><alternative><name><![CDATA[ Calls the attribute setters.]]></name><id>e</id></alternative><alternative><name><![CDATA[ Calls the setJspContext(JspContext).]]></name><id>f</id></alternative><corrects>b,f,d,e,a,c</corrects></alternatives><question_name><![CDATA[ Consider a simple tag handler that is nested, has attributes and a body. Here are the actions taken by the Container when this tag is invoked. Place them in the correct order starting from what happens first.
+        
+        
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Yes.]]></name><id>a</id></alternative><alternative><name><![CDATA[ No.]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Assuming all imports are correct, will this code compile successfully? (1 correct answer)
+
+    public class Test extends SimpleTagSupport {
+    public void doTag() throws IOException, JspException {
+        getJspContext().getOut().println("A simple tag handler!!");
+    }
+    }
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Yes.]]></name><id>a</id></alternative><alternative><name><![CDATA[ No.]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Assuming all imports are correct, will this code compile successfully? (1 correct answer)
+
+    public class Test extends SimpleTagSupport {
+    public void doTag() throws IOException, JspException {
+        getJspContext().getOut().append("A simple tag handler!!");
+    }
+    }
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Yes.]]></name><id>a</id></alternative><alternative><name><![CDATA[ No.]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Assuming all imports are correct, will this code compile successfully? (1 correct answer)
+
+    public class Test extends SimpleTagSupport {
+    public void doTag() throws IOException, JspException {
+        getJspContext().getOut().format("A simple tag handler!!");
+    }
+    }
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Yes.]]></name><id>a</id></alternative><alternative><name><![CDATA[ No.]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Assuming all imports are correct, will this code compile successfully? (1 correct answer)
+
+    public class Test extends SimpleTagSupport {
+    public void doTag() throws IOException {
+        getJspContext().getOut().print("A simple tag handler!!");
+    }
+    }
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Yes.]]></name><id>a</id></alternative><alternative><name><![CDATA[ No.]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Assuming all imports are correct, will this code compile successfully? (1 correct answer)
+
+    public class Test extends SimpleTagSupport {
+    public void doTag() throws Exception {
+        getJspContext().getOut().print("A simple tag handler!!");
+    }
+    }
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Yes.]]></name><id>a</id></alternative><alternative><name><![CDATA[ No.]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Is this code a valid simple tag handler? (1 correct answer)
+
+    public class Test extends SimpleTagSupport {
+    public Test(String name) {
+    }
+    public void doTag() throws IOException, JspException {
+        getJspContext().getOut().println("A simple tag handler!!");
+    }
+    }
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Yes.]]></name><id>a</id></alternative><alternative><name><![CDATA[ No.]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Test IS-A SimpleTagSupport in package simpletaghandlers. Is it correctly declared in a TLD? (1 correct answer)
+
+    <tag>
+      <tag-class>simpletaghandlers.Test</tag-class>
+      <body-content>empty</body-content>
+    </tag>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Yes.]]></name><id>a</id></alternative><alternative><name><![CDATA[ No.]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Test IS-A SimpleTagSupport in package simpletaghandlers. Is it correctly declared in a TLD? (1 correct answer)
+
+    <tag>
+      <name>simple</name>
+      <body-content>empty</body-content>
+    </tag>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Yes.]]></name><id>a</id></alternative><alternative><name><![CDATA[ No.]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Test IS-A SimpleTagSupport in package simpletaghandlers. Is it correctly declared in a TLD? (1 correct answer)
+
+    <tag>
+      <name>simple</name>
+      <tag-class>Test</tag-class>
+      <body-content>empty</body-content>
+    </tag>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Yes.]]></name><id>a</id></alternative><alternative><name><![CDATA[ No.]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Test IS-A SimpleTagSupport in package simpletaghandlers. Is it correctly declared in a TLD? (1 correct answer)
+
+    <tag>
+      <name>simple</name>
+      <tag-class>simpletaghandlers.Test</tag-class>
+    </tag>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Yes.]]></name><id>a</id></alternative><alternative><name><![CDATA[ No.]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Test IS-A SimpleTagSupport in package simpletaghandlers. Is it correctly declared in a TLD? (1 correct answer)
+
+    <tag>
+      <name>simple</name>
+      <tag-class>simpletaghandlers.Test</tag-class>
+      <body-content>empty</body-content>
+    </tag>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Yes.]]></name><id>a</id></alternative><alternative><name><![CDATA[ No.]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ mytaglib.tld is a valid TLD with <uri>/webapp/mytaglib</uri> and a simple tag handler with <name>simple</name>. Is this a valid use of the tag handler? (1 correct answer)
+
+    <%@ taglib tagdir="/WEB-INF/" prefix="show"%>
+    <html>
+      <body>
+        <show:simple />
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Yes.]]></name><id>a</id></alternative><alternative><name><![CDATA[ No.]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ mytaglib.tld is a valid TLD with <uri>/webapp/mytaglib</uri> and a simple tag handler with <name>simple</name>. Is this a valid use of the tag handler? (1 correct answer)
+
+    <%@ taglib tagdir="/WEB-INF/mytaglib.tld" prefix="show"%>
+    <html>
+      <body>
+        <show:simple />
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Yes.]]></name><id>a</id></alternative><alternative><name><![CDATA[ No.]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ mytaglib.tld is a valid TLD with <uri>/webapp/mytaglib</uri> and a simple tag handler with <name>simple</name>. Is this a valid use of the tag handler? (1 correct answer)
+
+    <%@ taglib tagdir="/webapp/mytaglib" prefix="show"%>
+    <html>
+      <body>
+        <show:simple />
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Yes.]]></name><id>a</id></alternative><alternative><name><![CDATA[ No.]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ mytaglib.tld is a valid TLD with <uri>/webapp/mytaglib</uri> and a simple tag handler with <name>simple</name>. Is this a valid use of the tag handler? (1 correct answer)
+
+    <%@ taglib uri="/webapp/mytaglib" prefix="show"%>
+    <html>
+      <body>
+        <show:simple />
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ (Before)(After)]]></name><id>a</id></alternative><alternative><name><![CDATA[ An exception occurs at runtime.]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Assume that everything is declared properly and the TLD specifies <body-content>scriptless</body-content>. What is the output of the JSP? (1 correct answer)
+
+    public class Repeater extends SimpleTagSupport {
+      public void doTag() throws JspException, IOException {
+        getJspBody().invoke(null);
+      }
+    }
+
+    <%@ taglib uri="/webapp/mytaglib" prefix="do" %>
+    <html>
+      <body>
+        (Before)
+        <do:repeater />
+        (After)
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ (Before)(After)]]></name><id>a</id></alternative><alternative><name><![CDATA[ (Before)Surprise(After)]]></name><id>b</id></alternative><alternative><name><![CDATA[ An exception occurs at runtime.]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Assume that everything is declared properly and the TLD specifies <body-content>scriptless</body-content>. What is the output of the JSP? (1 correct answer)
+
+    public class Repeater extends SimpleTagSupport {
+      public void doTag() throws JspException, IOException {
+        if (getJspBody() == null) {
+          getJspContext().getOut().print("Surprise");
+        } else {
+          getJspBody().invoke(null);
+        }
+      }
+    }
+
+    <%@ taglib uri="/webapp/mytaglib" prefix="do" %>
+    <html>
+      <body>
+        (Before)
+        <do:repeater></do:repeater>
+        (After)
+      </body>
+    </html>
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ (Before)(After)]]></name><id>a</id></alternative><alternative><name><![CDATA[ (Before)Surprise(After)]]></name><id>b</id></alternative><alternative><name><![CDATA[ An exception occurs at runtime.]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Assume that everything is declared properly and the TLD specifies <body-content>scriptless</body-content>. What is the output of the JSP? (1 correct answer)
+
+    public class Repeater extends SimpleTagSupport {
+      public void doTag() throws JspException, IOException {
+        getJspBody().invoke(null);
+      }
+    }
+
+    <%@ taglib uri="/webapp/mytaglib" prefix="do" %>
+    <html>
+      <body>
+        (Before)
+        <do:repeater>Surprise</do:repeater>
+        (After)
+      </body>
+    </html>
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ (Before)(After)]]></name><id>a</id></alternative><alternative><name><![CDATA[ (Before)Surprise(After)]]></name><id>b</id></alternative><alternative><name><![CDATA[ An exception occurs at runtime.]]></name><id>c</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ Assume that everything is declared properly and the TLD specifies <body-content>empty</body-content>. What is the output of the JSP? (1 correct answer)
+
+    public class Repeater extends SimpleTagSupport {
+      public void doTag() throws JspException, IOException {
+        getJspBody().invoke(null);
+      }
+    }
+
+    <%@ taglib uri="/webapp/mytaglib" prefix="do" %>
+    <html>
+      <body>
+        (Before)
+        <do:repeater>Surprise</do:repeater>
+        (After)
+      </body>
+    </html>
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ (Before)(After)]]></name><id>a</id></alternative><alternative><name><![CDATA[ (Before)Surprise(After)]]></name><id>b</id></alternative><alternative><name><![CDATA[ (Before)SurpriseSurprise(After)]]></name><id>c</id></alternative><alternative><name><![CDATA[ An exception occurs at runtime.]]></name><id>d</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ Assume that everything is declared properly and the TLD specifies <body-content>scriptless</body-content>. What is the output of the JSP? (1 correct answer)
+
+    public class Repeater extends SimpleTagSupport {
+      public void doTag() throws JspException, IOException {
+        getJspBody().invoke(null);
+        getJspBody().invoke(null);
+      }
+    }
+
+    <%@ taglib uri="/webapp/mytaglib" prefix="do" %>
+    <html>
+      <body>
+        (Before)
+        <do:repeater>Surprise</do:repeater>
+        (After)
+      </body>
+    </html>
+
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ (Before)(After)]]></name><id>a</id></alternative><alternative><name><![CDATA[ (Before)here(After)]]></name><id>b</id></alternative><alternative><name><![CDATA[ (Before)${here}(After)]]></name><id>c</id></alternative><alternative><name><![CDATA[ An exception occurs at runtime.]]></name><id>d</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Assume that everything is declared properly and the TLD specifies <body-content>scriptless</body-content>. What is the output of the JSP? (1 correct answer)
+
+    public class Repeater extends SimpleTagSupport {
+      public void doTag() throws JspException, IOException {
+        getJspBody().invoke(null);
+      }
+    }
+
+    <%@ taglib uri="/webapp/mytaglib" prefix="do" %>
+    <html>
+      <body>
+        (Before)
+        <do:repeater>${here}</do:repeater>
+        (After)
+      </body>
+    </html>
+
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ (Before)(After)]]></name><id>a</id></alternative><alternative><name><![CDATA[ (Before)Surprise(After)]]></name><id>b</id></alternative><alternative><name><![CDATA[ An exception occurs at runtime.]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Assume that everything is declared properly and the TLD specifies <body-content>scriptless</body-content>. What is the output of the JSP? (1 correct answer)
+
+    public class Repeater extends SimpleTagSupport {
+      public void doTag() throws JspException, IOException {
+        getJspBody().invoke(null);
+      }
+    }
+
+    <%@ taglib uri="/webapp/mytaglib" prefix="do" %>
+    <% request.setAttribute("here", "Surprise"); %>
+    <html>
+      <body>
+        (Before)
+        <do:repeater>${here}</do:repeater>
+        (After)
+      </body>
+    </html>
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ (Before)(After)]]></name><id>a</id></alternative><alternative><name><![CDATA[ (Before)Surprise(After)]]></name><id>b</id></alternative><alternative><name><![CDATA[ An exception occurs at runtime.]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Assume that everything is declared properly and the TLD specifies <body-content>scriptless</body-content>. What is the output of the JSP? (1 correct answer)
+
+    public class Repeater extends SimpleTagSupport {
+      public void doTag() throws JspException, IOException {
+        getJspContext().setAttribute("here", "Surprise");
+        getJspBody().invoke(null);
+      }
+    }
+
+    <%@ taglib uri="/webapp/mytaglib" prefix="do" %>
+    <html>
+      <body>
+        (Before)
+        <do:repeater>${here}</do:repeater>
+        (After)
+      </body>
+    </html>
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ (Before)(After)]]></name><id>a</id></alternative><alternative><name><![CDATA[ (Before)null is a big surprise!(After)]]></name><id>b</id></alternative><alternative><name><![CDATA[ (Before)NetBeans 6.5 is a big surprise!(After)]]></name><id>c</id></alternative><alternative><name><![CDATA[ An exception occurs at runtime.]]></name><id>d</id></alternative><corrects>d</corrects></alternatives><question_name><![CDATA[ Consider this simple tag handler
+
+    public class Repeater extends SimpleTagSupport {
+      private String surprise;
+      public void doTag() throws JspException, IOException {
+        getJspContext().getOut().print(surprise);
+        getJspContext().getOut().print(" is a big surprise!");
+      }
+    }
+
+    that is properly declared in a TLD with the following attribute.
+
+    <attribute>
+      <name>surprise</name>
+      <required>false</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+
+    What is the output of this JSP? (1 correct answer)
+
+    <%@ taglib uri="/webapp/mytaglib" prefix="do" %>
+    <html>
+      <body>
+        (Before)
+        <do:repeater surprise="NetBeans 6.5" />
+        (After)
+      </body>
+    </html>
+
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ (Before)(After)]]></name><id>a</id></alternative><alternative><name><![CDATA[ (Before)null is a big surprise!(After)]]></name><id>b</id></alternative><alternative><name><![CDATA[ (Before)NetBeans 6.5 is a big surprise!(After)]]></name><id>c</id></alternative><alternative><name><![CDATA[ An exception occurs at runtime.]]></name><id>d</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider this simple tag handler
+
+    public class Repeater extends SimpleTagSupport {
+      private String surprise;
+      public void doTag() throws JspException, IOException {
+        getJspContext().getOut().print(surprise);
+        getJspContext().getOut().print(" is a big surprise!");
+      }
+      public void setSurprise(String surprise) {
+      }
+    }
+
+    that is properly declared in a TLD with the following attribute.
+
+    <attribute>
+      <name>surprise</name>
+      <required>false</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+
+    What is the output of this JSP? (1 correct answer)
+
+    <%@ taglib uri="/webapp/mytaglib" prefix="do" %>
+    <html>
+      <body>
+        (Before)
+        <do:repeater surprise="NetBeans 6.5" />
+        (After)
+      </body>
+    </html>
+
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ (Before)(After)]]></name><id>a</id></alternative><alternative><name><![CDATA[ (Before)null is a big surprise!(After)]]></name><id>b</id></alternative><alternative><name><![CDATA[ (Before)NetBeans 6.5 is a big surprise!(After)]]></name><id>c</id></alternative><alternative><name><![CDATA[ An exception occurs at runtime.]]></name><id>d</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ Consider this simple tag handler
+
+    public class Repeater extends SimpleTagSupport {
+      private String surprise;
+      public void doTag() throws JspException, IOException {
+        getJspContext().getOut().print(surprise);
+        getJspContext().getOut().print(" is a big surprise!");
+      }
+      public void setSurprise(String surprise) {
+        this.surprise = surprise;
+      ;}
+    }
+
+    that is properly declared in a TLD with the following attribute.
+
+    <attribute>
+      <name>surprise</name>
+      <required>false</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+
+    What is the output of this JSP? (1 correct answer)
+
+    <%@ taglib uri="/webapp/mytaglib" prefix="do" %>
+    <html>
+      <body>
+        (Before)
+        <do:repeater surprise="NetBeans 6.5" />
+        (After)
+      </body>
+    </html>
+
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ TagSupport is a class that belongs to package javax.servlet.jsp.tagext. (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ TagSupport IS-A IterationTag. (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ TagSupport IS-A Tag. (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ TagSupport IS-A JspTag. (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ public int doStartTag() throws JspException]]></name><id>a</id></alternative><alternative><name><![CDATA[ public void doStartTag() throws JspException]]></name><id>b</id></alternative><alternative><name><![CDATA[ public int doStartTag() throws JspException, IOException]]></name><id>c</id></alternative><alternative><name><![CDATA[ public void doStartTag() throws JspException, IOException]]></name><id>d</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider class TagSupport. What is the signature of its method doStartTag? (1 correct answer)
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ public int doEndTag() throws JspException]]></name><id>a</id></alternative><alternative><name><![CDATA[ public int doEndTag(String) throws JspException]]></name><id>b</id></alternative><alternative><name><![CDATA[ public int doEndTag(Writer) throws JspException, IOException]]></name><id>c</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider class TagSupport. What is the signature of its method doEndTag? (1 correct answer)
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ int doAfterBody() throws JspException]]></name><id>a</id></alternative><alternative><name><![CDATA[ void doAfterBody() throws JspException]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider interface IterationTag. What is the signature of its method doAfterBody? (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ The following are all fields of interface Tag. (1 correct answer)
+          ⇒ SKIP_BODY
+          ⇒ SKIP_PAGE
+          ⇒ EVAL_PAGE
+          ⇒ EVAL_BODY_INCLUDE
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ The following is a field of interface IterationTag. (1 correct answer)
+          ⇒ EVAL_BODY_AGAIN
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Yes.]]></name><id>a</id></alternative><alternative><name><![CDATA[ No.]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Is this a valid classic tag handler? (1 correct answer)
+
+    public class Classic extends TagSupport {
+    }
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Yes.]]></name><id>a</id></alternative><alternative><name><![CDATA[ No.]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Is this a valid classic tag handler? (1 correct answer)
+
+    public class Classic extends TagSupport {
+        public Classic() {
+        }
+    }
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Yes.]]></name><id>a</id></alternative><alternative><name><![CDATA[ No.]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Is this a valid classic tag handler? (1 correct answer)
+
+    public class Classic extends TagSupport {
+        private Classic() {
+        }
+    }
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Yes.]]></name><id>a</id></alternative><alternative><name><![CDATA[ No.]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Is this a valid classic tag handler? (1 correct answer)
+
+    public class Classic extends TagSupport {
+        public Classic() {
+        }
+        public Classic(String construct) {
+        }
+    }
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ (Before)(After)]]></name><id>a</id></alternative><alternative><name><![CDATA[ (Before)My Body(After)]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Assume that everything is declared properly and the TLD specifies <body-content>scriptless</body-content>. What is the output of the JSP? (1 correct answer)
+
+    public class Classic extends TagSupport {
+      public int doStartTag() {
+        return SKIP_BODY;
+      }
+    }
+
+    <%@ taglib uri="correct" prefix="yes" %>
+    <html>
+      <body>
+        (Before)
+        <yes:classic>My Body</yes:classic>
+        (After)
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ (Before)(After)]]></name><id>a</id></alternative><alternative><name><![CDATA[ (Before)]]></name><id>b</id></alternative><alternative><name><![CDATA[ (Before)My Body(After)]]></name><id>c</id></alternative><alternative><name><![CDATA[ (Before)My Body]]></name><id>d</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ Assume that everything is declared properly and the TLD specifies <body-content>scriptless</body-content>. What is the output of the JSP? (1 correct answer)
+
+    public class Classic extends TagSupport {
+      public int doStartTag() {
+        return SKIP_PAGE;
+      }
+    }
+
+    <%@ taglib uri="correct" prefix="yes" %>
+    <html>
+      <body>
+        (Before)
+        <yes:classic>My Body</yes:classic>
+        (After)
+      </body>
+    </html>
+
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ (Before)(After)]]></name><id>a</id></alternative><alternative><name><![CDATA[ (Before)]]></name><id>b</id></alternative><alternative><name><![CDATA[ (Before)My Body(After)]]></name><id>c</id></alternative><alternative><name><![CDATA[ (Before)My Body]]></name><id>d</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ Assume that everything is declared properly and the TLD specifies <body-content>scriptless</body-content>. What is the output of the JSP? (1 correct answer)
+
+    public class Classic extends TagSupport {
+      public int doStartTag() {
+        return EVAL_BODY_INCLUDE;
+      }
+    }
+
+    <%@ taglib uri="correct" prefix="yes" %>
+    <html>
+      <body>
+        (Before)
+        <yes:classic>My Body</yes:classic>
+        (After)
+      </body>
+    </html>
+
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ (Before)(After)]]></name><id>a</id></alternative><alternative><name><![CDATA[ (Before)Hello!!(After)]]></name><id>b</id></alternative><alternative><name><![CDATA[ (Before)My Body(After)]]></name><id>c</id></alternative><alternative><name><![CDATA[ (Before)Hello!!My Body(After)]]></name><id>d</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Assume that everything is declared properly and the TLD specifies <body-content>scriptless</body-content>. What is the output of the JSP? (1 correct answer)
+
+    public class Classic extends TagSupport {
+      public int doStartTag() {
+        try {
+          pageContext.getOut().print("Hello!!");
+        } catch (Exception e) {
+          e.printStackTrace();
+        }
+        return SKIP_BODY;
+      }
+    }
+
+    <%@ taglib uri="correct" prefix="yes" %>
+    <html>
+      <body>
+        (Before)
+        <yes:classic>My Body</yes:classic>
+        (After)
+      </body>
+    </html>
+
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ (Before)(After)]]></name><id>a</id></alternative><alternative><name><![CDATA[ (Before)Hello!!(After)]]></name><id>b</id></alternative><alternative><name><![CDATA[ (Before)My Body(After)]]></name><id>c</id></alternative><alternative><name><![CDATA[ (Before)Hello!!My Body(After)]]></name><id>d</id></alternative><corrects>d</corrects></alternatives><question_name><![CDATA[ Assume that everything is declared properly and the TLD specifies <body-content>scriptless</body-content>. What is the output of the JSP? (1 correct answer)
+
+    public class Classic extends TagSupport {
+      public int doStartTag() {
+        try {
+          pageContext.getOut().print("Hello!!");
+        } catch (Exception e) {
+          e.printStackTrace();
+        }
+        return EVAL_BODY_INCLUDE;
+      }
+    }
+
+    <%@ taglib uri="correct" prefix="yes" %>
+    <html>
+      <body>
+        (Before)
+        <yes:classic>My Body</yes:classic>
+        (After)
+      </body>
+    </html>
+
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ We should override the doEndTag() method.]]></name><id>a</id></alternative><alternative><name><![CDATA[ The value returned by doStartTag() is not correct.]]></name><id>b</id></alternative><alternative><name><![CDATA[ The doAfterBody() should not have a while loop inside.]]></name><id>c</id></alternative><alternative><name><![CDATA[ The instance variables should be initialized in the doStartTag() method.]]></name><id>d</id></alternative><alternative><name><![CDATA[ The doStartTag() and doAfterBody() methods should throw a JspException.]]></name><id>e</id></alternative><corrects>d</corrects></alternatives><question_name><![CDATA[ This classic tag handler is properly declared in a TLD.
+
+    public class Classic extends TagSupport {
+      private List<String> movies = new ArrayList<String>();
+      private int current = 0;
+      public ClassicRepeater() {
+        movies.add("Heat");
+        movies.add("Pocahontas");
+        movies.add("Lawrence of Arabia");
+      }
+      public int doStartTag() {
+        setAttribute();
+        return EVAL_BODY_INCLUDE;
+      }
+      public int doAfterBody() {
+        while (current < movies.size()) {
+          setAttribute();
+          return EVAL_BODY_AGAIN;
+        }
+        return SKIP_BODY;        
+      }
+      private void setAttribute() {
+        pageContext.setAttribute("movie", movies.get(current));                
+        current++;
+      }
+    }
+
+    Many testers complain that when they visit or repeatedly hit the refresh button on the following jsp, they sometimes get an IndexOutOfBoundsException. What’s wrong with the above implementation? (1 correct answer)
+
+    <%@ taglib uri="correct" prefix="yes" %>
+    <html>
+      <body>
+        <ol>
+        <yes:classic><li>${movie}</li></yes:classic>
+        </ol>
+      </body>
+    </html>
+
+        
+        
+        
+        
+        
+
+]]></question_name></question>
+<question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ In EL you may use the . operator to access maps and beans.
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ In EL you may use the [] operator to access maps, beans, lists and arrays.
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ pageScope]]></name><id>a</id></alternative><alternative><name><![CDATA[ requestScope]]></name><id>b</id></alternative><alternative><name><![CDATA[ sessionScope]]></name><id>c</id></alternative><alternative><name><![CDATA[ contextScope]]></name><id>d</id></alternative><alternative><name><![CDATA[ applicationScope]]></name><id>e</id></alternative><corrects>a,b,c,e</corrects></alternatives><question_name><![CDATA[ Which of the following are EL implicit objects? (4 correct answers)
+        
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ param]]></name><id>a</id></alternative><alternative><name><![CDATA[ parameter]]></name><id>b</id></alternative><alternative><name><![CDATA[ params]]></name><id>c</id></alternative><alternative><name><![CDATA[ parameters]]></name><id>d</id></alternative><alternative><name><![CDATA[ paramValues]]></name><id>e</id></alternative><alternative><name><![CDATA[ parameterValues]]></name><id>f</id></alternative><corrects>a,e</corrects></alternatives><question_name><![CDATA[ Which of the following are EL implicit objects? (2 correct answers)
+        
+        
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ initParam]]></name><id>a</id></alternative><alternative><name><![CDATA[ servletParam]]></name><id>b</id></alternative><alternative><name><![CDATA[ contextParam]]></name><id>c</id></alternative><alternative><name><![CDATA[ applicationParam]]></name><id>d</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Which of the following are EL implicit objects? (1 correct answer)
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ cookie]]></name><id>a</id></alternative><alternative><name><![CDATA[ pageContext]]></name><id>b</id></alternative><alternative><name><![CDATA[ headerValues]]></name><id>c</id></alternative><alternative><name><![CDATA[ applicationScope]]></name><id>d</id></alternative><corrects>a,c,d</corrects></alternatives><question_name><![CDATA[ Which of the following EL implicit objects are maps? (3 correct answers)
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Diogenes”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “”]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of the following code? (1 correct answer)
+
+    <% session.setAttribute("name", "Diogenes"); %>
+    ${session.name}
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Diogenes”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “”]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of the following code? (1 correct answer)
+
+    <% session.setAttribute("name", "Diogenes"); %>
+    ${sessionScope.name}
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Diogenes”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “”]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of the following code? (1 correct answer)
+
+    <% session.setAttribute("name", "Diogenes"); %>
+    ${sessionScope[name]}
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hello !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hello Bond !!”]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider this code.
+
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="yourname" value="Bond"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+    <%-- output.jsp --%>
+    <html>
+      <body>
+        Hello ${yourname} !!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hello !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hello Bond !!”]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider this code.
+
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="yourname" value="Bond"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+    <%-- output.jsp --%>
+    <html>
+      <body>
+        Hello ${request.yourname} !!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hello !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hello Bond !!”]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider this code.
+
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="yourname" value="Bond"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+    <%-- output.jsp --%>
+    <html>
+      <body>
+        Hello ${requestMap.yourname} !!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hello !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hello Bond !!”]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider this code.
+
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="yourname" value="Bond"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+    <%-- output.jsp --%>
+    <html>
+      <body>
+        Hello ${requestScope.yourname} !!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hello !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hello Bond !!”]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider this code.
+
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="yourname" value="Bond"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+    <%-- output.jsp --%>
+    <html>
+      <body>
+        Hello ${pageScope.yourname} !!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hello !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hello Bond !!”]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider this code.
+
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="yourname" value="Bond"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+    <%-- output.jsp --%>
+    <html>
+      <body>
+        Hello ${param.yourname} !!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hello !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hello Bond !!”]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider this code.
+
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="yourname" value="Bond"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+    <%-- output.jsp --%>
+    <html>
+      <body>
+        Hello ${param[yourname]} !!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hello !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hello Bond !!”]]></name><id>b</id></alternative><alternative><name><![CDATA[ None of the above.]]></name><id>c</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ Consider this code.
+
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="yourname" value="Bond"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+    <%-- output.jsp --%>
+    <html>
+      <body>
+        Hello ${paramValues.yourname} !!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hello !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hello Bond !!”]]></name><id>b</id></alternative><alternative><name><![CDATA[ None of the above.]]></name><id>c</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider this code.
+
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="yourname" value="Bond"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+    <%-- output.jsp --%>
+    <html>
+      <body>
+        Hello ${paramValues[yourname]} !!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hello !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hello Bond !!”]]></name><id>b</id></alternative><alternative><name><![CDATA[ None of the above.]]></name><id>c</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ Consider this code.
+
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="yourname" value="Bond"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+    <%-- output.jsp --%>
+    <html>
+      <body>
+        Hello ${paramValues.yourname.0} !!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hello !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hello Bond !!”]]></name><id>b</id></alternative><alternative><name><![CDATA[ None of the above.]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider this code.
+
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="yourname" value="Bond"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+    <%-- output.jsp --%>
+    <html>
+      <body>
+        Hello ${paramValues.yourname[0]} !!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Number “]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Number 17″]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Number ${14 + 3}
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Number 17″]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Number 143″]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Number ${"14" + 3}
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Result is true”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Result is false”]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Result is ${2 > 3}
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Result is true”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Result is false”]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Result is ${"2" > 3}
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Result is true”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Result is false”]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Result is ${"a" > "b"}
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Result is true”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Result is false”]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Result is ${"a" < "b"}
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Result is true”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Result is false”]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Result is ${a < b}
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Result is “]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Result is a literal”]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Result is ${"a literal"}
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Result is “]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Result is a literal”]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Result is ${'a literal'}
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Result is a literal indeed.”]]></name><id>a</id></alternative><alternative><name><![CDATA[ An exception is thrown at runtime.]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Result is ${"a literal" + " indeed."}
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Result is Infinity”]]></name><id>a</id></alternative><alternative><name><![CDATA[ An exception is thrown at runtime.]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Result is ${2 / 0}
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Result is Infinity”]]></name><id>a</id></alternative><alternative><name><![CDATA[ An exception is thrown at runtime.]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Result is ${2 mod 0}
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Result is 0″]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Result is null”]]></name><id>b</id></alternative><alternative><name><![CDATA[ An exception is thrown at runtime.]]></name><id>c</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Result is ${null mod 1}
+      </body>
+    </html>
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Result is 0″]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Result is 1″]]></name><id>b</id></alternative><alternative><name><![CDATA[ “Result is null”]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Result is ${null + 1}
+      </body>
+    </html>
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Result is true”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Result is false”]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Result is ${true and null}
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Result is true”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Result is false”]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <html>
+      <body>
+        Result is ${empty null}
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Result is true”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Result is false”]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <% request.setAttribute("list", new String[100]); %>
+    <html>
+      <body>
+        Result is ${empty list}
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Result is true”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Result is false”]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <% request.setAttribute("list", new String[0]); %>
+    <html>
+      <body>
+        Result is ${empty list}
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hey !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hey null!!”]]></name><id>b</id></alternative><alternative><name><![CDATA[ “Hey Rihanna!!”]]></name><id>c</id></alternative><alternative><name><![CDATA[ None of the above.]]></name><id>d</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <% String[] names = new String[]{"Rihanna", "Lopez", "Kylie"};
+       request.setAttribute("names", names); %>
+    <html>
+      <body>
+        Hey ${request.names}!!
+      </body>
+    </html>
+
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hey !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hey Rihanna!!”]]></name><id>b</id></alternative><alternative><name><![CDATA[ None of the above.]]></name><id>c</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <% String[] names = new String[]{"Rihanna", "Lopez", "Kylie"};
+       request.setAttribute("names", names); %>
+    <html>
+      <body>
+        Hey ${request.names[0]}!!
+      </body>
+    </html>
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hey !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hey Rihanna!!”]]></name><id>b</id></alternative><alternative><name><![CDATA[ None of the above.]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <% String[] names = new String[]{"Rihanna", "Lopez", "Kylie"};
+       request.setAttribute("names", names); %>
+    <html>
+      <body>
+        Hey ${requestScope.names[0]}!!
+      </body>
+    </html>
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hey !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hey Rihanna!!”]]></name><id>b</id></alternative><alternative><name><![CDATA[ None of the above.]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <% String[] names = new String[]{"Rihanna", "Lopez", "Kylie"};
+       request.setAttribute("names", names); %>
+    <html>
+      <body>
+        Hey ${requestScope.names[12 - 12]}!!
+      </body>
+    </html>
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hey !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hey Rihanna!!”]]></name><id>b</id></alternative><alternative><name><![CDATA[ None of the above.]]></name><id>c</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <% String[] names = new String[]{"Rihanna", "Lopez", "Kylie"};
+       request.setAttribute("names", names); %>
+    <html>
+      <body>
+        Hey ${requestScope.names[<%= names.length - 2%>]}!!
+      </body>
+    </html>
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hey !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hey Rihanna!!”]]></name><id>b</id></alternative><alternative><name><![CDATA[ None of the above.]]></name><id>c</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <% String[] names = new String[]{"Rihanna", "Lopez", "Kylie"};
+       request.setAttribute("names", names); %>
+    <html>
+      <body>
+        Hey ${requestScope["names"]}!!
+      </body>
+    </html>
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hey !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hey Rihanna!!”]]></name><id>b</id></alternative><alternative><name><![CDATA[ None of the above.]]></name><id>c</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <% String[] names = new String[]{"Rihanna", "Lopez", "Kylie"};
+       request.setAttribute("names", names); %>
+    <html>
+      <body>
+        Hey ${requestScope["names"].0}!!
+      </body>
+    </html>
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hey !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hey Rihanna!!”]]></name><id>b</id></alternative><alternative><name><![CDATA[ None of the above.]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <% String[] names = new String[]{"Rihanna", "Lopez", "Kylie"};
+       request.setAttribute("names", names); %>
+    <html>
+      <body>
+        Hey ${requestScope["names"][0]}!!
+      </body>
+    </html>
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hey !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hey Rihanna!!”]]></name><id>b</id></alternative><alternative><name><![CDATA[ None of the above.]]></name><id>c</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <% String[] names = new String[]{"Rihanna", "Lopez", "Kylie"};
+       request.setAttribute("names", names); %>
+    <html>
+      <body>
+        Hey ${pageScope["names"][0]}!!
+      </body>
+    </html>
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hey !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hey Rihanna!!”]]></name><id>b</id></alternative><alternative><name><![CDATA[ None of the above.]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <% String[] names = new String[]{"Rihanna", "Lopez", "Kylie"};
+       request.setAttribute("names", names); %>
+    <html>
+      <body>
+        Hey ${names[0]}!!
+      </body>
+    </html>
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hey !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hey Rihanna!!”]]></name><id>b</id></alternative><alternative><name><![CDATA[ None of the above.]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <% java.util.List names = new java.util.LinkedList();
+       names.add("Rihanna");
+       names.add("Lopez");
+       names.add("Kylie");
+       request.setAttribute("names", names); %>
+    <html>
+      <body>
+        Hey ${names[0]}!!
+      </body>
+    </html>
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hey !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hey Rihanna!!”]]></name><id>b</id></alternative><alternative><name><![CDATA[ None of the above.]]></name><id>c</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <% java.util.List names = new java.util.LinkedList();
+       names.add("Rihanna");
+       names.add("Lopez");
+       names.add("Kylie");
+       request.setAttribute("names", names); %>
+    <html>
+      <body>
+        Hey ${names[-1]}!!
+      </body>
+    </html>
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hey !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hey Rihanna!!”]]></name><id>b</id></alternative><alternative><name><![CDATA[ None of the above.]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <% java.util.Map names = new java.util.HashMap();
+       names.put("0", "Rihanna");
+       names.put("1", "Lopez");
+       names.put("2", "Kylie");
+       request.setAttribute("names", names); %>
+    <html>
+      <body>
+        Hey ${names["0"]}!!
+      </body>
+    </html>
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hey !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hey Rihanna!!”]]></name><id>b</id></alternative><alternative><name><![CDATA[ None of the above.]]></name><id>c</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <% java.util.Map names = new java.util.HashMap();
+       names.put("0", "Rihanna");
+       names.put("1", "Lopez");
+       names.put("2", "Kylie");
+       request.setAttribute("names", names); %>
+    <html>
+      <body>
+        Hey ${names[0]}!!
+      </body>
+    </html>
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Number is !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Number is 10!!”]]></name><id>b</id></alternative><alternative><name><![CDATA[ “Number is 1007!!”]]></name><id>c</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <% request.setAttribute("1007", Integer.valueOf(10)); %>
+    <html>
+      <body>
+        Number is ${1007}!!
+      </body>
+    </html>
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Number is !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Number is 10!!”]]></name><id>b</id></alternative><alternative><name><![CDATA[ “Number is 1007!!”]]></name><id>c</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <% request.setAttribute("1007", Integer.valueOf(10)); %>
+    <html>
+      <body>
+        Number is ${"1007"}!!
+      </body>
+    </html>
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Number is !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Number is 10!!”]]></name><id>b</id></alternative><alternative><name><![CDATA[ “Number is 1007!!”]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of this page? (1 correct answer)
+
+    <% request.setAttribute("1007", Integer.valueOf(10)); %>
+    <html>
+      <body>
+        Number is ${requestScope["1007"]}!!
+      </body>
+    </html>
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Hey you !]]></name><id>a</id></alternative><alternative><name><![CDATA[ Hey you Josh Childress!]]></name><id>b</id></alternative><alternative><name><![CDATA[ None of the above.]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider the following code.
+
+    package model;
+    public class Person {
+       private String fullName;
+       public String getFullName() {
+          return fullName;
+       }
+       public void setFullName(String fullName) {
+          this.fullName = fullName;
+       }
+    }
+
+    <jsp:useBean id="person" class="model.Person">
+      <jsp:setProperty name="person" property="fullName" value="Josh Childress" />
+    </jsp:useBean>
+    <html>
+      <body>
+        Hey you ${person.fullName}!
+      </body>
+    </html>
+
+    What is the output? (1 correct answer)
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Hey you !]]></name><id>a</id></alternative><alternative><name><![CDATA[ Hey you Josh Childress!]]></name><id>b</id></alternative><alternative><name><![CDATA[ None of the above.]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider the following code.
+
+    package model;
+    public class Person {
+       private String name;
+       public String getFullName() {
+          return name;
+       }
+       public void setFullName(String fullName) {
+          this.name = fullName;
+       }
+    }
+
+    <jsp:useBean id="person" class="model.Person">
+      <jsp:setProperty name="person" property="fullName" value="Josh Childress" />
+    </jsp:useBean>
+    <html>
+      <body>
+        Hey you ${person.fullName}!
+      </body>
+    </html>
+
+    What is the output? (1 correct answer)
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Hey you !]]></name><id>a</id></alternative><alternative><name><![CDATA[ Hey you Josh Childress!]]></name><id>b</id></alternative><alternative><name><![CDATA[ None of the above.]]></name><id>c</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ Consider the following code.
+
+    package model;
+    public class Person {
+       private String fullName;
+       public String getFullName() {
+          return fullName;
+       }
+       public void setFullName(String fullName) {
+          this.fullName = fullName;
+       }
+    }
+
+    <jsp:useBean id="person" class="model.Person">
+      <jsp:setProperty name="person" property="fullName" value="Josh Childress" />
+    </jsp:useBean>
+    <html>
+      <body>
+        Hey you ${person}!
+      </body>
+    </html>
+
+    What is the output? (1 correct answer)
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Hey you !]]></name><id>a</id></alternative><alternative><name><![CDATA[ Hey you Josh Childress!]]></name><id>b</id></alternative><alternative><name><![CDATA[ None of the above.]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider the following code.
+
+    package model;
+    public class Person {
+       private String fullName;
+       public String getFullName() {
+          return fullName;
+       }
+       public void setFullName(String fullName) {
+          this.fullName = fullName;
+       }
+       public String toString() {
+          return fullName;
+       }
+    }
+
+    <jsp:useBean id="person" class="model.Person">
+      <jsp:setProperty name="person" property="fullName" value="Josh Childress" />
+    </jsp:useBean>
+    <html>
+      <body>
+        Hey you ${person}!
+      </body>
+    </html>
+
+    What is the output? (1 correct answer)
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Contact an administrator at page@info.]]></name><id>a</id></alternative><alternative><name><![CDATA[ Contact an administrator at session@info.]]></name><id>b</id></alternative><alternative><name><![CDATA[ Contact an administrator at request@info.]]></name><id>c</id></alternative><alternative><name><![CDATA[ Contact an administrator at application@info.]]></name><id>d</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of this code? (1 correct answer)
+
+    <%
+      request.setAttribute("email", "request@info");
+      session.setAttribute("email", "session@info");
+      pageContext.setAttribute("email", "page@info");
+      application.setAttribute("email", "application@info");
+    %>
+    <html>
+      <body>
+        Contact an administrator at ${email}.
+      </body>
+    </html>
+
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Contact an administrator at session@info.]]></name><id>a</id></alternative><alternative><name><![CDATA[ Contact an administrator at application@info.]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of this code? (1 correct answer)
+
+    <%
+      session.setAttribute("email", "session@info");
+      application.setAttribute("email", "application@info");
+    %>
+    <html>
+      <body>
+        Contact an administrator at ${email}.
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Contact an administrator at request@info.]]></name><id>a</id></alternative><alternative><name><![CDATA[ Contact an administrator at session@info.]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of this code? (1 correct answer)
+
+    <%
+      request.setAttribute("email", "request@info");
+      session.setAttribute("email", "session@info");
+    %>
+    <html>
+      <body>
+        Contact an administrator at ${email}.
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Contact an administrator at .]]></name><id>a</id></alternative><alternative><name><![CDATA[ Contact an administrator at session@info.]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of this code? (1 correct answer)
+
+    <%
+      request.setAttribute("email", null);
+      session.setAttribute("email", "session@info");
+    %>
+    <html>
+      <body>
+        Contact an administrator at ${email}.
+      </body>
+    </html>
+
+        
+        
+
+]]></question_name></question>
+<question><alternatives><alternative><name><![CDATA[ create instance]]></name><id>a</id></alternative><alternative><name><![CDATA[ translation]]></name><id>b</id></alternative><alternative><name><![CDATA[ load class]]></name><id>c</id></alternative><alternative><name><![CDATA[ call jspInit()]]></name><id>d</id></alternative><alternative><name><![CDATA[ call jspDestroy()]]></name><id>e</id></alternative><alternative><name><![CDATA[ compilation]]></name><id>f</id></alternative><alternative><name><![CDATA[ call _jspService()]]></name><id>g</id></alternative><corrects>b,f,c,a,d,g,e</corrects></alternatives><question_name><![CDATA[ Put in the correct order the following events from a JSP’s lifecycle.
+        
+        
+        
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ <% %>]]></name><id>a</id></alternative><alternative><name><![CDATA[ <%@ %>]]></name><id>b</id></alternative><alternative><name><![CDATA[ <%= %>]]></name><id>c</id></alternative><alternative><name><![CDATA[ <%! %>]]></name><id>d</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ How is a scriplet defined? (1 correct answer)
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ <% %>]]></name><id>a</id></alternative><alternative><name><![CDATA[ <%@ %>]]></name><id>b</id></alternative><alternative><name><![CDATA[ <%= %>]]></name><id>c</id></alternative><alternative><name><![CDATA[ <%! %>]]></name><id>d</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ How is a directive defined? (1 correct answer)
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ <% %>]]></name><id>a</id></alternative><alternative><name><![CDATA[ <%@ %>]]></name><id>b</id></alternative><alternative><name><![CDATA[ <%= %>]]></name><id>c</id></alternative><alternative><name><![CDATA[ <%! %>]]></name><id>d</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ How is an expression defined? (1 correct answer)
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ <% %>]]></name><id>a</id></alternative><alternative><name><![CDATA[ <%@ %>]]></name><id>b</id></alternative><alternative><name><![CDATA[ <%= %>]]></name><id>c</id></alternative><alternative><name><![CDATA[ <%! %>]]></name><id>d</id></alternative><corrects>d</corrects></alternatives><question_name><![CDATA[ How is a declaration defined? (1 correct answer)
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ <%@ page import=”java.util.List” %>]]></name><id>a</id></alternative><alternative><name><![CDATA[ <%@ page “import=java.util.List” %>]]></name><id>b</id></alternative><alternative><name><![CDATA[ <%@ page “import java.util.List” %>]]></name><id>c</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Which of the following is syntactically valid? (1 correct answer)
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ <%@ page import=”java.util.*” %>]]></name><id>a</id></alternative><alternative><name><![CDATA[ <%@ page “import=java.util.*” %>]]></name><id>b</id></alternative><alternative><name><![CDATA[ <%@ page “import java.util.*” %>]]></name><id>c</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Which of the following is syntactically valid? (1 correct answer)
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ <%@ page import=”java.util.List : java.util.ArrayList” %>]]></name><id>a</id></alternative><alternative><name><![CDATA[ <%@ page import=”java.util.List , java.util.ArrayList” %>]]></name><id>b</id></alternative><alternative><name><![CDATA[ <%@ page import=”java.util.List” import=”java.util.ArrayList” %>]]></name><id>c</id></alternative><corrects>b,c</corrects></alternatives><question_name><![CDATA[ Which of the following are syntactically valid? (2 correct answers)
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ The following are all attributes of the page directive. (1 correct answer)
+          ⇒ import
+          ⇒ errorPage
+          ⇒ contentType
+          ⇒ isErrorPage
+          ⇒ isELignored
+          ⇒ isThreadSafe
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ The following are all implicit objects of a JSP. (1 correct answer)
+
+        ⇒ out
+
+        ⇒ config
+
+        ⇒ session
+
+        ⇒ request
+
+        ⇒ response
+
+        ⇒ application
+
+        ⇒ exception
+        ⇒ pageContext
+        ⇒ page
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of the following code? (1 correct answer)
+   
+    <%= session == pageContext.getSession() %>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of the following code? (1 correct answer)
+   
+    <%= request == pageContext.getRequest() %>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of the following code? (1 correct answer)
+   
+    <%= response == pageContext.getResponse() %>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of the following code? (1 correct answer)
+   
+    <%= config == pageContext.getServletConfig() %>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of the following code? (1 correct answer)
+   
+    <%= application == session.getServletContext() %>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of the following code? (1 correct answer)
+   
+    <%= application == pageContext.getServletContext() %>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of the following code? (1 correct answer)
+   
+    <%= application == request.getSession().getServletContext() %>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of the following code? (1 correct answer)
+   
+    <%= page instanceof JspPage %>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of the following code? (1 correct answer)
+   
+    <%= out instanceof JspWriter %>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Diogenes]]></name><id>a</id></alternative><alternative><name><![CDATA[ null]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of the following code? (1 correct answer)
+   
+    <% session.setAttribute("name", "Diogenes"); %>
+    <%= session.getAttribute("name") %>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Diogenes]]></name><id>a</id></alternative><alternative><name><![CDATA[ null]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of the following code? (1 correct answer)
+   
+    <% session.setAttribute("name", "Diogenes"); %>
+    <%= session.getAttribute("Diogenes") %>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Diogenes]]></name><id>a</id></alternative><alternative><name><![CDATA[ null]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of the following code? (1 correct answer)
+   
+    <% session.setAttribute("name", "Diogenes"); %>
+    <%= pageContext.getAttribute("name") %>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Diogenes]]></name><id>a</id></alternative><alternative><name><![CDATA[ null]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of the following code? (1 correct answer)
+   
+    <% session.setAttribute("name", "Diogenes"); %>
+    <%= pageContext.getAttribute("name",
+                                 pageContext.APPLICATION_SCOPE) %>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Diogenes]]></name><id>a</id></alternative><alternative><name><![CDATA[ null]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of the following code? (1 correct answer)
+   
+    <% session.setAttribute("name", "Diogenes"); %>
+    <%= pageContext.getAttribute("name",
+                                 pageContext.SESSION_SCOPE) %>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Diogenes]]></name><id>a</id></alternative><alternative><name><![CDATA[ null]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of the following code? (1 correct answer)
+   
+    <% session.setAttribute("name", "Diogenes"); %>
+    <%= pageContext.findAttribute("name") %>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of the following code? (1 correct answer)
+   
+    <% session.setAttribute("name", "Diogenes"); %>
+    <%= pageContext.SESSION_SCOPE ==
+        pageContext.getAttributesScope("name") %>
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hello null !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hello Bond !!”]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider this code.
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="yourname" value="Bond"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <html>
+      <body>
+        Hello <%= request.getAttribute("yourname")%> !!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hello null !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hello Bond !!”]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider this code.
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="yourname" value="Bond"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <html>
+      <body>
+        Hello <%= request.getParameter("yourname")%> !!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hello null !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hello submit !!”]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider this code.
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="yourname" value="Bond"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <html>
+      <body>
+        Hello <%= request.getParameter("OK")%> !!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ “Hello null !!”]]></name><id>a</id></alternative><alternative><name><![CDATA[ “Hello OK !!”]]></name><id>b</id></alternative><alternative><name><![CDATA[ “Hello submit !!”]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider this code.
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="yourname" value="Bond"/>
+          <input type="submit" name="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <html>
+      <body>
+        Hello <%= request.getParameter("submit")%> !!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ I like null!]]></name><id>a</id></alternative><alternative><name><![CDATA[ I like Mathematics!]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="about" value="Mathematics"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="request" />
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ I like null!]]></name><id>a</id></alternative><alternative><name><![CDATA[ I like Mathematics!]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="about" value="Mathematics"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="request" />
+    <jsp:setProperty name="book" property="title" param="title" />
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ I like null!]]></name><id>a</id></alternative><alternative><name><![CDATA[ I like Mathematics!]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="about" value="Mathematics"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="request" />
+    <jsp:setProperty name="book" property="title" param="about" />
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ I like Art!]]></name><id>a</id></alternative><alternative><name><![CDATA[ I like Mathematics!]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="about" value="Mathematics"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="request" />
+    <jsp:setProperty name="book" property="title" value="Art" />
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ I like Art!]]></name><id>a</id></alternative><alternative><name><![CDATA[ I like Mathematics!]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="about" value="Mathematics"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="request" >
+      <jsp:setProperty name="book" property="title" value="Art" />
+    </jsp:useBean>
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ I like null!]]></name><id>a</id></alternative><alternative><name><![CDATA[ I like Mathematics!]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="about" value="Mathematics"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="request" >
+      <jsp:setProperty name="book" property="title" param="Mathematics" />
+    </jsp:useBean>
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ I like null!]]></name><id>a</id></alternative><alternative><name><![CDATA[ I like Mathematics!]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="about" value="Mathematics"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="request" >
+      <jsp:setProperty name="book" property="title" param="title" />
+    </jsp:useBean>
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ I like null!]]></name><id>a</id></alternative><alternative><name><![CDATA[ I like Mathematics!]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="about" value="Mathematics"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="request" >
+      <jsp:setProperty name="book" property="title" param="about" />
+    </jsp:useBean>
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ I like Art!]]></name><id>a</id></alternative><alternative><name><![CDATA[ I like Mathematics!]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="about" value="Mathematics"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="request" >
+      <jsp:setProperty name="book" property="title" param="about" />
+    </jsp:useBean>
+    <jsp:setProperty name="book" property="title" value="Art" />
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ I like null!]]></name><id>a</id></alternative><alternative><name><![CDATA[ I like Mathematics!]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="title" value="Mathematics"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="request" >
+      <jsp:setProperty name="book" property="title" param="title" />
+    </jsp:useBean>
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ I like null!]]></name><id>a</id></alternative><alternative><name><![CDATA[ I like Mathematics!]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="title" value="Mathematics"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="request" >
+      <jsp:setProperty name="book" property="title" param="*" />
+    </jsp:useBean>
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ I like null!]]></name><id>a</id></alternative><alternative><name><![CDATA[ I like Mathematics!]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="title" value="Mathematics"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="request" >
+      <jsp:setProperty name="book" property="title" />
+    </jsp:useBean>
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ I like null!]]></name><id>a</id></alternative><alternative><name><![CDATA[ I like Mathematics!]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="title" value="Mathematics"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="request" >
+      <jsp:setProperty name="book" property="*" />
+    </jsp:useBean>
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ I like Mathematics!]]></name><id>a</id></alternative><alternative><name><![CDATA[ An exception is thrown at runtime.]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="title" value="Mathematics"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" type="library.Book" scope="request" >
+      <jsp:setProperty name="book" property="*" />
+    </jsp:useBean>
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ I like Mathematics!]]></name><id>a</id></alternative><alternative><name><![CDATA[ An exception is thrown at runtime.]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="title" value="Mathematics"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" type="library.Book" class="library.Book" scope="request" >
+      <jsp:setProperty name="book" property="*" />
+    </jsp:useBean>
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ I like null!]]></name><id>a</id></alternative><alternative><name><![CDATA[ I like Head First Servlets and JSP!]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="request" >
+      <jsp:setProperty name="book" property="title" value="Head First Servlets and JSP" />
+    </jsp:useBean>
+    <html>
+      <body>
+        <a href="output.jsp">click here</a>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="request" />
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ I like null!]]></name><id>a</id></alternative><alternative><name><![CDATA[ I like Head First Servlets and JSP!]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="session" >
+      <jsp:setProperty name="book" property="title" value="Head First Servlets and JSP" />
+    </jsp:useBean>
+    <html>
+      <body>
+        <a href="output.jsp">click here</a>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="session" />
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ I like null!]]></name><id>a</id></alternative><alternative><name><![CDATA[ I like Head First Servlets and JSP!]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="session" >
+      <jsp:setProperty name="book" property="title" value="Head First Servlets and JSP" />
+    </jsp:useBean>
+    <html>
+      <body>
+        <a href="output.jsp">click here</a>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="session" />
+    <html>
+      <body>
+        I like <%= book.getTitle() %>!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Hello !!]]></name><id>a</id></alternative><alternative><name><![CDATA[ Hello Niko!!]]></name><id>b</id></alternative><alternative><name><![CDATA[ An Exception is thrown at runtime]]></name><id>c</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ Consider this code and that there is no attribute in the request object.
+   
+    package value;
+    public class Person {
+       public String name;
+    }
+
+   
+    <%-- hello.jsp --%>
+    <html>
+      <body>
+        <jsp:useBean id="person" class="value.Person" scope="request">
+          <jsp:setProperty name="person" property="name" value="Niko" />
+        </jsp:useBean>
+        Hello ${person.name}!!
+      </body>
+    </html>
+
+    What is the output of hello.jsp? (1 correct answer)
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Hello !!]]></name><id>a</id></alternative><alternative><name><![CDATA[ Hello Niko!!]]></name><id>b</id></alternative><alternative><name><![CDATA[ An Exception is thrown at runtime]]></name><id>c</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ Consider this code and that there is no attribute in the request object.
+   
+    package value;
+    public class Person {
+       private String name;
+       public void setName(String name) {
+          this.name = name;
+       }
+    }
+
+   
+    <%-- hello.jsp --%>
+    <html>
+      <body>
+        <jsp:useBean id="person" class="value.Person" scope="request">
+          <jsp:setProperty name="person" property="name" value="Niko" />
+        </jsp:useBean>
+        Hello ${person.name}!!
+      </body>
+    </html>
+
+    What is the output of hello.jsp? (1 correct answer)
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Hello !!]]></name><id>a</id></alternative><alternative><name><![CDATA[ Hello Niko!!]]></name><id>b</id></alternative><alternative><name><![CDATA[ An Exception is thrown at runtime]]></name><id>c</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ Consider this code and that there is no attribute in the request object.
+   
+    package value;
+    public class Person {
+       private String name;
+       public String getName() {
+          return name;
+       }
+    }
+
+   
+    <%-- hello.jsp --%>
+    <html>
+      <body>
+        <jsp:useBean id="person" class="value.Person" scope="request">
+          <jsp:setProperty name="person" property="name" value="Niko" />
+        </jsp:useBean>
+        Hello ${person.name}!!
+      </body>
+    </html>
+
+    What is the output of hello.jsp? (1 correct answer)
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Hello !!]]></name><id>a</id></alternative><alternative><name><![CDATA[ Hello Niko!!]]></name><id>b</id></alternative><alternative><name><![CDATA[ An Exception is thrown at runtime]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider this code and that there is no attribute in the request object.
+   
+    package value;
+    public class Person {
+       private String name;
+       public String getName() {
+          return name;
+       }
+       public void setName(String name) {
+          this.name = name;
+       }
+    }
+
+   
+    <%-- hello.jsp --%>
+    <html>
+      <body>
+        <jsp:useBean id="person" class="value.Person" scope="request">
+          <jsp:setProperty name="person" property="name" value="Niko" />
+        </jsp:useBean>
+        Hello ${person.name}!!
+      </body>
+    </html>
+
+    What is the output of hello.jsp? (1 correct answer)
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Hello !!]]></name><id>a</id></alternative><alternative><name><![CDATA[ Hello Niko!!]]></name><id>b</id></alternative><alternative><name><![CDATA[ An Exception is thrown at runtime]]></name><id>c</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ Consider this code and that there is no attribute in the request object.
+   
+    package value;
+    public class Person {
+       private String name;
+       private Person() {
+       }
+       public String getName() {
+          return name;
+       }
+       public void setName(String name) {
+          this.name = name;
+       }
+    }
+
+   
+    <%-- hello.jsp --%>
+    <html>
+      <body>
+        <jsp:useBean id="person" class="value.Person" scope="request">
+          <jsp:setProperty name="person" property="name" value="Niko" />
+        </jsp:useBean>
+        Hello ${person.name}!!
+      </body>
+    </html>
+
+    What is the output of hello.jsp? (1 correct answer)
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Hello !!]]></name><id>a</id></alternative><alternative><name><![CDATA[ Hello Niko!!]]></name><id>b</id></alternative><alternative><name><![CDATA[ An Exception is thrown at runtime]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider this code and that there is no attribute in the request object.
+   
+    package value;
+    public class Person {
+       private String onoma;
+       public String getName() {
+          return onoma;
+       }
+       public void setName(String name) {
+          this.onoma = name;
+       }
+    }
+
+   
+    <%-- hello.jsp --%>
+    <html>
+      <body>
+        <jsp:useBean id="person" class="value.Person" scope="request">
+          <jsp:setProperty name="person" property="name" value="Niko" />
+        </jsp:useBean>
+        Hello ${person.name}!!
+      </body>
+    </html>
+
+    What is the output of hello.jsp? (1 correct answer)
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Hello !!]]></name><id>a</id></alternative><alternative><name><![CDATA[ Hello Niko!!]]></name><id>b</id></alternative><alternative><name><![CDATA[ An Exception is thrown at runtime]]></name><id>c</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ Consider this code and that there is no attribute in the request object.
+   
+    package value;
+    public class Person {
+       private String name;
+       public String getName() {
+          return name;
+       }
+       public void setName(String name) {
+          this.name = name;
+       }
+    }
+
+   
+    <%-- hello.jsp --%>
+    <html>
+      <body>
+        <jsp:useBean id="person" class="value.Person" scope="request">
+          <jsp:setProperty name="person" property="name" value="Niko" />
+        </jsp:useBean>
+        Hello ${person.name[0]}!!
+      </body>
+    </html>
+
+    What is the output of hello.jsp? (1 correct answer)
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Hello !!]]></name><id>a</id></alternative><alternative><name><![CDATA[ Hello Niko!!]]></name><id>b</id></alternative><alternative><name><![CDATA[ An Exception is thrown at runtime]]></name><id>c</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ Consider this code and that there is no attribute in the request object.
+   
+    package value;
+    public class Person {
+       private String name;
+       public String getName() {
+          return name;
+       }
+       public void setName(String name) {
+          this.name = name;
+       }
+    }
+
+   
+    <%-- hello.jsp --%>
+    <html>
+      <body>
+        <jsp:useBean id="person" class="value.Person" scope="request">
+          <jsp:setProperty name="person" property="name" value="Niko" />
+        </jsp:useBean>
+        Hello ${person.name["0"]}!!
+      </body>
+    </html>
+
+    What is the output of hello.jsp? (1 correct answer)
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Both HttpJspPage and JspPage are interfaces. (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ HttpJspPage IS-A JspPage. (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ HttpJspPage IS-A Servlet. (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ void _jspService()]]></name><id>a</id></alternative><alternative><name><![CDATA[ void _jspService(HttpServletRequest, HttpServletResponse)]]></name><id>b</id></alternative><alternative><name><![CDATA[ void _jspService(HttpServletRequest, HttpServletResponse) throws IOException, ServletException]]></name><id>c</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ What is the signature of method _jspService of HttpJspPage? (1 correct answer)
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ The method _jspService of HttpJspPage should not be overriden by a JSP author. (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ void jspInit()]]></name><id>a</id></alternative><alternative><name><![CDATA[ void jspInit(HttpServletRequest, HttpServletResponse)]]></name><id>b</id></alternative><alternative><name><![CDATA[ void jspInit(HttpServletRequest, HttpServletResponse) throws IOException, ServletException]]></name><id>c</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the signature of method jspInit of JspPage? (1 correct answer)
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ void jspDestroy()]]></name><id>a</id></alternative><alternative><name><![CDATA[ void jspDestroy(HttpServletRequest, HttpServletResponse)]]></name><id>b</id></alternative><alternative><name><![CDATA[ void jspDestroy(HttpServletRequest, HttpServletResponse) throws IOException, ServletException]]></name><id>c</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the signature of method jspDestroy of JspPage? (1 correct answer)
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ The methods jspInit and jspDestroy of JspPage may be overriden by a JSP author. (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Both PageContext and JspContext are abstract classes. (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ PageContext IS-A JspContext. (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ The following are all methods of JspContext. (1 correct answer)
+          ⇒ findAttribute()
+          ⇒ getAttribute()
+          ⇒ setAttribute()
+          ⇒ removeAttribute()
+          ⇒ getAttributeNamesInScope()
+          ⇒ getAttributesScope()
+          ⇒ getOut()
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ findAttribute()]]></name><id>a</id></alternative><alternative><name><![CDATA[ getAttribute()]]></name><id>b</id></alternative><alternative><name><![CDATA[ setAttribute()]]></name><id>c</id></alternative><alternative><name><![CDATA[ removeAttribute()]]></name><id>d</id></alternative><corrects>b,c,d</corrects></alternatives><question_name><![CDATA[ Which of the following methods of JspContext have 2 overloaded versions? (3 correct answers)
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ public abstract JspWriter getOut()]]></name><id>a</id></alternative><alternative><name><![CDATA[ public abstract PrintWriter getOut()]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the signature of the method getOut of JspContext? (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ The following are all methods of PageContext. (1 correct answer)
+          ⇒ getPage()
+          ⇒ getSession()
+          ⇒ getRequest()
+          ⇒ getResponse()
+          ⇒ getServletConfig()
+          ⇒ getServletContext()
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ The following are all fields of PageContext. (1 correct answer)
+          ⇒ PAGE_SCOPE
+          ⇒ REQUEST_SCOPE
+          ⇒ SESSION_SCOPE
+          ⇒ APPLICATION_SCOPE
+
+        
+        
+
+]]></question_name></question>
+<question><alternatives><alternative><name><![CDATA[ Servlet]]></name><id>a</id></alternative><alternative><name><![CDATA[ HttpServlet]]></name><id>b</id></alternative><alternative><name><![CDATA[ ServletRequest]]></name><id>c</id></alternative><alternative><name><![CDATA[ HttpServletRequest]]></name><id>d</id></alternative><corrects>a,c,d</corrects></alternatives><question_name><![CDATA[ Which of the following are interfaces? (3 correct answers)
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Servlet]]></name><id>a</id></alternative><alternative><name><![CDATA[ HttpServlet]]></name><id>b</id></alternative><alternative><name><![CDATA[ GenericServlet]]></name><id>c</id></alternative><alternative><name><![CDATA[ HttpServletRequest]]></name><id>d</id></alternative><corrects>b,c</corrects></alternatives><question_name><![CDATA[ Which of the following are abstract classes? (2 correct answers)
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ HttpServlet extends GenericServlet that implements Servlet.]]></name><id>a</id></alternative><alternative><name><![CDATA[ HttpServlet extends GenericServlet that extends Servlet.]]></name><id>b</id></alternative><alternative><name><![CDATA[ HttpServlet implements GenericServlet that extends Servlet.]]></name><id>c</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Which of the following statements is true? (1 correct answer)
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ HttpServlet IS-A GenericServlet.]]></name><id>a</id></alternative><alternative><name><![CDATA[ HttpServlet IS-A Servlet.]]></name><id>b</id></alternative><alternative><name><![CDATA[ HttpServlet IS-A ServletRequest.]]></name><id>c</id></alternative><corrects>a,b</corrects></alternatives><question_name><![CDATA[ Which of the following statements are true? (2 correct answers)
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Calls the void service(HttpServletRequest, HttpServletResponse) method of the servlet.]]></name><id>a</id></alternative><alternative><name><![CDATA[ Creates a pair of request and response objects.]]></name><id>b</id></alternative><alternative><name><![CDATA[ Finds the correct servlet based on the URL.]]></name><id>c</id></alternative><alternative><name><![CDATA[ Creates a new thread or allocates an existing thread to the client’s request.]]></name><id>d</id></alternative><corrects>b,c,d,a</corrects></alternatives><question_name><![CDATA[ Here are some actions taken by the Container when a client request arrives. Place them in the correct order starting from what happens first.
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ getServletConfig();]]></name><id>a</id></alternative><alternative><name><![CDATA[ request.getServletConfig();]]></name><id>b</id></alternative><alternative><name><![CDATA[ response.getServletConfig();]]></name><id>c</id></alternative><alternative><name><![CDATA[ getServletContext().getServletConfig();]]></name><id>d</id></alternative><alternative><name><![CDATA[ request.getSession().getServletConfig();]]></name><id>e</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ How can a servlet access it’s associated ServletConfig object? (1 correct answer)
+        
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ getServletContext();]]></name><id>a</id></alternative><alternative><name><![CDATA[ request.getServletContext();]]></name><id>b</id></alternative><alternative><name><![CDATA[ response.getServletContext();]]></name><id>c</id></alternative><alternative><name><![CDATA[ getServletConfig().getServletContext();]]></name><id>d</id></alternative><alternative><name><![CDATA[ request.getSession().getServletContext();]]></name><id>e</id></alternative><corrects>a,d,e</corrects></alternatives><question_name><![CDATA[ How can a servlet access the application’s ServletContext object? (3 correct answers)
+        
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ request.getRequestDispatcher().forward(“hello.jsp”);]]></name><id>a</id></alternative><alternative><name><![CDATA[ request.getRequestDispatcher().dispatch(“hello.jsp”);]]></name><id>b</id></alternative><alternative><name><![CDATA[ request.getRequestDispatcher(“hello.jsp”).forward(request, response);]]></name><id>c</id></alternative><alternative><name><![CDATA[ request.getRequestDispatcher(“hello.jsp”).dispatch(request, response);]]></name><id>d</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ How is a request dispatchedto hello.jsp from a doGet() method? (1 correct answer)
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ request.redirect(“hello.jsp”);]]></name><id>a</id></alternative><alternative><name><![CDATA[ response.redirect(“hello.jsp”);]]></name><id>b</id></alternative><alternative><name><![CDATA[ request.sendRedirect(“hello.jsp”);]]></name><id>c</id></alternative><alternative><name><![CDATA[ response.sendRedirect(“hello.jsp”);]]></name><id>d</id></alternative><corrects>d</corrects></alternatives><question_name><![CDATA[ How is a request redirectedto hello.jsp from a doGet() method? (1 correct answer)
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Dispatching a request occurs on the server-side and redirection on the client-side. (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Both context init parameters and servlet init parameters are declared in the web.xml. (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ The value of a servlet init parameter can be changed programmatically, but the value of a context init parameter cannot. (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ A context init parameter cannot have the same name with a servlet init parameter. (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ A servlet init parameter cannot have the same name with the servlet it refers to. (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ In the ServletConfig object of the servlet.]]></name><id>a</id></alternative><alternative><name><![CDATA[ In the ServletContext object of the web application.]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Where is a servlet init parameter stored after the servlet is initialized and available for use? (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ In the ServletConfig object of the servlet.]]></name><id>a</id></alternative><alternative><name><![CDATA[ In the ServletContext object of the web application.]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Where is a context init parameter stored after the servlet is initialized and available for use? (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Yes.]]></name><id>a</id></alternative><alternative><name><![CDATA[ No, because servlet-name contains a space.]]></name><id>b</id></alternative><alternative><name><![CDATA[ No, because servlet-class has a wrong value.]]></name><id>c</id></alternative><alternative><name><![CDATA[ No, because param-name is a reserved Java keyword.]]></name><id>d</id></alternative><alternative><name><![CDATA[ No, because param-value contains an explanation mark (!).]]></name><id>e</id></alternative><alternative><name><![CDATA[ No, because init-param should be inside a servlet-mapping element.]]></name><id>f</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ Assume the servlet HelloServlet that belongs to package com. The file HelloServlet.class is placed in the directory WEB-INF/classes/com. Is this a correct declaration of an init parameter for this servlet? (1 correct answer)
+    
+    <servlet>
+        <servlet-name>Hello Servlet</servlet-name>
+        <servlet-class>classes.com.HelloServlet</servlet-class>
+        <init-param>
+            <param-name>this</param-name>
+            <param-value>Hello!</param-value>
+        </init-param>
+    </servlet>
+
+        
+        
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Compilation fails because there is no init() method defined.]]></name><id>a</id></alternative><alternative><name><![CDATA[ An exception is thrown at runtime because service() has no method to call!]]></name><id>b</id></alternative><alternative><name><![CDATA[ Deployment succeeds but we get a message “GET is not supported by this URL” if we access it.]]></name><id>c</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ What happens when we compile and deploy this servlet? (1 correct answer)
+    
+    public class Test extends HttpServlet {
+     
+    }
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Compilation fails because there is no init() method defined.]]></name><id>a</id></alternative><alternative><name><![CDATA[ An exception is thrown at runtime because the servlet has no modifier.]]></name><id>b</id></alternative><alternative><name><![CDATA[ An exception is thrown at runtime because service() has no method to call!]]></name><id>c</id></alternative><alternative><name><![CDATA[ Deployment succeeds but we get a message “GET is not supported by this URL” if we try to access its URL.]]></name><id>d</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What happens when we compile and deploy this servlet? (1 correct answer)
+    
+    class Test extends HttpServlet {
+     
+    }
+
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Compilation fails because doGet() is empty.]]></name><id>a</id></alternative><alternative><name><![CDATA[ An exception is thrown at runtime because doGet() is empty.]]></name><id>b</id></alternative><alternative><name><![CDATA[ Deployment succeeds but nothing is displayed to the user’s browser.]]></name><id>c</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ What happens when this servlet is compiled, deployed and called? (1 correct answer)
+    
+    public class Test extends HttpServlet {
+        public void doGet(HttpServletRequest request,
+                          HttpServletResponse response)
+                          throws ServletException, IOException {
+            // TODO
+        }
+    }
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Compilation fails because doGet() must be void.]]></name><id>a</id></alternative><alternative><name><![CDATA[ Deployment succeeds but nothing is displayed to the user’s browser.]]></name><id>b</id></alternative><alternative><name><![CDATA[ A NullPointerException is thrown at runtime because null is returned.]]></name><id>c</id></alternative><alternative><name><![CDATA[ A ServletException is thrown at runtime because service() cannot find the proper doGet() method.]]></name><id>d</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What happens when this servlet is compiled, deployed and called? (1 correct answer)
+    
+    public class Test extends HttpServlet {
+    public String doGet(HttpServletRequest request,
+                        HttpServletResponse response)
+                        throws ServletException, IOException {
+            // TODO
+        return null;
+    }
+    }
+
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Compilation fails because doGet() is protected.]]></name><id>a</id></alternative><alternative><name><![CDATA[ Compilation fails because doGet() does not declare a ServletException.]]></name><id>b</id></alternative><alternative><name><![CDATA[ Deployment succeeds and clients are served just fine.]]></name><id>c</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ What happens when this servlet is compiled and deployed? (1 correct answer)
+    
+    public class Test extends HttpServlet {
+    protected void doGet(HttpServletRequest request,
+                         HttpServletResponse response)
+                         throws IOException {
+        response.setContentType("text/html; charset=UTF-8");
+        PrintWriter out = response.getWriter();
+        out.println("<html><body>");
+        out.println("<p>Hello!!</p>");
+        out.println("</body></html>");
+        out.close();
+    }
+    }
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ An exception is thrown at runtime because the Container cannot modify the request and response objects.]]></name><id>a</id></alternative><alternative><name><![CDATA[ An exception is thrown at runtime when the out object is closed.]]></name><id>b</id></alternative><alternative><name><![CDATA[ Deployment succeeds and clients are served just fine.]]></name><id>c</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ What happens when this servlet is deployed and called? (1 correct answer)
+    
+    public class Test extends HttpServlet {
+    public void doGet(final HttpServletRequest request,
+                      final HttpServletResponse response)
+                      throws IOException, ServletException {
+        response.setContentType("text/html; charset=UTF-8");
+        final PrintWriter out = response.getWriter();
+        out.println("<html><body>");
+        out.println("<p>Hello!!</p>");
+        out.println("</body></html>");
+        out.close();
+    }
+    }
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ A ServletException is thrown at runtime because the <html> and <body> tags are missing.]]></name><id>a</id></alternative><alternative><name><![CDATA[ Deployment succeeds and Hello!! is presented on the browser.]]></name><id>b</id></alternative><alternative><name><![CDATA[ The server responds with a HTTP status code 404: “Not Found”.]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What happens when this servlet is deployed and called? (1 correct answer)
+    
+    public class Test extends HttpServlet {
+    public void doGet(HttpServletRequest request,
+                      HttpServletResponse response)
+                      throws ServletException, IOException {
+        response.setContentType("text/html; charset=UTF-8");
+        PrintWriter out = response.getWriter();
+        // out.println("<html><body>");
+        out.println("<p>Hello!!</p>");
+        // out.println("</body></html>");
+        out.close();
+    }
+    }
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Deployment succeeds and Hello!! is presented on the browser.]]></name><id>a</id></alternative><alternative><name><![CDATA[ Compilation fails because the content type should be specified before any output is written.]]></name><id>b</id></alternative><alternative><name><![CDATA[ An exception is thrown at runtime because the response has not an explicitly set content type.]]></name><id>c</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What happens when this servlet is compiled, deployed and called? (1 correct answer)
+    
+    public class Test extends HttpServlet {
+    public void doGet(HttpServletRequest request,
+                      HttpServletResponse response)
+                      throws ServletException, IOException {
+        // response.setContentType("text/html; charset=UTF-8");
+        PrintWriter out = response.getWriter();
+        out.println("<html><body>Hello!!</body></html>");
+        out.close();
+    }
+    }
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ An exception is thrown at runtime because out is not closed.]]></name><id>a</id></alternative><alternative><name><![CDATA[ Deployment succeeds and Hello!! is presented on the browser.]]></name><id>b</id></alternative><alternative><name><![CDATA[ Deployment succeeds but no output is presented on the browser.]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What happens when this servlet is compiled, deployed and called? (1 correct answer)
+    
+    public class Test extends HttpServlet {
+    public void doGet(HttpServletRequest request,
+                      HttpServletResponse response)
+                      throws ServletException, IOException {
+        response.setContentType("text/html; charset=UTF-8");
+        PrintWriter out = response.getWriter();
+        out.println("<html><body>Hello!!</body></html>");
+        // out.close();
+    }
+    }
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Compilation succeeds.]]></name><id>a</id></alternative><alternative><name><![CDATA[ There is a compilation error at line 4.]]></name><id>b</id></alternative><alternative><name><![CDATA[ There is a compilation error at line 6.]]></name><id>c</id></alternative><alternative><name><![CDATA[ Both lines 4 and 6 contain a compilation error.]]></name><id>d</id></alternative><corrects>d</corrects></alternatives><question_name><![CDATA[ Does this servlet compile successfully? (1 correct answer)
+    
+    1 public class Test extends HttpServlet {
+    2 public void doGet(HttpServletRequest request,
+    3                   HttpServletResponse response)
+    4                   throws Exception {
+    5     response.setContentType("text/html; charset=UTF-8");
+    6     response.getWriter().println("Hello!!").close();
+    7 }
+    8 }
+
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Compilation succeeds.]]></name><id>a</id></alternative><alternative><name><![CDATA[ Compilation fails because there is no init(ServletConfig) in GenericServlet.]]></name><id>b</id></alternative><alternative><name><![CDATA[ Compilation fails because init(ServletConfig) of GenericServlet throws ServletException.]]></name><id>c</id></alternative><alternative><name><![CDATA[ Compilation fails because init(ServletConfig) of GenericServlet throws IOException and ServletException.]]></name><id>d</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ Does this servlet compile successfully? (1 correct answer)
+    
+    public class Test extends HttpServlet {
+    public void init(ServletConfig config) {
+        super.init(config);
+    }
+    public void doGet(HttpServletRequest request,
+                      HttpServletResponse response)
+                      throws ServletException, IOException {
+        response.setContentType("text/html; charset=UTF-8");
+        PrintWriter out = response.getWriter();
+        out.println("<html><body>Hello!</body></html>");
+        out.close();
+    }
+    }
+
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Compilation succeeds.]]></name><id>a</id></alternative><alternative><name><![CDATA[ Compilation fails because index.html is not a jsp.]]></name><id>b</id></alternative><alternative><name><![CDATA[ Compilation fails because doGet should declare ServletException as well.]]></name><id>c</id></alternative><alternative><name><![CDATA[ Compilation fails because the request object’s reference must be request and not req.]]></name><id>d</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ Does this servlet compile successfully? (1 correct answer)
+    
+    public class Test extends HttpServlet {
+    public void doGet(HttpServletRequest req,
+                      HttpServletResponse response)
+                      throws IOException {
+        req.getRequestDispatcher("index.html").
+            forward(req, response);
+    }
+    }
+
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ Compilation succeeds.]]></name><id>a</id></alternative><alternative><name><![CDATA[ Compilation fails because index.html is not a jsp.]]></name><id>b</id></alternative><alternative><name><![CDATA[ Compilation fails because doGet should declare ServletException as well.]]></name><id>c</id></alternative><alternative><name><![CDATA[ Compilation fails because the request object’s reference must be request and not req.]]></name><id>d</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Does this servlet compile successfully? (1 correct answer)
+    
+    public class Test extends HttpServlet {
+    public void doGet(HttpServletRequest req,
+                      HttpServletResponse response)
+                      throws IOException {
+        response.sendRedirect("index.html");
+    }
+    }
+
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ request.getRequestDispatcher(“hello.jsp”).forward(request, response);]]></name><id>a</id></alternative><alternative><name><![CDATA[ request.getRequestDispatcher(“hello.jsp”).forward(response, request);]]></name><id>b</id></alternative><alternative><name><![CDATA[ response.getRequestDispatcher(“hello.jsp”).forward(request, response);]]></name><id>c</id></alternative><alternative><name><![CDATA[ response.getRequestDispatcher(“hello.jsp”).forward(response, request);]]></name><id>d</id></alternative><alternative><name><![CDATA[ None of the above.]]></name><id>e</id></alternative><corrects>e</corrects></alternatives><question_name><![CDATA[ Which of the following statements shoud be inserted for a successful compilation? (1 correct answer)
+    
+    public class Test extends HttpServlet {
+        protected void doGet(HttpServletRequest request,
+        HttpServletResponse response) {
+            // insert statement
+        }
+    }
+
+        
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ An IllegalStateException is thrown at runtime because response.getWriter() is called more than once.]]></name><id>a</id></alternative><alternative><name><![CDATA[ An IllegalStateException is thrown at runtime at line 5 because the request is dispatched after writing data.]]></name><id>b</id></alternative><alternative><name><![CDATA[ An IllegalStateException is thrown at runtime at line 6 because data is written after the request has been dispatched.]]></name><id>c</id></alternative><alternative><name><![CDATA[ An IllegalStateException is thrown at runtime at line 7 because the writer is closed after the request has been dispatched.]]></name><id>d</id></alternative><alternative><name><![CDATA[ The browser displays the content of hello.jsp without any exception at runtime.]]></name><id>e</id></alternative><alternative><name><![CDATA[ The browser displays aa without any exception at runtime.]]></name><id>f</id></alternative><alternative><name><![CDATA[ The browser displays a without any exception at runtime.]]></name><id>g</id></alternative><corrects>e</corrects></alternatives><question_name><![CDATA[ What happens when the servlet with the following method is deployed and called? (1 correct answer)
+    
+    1 public void doGet(HttpServletRequest request,
+    2                   HttpServletResponse response)
+    3                   throws ServletException, IOException {
+    4     response.getWriter().print('a');
+    5     request.getRequestDispatcher("hello.jsp").forward(request, response);
+    6     response.getWriter().print('a');
+    7     response.getWriter().close();
+    8 }
+
+        
+        
+        
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ An exception is thrown at runtime because the provided URL does not start with “/”.]]></name><id>a</id></alternative><alternative><name><![CDATA[ Compilation fails because the provided URL does not start with “/”.]]></name><id>b</id></alternative><alternative><name><![CDATA[ The browser displays the content of hello.jsp.]]></name><id>c</id></alternative><alternative><name><![CDATA[ The browser displays an empty page.]]></name><id>d</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What happens when the servlet with the following method is deployed and called? (1 correct answer)
+    
+    public void doGet(HttpServletRequest request,
+                      HttpServletResponse response)
+                      throws ServletException, IOException {
+        getServletContext().getRequestDispatcher("hello.jsp")
+                           .forward(request, response);
+    }
+
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ An exception is thrown at runtime because the provided URL is absolute.]]></name><id>a</id></alternative><alternative><name><![CDATA[ Compilation fails because the provided URL is absolute.]]></name><id>b</id></alternative><alternative><name><![CDATA[ The browser displays the content of hello.jsp.]]></name><id>c</id></alternative><alternative><name><![CDATA[ The browser displays an empty page.]]></name><id>d</id></alternative><corrects>d</corrects></alternatives><question_name><![CDATA[ What happens when the servlet with the following method is deployed and called? (1 correct answer)
+    
+    public void doGet(HttpServletRequest request,
+                      HttpServletResponse response)
+                      throws ServletException, IOException {
+        getServletContext().getRequestDispatcher("/hello.jsp");
+    }
+
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ A NullPointerException occurs at runtime.]]></name><id>a</id></alternative><alternative><name><![CDATA[ The browser displays an empty page.]]></name><id>b</id></alternative><alternative><name><![CDATA[ The browser displays “null”.]]></name><id>c</id></alternative><alternative><name><![CDATA[ The browser displays “ice”.]]></name><id>d</id></alternative><alternative><name><![CDATA[ The browser displays “tea”.]]></name><id>e</id></alternative><alternative><name><![CDATA[ Compilation fails.]]></name><id>f</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ A servlet init parameter with name “ice” and value “tea” is properly declared. What is the result of this code? (1 correct answer)
+    
+    public void doGet(HttpServletRequest request,
+                      HttpServletResponse response)
+                      throws ServletException, IOException {
+        response.getWriter().println(
+            getServletConfig().getInitParameter("tea")
+        );
+    }
+
+        
+        
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ A NullPointerException occurs at runtime.]]></name><id>a</id></alternative><alternative><name><![CDATA[ The browser displays an empty page.]]></name><id>b</id></alternative><alternative><name><![CDATA[ The browser displays “null”.]]></name><id>c</id></alternative><alternative><name><![CDATA[ The browser displays “ice”.]]></name><id>d</id></alternative><alternative><name><![CDATA[ The browser displays “tea”.]]></name><id>e</id></alternative><alternative><name><![CDATA[ Compilation fails.]]></name><id>f</id></alternative><corrects>e</corrects></alternatives><question_name><![CDATA[ A servlet init parameter with name “ice” and value “tea” is properly declared. What is the result of this code? (1 correct answer)
+    
+    public void doGet(HttpServletRequest request,
+                      HttpServletResponse response)
+                      throws ServletException, IOException {
+        response.getWriter().println(getInitParameter("ice"));
+    }
+
+        
+        
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ A NullPointerException occurs at runtime.]]></name><id>a</id></alternative><alternative><name><![CDATA[ The browser displays an empty page.]]></name><id>b</id></alternative><alternative><name><![CDATA[ The browser displays “null”.]]></name><id>c</id></alternative><alternative><name><![CDATA[ The browser displays “ice”.]]></name><id>d</id></alternative><alternative><name><![CDATA[ The browser displays “tea”.]]></name><id>e</id></alternative><alternative><name><![CDATA[ Compilation fails.]]></name><id>f</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ A context init parameter with name “ice” and value “tea” is properly declared. What is the result of this code? (1 correct answer)
+    
+    public void doGet(HttpServletRequest request,
+                      HttpServletResponse response)
+                      throws ServletException, IOException {
+        response.getWriter().println(
+            getServletContext().getInitParameter("tea")
+        );
+    }
+
+        
+        
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ A NullPointerException occurs at runtime.]]></name><id>a</id></alternative><alternative><name><![CDATA[ The browser displays an empty page.]]></name><id>b</id></alternative><alternative><name><![CDATA[ The browser displays “null”.]]></name><id>c</id></alternative><alternative><name><![CDATA[ The browser displays “ice”.]]></name><id>d</id></alternative><alternative><name><![CDATA[ The browser displays “tea”.]]></name><id>e</id></alternative><alternative><name><![CDATA[ Compilation fails.]]></name><id>f</id></alternative><corrects>f</corrects></alternatives><question_name><![CDATA[ A context init parameter with name “ice” and value “tea” is properly declared. What is the result of this code? (1 correct answer)
+    
+    public void doGet(HttpServletRequest request,
+                      HttpServletResponse response)
+                      throws ServletException, IOException {
+        response.getWriter().println(getContextParameter("ice"));
+    }
+
+        
+        
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ The Container creates a single instance for every servlet. The client requests are served with various threads. (1 correct answer)
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ http://localhost:]]></name><id>a</id></alternative><alternative><name><![CDATA[ /test1/processor]]></name><id>b</id></alternative><alternative><name><![CDATA[ /processor]]></name><id>c</id></alternative><alternative><name><![CDATA[ /test1]]></name><id>d</id></alternative><corrects>d</corrects></alternatives><question_name><![CDATA[ Assume that the container is running on port 9999 of localhost, our application is called test1 and that the following servlet is declared with url pattern /processor. What is the output? (1 correct answer)
+    
+    public class Processor extends HttpServlet {
+    public void doGet(HttpServletRequest request,
+                      HttpServletResponse response)
+                      throws ServletException, IOException {
+        response.getWriter().println(request.getContextPath());
+    }
+    }
+
+        9/test1/processor999
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ http://localhost:]]></name><id>a</id></alternative><alternative><name><![CDATA[ /test1/processor]]></name><id>b</id></alternative><alternative><name><![CDATA[ /processor]]></name><id>c</id></alternative><alternative><name><![CDATA[ /test1]]></name><id>d</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ Assume that the container is running on port 9999 of localhost, our application is called test1 and that the following servlet is declared with url pattern /processor. What is the output? (1 correct answer)
+    
+    public class Processor extends HttpServlet {
+    public void doGet(HttpServletRequest request,
+                      HttpServletResponse response)
+                      throws ServletException, IOException {
+        response.getWriter().println(request.getServletPath());
+    }
+    }
+
+        9/test1/processor999
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ http://localhost:]]></name><id>a</id></alternative><alternative><name><![CDATA[ /test1/processor]]></name><id>b</id></alternative><alternative><name><![CDATA[ /processor]]></name><id>c</id></alternative><alternative><name><![CDATA[ /test1]]></name><id>d</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Assume that the container is running on port 9999 of localhost, our application is called test1 and that the following servlet is declared with url pattern /processor. What is the output? (1 correct answer)
+    
+    public class Processor extends HttpServlet {
+    public void doGet(HttpServletRequest request,
+                      HttpServletResponse response)
+                      throws ServletException, IOException {
+        response.getWriter().println(request.getRequestURL());
+    }
+    }
+
+        9/test1/processor999
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ http://localhost:]]></name><id>a</id></alternative><alternative><name><![CDATA[ /test1/processor]]></name><id>b</id></alternative><alternative><name><![CDATA[ /processor]]></name><id>c</id></alternative><alternative><name><![CDATA[ /test1]]></name><id>d</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Assume that the container is running on port 9999 of localhost, our application is called test1 and that the following servlet is declared with url pattern /processor. What is the output? (1 correct answer)
+    
+    public class Processor extends HttpServlet {
+    public void doGet(HttpServletRequest request,
+                      HttpServletResponse response)
+                      throws ServletException, IOException {
+        response.getWriter().println(request.getRequestURI());
+    }
+    }
+
+        9/test1/processor999
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ GET]]></name><id>a</id></alternative><alternative><name><![CDATA[ POST]]></name><id>b</id></alternative><alternative><name><![CDATA[ A HTTP 405 message informs that GET is not supported.]]></name><id>c</id></alternative><alternative><name><![CDATA[ A HTTP 405 message informs that POST is not supported.]]></name><id>d</id></alternative><corrects>d</corrects></alternatives><question_name><![CDATA[ Consider this form.
+    
+    <form method="post" action="processor">
+       <input type="submit" value="OK"/>
+    </form>
+
+    And this servlet.
+    
+    public class Processor extends HttpServlet {
+    public void doGet(HttpServletRequest request,
+                      HttpServletResponse response)
+                      throws ServletException, IOException {
+        response.getWriter().println(request.getMethod());
+    }
+    }
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ GET]]></name><id>a</id></alternative><alternative><name><![CDATA[ POST]]></name><id>b</id></alternative><alternative><name><![CDATA[ A HTTP 405 message informs that GET is not supported.]]></name><id>c</id></alternative><alternative><name><![CDATA[ A HTTP 405 message informs that POST is not supported.]]></name><id>d</id></alternative><corrects>d</corrects></alternatives><question_name><![CDATA[ Consider this form.
+    
+    <form method="post" action="processor">
+       <input type="submit" value="OK"/>
+    </form>
+
+    And this servlet.
+    
+    public class Processor extends HttpServlet {
+    public void doGet(HttpServletRequest request,
+                      HttpServletResponse response)
+                      throws ServletException, IOException {
+        response.getWriter().println(request.getMethod());
+    }
+    public void doPost(HttpServletResponse response,
+                      HttpServletRequest request)
+                      throws ServletException, IOException {
+        doGet(request, response);
+    }
+    }
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ form OK]]></name><id>a</id></alternative><alternative><name><![CDATA[ null OK]]></name><id>b</id></alternative><alternative><name><![CDATA[ form null]]></name><id>c</id></alternative><alternative><name><![CDATA[ null null]]></name><id>d</id></alternative><corrects>d</corrects></alternatives><question_name><![CDATA[ Consider this form.
+    
+    <form name="form" method="post" action="processor">
+       <input name="submit" type="submit" value="OK"/>
+    </form>
+
+    And this servlet.
+    
+    public class Processor extends HttpServlet {
+    public void doPost(HttpServletRequest request,
+                       HttpServletResponse response)
+                       throws ServletException, IOException {
+        response.getWriter().format("%s %s",
+        request.getParameter("form"),
+        request.getParameter("name"));
+    }
+    }
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ form OK]]></name><id>a</id></alternative><alternative><name><![CDATA[ null OK]]></name><id>b</id></alternative><alternative><name><![CDATA[ form null]]></name><id>c</id></alternative><alternative><name><![CDATA[ null null]]></name><id>d</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider this form.
+    
+    <form name="form" method="post" action="processor">
+       <input name="submit" type="submit" value="OK"/>
+    </form>
+
+    And this servlet.
+    
+    public class Processor extends HttpServlet {
+    public void doPost(HttpServletRequest request,
+                       HttpServletResponse response)
+                       throws ServletException, IOException {
+        response.getWriter().format("%s %s",
+        request.getParameter("form"),
+        request.getParameter("submit"));
+    }
+    }
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ OK OK]]></name><id>a</id></alternative><alternative><name><![CDATA[ null OK]]></name><id>b</id></alternative><alternative><name><![CDATA[ OK null]]></name><id>c</id></alternative><alternative><name><![CDATA[ null null]]></name><id>d</id></alternative><corrects>c</corrects></alternatives><question_name><![CDATA[ Consider this form.
+    
+    <form name="form" method="post" action="processor">
+       <input type="text" name="name" value="OK"/>
+       <input name="submit" type="submit" value="OK"/>
+    </form>
+
+    And this servlet.
+    
+    public class Processor extends HttpServlet {
+    public void doPost(HttpServletRequest request,
+                       HttpServletResponse response)
+                       throws ServletException, IOException {
+        response.getWriter().format("%s %s",
+        request.getParameter("name"),
+        request.getParameter("OK"));
+    }
+    }
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ http://localhost:]]></name><id>a</id></alternative><alternative><name><![CDATA[ http://localhost:]]></name><id>b</id></alternative><alternative><name><![CDATA[ null]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider doGet() of a valid servlet with url pattern /source,
+    
+    request.getRequestDispatcher("target")
+           .forward(request, response);
+
+    and doGet() of another valid servlet with url pattern /target.
+    
+    response.getWriter().println(request.getRequestURL());
+
+    What is the output when invoking http://localhost:9999/exam/source?user=nikos&pass=12345? (1 correct answer)
+
+        9/exam/source999
+        9/exam/target999
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ user=nikos&pass=12345]]></name><id>a</id></alternative><alternative><name><![CDATA[ null]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider doGet() of a valid servlet with url pattern /source,
+    
+    request.getRequestDispatcher("target")
+           .forward(request, response);
+
+    and doGet() of another valid servlet with url pattern /target.
+    
+    response.getWriter().println(request.getQueryString());
+
+    What is the output when invoking http://localhost:9999/exam/source?user=nikos&pass=12345? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ user=nikos&pass=12345]]></name><id>a</id></alternative><alternative><name><![CDATA[ null]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider doGet() of a valid servlet with url pattern /source,
+    
+    request.getRequestDispatcher("target")
+           .forward(request, response);
+
+    and doGet() of another valid servlet with url pattern /target.
+    
+    response.getWriter().println(request.getAttribute("javax.servlet.forward.query_string"));
+
+    What is the output when invoking http://localhost:9999/exam/source?user=nikos&pass=12345? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ /source]]></name><id>a</id></alternative><alternative><name><![CDATA[ /target]]></name><id>b</id></alternative><alternative><name><![CDATA[ null]]></name><id>c</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider doGet() of a valid servlet with url pattern /source,
+    
+    request.getRequestDispatcher("target")
+           .forward(request, response);
+
+    and doGet() of another valid servlet with url pattern /target.
+    
+    response.getWriter().println(request.getAttribute("javax.servlet.forward.servlet_path"));
+
+    What is the output when invoking http://localhost:9999/exam/source?user=nikos&pass=12345? (1 correct answer)
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ /source]]></name><id>a</id></alternative><alternative><name><![CDATA[ /target]]></name><id>b</id></alternative><alternative><name><![CDATA[ null]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider doGet() of a valid servlet with url pattern /source,
+    
+    request.getRequestDispatcher("target")
+           .forward(request, response);
+
+    and doGet() of another valid servlet with url pattern /target.
+    
+    response.getWriter().println(request.getServletPath());
+
+    What is the output when invoking http://localhost:9999/exam/source?user=nikos&pass=12345? (1 correct answer)
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ 12345]]></name><id>a</id></alternative><alternative><name><![CDATA[ null]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Consider doGet() of a valid servlet with url pattern /source,
+    
+    request.getRequestDispatcher("target")
+           .forward(request, response);
+
+    and doGet() of another valid servlet with url pattern /target.
+    
+    response.getWriter().println(request.getParameter("pass"));
+
+    What is the output when invoking http://localhost:9999/exam/source?user=nikos&pass=12345? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ 12345]]></name><id>a</id></alternative><alternative><name><![CDATA[ null]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider doGet() of a valid servlet with url pattern /source,
+    
+    response.sendRedirect("target");
+
+    and doGet() of another valid servlet with url pattern /target.
+    
+    response.getWriter().println(request.getParameter("pass"));
+
+    What is the output when invoking http://localhost:9999/exam/source?user=nikos&pass=12345? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ /source]]></name><id>a</id></alternative><alternative><name><![CDATA[ /target]]></name><id>b</id></alternative><alternative><name><![CDATA[ null]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider doGet() of a valid servlet with url pattern /source,
+    
+    response.sendRedirect("target");
+
+    and doGet() of another valid servlet with url pattern /target.
+    
+    response.getWriter().println(request.getServletPath());
+
+    What is the output when invoking http://localhost:9999/exam/source?user=nikos&pass=12345? (1 correct answer)
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ user=nikos&pass=12345]]></name><id>a</id></alternative><alternative><name><![CDATA[ null]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider doGet() of a valid servlet with url pattern /source,
+    
+    response.sendRedirect("target");
+
+    and doGet() of another valid servlet with url pattern /target.
+    
+    response.getWriter().println(
+        request.getAttribute("javax.servlet.forward.query_string")
+    );
+
+    What is the output when invoking http://localhost:9999/exam/source?user=nikos&pass=12345? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ user=nikos&pass=12345]]></name><id>a</id></alternative><alternative><name><![CDATA[ null]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider doGet() of a valid servlet with url pattern /source,
+    
+    response.sendRedirect("target");
+
+    and doGet() of another valid servlet with url pattern /target.
+    
+    response.getWriter().println(
+        request.getQueryString()
+    );
+
+    What is the output when invoking http://localhost:9999/exam/source?user=nikos&pass=12345? (1 correct answer)
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ The content of index.html]]></name><id>a</id></alternative><alternative><name><![CDATA[ HTTP Status 404]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ There is a top-level folder help in the war file with index.htmlinside. What is the output of this code? (1 correct answer)
+    
+    request.getRequestDispatcher("help/index.html")
+           .forward(request, response);
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ The content of index.html]]></name><id>a</id></alternative><alternative><name><![CDATA[ HTTP Status 404]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ There is a top-level folder help in the war file with index.htmlinside. What is the output of this code? (1 correct answer)
+    
+    request.getRequestDispatcher("/help/index.html")
+           .forward(request, response);
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ The content of fcom.gr]]></name><id>a</id></alternative><alternative><name><![CDATA[ HTTP Status 404]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What is the output of this code? (1 correct answer)
+    
+    request.getRequestDispatcher("http://fcom.gr")
+           .forward(request, response);
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ The content of index.html]]></name><id>a</id></alternative><alternative><name><![CDATA[ HTTP Status 404]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ There is a top-level folder help in the war file with index.htmlinside. What is the output of this code? (1 correct answer)
+    
+    response.sendRedirect("help/index.html");
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ The content of index.html]]></name><id>a</id></alternative><alternative><name><![CDATA[ HTTP Status 404]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ There is a top-level folder help in the war file with index.htmlinside. What is the output of this code? (1 correct answer)
+    
+    response.sendRedirect("/help/index.html");
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ The content of fcom.gr]]></name><id>a</id></alternative><alternative><name><![CDATA[ HTTP Status 404]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What is the output of this code? (1 correct answer)
+    
+    response.sendRedirect("http://fcom.gr");
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ The same value is always displayed.]]></name><id>a</id></alternative><alternative><name><![CDATA[ The displayed value increases with every refresh.]]></name><id>b</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ What happens when this servlet is deployed and a user hits repeatedly the refresh button of his browser? (1 correct answer)
+    
+    public class Test extends HttpServlet {
+    private Integer number = 0;
+    public void doGet(HttpServletRequest request,
+                      HttpServletResponse response)
+                      throws ServletException, IOException {
+        number = number + 1;
+        response.getWriter().println(number);
+    }
+    }
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ The same value is always displayed.]]></name><id>a</id></alternative><alternative><name><![CDATA[ The displayed value increases with every refresh.]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ What happens when this servlet is deployed and a user hits repeatedly the refresh button of his browser? (1 correct answer)
+    
+    public class Test extends HttpServlet {
+    private Integer number = new Random().nextInt();
+    public void doGet(HttpServletRequest request,
+                      HttpServletResponse response)
+                      throws ServletException, IOException {
+        response.getWriter().println(number);
+    }
+    }
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ true]]></name><id>a</id></alternative><alternative><name><![CDATA[ false]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ The following types are ALL interfaces and are used as listeners in a web application. (1 correct answer)
+    → ServletContextListener
+    → ServletContextAttributeListener
+    → ServletRequestListener
+    → ServletRequestAttributeListener
+    → HttpSessionListener
+    → HttpSessionBindingListener
+    → HttpSessionAttributeListener
+    → HttpSessionActivationListener
+
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ void contextDeleted(ServletContextEvent)]]></name><id>a</id></alternative><alternative><name><![CDATA[ void contextDestroyed(ServletContextEvent)]]></name><id>b</id></alternative><alternative><name><![CDATA[ void servletContextDeleted(ServletContextEvent)]]></name><id>c</id></alternative><alternative><name><![CDATA[ void servletContextDestroyed(ServletContextEvent)]]></name><id>d</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ Consider the interface ServletContextListener. What is the signature of the method that is invoked when the servlet context is about to be shut down? (1 correct answer)
+        
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ 0]]></name><id>a</id></alternative><alternative><name><![CDATA[ 1]]></name><id>b</id></alternative><alternative><name><![CDATA[ 2]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ There is a properly declared HttpSessionAttributeListener. How many times its attributeRemovedmethod is invoked when the following servlet is accessed once? (1 correct answer)
+    
+    public class Test extends HttpServlet {
+    public void doGet(HttpServletRequest request,
+                      HttpServletResponse response)
+                      throws ServletException, IOException {
+        request.getSession().setAttribute("planet", "earth");
+        request.getSession().removeAttribute("planet");
+        request.getSession().removeAttribute("planet");
+    }
+    }
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ 0]]></name><id>a</id></alternative><alternative><name><![CDATA[ 1]]></name><id>b</id></alternative><alternative><name><![CDATA[ 2]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ There is a properly declared HttpSessionAttributeListener. How many times its attributeRemovedmethod is invoked when the following servlet is accessed once? (1 correct answer)
+    
+    public class Test extends HttpServlet {
+    public void doGet(HttpServletRequest request,
+                      HttpServletResponse response)
+                      throws ServletException, IOException {
+        request.getSession().setAttribute("planet", "earth");
+        request.getSession().invalidate();
+        request.getSession().removeAttribute("planet");
+        request.getSession().setAttribute("planet", "earth");
+    }
+    }
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ 0]]></name><id>a</id></alternative><alternative><name><![CDATA[ 1]]></name><id>b</id></alternative><alternative><name><![CDATA[ 2]]></name><id>c</id></alternative><corrects>b</corrects></alternatives><question_name><![CDATA[ There is a properly declared HttpSessionAttributeListener. How many times its attributeReplacedmethod is invoked when the following servlet is accessed once? (1 correct answer)
+    
+    public class Test extends HttpServlet {
+    public void doGet(HttpServletRequest request,
+                      HttpServletResponse response)
+                      throws ServletException, IOException {
+        request.getSession().setAttribute("planet", "earth");
+        request.getSession().removeAttribute("earth");
+        request.getSession().setAttribute("planet", "earth");
+    }
+    }
+
+        
+        
+        
+
+]]></question_name></question><question><alternatives><alternative><name><![CDATA[ 0]]></name><id>a</id></alternative><alternative><name><![CDATA[ 1]]></name><id>b</id></alternative><alternative><name><![CDATA[ 2]]></name><id>c</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ There is a properly declared HttpSessionAttributeListener. How many times its attributeReplacedmethod is invoked when the following servlet is accessed once? (1 correct answer)
+    
+    public class Test extends HttpServlet {
+    public void doGet(HttpServletRequest request,
+                      HttpServletResponse response)
+                      throws ServletException, IOException {
+        request.getSession().setAttribute("planet", "earth");
+        request.getSession().removeAttribute("planet");
+        request.getSession().setAttribute("planet", "venus");
+        request.setAttribute("planet", "earth");
+        request.setAttribute("planet", "venus");
+    }
+    }
+
+        
+        
+        
+
+]]></question_name></question></questions>

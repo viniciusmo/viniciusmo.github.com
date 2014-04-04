@@ -1,0 +1,1257 @@
+    question. Put in the correct order the following events from a JSP’s lifecycle.
+        111 create instance999
+        111 translation999
+        111 load class999
+        111 call jspInit()999
+        111 call jspDestroy()999
+        111 compilation999
+        111 call _jspService()999
+
+    question. How is a scriplet defined? (1 correct answer)
+        111 <% %>999
+        111 <%@ %>999
+        111 <%= %>999
+        111 <%! %>999
+
+    question. How is a directive defined? (1 correct answer)
+        111 <% %>999
+        111 <%@ %>999
+        111 <%= %>999
+        111 <%! %>999
+
+    question. How is an expression defined? (1 correct answer)
+        111 <% %>999
+        111 <%@ %>999
+        111 <%= %>999
+        111 <%! %>999
+
+    question. How is a declaration defined? (1 correct answer)
+        111 <% %>999
+        111 <%@ %>999
+        111 <%= %>999
+        111 <%! %>999
+
+    question. Which of the following is syntactically valid? (1 correct answer)
+        111 <%@ page import=”java.util.List” %>999
+        111 <%@ page “import=java.util.List” %>999
+        111 <%@ page “import java.util.List” %>999
+
+    question. Which of the following is syntactically valid? (1 correct answer)
+        111 <%@ page import=”java.util.*” %>999
+        111 <%@ page “import=java.util.*” %>999
+        111 <%@ page “import java.util.*” %>999
+
+    question. Which of the following are syntactically valid? (2 correct answers)
+        111 <%@ page import=”java.util.List : java.util.ArrayList” %>999
+        111 <%@ page import=”java.util.List , java.util.ArrayList” %>999
+        111 <%@ page import=”java.util.List” import=”java.util.ArrayList” %>999
+
+    question. The following are all attributes of the page directive. (1 correct answer)
+          ⇒ import
+          ⇒ errorPage
+          ⇒ contentType
+          ⇒ isErrorPage
+          ⇒ isELignored
+          ⇒ isThreadSafe
+
+        111 true999
+        111 false999
+
+    question. The following are all implicit objects of a JSP. (1 correct answer)
+
+        ⇒ out
+
+        ⇒ config
+
+        ⇒ session
+
+        ⇒ request
+
+        ⇒ response
+
+        ⇒ application
+
+        ⇒ exception
+        ⇒ pageContext
+        ⇒ page
+
+        111 true999
+        111 false999
+
+    question. What is the output of the following code? (1 correct answer)
+   
+    <%= session == pageContext.getSession() %>
+
+        111 true999
+        111 false999
+
+    question. What is the output of the following code? (1 correct answer)
+   
+    <%= request == pageContext.getRequest() %>
+
+        111 true999
+        111 false999
+
+    question. What is the output of the following code? (1 correct answer)
+   
+    <%= response == pageContext.getResponse() %>
+
+        111 true999
+        111 false999
+
+    question. What is the output of the following code? (1 correct answer)
+   
+    <%= config == pageContext.getServletConfig() %>
+
+        111 true999
+        111 false999
+
+    question. What is the output of the following code? (1 correct answer)
+   
+    <%= application == session.getServletContext() %>
+
+        111 true999
+        111 false999
+
+    question. What is the output of the following code? (1 correct answer)
+   
+    <%= application == pageContext.getServletContext() %>
+
+        111 true999
+        111 false999
+
+    question. What is the output of the following code? (1 correct answer)
+   
+    <%= application == request.getSession().getServletContext() %>
+
+        111 true999
+        111 false999
+
+    question. What is the output of the following code? (1 correct answer)
+   
+    <%= page instanceof JspPage %>
+
+        111 true999
+        111 false999
+
+    question. What is the output of the following code? (1 correct answer)
+   
+    <%= out instanceof JspWriter %>
+
+        111 true999
+        111 false999
+
+    question. What is the output of the following code? (1 correct answer)
+   
+    <% session.setAttribute("name", "Diogenes"); %>
+    <%= session.getAttribute("name") %>
+
+        111 Diogenes999
+        111 null999
+
+    question. What is the output of the following code? (1 correct answer)
+   
+    <% session.setAttribute("name", "Diogenes"); %>
+    <%= session.getAttribute("Diogenes") %>
+
+        111 Diogenes999
+        111 null999
+
+    question. What is the output of the following code? (1 correct answer)
+   
+    <% session.setAttribute("name", "Diogenes"); %>
+    <%= pageContext.getAttribute("name") %>
+
+        111 Diogenes999
+        111 null999
+
+    question. What is the output of the following code? (1 correct answer)
+   
+    <% session.setAttribute("name", "Diogenes"); %>
+    <%= pageContext.getAttribute("name",
+                                 pageContext.APPLICATION_SCOPE) %>
+
+        111 Diogenes999
+        111 null999
+
+    question. What is the output of the following code? (1 correct answer)
+   
+    <% session.setAttribute("name", "Diogenes"); %>
+    <%= pageContext.getAttribute("name",
+                                 pageContext.SESSION_SCOPE) %>
+
+        111 Diogenes999
+        111 null999
+
+    question. What is the output of the following code? (1 correct answer)
+   
+    <% session.setAttribute("name", "Diogenes"); %>
+    <%= pageContext.findAttribute("name") %>
+
+        111 Diogenes999
+        111 null999
+
+    question. What is the output of the following code? (1 correct answer)
+   
+    <% session.setAttribute("name", "Diogenes"); %>
+    <%= pageContext.SESSION_SCOPE ==
+        pageContext.getAttributesScope("name") %>
+
+        111 true999
+        111 false999
+
+    question. Consider this code.
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="yourname" value="Bond"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <html>
+      <body>
+        Hello <%= request.getAttribute("yourname")%> !!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        111 “Hello null !!”999
+        111 “Hello Bond !!”999
+
+    question. Consider this code.
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="yourname" value="Bond"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <html>
+      <body>
+        Hello <%= request.getParameter("yourname")%> !!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        111 “Hello null !!”999
+        111 “Hello Bond !!”999
+
+    question. Consider this code.
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="yourname" value="Bond"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <html>
+      <body>
+        Hello <%= request.getParameter("OK")%> !!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        111 “Hello null !!”999
+        111 “Hello submit !!”999
+
+    question. Consider this code.
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="yourname" value="Bond"/>
+          <input type="submit" name="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <html>
+      <body>
+        Hello <%= request.getParameter("submit")%> !!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        111 “Hello null !!”999
+        111 “Hello OK !!”999
+        111 “Hello submit !!”999
+
+    question. Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="about" value="Mathematics"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="request" />
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        111 I like null!999
+        111 I like Mathematics!999
+
+    question. Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="about" value="Mathematics"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="request" />
+    <jsp:setProperty name="book" property="title" param="title" />
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        111 I like null!999
+        111 I like Mathematics!999
+
+    question. Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="about" value="Mathematics"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="request" />
+    <jsp:setProperty name="book" property="title" param="about" />
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        111 I like null!999
+        111 I like Mathematics!999
+
+    question. Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="about" value="Mathematics"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="request" />
+    <jsp:setProperty name="book" property="title" value="Art" />
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        111 I like Art!999
+        111 I like Mathematics!999
+
+    question. Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="about" value="Mathematics"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="request" >
+      <jsp:setProperty name="book" property="title" value="Art" />
+    </jsp:useBean>
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        111 I like Art!999
+        111 I like Mathematics!999
+
+    question. Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="about" value="Mathematics"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="request" >
+      <jsp:setProperty name="book" property="title" param="Mathematics" />
+    </jsp:useBean>
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        111 I like null!999
+        111 I like Mathematics!999
+
+    question. Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="about" value="Mathematics"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="request" >
+      <jsp:setProperty name="book" property="title" param="title" />
+    </jsp:useBean>
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        111 I like null!999
+        111 I like Mathematics!999
+
+    question. Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="about" value="Mathematics"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="request" >
+      <jsp:setProperty name="book" property="title" param="about" />
+    </jsp:useBean>
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        111 I like null!999
+        111 I like Mathematics!999
+
+    question. Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="about" value="Mathematics"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="request" >
+      <jsp:setProperty name="book" property="title" param="about" />
+    </jsp:useBean>
+    <jsp:setProperty name="book" property="title" value="Art" />
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        111 I like Art!999
+        111 I like Mathematics!999
+
+    question. Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="title" value="Mathematics"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="request" >
+      <jsp:setProperty name="book" property="title" param="title" />
+    </jsp:useBean>
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        111 I like null!999
+        111 I like Mathematics!999
+
+    question. Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="title" value="Mathematics"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="request" >
+      <jsp:setProperty name="book" property="title" param="*" />
+    </jsp:useBean>
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        111 I like null!999
+        111 I like Mathematics!999
+
+    question. Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="title" value="Mathematics"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="request" >
+      <jsp:setProperty name="book" property="title" />
+    </jsp:useBean>
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        111 I like null!999
+        111 I like Mathematics!999
+
+    question. Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="title" value="Mathematics"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="request" >
+      <jsp:setProperty name="book" property="*" />
+    </jsp:useBean>
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        111 I like null!999
+        111 I like Mathematics!999
+
+    question. Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="title" value="Mathematics"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" type="library.Book" scope="request" >
+      <jsp:setProperty name="book" property="*" />
+    </jsp:useBean>
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        111 I like Mathematics!999
+        111 An exception is thrown at runtime.999
+
+    question. Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <html>
+      <body>
+        <form action="output.jsp">
+          <input type="text" name="title" value="Mathematics"/>
+          <input type="submit" value="OK" />
+        </form>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" type="library.Book" class="library.Book" scope="request" >
+      <jsp:setProperty name="book" property="*" />
+    </jsp:useBean>
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        111 I like Mathematics!999
+        111 An exception is thrown at runtime.999
+
+    question. Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="request" >
+      <jsp:setProperty name="book" property="title" value="Head First Servlets and JSP" />
+    </jsp:useBean>
+    <html>
+      <body>
+        <a href="output.jsp">click here</a>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="request" />
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        111 I like null!999
+        111 I like Head First Servlets and JSP!999
+
+    question. Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="session" >
+      <jsp:setProperty name="book" property="title" value="Head First Servlets and JSP" />
+    </jsp:useBean>
+    <html>
+      <body>
+        <a href="output.jsp">click here</a>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="session" />
+    <html>
+      <body>
+        I like <jsp:getProperty name="book" property="title" />!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        111 I like null!999
+        111 I like Head First Servlets and JSP!999
+
+    question. Consider this code.
+   
+    package library;
+    public class Book {
+       private String title;
+       public Book() {}
+       // get and set methods
+    }
+
+   
+    <%-- input.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="session" >
+      <jsp:setProperty name="book" property="title" value="Head First Servlets and JSP" />
+    </jsp:useBean>
+    <html>
+      <body>
+        <a href="output.jsp">click here</a>
+      </body>
+    </html>
+
+   
+    <%-- output.jsp --%>
+    <jsp:useBean id="book" class="library.Book" scope="session" />
+    <html>
+      <body>
+        I like <%= book.getTitle() %>!
+      </body>
+    </html>
+
+    What is the output when the form is submitted? (1 correct answer)
+
+        111 I like null!999
+        111 I like Head First Servlets and JSP!999
+
+    question. Consider this code and that there is no attribute in the request object.
+   
+    package value;
+    public class Person {
+       public String name;
+    }
+
+   
+    <%-- hello.jsp --%>
+    <html>
+      <body>
+        <jsp:useBean id="person" class="value.Person" scope="request">
+          <jsp:setProperty name="person" property="name" value="Niko" />
+        </jsp:useBean>
+        Hello ${person.name}!!
+      </body>
+    </html>
+
+    What is the output of hello.jsp? (1 correct answer)
+
+        111 Hello !!999
+        111 Hello Niko!!999
+        111 An Exception is thrown at runtime999
+
+    question. Consider this code and that there is no attribute in the request object.
+   
+    package value;
+    public class Person {
+       private String name;
+       public void setName(String name) {
+          this.name = name;
+       }
+    }
+
+   
+    <%-- hello.jsp --%>
+    <html>
+      <body>
+        <jsp:useBean id="person" class="value.Person" scope="request">
+          <jsp:setProperty name="person" property="name" value="Niko" />
+        </jsp:useBean>
+        Hello ${person.name}!!
+      </body>
+    </html>
+
+    What is the output of hello.jsp? (1 correct answer)
+
+        111 Hello !!999
+        111 Hello Niko!!999
+        111 An Exception is thrown at runtime999
+
+    question. Consider this code and that there is no attribute in the request object.
+   
+    package value;
+    public class Person {
+       private String name;
+       public String getName() {
+          return name;
+       }
+    }
+
+   
+    <%-- hello.jsp --%>
+    <html>
+      <body>
+        <jsp:useBean id="person" class="value.Person" scope="request">
+          <jsp:setProperty name="person" property="name" value="Niko" />
+        </jsp:useBean>
+        Hello ${person.name}!!
+      </body>
+    </html>
+
+    What is the output of hello.jsp? (1 correct answer)
+
+        111 Hello !!999
+        111 Hello Niko!!999
+        111 An Exception is thrown at runtime999
+
+    question. Consider this code and that there is no attribute in the request object.
+   
+    package value;
+    public class Person {
+       private String name;
+       public String getName() {
+          return name;
+       }
+       public void setName(String name) {
+          this.name = name;
+       }
+    }
+
+   
+    <%-- hello.jsp --%>
+    <html>
+      <body>
+        <jsp:useBean id="person" class="value.Person" scope="request">
+          <jsp:setProperty name="person" property="name" value="Niko" />
+        </jsp:useBean>
+        Hello ${person.name}!!
+      </body>
+    </html>
+
+    What is the output of hello.jsp? (1 correct answer)
+
+        111 Hello !!999
+        111 Hello Niko!!999
+        111 An Exception is thrown at runtime999
+
+    question. Consider this code and that there is no attribute in the request object.
+   
+    package value;
+    public class Person {
+       private String name;
+       private Person() {
+       }
+       public String getName() {
+          return name;
+       }
+       public void setName(String name) {
+          this.name = name;
+       }
+    }
+
+   
+    <%-- hello.jsp --%>
+    <html>
+      <body>
+        <jsp:useBean id="person" class="value.Person" scope="request">
+          <jsp:setProperty name="person" property="name" value="Niko" />
+        </jsp:useBean>
+        Hello ${person.name}!!
+      </body>
+    </html>
+
+    What is the output of hello.jsp? (1 correct answer)
+
+        111 Hello !!999
+        111 Hello Niko!!999
+        111 An Exception is thrown at runtime999
+
+    question. Consider this code and that there is no attribute in the request object.
+   
+    package value;
+    public class Person {
+       private String onoma;
+       public String getName() {
+          return onoma;
+       }
+       public void setName(String name) {
+          this.onoma = name;
+       }
+    }
+
+   
+    <%-- hello.jsp --%>
+    <html>
+      <body>
+        <jsp:useBean id="person" class="value.Person" scope="request">
+          <jsp:setProperty name="person" property="name" value="Niko" />
+        </jsp:useBean>
+        Hello ${person.name}!!
+      </body>
+    </html>
+
+    What is the output of hello.jsp? (1 correct answer)
+
+        111 Hello !!999
+        111 Hello Niko!!999
+        111 An Exception is thrown at runtime999
+
+    question. Consider this code and that there is no attribute in the request object.
+   
+    package value;
+    public class Person {
+       private String name;
+       public String getName() {
+          return name;
+       }
+       public void setName(String name) {
+          this.name = name;
+       }
+    }
+
+   
+    <%-- hello.jsp --%>
+    <html>
+      <body>
+        <jsp:useBean id="person" class="value.Person" scope="request">
+          <jsp:setProperty name="person" property="name" value="Niko" />
+        </jsp:useBean>
+        Hello ${person.name[0]}!!
+      </body>
+    </html>
+
+    What is the output of hello.jsp? (1 correct answer)
+
+        111 Hello !!999
+        111 Hello Niko!!999
+        111 An Exception is thrown at runtime999
+
+    question. Consider this code and that there is no attribute in the request object.
+   
+    package value;
+    public class Person {
+       private String name;
+       public String getName() {
+          return name;
+       }
+       public void setName(String name) {
+          this.name = name;
+       }
+    }
+
+   
+    <%-- hello.jsp --%>
+    <html>
+      <body>
+        <jsp:useBean id="person" class="value.Person" scope="request">
+          <jsp:setProperty name="person" property="name" value="Niko" />
+        </jsp:useBean>
+        Hello ${person.name["0"]}!!
+      </body>
+    </html>
+
+    What is the output of hello.jsp? (1 correct answer)
+
+        111 Hello !!999
+        111 Hello Niko!!999
+        111 An Exception is thrown at runtime999
+
+    question. Both HttpJspPage and JspPage are interfaces. (1 correct answer)
+        111 true999
+        111 false999
+
+    question. HttpJspPage IS-A JspPage. (1 correct answer)
+        111 true999
+        111 false999
+
+    question. HttpJspPage IS-A Servlet. (1 correct answer)
+        111 true999
+        111 false999
+
+    question. What is the signature of method _jspService of HttpJspPage? (1 correct answer)
+        111 void _jspService()999
+        111 void _jspService(HttpServletRequest, HttpServletResponse)999
+        111 void _jspService(HttpServletRequest, HttpServletResponse) throws IOException, ServletException999
+
+    question. The method _jspService of HttpJspPage should not be overriden by a JSP author. (1 correct answer)
+        111 true999
+        111 false999
+
+    question. What is the signature of method jspInit of JspPage? (1 correct answer)
+        111 void jspInit()999
+        111 void jspInit(HttpServletRequest, HttpServletResponse)999
+        111 void jspInit(HttpServletRequest, HttpServletResponse) throws IOException, ServletException999
+
+    question. What is the signature of method jspDestroy of JspPage? (1 correct answer)
+        111 void jspDestroy()999
+        111 void jspDestroy(HttpServletRequest, HttpServletResponse)999
+        111 void jspDestroy(HttpServletRequest, HttpServletResponse) throws IOException, ServletException999
+
+    question. The methods jspInit and jspDestroy of JspPage may be overriden by a JSP author. (1 correct answer)
+        111 true999
+        111 false999
+
+    question. Both PageContext and JspContext are abstract classes. (1 correct answer)
+        111 true999
+        111 false999
+
+    question. PageContext IS-A JspContext. (1 correct answer)
+        111 true999
+        111 false999
+
+    question. The following are all methods of JspContext. (1 correct answer)
+          ⇒ findAttribute()
+          ⇒ getAttribute()
+          ⇒ setAttribute()
+          ⇒ removeAttribute()
+          ⇒ getAttributeNamesInScope()
+          ⇒ getAttributesScope()
+          ⇒ getOut()
+
+        111 true999
+        111 false999
+
+    question. Which of the following methods of JspContext have 2 overloaded versions? (3 correct answers)
+        111 findAttribute()999
+        111 getAttribute()999
+        111 setAttribute()999
+        111 removeAttribute()999
+
+    question. What is the signature of the method getOut of JspContext? (1 correct answer)
+        111 public abstract JspWriter getOut()999
+        111 public abstract PrintWriter getOut()999
+
+    question. The following are all methods of PageContext. (1 correct answer)
+          ⇒ getPage()
+          ⇒ getSession()
+          ⇒ getRequest()
+          ⇒ getResponse()
+          ⇒ getServletConfig()
+          ⇒ getServletContext()
+
+        111 true999
+        111 false999
+
+    question. The following are all fields of PageContext. (1 correct answer)
+          ⇒ PAGE_SCOPE
+          ⇒ REQUEST_SCOPE
+          ⇒ SESSION_SCOPE
+          ⇒ APPLICATION_SCOPE
+
+        111 true999
+        111 false999
+
+
