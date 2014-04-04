@@ -4,7 +4,7 @@
   <title><![CDATA[Vinícius Oliveira]]></title>
   <link href="http://viniciusmo.github.com/atom.xml" rel="self"/>
   <link href="http://viniciusmo.github.com/"/>
-  <updated>2014-04-04T15:45:19-03:00</updated>
+  <updated>2014-04-04T16:25:25-03:00</updated>
   <id>http://viniciusmo.github.com/</id>
   <author>
     <name><![CDATA[viniciusmo]]></name>
@@ -12,6 +12,22 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Exam OCE Web Component Developer]]></title>
+    <link href="http://viniciusmo.github.com/blog/2014/04/04/exam-oce-web-component-developer/"/>
+    <updated>2014-04-04T16:20:00-03:00</updated>
+    <id>http://viniciusmo.github.com/blog/2014/04/04/exam-oce-web-component-developer</id>
+    <content type="html"><![CDATA[<p>Pequeno exame que eu fiz para estudar para certificação Web Component Developer :)</p>
+
+<p><img class="center" src="https://raw.github.com/viniciusmo/octopress/master/source/images/blog/opensource/mock1.png"></p>
+
+<p><img class="center" src="https://raw.github.com/viniciusmo/octopress/master/source/images/blog/opensource/mock2.png"></p>
+
+<p>Código Fonte : <a href="https://github.com/viniciusmo/exam-oce-web-component-developer" title="Clique aqui">Clique aqui</a><br/>
+Demo : <a href="http://viniciusmo.github.io/games/memory-game/game.html" title="Clique aqui">Clique aqui</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Pong Game feito em Java]]></title>
