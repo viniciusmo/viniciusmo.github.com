@@ -4,7 +4,7 @@
   <title><![CDATA[Category: opensource | Vinícius Oliveira]]></title>
   <link href="http://viniciusmo.github.com/blog/categories/opensource/atom.xml" rel="self"/>
   <link href="http://viniciusmo.github.com/"/>
-  <updated>2014-04-07T13:15:22-03:00</updated>
+  <updated>2014-04-07T13:16:08-03:00</updated>
   <id>http://viniciusmo.github.com/</id>
   <author>
     <name><![CDATA[viniciusmo]]></name>
@@ -68,7 +68,7 @@ texto, na qual, utilizando o teclado do dispositivo, o usuário informa uma pala
 
 <h2>Código Fonte e documentação</h2>
 
-<p>  Toda a documentação e código fonte do projeto é encontrada <a href="https://raw.githubusercontent.com/viniciusmo/viniciusmo.github.com/master/images/blog/opensource/hermes/image1.jpg">aqui</a>.</p>
+<p>  Toda a documentação e código fonte do projeto é encontrada <a href="https://github.com/viniciusmo/hermes">aqui</a>.</p>
 ]]></content>
   </entry>
   
