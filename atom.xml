@@ -4,7 +4,7 @@
   <title><![CDATA[Vinícius Oliveira]]></title>
   <link href="http://viniciusmo.github.com/atom.xml" rel="self"/>
   <link href="http://viniciusmo.github.com/"/>
-  <updated>2014-04-07T15:46:14-03:00</updated>
+  <updated>2014-04-08T10:33:52-03:00</updated>
   <id>http://viniciusmo.github.com/</id>
   <author>
     <name><![CDATA[viniciusmo]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Tijolo Java Game]]></title>
+    <link href="http://viniciusmo.github.com/blog/2014/04/08/tijolo-java-game/"/>
+    <updated>2014-04-08T10:30:00-03:00</updated>
+    <id>http://viniciusmo.github.com/blog/2014/04/08/tijolo-java-game</id>
+    <content type="html"><![CDATA[<p>Pequeno joguinho feito utilizando a biblioteca 2D.</p>
+
+<h2>Demonstração</h2>
+
+<p>  <img src="https://raw.githubusercontent.com/viniciusmo/viniciusmo.github.com/master/images/blog/opensource/tijolo/tijolo.gif" alt="&quot;Imagem 1&quot;" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Hermes]]></title>
