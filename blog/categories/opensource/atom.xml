@@ -4,7 +4,7 @@
   <title><![CDATA[Category: opensource | Vinícius Oliveira]]></title>
   <link href="http://viniciusmo.github.com/blog/categories/opensource/atom.xml" rel="self"/>
   <link href="http://viniciusmo.github.com/"/>
-  <updated>2014-04-08T11:03:16-03:00</updated>
+  <updated>2014-04-08T11:05:23-03:00</updated>
   <id>http://viniciusmo.github.com/</id>
   <author>
     <name><![CDATA[viniciusmo]]></name>
@@ -23,6 +23,12 @@
 <h2>Demonstração</h2>
 
 <p>  <img src="https://raw.githubusercontent.com/viniciusmo/viniciusmo.github.com/master/images/blog/opensource/tijolo/tijolo.gif" alt="&quot;Imagem 1&quot;" /></p>
+
+<h2>Código Fonte</h2>
+
+<pre><code>[Github][2].
+[2]: https://github.com/viniciusmo/tijolo-java-game
+</code></pre>
 ]]></content>
   </entry>
   
