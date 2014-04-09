@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Vinícius Oliveira]]></title>
-  <link href="http://viniciusmo.github.com/atom.xml" rel="self"/>
-  <link href="http://viniciusmo.github.com/"/>
-  <updated>2014-04-08T12:34:56-03:00</updated>
-  <id>http://viniciusmo.github.com/</id>
+  <link href="http://viniciusmo.github.io/atom.xml" rel="self"/>
+  <link href="http://viniciusmo.github.io/"/>
+  <updated>2014-04-09T15:14:15-03:00</updated>
+  <id>http://viniciusmo.github.io/</id>
   <author>
     <name><![CDATA[viniciusmo]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Tijolo Java Game]]></title>
-    <link href="http://viniciusmo.github.com/blog/2014/04/08/tijolo-java-game/"/>
+    <link href="http://viniciusmo.github.io/blog/2014/04/08/tijolo-java-game/"/>
     <updated>2014-04-08T10:30:00-03:00</updated>
-    <id>http://viniciusmo.github.com/blog/2014/04/08/tijolo-java-game</id>
+    <id>http://viniciusmo.github.io/blog/2014/04/08/tijolo-java-game</id>
     <content type="html"><![CDATA[<p>Pequeno joguinho que eu fiz utilizando a biblioteca gráfica 2D do Java.</p>
 
 <h2>Demonstração</h2>
@@ -32,9 +32,9 @@
   
   <entry>
     <title type="html"><![CDATA[Hermes]]></title>
-    <link href="http://viniciusmo.github.com/blog/2014/04/07/hermes/"/>
+    <link href="http://viniciusmo.github.io/blog/2014/04/07/hermes/"/>
     <updated>2014-04-07T12:50:00-03:00</updated>
-    <id>http://viniciusmo.github.com/blog/2014/04/07/hermes</id>
+    <id>http://viniciusmo.github.io/blog/2014/04/07/hermes</id>
     <content type="html"><![CDATA[<h2>O que é ?</h2>
 
 <p>  É a implementação de um aplicativo com interface específica que funciona como intermediário na comunicação entre portadores de necessidades especiais verbal e auditiva e pessoas ouvintes e falantes.</p>
@@ -91,9 +91,9 @@ texto, na qual, utilizando o teclado do dispositivo, o usuário informa uma pala
   
   <entry>
     <title type="html"><![CDATA[Exam OCE Web Component Developer]]></title>
-    <link href="http://viniciusmo.github.com/blog/2014/04/04/exam-oce-web-component-developer/"/>
+    <link href="http://viniciusmo.github.io/blog/2014/04/04/exam-oce-web-component-developer/"/>
     <updated>2014-04-04T16:20:00-03:00</updated>
-    <id>http://viniciusmo.github.com/blog/2014/04/04/exam-oce-web-component-developer</id>
+    <id>http://viniciusmo.github.io/blog/2014/04/04/exam-oce-web-component-developer</id>
     <content type="html"><![CDATA[<p>Pequeno exame que eu fiz para estudar para certificação Web Component Developer :)</p>
 
 <p><img class="center" src="https://raw.github.com/viniciusmo/octopress/master/source/images/blog/opensource/mock1.png"></p>
@@ -107,9 +107,9 @@ Demo : <a href="http://viniciusmo.github.io/exam/exam-oce-web-component-develope
   
   <entry>
     <title type="html"><![CDATA[Pong Game feito em Java]]></title>
-    <link href="http://viniciusmo.github.com/blog/2013/04/09/pong-game-feito-em-java/"/>
+    <link href="http://viniciusmo.github.io/blog/2013/04/09/pong-game-feito-em-java/"/>
     <updated>2013-04-09T15:15:00-03:00</updated>
-    <id>http://viniciusmo.github.com/blog/2013/04/09/pong-game-feito-em-java</id>
+    <id>http://viniciusmo.github.io/blog/2013/04/09/pong-game-feito-em-java</id>
     <content type="html"><![CDATA[<p>Pong Game (versão modificada) feito em Java apresentado a disciplina de Jogos Digitais para WEB - Fatec Carapicuíba.</p>
 
 <p><img class="center" src="https://raw.github.com/viniciusmo/octopress/master/source/images/blog/opensource/pong_game_modificado.png"></p>
@@ -121,9 +121,9 @@ Demo : <a href="http://viniciusmo.github.io/games/simple-pong-game-applet/html/v
   
   <entry>
     <title type="html"><![CDATA[Campo minado utilizando HTML5 (Canvas/Local Storage)]]></title>
-    <link href="http://viniciusmo.github.com/blog/2013/04/09/campo-minado-utilizando-html5-canvas-slash-local-storage/"/>
+    <link href="http://viniciusmo.github.io/blog/2013/04/09/campo-minado-utilizando-html5-canvas-slash-local-storage/"/>
     <updated>2013-04-09T15:00:00-03:00</updated>
-    <id>http://viniciusmo.github.com/blog/2013/04/09/campo-minado-utilizando-html5-canvas-slash-local-storage</id>
+    <id>http://viniciusmo.github.io/blog/2013/04/09/campo-minado-utilizando-html5-canvas-slash-local-storage</id>
     <content type="html"><![CDATA[<p>Campo minado apresentado a disciplina de Jogos Digitais para WEB - Fatec Carapicuíba com três niveis diferentes.</p>
 
 <p><img class="center" src="https://raw.github.com/viniciusmo/octopress/master/source/images/blog/opensource/campo_minado.png"></p>
@@ -135,9 +135,9 @@ Demo : <a href="http://viniciusmo.github.io/games/minesweeper-html5/minesweeper.
   
   <entry>
     <title type="html"><![CDATA[Joguinho da Memória HTML+CSS+JAVASCRIPT]]></title>
-    <link href="http://viniciusmo.github.com/blog/2013/04/09/joguinho-da-memoria-html-plus-css-plus-javascript/"/>
+    <link href="http://viniciusmo.github.io/blog/2013/04/09/joguinho-da-memoria-html-plus-css-plus-javascript/"/>
     <updated>2013-04-09T14:44:00-03:00</updated>
-    <id>http://viniciusmo.github.com/blog/2013/04/09/joguinho-da-memoria-html-plus-css-plus-javascript</id>
+    <id>http://viniciusmo.github.io/blog/2013/04/09/joguinho-da-memoria-html-plus-css-plus-javascript</id>
     <content type="html"><![CDATA[<p>Pequeno joguinho da memória apresentado para a disciplina de Jogos Digitais para WEB - FATEC Carapicuíba.</p>
 
 <p><img class="center" src="https://raw.github.com/viniciusmo/octopress/master/source/images/blog/opensource/joguinho_da_memoria.png"></p>
@@ -149,9 +149,9 @@ Demo : <a href="http://viniciusmo.github.io/games/memory-game/game.html" title="
   
   <entry>
     <title type="html"><![CDATA[Programming Challenges - LCD Display]]></title>
-    <link href="http://viniciusmo.github.com/blog/2013/02/08/programming-challenges-lcd-display/"/>
+    <link href="http://viniciusmo.github.io/blog/2013/02/08/programming-challenges-lcd-display/"/>
     <updated>2013-02-08T23:33:00-02:00</updated>
-    <id>http://viniciusmo.github.com/blog/2013/02/08/programming-challenges-lcd-display</id>
+    <id>http://viniciusmo.github.io/blog/2013/02/08/programming-challenges-lcd-display</id>
     <content type="html"><![CDATA[<h1>Problem LCD Display</h1>
 
 <p>A friend of yours has just bought a new computer. Before this, the most powerful<br/>
@@ -178,7 +178,7 @@ sample output below.</p>
 
 <h3>Solution</h3>
 
-<figure class='code'><figcaption><span> (lcd_display.cpp)</span> <a href='http://viniciusmo.github.com/downloads/code/lcd_display.cpp'>download</a></figcaption>
+<figure class='code'><figcaption><span> (lcd_display.cpp)</span> <a href='http://viniciusmo.github.io/downloads/code/lcd_display.cpp'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -498,9 +498,9 @@ sample output below.</p>
   
   <entry>
     <title type="html"><![CDATA[Programming Challenges - The Trip]]></title>
-    <link href="http://viniciusmo.github.com/blog/2013/02/08/programming-challenges-the-trip/"/>
+    <link href="http://viniciusmo.github.io/blog/2013/02/08/programming-challenges-the-trip/"/>
     <updated>2013-02-08T23:13:00-02:00</updated>
-    <id>http://viniciusmo.github.com/blog/2013/02/08/programming-challenges-the-trip</id>
+    <id>http://viniciusmo.github.io/blog/2013/02/08/programming-challenges-the-trip</id>
     <content type="html"><![CDATA[<h1>Problem The Trip</h1>
 
 <p>A group of students are members of a club that travels annually to different lo-
@@ -530,7 +530,7 @@ that must be exchanged to equalize the students’ costs.</p>
 
 <h3>Solution</h3>
 
-<figure class='code'><figcaption><span> (the_trip.cpp)</span> <a href='http://viniciusmo.github.com/downloads/code/the_trip.cpp'>download</a></figcaption>
+<figure class='code'><figcaption><span> (the_trip.cpp)</span> <a href='http://viniciusmo.github.io/downloads/code/the_trip.cpp'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -618,9 +618,9 @@ that must be exchanged to equalize the students’ costs.</p>
   
   <entry>
     <title type="html"><![CDATA[Programming Challenges - Minesweeper]]></title>
-    <link href="http://viniciusmo.github.com/blog/2013/02/04/programming-challenges-minesweeper/"/>
+    <link href="http://viniciusmo.github.io/blog/2013/02/04/programming-challenges-minesweeper/"/>
     <updated>2013-02-04T16:37:00-02:00</updated>
-    <id>http://viniciusmo.github.com/blog/2013/02/04/programming-challenges-minesweeper</id>
+    <id>http://viniciusmo.github.io/blog/2013/02/04/programming-challenges-minesweeper</id>
     <content type="html"><![CDATA[<h1>Problem Minesweeper</h1>
 
 <p>Have you ever played Minesweeper? This cute little game comes with a certain op- erating system whose name we can’t remember. The goal of the game is to find where all the mines are located within a M × N field.<br/>
@@ -643,7 +643,7 @@ Safe squares are denoted by “.” and mine squares by “*,” both without th
 
 <h3>Solution</h3>
 
-<figure class='code'><figcaption><span>[++] (minesweeper.cpp)</span> <a href='http://viniciusmo.github.com/downloads/code/minesweeper.cpp'>download</a></figcaption>
+<figure class='code'><figcaption><span>[++] (minesweeper.cpp)</span> <a href='http://viniciusmo.github.io/downloads/code/minesweeper.cpp'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -799,9 +799,9 @@ Safe squares are denoted by “.” and mine squares by “*,” both without th
   
   <entry>
     <title type="html"><![CDATA[Programming Challenges - The 3n + 1 Problem]]></title>
-    <link href="http://viniciusmo.github.com/blog/2013/02/04/programming-challenges-the-3n-plus-1-problem/"/>
+    <link href="http://viniciusmo.github.io/blog/2013/02/04/programming-challenges-the-3n-plus-1-problem/"/>
     <updated>2013-02-04T14:06:00-02:00</updated>
-    <id>http://viniciusmo.github.com/blog/2013/02/04/programming-challenges-the-3n-plus-1-problem</id>
+    <id>http://viniciusmo.github.io/blog/2013/02/04/programming-challenges-the-3n-plus-1-problem</id>
     <content type="html"><![CDATA[<h1>Problem The 3n + 1</h1>
 
 <p>Consider the following algorithm to generate a sequence of numbers. Start with an integer n. If n is even, divide by 2. If n is odd, multiply by 3 and add 1.Repeat this process with the new value of n, terminating when n = 1. For example, the following sequence of numbers will be generated for n = 22:</p>
@@ -821,7 +821,7 @@ For an input n, the cycle-length of n is the number of numbers generated up to a
 
 <h3>Solution</h3>
 
-<figure class='code'><figcaption><span> (the_3n_+_1.cpp)</span> <a href='http://viniciusmo.github.com/downloads/code/the_3n_+_1.cpp'>download</a></figcaption>
+<figure class='code'><figcaption><span> (the_3n_+_1.cpp)</span> <a href='http://viniciusmo.github.io/downloads/code/the_3n_+_1.cpp'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -919,9 +919,9 @@ For an input n, the cycle-length of n is the number of numbers generated up to a
   
   <entry>
     <title type="html"><![CDATA[Arquitetura - Listagem Frameworks]]></title>
-    <link href="http://viniciusmo.github.com/blog/2013/01/31/listagem-de-frameworks/"/>
+    <link href="http://viniciusmo.github.io/blog/2013/01/31/listagem-de-frameworks/"/>
     <updated>2013-01-31T18:01:00-02:00</updated>
-    <id>http://viniciusmo.github.com/blog/2013/01/31/listagem-de-frameworks</id>
+    <id>http://viniciusmo.github.io/blog/2013/01/31/listagem-de-frameworks</id>
     <content type="html"><![CDATA[<p>Ótima lista de frameworks e componentes feita pelo <a href="http://fernandofranzini.wordpress.com/2013/01/30/listagem-de-frameworks-30012013/">Fernando Franzini</a> como ajuda na hora de arquitetar um sistema , segue a excelente lista :</p>
 
 <h2>Container IoC</h2>
@@ -1166,9 +1166,9 @@ JLicense  – Gerenciador de licenciamento de uso de software –http://www.webs
   
   <entry>
     <title type="html"><![CDATA[OCEJWCD Study Companion: Certified Expert Java EE 6 Web Component Developer (Oracle Exam 1Z0-899)]]></title>
-    <link href="http://viniciusmo.github.com/blog/2013/01/31/ocejwcd-study-companion-certified-expert-java-ee-6-web-component-developer-oracle-exam-1z0-899/"/>
+    <link href="http://viniciusmo.github.io/blog/2013/01/31/ocejwcd-study-companion-certified-expert-java-ee-6-web-component-developer-oracle-exam-1z0-899/"/>
     <updated>2013-01-31T17:15:00-02:00</updated>
-    <id>http://viniciusmo.github.com/blog/2013/01/31/ocejwcd-study-companion-certified-expert-java-ee-6-web-component-developer-oracle-exam-1z0-899</id>
+    <id>http://viniciusmo.github.io/blog/2013/01/31/ocejwcd-study-companion-certified-expert-java-ee-6-web-component-developer-oracle-exam-1z0-899</id>
     <content type="html"><![CDATA[<p>Para quem está querendo tirar essa certificação recomendo este livro como fonte de estudo.</p>
 
 <p><img class="center" src="https://raw.github.com/viniciusmo/octopress/master/source/images/blog/java/livro_ocejwcd.jpg"></p>
@@ -1179,9 +1179,9 @@ JLicense  – Gerenciador de licenciamento de uso de software –http://www.webs
   
   <entry>
     <title type="html"><![CDATA[iOS : Automatic Counting Reference - ARC]]></title>
-    <link href="http://viniciusmo.github.com/blog/2013/01/24/ios-automatic-counting-reference-arc/"/>
+    <link href="http://viniciusmo.github.io/blog/2013/01/24/ios-automatic-counting-reference-arc/"/>
     <updated>2013-01-24T14:58:00-02:00</updated>
-    <id>http://viniciusmo.github.com/blog/2013/01/24/ios-automatic-counting-reference-arc</id>
+    <id>http://viniciusmo.github.io/blog/2013/01/24/ios-automatic-counting-reference-arc</id>
     <content type="html"><![CDATA[<h1>Introdução</h1>
 
 <p>A grande mudança no <strong><em>iOS 5</em></strong> foi o novo recurso adicionado  chamado de contador automático de referência (ARC - Automatic Counting Reference).ARC é uma característica do novo compilador LLVM 3.0 que acaba completamente com  o gerenciamento  de memória manual.Usar o ARC em seus projetos é extremamente simples.Você mantém o mesmo código, como de costume, exceto que você não precisa realizar chamadas a <strong><em>release</em></strong> , <strong><em>retain</em></strong> ou ao <strong><em>autorelease</em></strong>.O ARC realiza todas essas tarefas pra você :).<br/>

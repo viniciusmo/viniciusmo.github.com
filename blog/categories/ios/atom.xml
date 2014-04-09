@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: iOS | Vinícius Oliveira]]></title>
-  <link href="http://viniciusmo.github.com/blog/categories/ios/atom.xml" rel="self"/>
-  <link href="http://viniciusmo.github.com/"/>
-  <updated>2014-04-08T12:34:56-03:00</updated>
-  <id>http://viniciusmo.github.com/</id>
+  <link href="http://viniciusmo.github.io/blog/categories/ios/atom.xml" rel="self"/>
+  <link href="http://viniciusmo.github.io/"/>
+  <updated>2014-04-09T15:14:15-03:00</updated>
+  <id>http://viniciusmo.github.io/</id>
   <author>
     <name><![CDATA[viniciusmo]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[iOS : Automatic Counting Reference - ARC]]></title>
-    <link href="http://viniciusmo.github.com/blog/2013/01/24/ios-automatic-counting-reference-arc/"/>
+    <link href="http://viniciusmo.github.io/blog/2013/01/24/ios-automatic-counting-reference-arc/"/>
     <updated>2013-01-24T14:58:00-02:00</updated>
-    <id>http://viniciusmo.github.com/blog/2013/01/24/ios-automatic-counting-reference-arc</id>
+    <id>http://viniciusmo.github.io/blog/2013/01/24/ios-automatic-counting-reference-arc</id>
     <content type="html"><![CDATA[<h1>Introdução</h1>
 
 <p>A grande mudança no <strong><em>iOS 5</em></strong> foi o novo recurso adicionado  chamado de contador automático de referência (ARC - Automatic Counting Reference).ARC é uma característica do novo compilador LLVM 3.0 que acaba completamente com  o gerenciamento  de memória manual.Usar o ARC em seus projetos é extremamente simples.Você mantém o mesmo código, como de costume, exceto que você não precisa realizar chamadas a <strong><em>release</em></strong> , <strong><em>retain</em></strong> ou ao <strong><em>autorelease</em></strong>.O ARC realiza todas essas tarefas pra você :).<br/>
